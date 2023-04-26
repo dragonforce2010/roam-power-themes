@@ -198,6 +198,7 @@ function onload({ extensionAPI }: OnloadArgs) {
 
 function onunload() {
   removeThemeCommands()
+  document.body.className = ''
 }
 
 export default {
