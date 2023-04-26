@@ -1,0 +1,166 @@
+.float {
+  /* Background color for the rest of body */
+  /* Header - Note title */
+  /* primary text colour */
+  /*topbar*/
+  /*sidebar*/
+  /*right sidebar*/
+  /*border between page in daily notes*/
+  /* hashtags */
+  /* the bright blue highlight color */
+  /* the reference boxes at the bottom */
+  /* CodeMirror */
+}
+.float body {
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  letter-spacing: -0.001em;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+.float .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button {
+  padding: 8px 20px;
+  font-weight: 900;
+  cursor: pointer;
+  font-size: 16px;
+  color: #6bdefe;
+}
+.float body {
+  background-color: #191919;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  letter-spacing: -0.001em;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+.float .roam-app h1 {
+  color: #6bdefe !important;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-weight: bold;
+}
+.float .roam-app {
+  color: #a4b9b9 !important;
+}
+.float .roam-topbar {
+  background-color: #2b2b2b;
+  border-bottom: 1px solid #292929;
+}
+.float .roam-body .roam-app .roam-sidebar-container {
+  background-color: #11151c;
+  border-right: 1px solid #292929;
+}
+.float .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper {
+  color: #6bdefe;
+}
+.float .flex-v-box .starred-pages-wrapper:first-child {
+  background-color: #292929;
+}
+.float .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page {
+  color: #6bdefe;
+}
+.float .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page:hover {
+  color: white;
+}
+.float #right-sidebar {
+  background-color: #1f1f1f !important;
+  border-left: 1px solid #292929;
+  font-size: 15px;
+}
+.float #right-sidebar .flex-h-box .bp3-button .bp3-minimal .bp3-small {
+  color: #6bdefe;
+}
+.float .roam-log-container .roam-log-page {
+  border-top: 1px solid #292929;
+}
+.float .rm-page-ref-tag {
+  color: #d4fef0 !important;
+  background: #1a6950;
+  padding: 0.1em 0.6em;
+  border-radius: 12px;
+}
+.float .block-border-left {
+  border-left: 1px solid #292929;
+}
+.float .rm-block-ref {
+  border-bottom: 1px solid #6bdefe;
+}
+.float .rm-block-ref:hover {
+  background: #091722;
+  border: 1px solid #112a3f;
+}
+.float .rm-page-ref-tag:hover {
+  text-decoration: underline;
+}
+.float .block-highlight-blue {
+  background-color: #1c2e3e;
+}
+.float .rm-reference-item {
+  background-color: #0b1721;
+  margin-top: 12px;
+  border: 1px solid #1e3745;
+  border-radius: 4px;
+}
+.float .rm-reference-item .roam-block {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+.float .rm-reference-item .controls {
+  padding-top: 10px;
+  padding-bottom: 4px;
+}
+.float .rm-page-ref.rm-page-ref-link-color {
+  color: #5dd8ff;
+}
+.float .rm-page-ref:hover {
+  color: #ff895e;
+}
+.float .rm-page-ref.rm-page-ref-link-color {
+  color: #5dd8ff;
+}
+.float a {
+  color: #5dd8ff;
+}
+.float a:focus {
+  color: #5dd8ff;
+}
+.float a:hover {
+  color: #5dd8ff;
+}
+.float .rm-level2 {
+  color: #6bdefe;
+  font-weight: 700;
+}
+.float .rm-level3 {
+  color: #6bdefe;
+  font-weight: 500;
+}
+.float code {
+  color: #a0a2b6;
+  background: #091722;
+  border: 1px solid #112a3f;
+  padding: 0.3em 0.4em;
+  border-radius: 3px;
+}
+.float .CodeMirror {
+  background: #091722;
+  color: #589cab;
+}
+.float .CodeMirror-lines {
+  color: #a0a2b6;
+}
+.float .CodeMirror-gutters {
+  background-color: #091722;
+  border-right: 1px solid #112a3f;
+}
+.float .CodeMirror-activeline-background {
+  background: #0d2030;
+}
+.float .cm-s-default .cm-keyword {
+  color: #5393a2;
+}
+.float .cm-s-default .cm-bracket .CodeMirror-matchingbracket {
+  text-decoration: #5393a2;
+  color: white !important;
+}

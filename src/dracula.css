@@ -1,0 +1,504 @@
+.dracula {
+  /*
+Dracula Theme for Roam Research v0.8.2.
+Install with the Stylus extension for Chrome or Firefox.
+*/
+  /* Dracula color palette */
+  --blue: #8be9fd;
+  --green: #50fa7b;
+  --orange: #ffb86c;
+  --pink: #ff79c6;
+  --purple: #bd93f9;
+  --red: #ff5555;
+  --yellow: #f1fa8c;
+  /* Dracula black & white colors */
+  --background: #282a36;
+  --current-line: #44475a;
+  --foreground: #f8f8f2;
+  --comment: #6272a4;
+  /* Other UI colors */
+  --dark-blue: #29454b;
+  --dark-yellow: #606438;
+  --background2: #333545;
+  --foreground2: #bdcad4;
+  --search-input: #e4e9ed;
+  --search-hover: #d5dadf;
+  --bullet-outer: #6c6f75;
+  --bullet-inner: #d8dee9;
+  --column-title: #818d9b;
+  /* Body, topbar, sidebar */
+  /* Button */
+  /* Heading */
+  /* Right sidebar */
+  /* Buffer (the help window in the bottom right corner) */
+  /* Highlights */
+  /* Toast messages */
+  /* Sync icon */
+  /* External links */
+  /* Reference links */
+  /* Reference pages */
+  /* Bullet points & indent lines */
+  /* All Pages table */
+  /* All Pages checkmarks */
+  /* Mentions in All Pages */
+  /* Find or Create Page search box */
+  /* Hover window triggered by autocompletion */
+  /* Date picker */
+  /* Kanban board */
+  /* Filter tooltip */
+  /* Embed containers */
+  /* Checkmarks */
+  /* Sliders */
+  /* Inline code blocks with ` */
+  /* Multiline code blocks with ``` */
+}
+.dracula .roam-topbar {
+  background-color: var(--background);
+}
+.dracula .roam-body-main {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+.dracula .roam-body .roam-app h1 {
+  color: var(--foreground);
+}
+.dracula .roam-app {
+  background-color: var(--background);
+}
+.dracula .roam-body .roam-app .roam-sidebar-container {
+  background-color: var(--background2);
+}
+.dracula .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page,
+.dracula .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button,
+.dracula .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper,
+.dracula .roam-body .roam-app .roam-sidebar-container > * {
+  color: var(--foreground2);
+  opacity: 0.9;
+}
+.dracula .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page:hover,
+.dracula .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button:hover {
+  background: var(--current-line);
+  color: var(--foreground);
+  opacity: 0.9;
+}
+.dracula .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button .bp3-button:hover {
+  background-color: var(--foreground);
+}
+.dracula .roam-block-container button {
+  background-color: var(--current-line);
+  color: var(--foreground);
+  border-color: var(--background2);
+}
+.dracula .bp3-button.bp3-minimal {
+  color: var(--foreground);
+}
+.dracula .bp3-button.bp3-minimal.bp3-small {
+  color: var(--comment);
+}
+.dracula .roam-block .bp3-button {
+  background-color: var(--background2);
+  color: var(--foreground2);
+  background-image: none;
+}
+.dracula .roam-block .bp3-button:hover {
+  background-color: var(--current-line);
+  color: var(--foreground);
+}
+.dracula .dont-focus-block.bp3-button {
+  background-color: var(--background2);
+  color: var(--foreground2);
+  background-image: none;
+}
+.dracula .dont-focus-block.bp3-button:hover {
+  background-color: var(--current-line);
+  color: var(--foreground);
+}
+.dracula .rm-level3 {
+  color: var(--foreground2);
+}
+.dracula #right-sidebar > div {
+  background-color: var(--background2);
+  color: var(--foreground);
+}
+.dracula #buffer {
+  background-color: var(--current-line) !important;
+  color: var(--foreground) !important;
+}
+.dracula .rm-highlight {
+  background-color: var(--dark-yellow);
+}
+.dracula .block-highlight-yellow {
+  background-color: var(--dark-yellow);
+}
+.dracula .block-highlight-blue {
+  background-color: var(--dark-blue);
+}
+.dracula .block-highlight-grey {
+  background-color: var(--dark-blue);
+}
+.dracula .bp3-toast.bp3-intent-success {
+  background-color: var(--green);
+}
+.dracula .bp3-toast.bp3-intent-warning {
+  background-color: var(--orange);
+}
+.dracula .rm-sync__icon.rm-sync--synced {
+  background-color: var(--green);
+  opacity: 1;
+}
+.dracula .rm-sync__icon.rm-sync--saving-remote {
+  background-color: var(--orange);
+  opacity: 1;
+}
+.dracula a {
+  color: var(--blue);
+}
+.dracula a:hover {
+  color: var(--blue);
+}
+.dracula .rm-bq {
+  /* block quote */
+  background-color: var(--background2);
+}
+.dracula .rm-block-ref {
+  border-bottom: 0.5px solid var(--current-line);
+}
+.dracula .rm-block-ref:hover {
+  background-color: var(--background2);
+}
+.dracula .rm-inline-references {
+  background-color: var(--current-line);
+}
+.dracula .rm-page-ref {
+  color: var(--comment);
+}
+.dracula .rm-page-ref--link {
+  color: var(--purple);
+}
+.dracula .rm-page-ref--namespace {
+  color: var(--purple);
+}
+.dracula .rm-page-ref__brackets {
+  color: var(--comment);
+}
+.dracula .rm-ref-page-view-title span {
+  color: var(--pink);
+}
+.dracula .rm-reference-item {
+  background-color: var(--current-line);
+}
+.dracula .parent-path-wrapper {
+  color: var(--foreground2);
+}
+.dracula .bp3-icon-standard {
+  color: var(--foreground2);
+}
+.dracula .rm-bullet__inner {
+  background-color: var(--bullet-inner);
+}
+.dracula .rm-bullet.rm-bullet--closed .rm-bullet__inner {
+  border: 4px solid var(--bullet-outer);
+  margin-top: 2px;
+}
+.dracula .sidebar-content .rm-bullet.rm-bullet--closed .rm-bullet__inner {
+  border: 4px solid var(--bullet-outer);
+}
+.dracula .rm-multibar {
+  border-right: 1px solid var(--comment);
+}
+.dracula .block-border-left {
+  border-left: 1px solid var(--comment);
+}
+.dracula .rm-pages-title-text {
+  color: var(--foreground);
+}
+.dracula .rm-all-pages .table .rm-pages-row.rm-pages-row-header {
+  background-color: var(--background2);
+}
+.dracula .rm-all-pages .table .rm-pages-row {
+  border-bottom: 1px solid var(--background2);
+}
+.dracula .rm-pages-title-col span {
+  color: var(--column-title);
+}
+.dracula .rm-pages-col span {
+  color: var(--column-title);
+}
+.dracula .rm-pages-title-col span.sorted-header-text {
+  color: var(--foreground2);
+}
+.dracula .rm-pages-col span.sorted-header-text {
+  color: var(--foreground2);
+}
+.dracula .sorting-button-group .focused::before {
+  color: var(--foreground2);
+}
+.dracula .rm-pages-title-col a.rm-pages-title-text:hover {
+  color: var(--foreground2);
+}
+.dracula .rm-pages-title-col span.title-children-text {
+  color: var(--comment);
+}
+.dracula .bp3-control.bp3-checkbox .bp3-control-indicator {
+  background-color: var(--current-line);
+  border-color: var(--background2);
+  background-image: none;
+}
+.dracula .bp3-control.bp3-checkbox input:active ~ .bp3-control-indicator {
+  background-color: var(--bullet-outer);
+}
+.dracula .bp3-control.bp3-checkbox input:not(:disabled):active:checked ~ .bp3-control-indicator {
+  background-color: var(--bullet-outer);
+}
+.dracula .bp3-control.bp3-checkbox input:checked ~ .bp3-control-indicator {
+  background-color: var(--dark-yellow);
+}
+.dracula .rm-clickable-pill.empty-pill {
+  color: var(--foreground);
+  background-color: var(--background);
+}
+.dracula .rm-clickable-pill {
+  color: var(--background);
+  background-color: var(--blue);
+  opacity: 0.7;
+}
+.dracula .rm-clickable-pill.level1-pill {
+  color: var(--background);
+  background-color: var(--blue);
+  opacity: 0.8;
+}
+.dracula .rm-clickable-pill.level2-pill {
+  color: var(--background);
+  background-color: var(--blue);
+  opacity: 0.9;
+}
+.dracula .rm-clickable-pill.level3-pill {
+  color: var(--background);
+  background-color: var(--blue);
+  opacity: 1;
+}
+.dracula .bp3-input {
+  background-color: var(--search-input);
+  color: var(--background);
+}
+.dracula .bp3-menu {
+  background-color: var(--search-input) !important;
+  color: var(--current-line) !important;
+}
+.dracula .bp3-menu div:hover {
+  background-color: var(--search-hover);
+}
+.dracula .rm-find-or-create-wrapper .rm-menu-item .rm-search-title .rm-new-page {
+  color: var(--pink);
+}
+.dracula .rm-find-or-create-wrapper .rm-menu-item .rm-search-list-item {
+  color: var(--comment);
+}
+.dracula .rm-find-or-create-wrapper .rm-menu-item ul {
+  color: var(--comment);
+}
+.dracula .bp3-elevation-3 {
+  background-color: var(--current-line) !important;
+}
+.dracula .bp3-elevation-3 .dont-unfocus-block[style~='background-color:'] {
+  background-color: var(--comment) !important;
+}
+.dracula .bp3-datepicker {
+  background-color: var(--current-line);
+  color: var(--foreground2);
+}
+.dracula .bp3-html-select.bp3-minimal.bp3-datepicker-month-select > select,
+.dracula .bp3-html-select.bp3-minimal.bp3-datepicker-year-select > select {
+  color: var(--foreground2);
+}
+.dracula .kanban-board {
+  background-color: #6c6f75;
+}
+.dracula .kanban-title {
+  border-bottom: 1px solid var(--foreground);
+}
+.dracula .kanban-column {
+  background-color: var(--background2);
+}
+.dracula .kanban-card {
+  background-color: var(--background);
+}
+.dracula .bp3-tooltip .bp3-popover-content {
+  background-color: var(--current-line);
+  color: var(--foreground);
+}
+.dracula .bp3-popover .bp3-popover-content {
+  background-color: var(--current-line);
+  color: var(--foreground);
+}
+.dracula .bp3-popover-arrow {
+  color: var(--current-line);
+}
+.dracula .bp3-popover .bp3-popover-content .bp3-button {
+  background-color: var(--background2) !important;
+  color: var(--foreground) !important;
+  background-image: none;
+  box-shadow: none;
+}
+.dracula .rm-autocomplete-result {
+  color: #fff;
+}
+.dracula .bp3-text-overflow-ellipsis {
+  color: var(--background);
+}
+.dracula .rm-embed-container {
+  background-color: var(--background2);
+}
+.dracula .rm-embed-container .rm-embed-container {
+  background-color: var(--current-line);
+}
+.dracula .checkmark {
+  background-color: var(--current-line);
+  border-color: var(--background2);
+}
+.dracula .check-container input:active ~ .bp3-control-indicator {
+  background-color: var(--bullet-outer);
+}
+.dracula .check-container input:not(:disabled):active:checked ~ .bp3-control-indicator {
+  background-color: var(--bullet-outer);
+}
+.dracula .check-container input:checked ~ .checkmark {
+  background-color: var(--dark-yellow);
+}
+.dracula .bp3-slider-progress.bp3-intent-primary {
+  background-color: var(--yellow);
+}
+.dracula .bp3-slider-handle {
+  background-color: var(--bullet-outer);
+  background-image: none;
+}
+.dracula .bp3-slider-handle .bp3-slider-label {
+  background-color: var(--bullet-inner);
+  color: var(--background2);
+}
+.dracula code {
+  color: var(--orange);
+  background-color: var(--current-line);
+  border-color: var(--current-line);
+}
+.dracula .rm-code-block {
+  background-color: var(--background);
+  color: var(--foreground);
+  border: 2px solid var(--background2);
+}
+.dracula .cm-gutter {
+  background-color: var(--background);
+  color: var(--comment);
+  right-border: 2px solid var(--background2);
+}
+.dracula .cm-activeLine,
+.dracula .cm-focused .cm-activeLine,
+.dracula .cm-activeLineGutter,
+.dracula .cm-focused .cm-activeLineGutter,
+.dracula .ͼ2 .cm-activeLine,
+.dracula .ͼ3 .cm-activeLine,
+.dracula .ͼ2 .cm-activeLineGutter,
+.dracula .ͼ3 .cm-activeLineGutter {
+  background-color: var(--background) !important;
+}
+.dracula .ͼ2 .cm-content,
+.dracula .ͼ3 .cm-content {
+  caret-color: var(--blue);
+}
+.dracula .ͼ2 .cm-selectionBackground,
+.dracula .ͼ3 .cm-selectionBackground,
+.dracula .ͼ2.cm-focused .cm-selectionBackground,
+.dracula .ͼ3.cm-focused .cm-selectionBackground,
+.dracula .cm-content::selection {
+  background-color: var(--background2);
+  color: var(--foreground2);
+}
+.dracula .ͼ1 .cm-cursor,
+.dracula .ͼ3 .cm-cursor {
+  border-left-color: var(--white);
+}
+.dracula .ͼ2 .cm-specialChar,
+.dracula .ͼ3 .cm-specialChar {
+  color: var(--green);
+}
+.dracula .ͼ1 .cm-placeholder {
+  color: var(--comment);
+}
+.dracula .ͼ1 .cm-textfield {
+  vertical-align: middle;
+  color: inherit;
+  font-size: 70%;
+  border: 1px solid silver;
+  padding: 0.2em 0.5em;
+}
+.dracula .ͼ1 .cm-foldPlaceholder {
+  background-color: transparent;
+  border-color: var(--foreground2);
+  color: var(--foreground2);
+}
+.dracula .ͼ1 .cm-gutters,
+.dracula .ͼ2 .cm-gutters,
+.dracula .ͼ3 .cm-gutters {
+  background-color: var(--background2);
+  color: var(--foreground2);
+  border-right: 1px solid var(--background2);
+}
+.dracula .ͼ1 .cm-matchingBracket {
+  background-color: var(--background2);
+  outline: 1px solid var(--background2);
+}
+.dracula .ͼ1 .cm-nonmatchingBracket {
+  background-color: var(--red);
+}
+.dracula .ͼa {
+  /* keyword */
+  color: var(--pink);
+}
+.dracula .ͼb {
+  /* operator */
+  color: var(--blue);
+}
+.dracula .ͼc {
+  /* color */
+  color: var(--purple);
+}
+.dracula .ͼd {
+  /* string */
+  color: var(--yellow);
+}
+.dracula .ͼe {
+  /* regexp */
+  color: var(--blue);
+}
+.dracula .ͼf {
+  /* variable */
+  color: var(--blue);
+}
+.dracula .ͼg {
+  color: var(--green);
+}
+.dracula .ͼh {
+  /* propertyname */
+  color: var(--pink);
+}
+.dracula .ͼi {
+  /* typename, classname, etc. */
+  color: var(--green);
+}
+.dracula .ͼj {
+  color: var(--orange);
+}
+.dracula .ͼk {
+  /* name */
+  color: var(--red);
+}
+.dracula .ͼl {
+  /* comment */
+  color: var(--comment);
+}
+.dracula .ͼm {
+  color: var(--green);
+}
+.dracula .ͼn {
+  color: var(--orange);
+}

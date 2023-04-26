@@ -1,0 +1,734 @@
+.gambler {
+  /*
+
+	Author: Joan Gamell
+	URL: http://gamell.io
+	Repo: http://github.com/gamell/roam-gambler-dracula
+	License: MIT
+	Based on:
+		- Hypnos theme (https://github.com/jordanmoore/hypnos) by @jordanmoore (https://twitter.com/jordanmoore)
+		- Dracula Theme by Zeno Rocha https://draculatheme.com/
+
+	Customization instructions:
+		- You can easily change the highlight colors for headers, links and other elements inside the :root {} element
+
+
+*/
+  /*
+
+    DRACULA THEME COLORS - https://draculatheme.com/
+
+    Background	    #282a36	
+    Current Line	#44475a	
+    Foreground	    #f8f8f2	
+    Comment	        #6272a4	
+    Cyan	        #8be9fd	
+    Green	        #50fa7b	
+    Orange	        #ffb86c	
+    Pink	        #ff79c6	
+    Purple	        #bd93f9	
+    Red	            #ff5555	
+    Yellow	        #f1fa8c
+*/
+  @import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@4/distr/fira_code.css);
+  /* PRIMARIES FROM DRACULA THEME */
+  --color-green: #50fa7b;
+  --color-orange: #ffb86c;
+  --color-blue: #8be9fd;
+  --color-purple: #bd93f9;
+  --color-pink: #ff79c6;
+  --color-red: #ff5555;
+  --color-yellow: #f1fa8c;
+  --color-background: #282a36;
+  --color-foreground: #f8f8f2;
+  --color-foreground-faded: #6272a4;
+  --color-foreground-faded-bright: #7a8cc4;
+  --color-background-secondary: #353848;
+  --color-background-current: #44475a;
+  --color-background-dark: #212431;
+  --color-foreground-faded-50: #6272a4;
+  /* TRANSPARENT COLORS FOR EASILY LAYERING */
+  --color-darken-15: #000000;
+  --color-darken-25: #000000;
+  --color-brighten-3: #c8cde6;
+  --color-brighten-5: #c8cde6;
+  --color-brighten-10: #c8cde6;
+  --color-brighten-15: #c8cde6;
+  --color-brighten-25-highlight: rgba(251, 234, 0, 0.25);
+  --color-brighten-25: rgba(255, 255, 255, 0.25);
+  --color-brighten-90: #c8cde6;
+  --color-brighten-30: #c8cde6;
+  /* CUSTOMIZE HIGHLIGHT COLORS HERE */
+  --color-headers: var(--color-pink);
+  --color-links: var(--color-green);
+  --color-bracket-links: var(--color-green);
+  --color-tag-links: var(--color-orange);
+  --color-code: var(--color-blue);
+  --color-other-highlights: var(--color-blue);
+  /* LOADING SCREEN */
+  /* FONTS */
+  /* TOP BAR */
+  /* BODY COLOR */
+  /* HEADINGS */
+  /* HIGH LEVEL STUFF */
+  /* Make the central content wider in wide screens */
+  /* 2x wider than the default theme, utilizing better the horizontal space in wide screens */
+  /* LINKS AND TAGS */
+  /* CODE BLOCKS */
+  /* HIGHLIGHT BLOCKS */
+  /* Blockquotes */
+  /* BUTTONS */
+  /* BP3 Dialogs */
+  /* Select Dropdowns */
+  /* LEFT SIDEBAR */
+  /* RIGHT SIDEBAR */
+  /* REFERENCE BOXES AND EMBED BLOCKS */
+  /* POPOVERS AND FILTERS */
+  /* To overwrite the embedded style in the slash-command autocomplete highlighted row */
+  /* DAILY LOG */
+  /* SEARCH AND TOOLTIPS */
+  /* The search "selected" item is hardcoded inline so we have to do this gross and inefficient matching selector */
+  /* MORE MENU */
+  /* ALL PAGES TABLE */
+  /* USER MENU */
+  /* END */
+  /* EXTRA FEATURES */
+  /* Import CodeMirror Dracula Themes */
+  /* https://raw.githubusercontent.com/codemirror/CodeMirror/master/theme/dracula.css */
+  /*
+
+    Name:       dracula
+    Author:     Michael Kaminsky (http://github.com/mkaminsky11)
+
+    Original dracula color scheme by Zeno Rocha (https://github.com/zenorocha/dracula-theme)
+
+*/
+}
+.gambler #roam-loader path,
+.gambler #roam-loader g g g circle,
+.gambler #roam-loader line {
+  fill: var(--color-pink) !important;
+  stroke: var(--color-pink) !important;
+}
+.gambler #roam-loader circle {
+  stroke: var(--color-pink) !important;
+}
+.gambler body {
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Fira Code', 'Operator Mono', Menlo, Monaco, 'Courier New', monospace;
+}
+.gambler body,
+.gambler .level2,
+.gambler .level3,
+.gambler .level4,
+.gambler .level5,
+.gambler .level6,
+.gambler div,
+.gambler textarea,
+.gambler .roam-log-page.roam-log-preview h1.level2 {
+  font-family: 'Fira Code', 'Operator Mono', Menlo, Monaco, 'Courier New', monospace;
+}
+.gambler .rm-saving-inner-icon.rm-saving-remote {
+  background-color: var(--color-orange);
+}
+.gambler .rm-saving-inner-icon.rm-synced {
+  background-color: var(--color-green);
+}
+.gambler .roam-topbar .bp3-input {
+  background-color: var(--color-darken-15);
+  color: var(--color-foreground-faded);
+}
+.gambler .roam-topbar .bp3-input:focus {
+  box-shadow: 0 0 0 2px var(--color-foreground-faded);
+}
+.gambler body,
+.gambler .roam-topbar {
+  background: var(--color-background);
+}
+.gambler .rm-pages-title-text,
+.gambler .roam-body .roam-app h1,
+.gambler .roam-body .roam-app,
+.gambler .rm-reference-container > div > div > strong,
+.gambler .bp3-menu .rm-search-title {
+  color: var(--color-foreground);
+}
+.gambler .rm-reference-main strong,
+.gambler .rm-reference-container > div > div > strong {
+  color: var(--color-foreground) !important;
+}
+.gambler .level1,
+.gambler .level2,
+.gambler .level3,
+.gambler .level4,
+.gambler .level5,
+.gambler .level6,
+.gambler h1,
+.gambler h2,
+.gambler h3,
+.gambler h4,
+.gambler h5,
+.gambler h6 {
+  font-weight: 900;
+}
+.gambler .rm-level1 {
+  font-size: 1.8em;
+}
+.gambler .rm-level2 {
+  font-size: 1.4em;
+}
+.gambler .rm-level3 {
+  font-size: 1.2em;
+}
+.gambler .roam-body .roam-app textarea {
+  font-weight: 500;
+  background-color: var(--color-background-secondary);
+}
+.gambler .roam-block {
+  min-height: unset;
+}
+.gambler #rm-log-container,
+.gambler .roam-body-main > div:first-child {
+  padding-left: calc((100% - 1432px) / 2) !important;
+  padding-right: 10% !important;
+}
+.gambler .roam-block-container,
+.gambler .rm-block-text {
+  max-width: unset;
+}
+.gambler .roam-article {
+  max-width: 1300px;
+}
+.gambler .rm-full-width {
+  margin: 0;
+}
+.gambler b,
+.gambler strong {
+  font-weight: 900;
+}
+.gambler div,
+.gambler textarea {
+  font-weight: 400;
+}
+.gambler .roam-body .roam-app h1,
+.gambler .roam-body .roam-app h2,
+.gambler .roam-body .roam-app h3,
+.gambler .roam-body .roam-app h4,
+.gambler .roam-body .roam-app h5,
+.gambler .roam-body .roam-app h6 {
+  color: var(--color-headers);
+}
+.gambler a,
+.gambler a:hover,
+.gambler .rm-page-ref {
+  color: var(--color-links);
+}
+.gambler a:hover,
+.gambler .rm-page-ref:hover {
+  text-decoration: none;
+  border-bottom: 0.05em solid;
+}
+.gambler a.bp3-menu-item:hover {
+  border: 0;
+}
+.gambler .rm-page-ref-brackets {
+  color: var(--color-bracket-links);
+  opacity: 0.5;
+}
+.gambler .rm-page-ref-link-color {
+  color: var(--color-bracket-links);
+  font-weight: 500;
+}
+.gambler .rm-page-ref {
+  font-style: italic;
+}
+.gambler .rm-block-ref {
+  font-size: 1em;
+  color: #f8f8f2;
+  font-style: italic;
+  border-color: rgba(141, 156, 176, 0.2);
+  transition: border-color 0.26s ease;
+  background-color: var(--color-brighten-10);
+}
+.gambler .rm-block-ref:hover {
+  background: none;
+  cursor: pointer;
+  border-color: rgba(141, 156, 176, 0.5);
+}
+.gambler .rm-page-ref--tag {
+  color: var(--color-tag-links);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06);
+  background: var(--color-background-secondary);
+  font-weight: 500;
+  display: inline-block;
+  padding: 0 3px;
+  border-radius: 2px;
+}
+.gambler .rm-page-ref--tag:hover {
+  text-decoration: none;
+  border: none;
+  opacity: 1;
+  color: var(--color-tag-links);
+  background: none;
+  box-shadow: inset 0 0 0 1px var(--color-tag-links);
+}
+.gambler code {
+  border-radius: 3px;
+  color: var(--color-code);
+  background: var(--color-background-secondary);
+  border: 1px solid var(--color-brighten-10);
+}
+.gambler .rm-highlight {
+  background-color: var(--color-brighten-25-highlight);
+}
+.gambler .block-highlight-yellow {
+  background-color: var(--color-brighten-25-highlight);
+}
+.gambler .block-highlight-blue {
+  background-color: var(--color-brighten-25);
+}
+.gambler .rm-zoom.zoom-path-view .rm-zoom-mask {
+  background-color: var(--color-foreground-faded);
+}
+.gambler .rm-bq {
+  background-color: var(--color-background-secondary);
+}
+.gambler button.bp3-button {
+  color: var(--color-other-highlights) !important;
+}
+.gambler button.bp3-button:hover {
+  background-color: var(--color-brighten-10) !important;
+}
+.gambler button.bp3-button {
+  background-color: var(--color-darken-15) !important;
+  background-image: none !important;
+}
+.gambler .bp3-dialog {
+  background-color: var(--color-background) !important;
+  color: var(--color-foreground);
+}
+.gambler select {
+  background-color: inherit !important;
+  color: inherit;
+  border-radius: 4px;
+  padding-right: 2px;
+}
+.gambler .roam-body .roam-app .roam-sidebar-container {
+  background-color: var(--color-background-dark);
+  border-right: 1px rgba(255, 255, 255, 0.06) solid;
+}
+.gambler .block-border-left {
+  border-left: 1px solid rgba(141, 156, 176, 0.2);
+}
+.gambler .starred-pages-wrapper > div:first-of-type {
+  background-color: rgba(255, 255, 255, 0.06) !important;
+}
+.gambler .starred-pages a div:before {
+  content: '★ ';
+}
+.gambler .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page {
+  color: var(--color-purple);
+  opacity: 0.9;
+  letter-spacing: -0.002em;
+  font-weight: 400;
+  transition: all 0.16s ease;
+}
+.gambler .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages :nth-child(1n) .page {
+  color: var(--color-blue);
+}
+.gambler .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages :nth-child(2n) .page {
+  color: var(--color-red);
+}
+.gambler .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages :nth-child(3n) .page {
+  color: var(--color-orange);
+}
+.gambler .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages :nth-child(4n) .page {
+  color: var(--color-yellow);
+}
+.gambler .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages :nth-child(5n) .page {
+  color: var(--color-pink);
+}
+.gambler .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages :nth-child(6n) .page {
+  color: var(--color-green);
+}
+.gambler .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages :nth-child(7n) .page {
+  color: var(--color-purple);
+}
+.gambler .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page:hover {
+  background: none;
+  opacity: 1;
+  font-weight: 600;
+  filter: brightness(120%);
+}
+.gambler .starred-pages-wrapper .flex-h-box span {
+  color: var(--color-foreground);
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  /* opacity: 0.4; */
+}
+.gambler #right-sidebar {
+  background-color: var(--color-background-dark);
+}
+.gambler #right-sidebar > div {
+  border-left: 1px rgba(255, 255, 255, 0.06) solid;
+}
+.gambler .rm-resize-handle {
+  z-index: unset !important;
+}
+.gambler .rm-reference-item {
+  margin-top: 8px;
+  border-radius: 3px;
+  border: 1px solid var(--color-foreground-faded-50);
+  margin-right: 8px;
+  flex: 1 1 100%;
+  word-break: break-word;
+  background-color: var(--color-brighten-5);
+  padding: 8px;
+}
+.gambler .rm-inline-references {
+  background-color: var(--color-darken-25);
+  color: var(--color-foreground-faded) !important;
+}
+.gambler .rm-zoom-item {
+  color: var(--color-foreground-faded-bright) !important;
+}
+.gambler .rm-embed-container {
+  background-color: var(--color-brighten-5);
+  border: 1px solid var(--color-foreground-faded);
+  border-radius: 6px;
+  margin-left: 4px;
+}
+.gambler .bp3-popover .bp3-popover-content,
+.gambler .bp3-menu,
+.gambler .bp3-elevation-3 {
+  background: var(--color-background-secondary) !important;
+  padding: 2px;
+}
+.gambler .bp3-popover-content {
+  color: var(--color-foreground) !important;
+}
+.gambler .rm-line {
+  border-color: var(--color-brighten-15) !important;
+  background-color: var(--color-brighten-15) !important;
+}
+.gambler .bp3-datepicker {
+  background-color: inherit;
+}
+.gambler .bp3-html-select select,
+.gambler .bp3-select select {
+  color: var(--color-foreground);
+}
+.gambler [style*='background-color: rgb(213, 218, 223)'] {
+  background-color: var(--color-brighten-15) !important;
+}
+.gambler .roam-log-page,
+.gambler .roam-log-container .roam-log-preview,
+.gambler .roam-log-container .roam-log-page {
+  border-color: rgba(255, 255, 255, 0.06);
+}
+.gambler .rm-find-or-create-wrapper .rm-menu-item[style*='background-color: rgb(213, 218, 223)'] {
+  background: var(--color-brighten-15) !important;
+}
+.gambler .rm-find-or-create-wrapper .rm-menu-item:hover,
+.gambler .bp3-elevation-3 .dont-unfocus-block:hover {
+  background: var(--color-brighten-15) !important;
+  color: white !important;
+}
+.gambler .rm-new-page {
+  color: var(--color-green) !important;
+}
+.gambler .bp3-menu .rm-search-title:hover {
+  color: white !important;
+}
+.gambler .bp3-popover .bp3-popover-arrow-fill {
+  fill: var(--color-background-secondary);
+}
+.gambler .bp3-menu {
+  color: white;
+}
+.gambler .rm-pages-title-text strong {
+  font-weight: 600;
+}
+.gambler .rm-all-pages .table .rm-pages-row.rm-pages-row-header {
+  background: var(--color-background-secondary);
+  border-radius: 0;
+}
+.gambler .rm-all-pages .table .rm-pages-row .rm-pages-col {
+  align-self: center;
+}
+.gambler .bp3-text-small span {
+  font-size: 14px;
+}
+.gambler .rm-all-pages .table .rm-pages-row.rm-pages-row-header .rm-pages-title-col span,
+.gambler .rm-all-pages .table .rm-pages-row.rm-pages-row-header .rm-pages-col span {
+  font-size: 12px;
+  font-weight: 500;
+}
+.gambler .rm-clickable-pill,
+.gambler .rm-clickable-pill.level1-pill {
+  background-color: #ffc76a;
+  opacity: 1;
+  color: #00162b;
+}
+.gambler .checkmark {
+  background: #fff;
+}
+.gambler .check-container input:checked ~ .checkmark {
+  background: #33bdea;
+}
+.gambler .check-container input:checked ~ .checkmark:after {
+  border-color: #fff;
+}
+.gambler .rm-all-pages .table .rm-pages-row {
+  border-color: rgba(255, 255, 255, 0.16);
+}
+.gambler .roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown {
+  box-shadow: none;
+}
+.gambler .bp3-menu,
+.gambler .roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown .setting,
+.gambler .roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown .setting {
+  background-color: var(--color-background) !important;
+}
+.gambler .bp3-menu-item:hover,
+.gambler .roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown .setting,
+.gambler .roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown .setting:hover {
+  background-color: var(--color-background-secondary);
+}
+.gambler .roam-sidebar-container .rm-db-title-container .rm-db-title,
+.gambler .roam-body .roam-app .roam-sidebar-container .rm-graph-dropdown a {
+  color: white;
+}
+.gambler .rm-query {
+  border: 0.5px solid var(--color-foreground-faded);
+  border-radius: 3px;
+}
+.gambler .title-children-text {
+  font-size: 14px;
+}
+.gambler .rm-query .rm-query-title {
+  background-color: var(--color-brighten-10);
+  padding: 0.8em;
+  color: var(--color-other-highlights);
+  font-size: 80%;
+  border-radius: 3px 3px 0 0;
+}
+.gambler .rm-reference-main.rm-query-content {
+  padding: 0.8em;
+}
+.gambler .rm-reference-main .rm-reference-item .rm-block-text {
+  font-size: 90%;
+}
+.gambler .roam-log-page.roam-log-preview h1.level2 + div {
+  font-size: 13px;
+  position: relative;
+  top: 4px;
+}
+.gambler .rm-reference-main .rm-reference-item .controls {
+  margin-left: -1em;
+}
+.gambler .rm-ref-page-view {
+  padding: 0.4em 0.2em;
+}
+.gambler .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page {
+  padding: 4px 6px;
+}
+.gambler div.roam-sidebar-container.noselect > div > div {
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+.gambler .bp3-icon-caret-down::before {
+  content: '⌄';
+  position: relative;
+  top: -4px;
+  opacity: 0.6;
+}
+.gambler #block-input {
+  background: white;
+}
+.gambler .roam-body #block-input > span > div {
+  padding: 6px 24px;
+  background: white;
+}
+.gambler span.bp3-icon-small.bp3-icon-star {
+  display: none;
+  visibility: hidden;
+}
+.gambler .controls .simple-bullet-outer .simple-bullet-inner {
+  background-color: var(--color-foreground);
+}
+.gambler button.rm-pomodoro {
+  border-color: var(--color-brighten-3);
+  background-color: var(--color-brighten-5) !important;
+  color: var(--color-red) !important;
+}
+.gambler .rm-calc-val {
+  color: var(--color-green);
+}
+.gambler .kanban-board {
+  background-color: var(--color-brighten-5);
+}
+.gambler .kanban-card {
+  background-color: white;
+  margin: 8px;
+  box-shadow: 0px 1px 2px var(--color-foreground-faded);
+  padding: 10px;
+  border-radius: 2px;
+  line-height: 1.3em;
+}
+.gambler .kanban-title {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 6px;
+}
+.gambler .kanban-column {
+  background-color: var(--color-background-current);
+  margin: 0px 4px 0px 4px;
+  padding: 4px;
+  min-width: 200px;
+  border-radius: 3px;
+}
+.gambler .kanban-card {
+  background-color: var(--color-foreground-faded-50);
+}
+.gambler .intercom-app,
+.gambler .intercom-launcher-frame,
+.gambler #intercom-container {
+  display: none;
+}
+.gambler .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button {
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--color-foreground);
+  opacity: 0.7;
+  transition: all 0.16s ease;
+  padding: 8px 27px;
+  align-items: baseline;
+}
+.gambler .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button .flex-h-box {
+  align-items: baseline;
+}
+.gambler .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button div {
+  font-size: 13px;
+  font-weight: 600;
+}
+.gambler .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button:hover {
+  background: none;
+  color: white;
+  opacity: 1;
+}
+.gambler .roam-sidebar-container .rm-db-title-container .rm-db-title {
+  font-size: 14px;
+}
+.gambler .roam-sidebar-content .top-row {
+  margin-bottom: 1.6em;
+}
+.gambler #buffer.tall {
+  height: calc(100vh - 50px);
+}
+.gambler .check-container {
+  padding-right: 4px;
+}
+.gambler .content span.rm-page-ref {
+  padding: 4px 1px 1px;
+  /* required for fixing azo */
+}
+.gambler .center-proj {
+  text-align: center;
+}
+.gambler .rm-quick-capture-sync-modal {
+  background-color: var(--color-background);
+}
+.gambler .cm-s-default.CodeMirror,
+.gambler .cm-s-default .CodeMirror-gutters {
+  background-color: #282a36 !important;
+  color: #f8f8f2 !important;
+  border: none;
+}
+.gambler .cm-s-default .CodeMirror-gutters {
+  color: #282a36;
+}
+.gambler .cm-s-default .CodeMirror-cursor {
+  border-left: solid thin #f8f8f0;
+}
+.gambler .cm-s-default .CodeMirror-linenumber {
+  color: #6d8a88;
+}
+.gambler .cm-s-default .CodeMirror-selected {
+  background: rgba(255, 255, 255, 0.1);
+}
+.gambler .cm-s-default .CodeMirror-line::selection,
+.gambler .cm-s-default .CodeMirror-line > span::selection,
+.gambler .cm-s-default .CodeMirror-line > span > span::selection {
+  background: rgba(255, 255, 255, 0.1);
+}
+.gambler .cm-s-default .CodeMirror-line::-moz-selection,
+.gambler .cm-s-default .CodeMirror-line > span::-moz-selection,
+.gambler .cm-s-default .CodeMirror-line > span > span::-moz-selection {
+  background: rgba(255, 255, 255, 0.1);
+}
+.gambler .cm-s-default span.cm-comment {
+  color: #6272a4;
+}
+.gambler .cm-s-default span.cm-string,
+.gambler .cm-s-default span.cm-string-2 {
+  color: #f1fa8c;
+}
+.gambler .cm-s-default span.cm-number {
+  color: #bd93f9;
+}
+.gambler .cm-s-default span.cm-variable {
+  color: #50fa7b;
+}
+.gambler .cm-s-default span.cm-variable-2 {
+  color: white;
+}
+.gambler .cm-s-default span.cm-def {
+  color: #50fa7b;
+}
+.gambler .cm-s-default span.cm-operator {
+  color: #ff79c6;
+}
+.gambler .cm-s-default span.cm-keyword {
+  color: #ff79c6;
+}
+.gambler .cm-s-default span.cm-atom {
+  color: #bd93f9;
+}
+.gambler .cm-s-default span.cm-meta {
+  color: #f8f8f2;
+}
+.gambler .cm-s-default span.cm-tag {
+  color: #ff79c6;
+}
+.gambler .cm-s-default span.cm-attribute {
+  color: #50fa7b;
+}
+.gambler .cm-s-default span.cm-qualifier {
+  color: #50fa7b;
+}
+.gambler .cm-s-default span.cm-property {
+  color: #66d9ef;
+}
+.gambler .cm-s-default span.cm-builtin {
+  color: #50fa7b;
+}
+.gambler .cm-s-default span.cm-variable-3,
+.gambler .cm-s-default span.cm-type {
+  color: #ffb86c;
+}
+.gambler .cm-s-default .CodeMirror-activeline-background {
+  background: rgba(255, 255, 255, 0.1);
+}
+.gambler .cm-s-default .CodeMirror-matchingbracket {
+  text-decoration: underline;
+  color: white !important;
+}
+.gambler .roam-main {
+  background: var(--color-background-dark);
+  margin-left: 30px;
+}
+.gambler .roam-body .roam-app .roam-sidebar-container {
+  width: 300px !important;
+  z-index: 0;
+}

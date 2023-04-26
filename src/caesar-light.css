@@ -1,0 +1,342 @@
+.caesar-light {
+  /*
+  Based on Maggie Appleton's work in Painting Roam - https://maggieappleton.com/paintingroam
+*/
+}
+.caesar-light body {
+  -webkit-font-smoothing: antialiased;
+}
+.caesar-light h1,
+.caesar-light h2,
+.caesar-light h3,
+.caesar-light h4,
+.caesar-light h5,
+.caesar-light h6 {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, 'Apple Color Emoji', Arial, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-weight: 600;
+}
+.caesar-light .rm-title-display {
+  font-weight: 600;
+}
+.caesar-light .roam-body .roam-app h1 {
+  font-size: 28px;
+  font-weight: 600;
+}
+.caesar-light .roam-body .roam-app .rm-level1 {
+  font-size: 26px;
+  font-weight: 600;
+}
+.caesar-light .roam-body .roam-app .rm-level2 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.caesar-light .roam-body .roam-app .rm-level3 {
+  font-size: 18px;
+  font-weight: 600;
+}
+.caesar-light .roam-body .roam-app h1 textarea {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, 'Apple Color Emoji', Arial, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-weight: 600;
+}
+.caesar-light div,
+.caesar-light textarea {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, 'Apple Color Emoji', Arial, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-weight: 400;
+}
+.caesar-light b,
+.caesar-light strong {
+  font-weight: 600;
+}
+.caesar-light .starred-pages-wrapper > div:first-of-type {
+  background-color: #151617 !important;
+}
+.caesar-light .starred-pages a div:before {
+  content: '→ ';
+}
+.caesar-light .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page {
+  color: white;
+  opacity: 0.4;
+  letter-spacing: -0.002em;
+  font-weight: 500;
+  transition: all 0.16s ease;
+}
+.caesar-light .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page:hover {
+  background: none;
+  opacity: 1;
+}
+.caesar-light .starred-pages-wrapper .flex-h-box span {
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  opacity: 0.3;
+}
+.caesar-light .roam-block-container {
+  max-width: 1000px;
+}
+.caesar-light .rm-query {
+  border: 0.5px solid #e4e9ec;
+  border-radius: 5px;
+}
+.caesar-light .title-children-text {
+  font-size: 14px;
+}
+.caesar-light .rm-query .rm-query-title {
+  background-color: #f7f8f8;
+  padding: 0.8em;
+  color: #d1dbe2;
+  font-size: 80%;
+}
+.caesar-light .rm-reference-container > div > div > strong,
+.caesar-light .rm-reference-main strong {
+  color: rgba(24, 32, 38, 0.5) !important;
+}
+.caesar-light .rm-reference-main.rm-query-content {
+  padding: 0.8em;
+}
+.caesar-light .rm-reference-main .rm-reference-item .rm-block-text {
+  font-size: 90%;
+}
+.caesar-light .roam-log-page,
+.caesar-light .roam-log-container .roam-log-preview,
+.caesar-light .roam-log-container .roam-log-page {
+  border-color: #dedede;
+}
+.caesar-light .roam-log-page.roam-log-preview h1.level2 {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, 'Apple Color Emoji', Arial, sans-serif, 'Segoe UI Emoji', 'Segoe UI Symbol';
+  font-weight: 700;
+}
+.caesar-light .roam-log-page.roam-log-preview h1.level2 + div {
+  font-size: 13px;
+  position: relative;
+  top: 4px;
+}
+.caesar-light .rm-reference-main .rm-reference-item .controls {
+  margin-left: -1em;
+}
+.caesar-light .rm-ref-page-view {
+  padding: 0.4em 0.2em;
+}
+.caesar-light .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page {
+  padding: 4px 6px;
+}
+.caesar-light div.roam-sidebar-container.noselect > div > div {
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+.caesar-light .bp3-icon-caret-down::before {
+  content: '⌄';
+  position: relative;
+  top: -4px;
+  opacity: 0.6;
+}
+.caesar-light #block-input {
+  background: white;
+}
+.caesar-light .roam-body #block-input > span > div {
+  padding: 6px 24px;
+  background: white;
+}
+.caesar-light span.bp3-icon-small.bp3-icon-star {
+  display: none;
+  visibility: hidden;
+}
+.caesar-light .roam-block {
+  max-width: 850px;
+}
+.caesar-light #right-sidebar > div {
+  background-color: #f7f8fa;
+  border-left: 1px solid #e9ebef;
+}
+.caesar-light .rm-page-ref-brackets {
+  color: #db3737;
+  opacity: 0.4;
+}
+.caesar-light .controls .simple-bullet-outer .simple-bullet-inner {
+  background-color: #cccfd6;
+}
+.caesar-light .block-border-left {
+  border-left: 1px solid #fff;
+}
+.caesar-light .kanban-board {
+  background-color: #fff;
+}
+.caesar-light .kanban-card {
+  background-color: white;
+  margin: 8px;
+  box-shadow: 0px 1px 2px #9eb3c0;
+  padding: 10px;
+  border-radius: 2px;
+  line-height: 1.3em;
+}
+.caesar-light .kanban-title {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 6px;
+}
+.caesar-light .kanban-column {
+  background-color: #e4edf2;
+  margin: 0px 4px 0px 4px;
+  padding: 4px;
+  min-width: 200px;
+  border-radius: 3px;
+}
+.caesar-light .rm-block-ref::before {
+  content: '';
+  display: inline-block;
+  width: 6px;
+  border-radius: 40px;
+  height: 6px;
+  background: #db3737;
+  margin-right: 5px;
+  position: relative;
+  top: -2px;
+}
+.caesar-light .rm-block-ref {
+  font-size: 1em;
+  color: #606b7b;
+  border-color: rgba(219, 55, 55, 0.2);
+}
+.caesar-light .rm-block-ref:hover {
+  background: none;
+  cursor: pointer;
+  border-color: rgba(219, 55, 55, 0.6);
+}
+.caesar-light .rm-pages-title-text strong {
+  font-weight: 600;
+}
+.caesar-light .rm-all-pages .table .rm-pages-row.rm-pages-row-header {
+  background: #fff;
+}
+.caesar-light .rm-all-pages .table .rm-pages-row .rm-pages-col {
+  align-self: center;
+}
+.caesar-light .bp3-text-small span {
+  font-size: 14px;
+}
+.caesar-light .rm-all-pages .table .rm-pages-row.rm-pages-row-header .rm-pages-title-col span,
+.caesar-light .rm-all-pages .table .rm-pages-row.rm-pages-row-header .rm-pages-col span {
+  font-size: 12px;
+  font-weight: 600;
+}
+.caesar-light .rm-clickable-pill,
+.caesar-light .rm-clickable-pill.level1-pill {
+  background-color: #db3737;
+}
+.caesar-light .checkmark {
+  background: #fff;
+}
+.caesar-light .check-container input:checked ~ .checkmark {
+  background: #33bdea;
+}
+.caesar-light .check-container input:checked ~ .checkmark:after {
+  border-color: #fff;
+}
+.caesar-light .rm-reference-item {
+  margin-top: 8px;
+  border-radius: 6px;
+  border: 1px solid #e4e9ee;
+  margin-right: 8px;
+  flex: 1 1 100%;
+  word-break: break-word;
+  background-color: #f7f9fb;
+  padding: 8px;
+}
+.caesar-light .rm-level2 {
+  font-size: 1.5em;
+}
+.caesar-light .rm-level3 {
+  color: #939aae;
+  font-weight: 400;
+  font-size: 1.3em;
+}
+.caesar-light .rm-page-ref {
+  color: #db3737;
+}
+.caesar-light .rm-page-ref-tag {
+  background: #f5f5f5;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.06);
+  padding: 3px;
+}
+.caesar-light .rm-page-ref-tag:before,
+.caesar-light .rm-page-ref-tag:after {
+  content: '';
+  display: inline-block;
+  width: 4px;
+}
+.caesar-light .rm-page-ref-tag:hover {
+  text-decoration: none;
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.2);
+}
+.caesar-light .rm-page-ref-link-color {
+  color: #db3737;
+  font-weight: 600;
+}
+.caesar-light a {
+  color: #db3737;
+}
+.caesar-light a:hover {
+  color: #db3737;
+  text-decoration-color: rgba(219, 55, 55, 0.4);
+  text-underline-position: under;
+}
+.caesar-light .intercom-app,
+.caesar-light .intercom-launcher-frame,
+.caesar-light #intercom-container {
+  display: none;
+}
+.caesar-light .roam-body .roam-app .roam-sidebar-container {
+  background-color: #202021;
+  border-right: 1px #eee solid;
+}
+.caesar-light .bp3-input {
+  box-shadow: 0 0 0 0 rgba(19, 124, 189, 0), 0 0 0 0 rgba(19, 124, 189, 0), inset 0 0 0 1px rgba(16, 22, 26, 0.15), inset 0 0px 0px rgba(16, 22, 26, 0.2);
+}
+.caesar-light .bp3-input:focus,
+.caesar-light .bp3-input.bp3-active {
+  box-shadow: 0 0 0 1px #137cbd, 0 0 0 3px rgba(19, 124, 189, 0.3), inset 0 1px 0px rgba(16, 22, 26, 0.2);
+}
+.caesar-light .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button .icon {
+  display: none;
+}
+.caesar-light .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button {
+  font-weight: 600;
+  font-size: 13px;
+  color: white;
+  opacity: 0.4;
+  transition: all 0.16s ease;
+  padding: 8px 27px;
+}
+.caesar-light .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button div {
+  font-size: 13px;
+  font-weight: 600;
+}
+.caesar-light .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button:hover {
+  background: none;
+  color: white;
+  opacity: 1;
+}
+.caesar-light .roam-sidebar-container .rm-db-title-container .rm-db-title {
+  font-size: 14px;
+}
+.caesar-light .roam-sidebar-content .top-row {
+  margin-bottom: 1.6em;
+}
+.caesar-light #buffer.tall {
+  height: calc(100vh - 50px);
+}
+.caesar-light .check-container {
+  padding-right: 4px;
+}
+.caesar-light span.rm-page-ref {
+  border-radius: 2px;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+.caesar-light .content span.rm-page-ref {
+  padding: 4px 1px 1px;
+  /* required for fixing azo */
+}
+.caesar-light .center-proj {
+  text-align: center;
+}

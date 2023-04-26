@@ -1,0 +1,625 @@
+/*  Make sure you have the fonts Lato and Dank Mono installed locally on your machine.
+Lato is free to download from Google:
+https://fonts.google.com/specimen/Lato
+
+Dank Mono is available for purchase:
+https://dank.sh/  
+
+I reccomend Open Sans if you dont want to purchase Dank Mono:
+https://fonts.google.com/specimen/Open+Sans
+*/
+.night-owlish {
+  /* highlights */
+  /* reactions */
+  /* rows */
+}
+.night-owlish h1,
+.night-owlish h2,
+.night-owlish h3,
+.night-owlish h4,
+.night-owlish h5,
+.night-owlish h6 {
+  font-family: 'Lato';
+}
+.night-owlish div,
+.night-owlish textarea {
+  font-family: 'Dank Mono';
+}
+.night-owlish .roam-block-container {
+  max-width: 1000px;
+}
+.night-owlish .roam-block,
+.night-owlish .rm-block-text {
+  max-width: 850px;
+}
+.night-owlish .bp3-button.bp3-minimal {
+  color: #ffa7c4;
+}
+.night-owlish .bp3-button.bp3-minimal:hover {
+  color: #ffa7c4;
+}
+.night-owlish .bp3-elevation-3 {
+  background-color: #697098 !important;
+}
+.night-owlish .bp3-elevation-3 > div:hover {
+  background-color: #011627;
+}
+.night-owlish .kanban-board {
+  background-color: #fff;
+}
+.night-owlish .kanban-card {
+  background-color: white;
+  margin: 8px;
+  box-shadow: 0px 1px 2px #9eb3c0;
+  padding: 10px;
+  border-radius: 2px;
+  line-height: 1.3em;
+}
+.night-owlish .kanban-title {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 6px;
+}
+.night-owlish .kanban-column {
+  background-color: #e4edf2;
+  margin: 0px 4px 0px 4px;
+  padding: 4px;
+  min-width: 200px;
+  border-radius: 3px;
+}
+.night-owlish .rm-block-ref {
+  border-bottom: none;
+  font-size: 1em;
+  padding: 4px;
+  color: #697098;
+}
+.night-owlish .rm-block-ref:hover {
+  background-color: #697098;
+  color: #011627;
+}
+.night-owlish .checkmark {
+  background: #fff;
+}
+.night-owlish .check-container input:checked ~ .checkmark {
+  background: #2db4eb;
+}
+.night-owlish .check-container input:checked ~ .checkmark:after {
+  border-color: #fff;
+}
+.night-owlish .rm-level3 {
+  color: #8390b2;
+}
+.night-owlish .rm-page-ref {
+  color: #7e57c2cc;
+}
+.night-owlish .rm-page-ref-link-color {
+  color: #ffa7c4;
+}
+.night-owlish a {
+  color: #64b5f6 !important;
+}
+.night-owlish .intercom-app,
+.night-owlish .intercom-launcher-frame,
+.night-owlish #intercom-container {
+  display: none !important;
+}
+.night-owlish .rm-reference-item div {
+  background-color: #2e3250;
+}
+.night-owlish #right-sidebar div .rm-reference-item div,
+.night-owlish .roam-topbar,
+.night-owlish .roam-body {
+  background-color: #011627;
+}
+.night-owlish .roam-body-main {
+  background-color: #011627;
+  color: #fff;
+}
+.night-owlish .roam-body .roam-app h1 {
+  color: #fff;
+}
+.night-owlish #right-sidebar div {
+  background-color: #2e3250;
+}
+.night-owlish .roam-body .roam-app .roam-sidebar-container {
+  background-color: #2e3250;
+  border-right: 1px #051e33 solid;
+}
+.night-owlish
+  .roam-body
+  .roam-app
+  .roam-sidebar-container
+  .roam-sidebar-content
+  .log-button,
+.night-owlish
+  .roam-body
+  .roam-app
+  .roam-sidebar-container
+  .roam-sidebar-content
+  .starred-pages-wrapper,
+.night-owlish
+  .roam-body
+  .roam-app
+  .roam-sidebar-container
+  .roam-sidebar-content
+  .starred-pages-wrapper
+  .starred-pages
+  .page,
+.night-owlish .roam-body .roam-app .roam-sidebar-container > * {
+  opacity: 0.9;
+  color: #fff;
+}
+.night-owlish
+  .roam-body
+  .roam-app
+  .roam-sidebar-container
+  .roam-sidebar-content
+  .starred-pages-wrapper
+  .starred-pages
+  .page:hover,
+.night-owlish
+  .roam-body
+  .roam-app
+  .roam-sidebar-container
+  .roam-sidebar-content
+  .log-button:hover {
+  background: #011627;
+  color: white;
+  opacity: 0.9;
+}
+.night-owlish #buffer.tall {
+  height: calc(100vh - 50px) !important;
+}
+.night-owlish .check-container {
+  padding-right: 4px;
+}
+.night-owlish .rm-reference-item {
+  background-color: #011627;
+}
+.night-owlish .block-highlight-blue,
+.night-owlish #roam-right-sidebar-content div .block-highlight-blue div {
+  background-color: #a599e9;
+}
+.night-owlish .kanban-board {
+  background: #011627;
+  color: white;
+}
+.night-owlish .kanban-column {
+  background-color: #2e3250;
+}
+.night-owlish .kanban-card {
+  color: #011627;
+}
+.night-owlish .roam-highlight {
+  background-color: #a599e9;
+}
+.night-owlish .rm-emoji-button {
+  background-color: #697098 !important;
+}
+.night-owlish .rm-pages-row:first-of-type,
+.night-owlish .rm-pages-row-highlight {
+  background-color: #2e3250 !important;
+}
+.night-owlish .CodeMirror {
+  font-family: 'Dank Mono' !important;
+  height: auto;
+  color: #2e3250;
+  direction: ltr;
+  background: #182026 !important;
+  border-radius: 5px;
+}
+.night-owlish .CodeMirror-lines {
+  padding: 4px 0;
+}
+.night-owlish .CodeMirror pre {
+  padding: 0 4px;
+  margin-left: 5px;
+}
+.night-owlish .CodeMirror-scrollbar-filler,
+.night-owlish .CodeMirror-gutter-filler {
+  background-color: white;
+}
+.night-owlish .CodeMirror-gutters {
+  border-right: 0px solid #ddd;
+  background-color: #242f38;
+  white-space: nowrap;
+  width: 30px;
+}
+.night-owlish .CodeMirror-linenumber {
+  padding: 0 3px 0 5px;
+  min-width: 20px;
+  text-align: right;
+  color: #999;
+  white-space: nowrap;
+  font-family: 'Dank Mono';
+}
+.night-owlish .CodeMirror-guttermarker {
+  color: black;
+}
+.night-owlish .CodeMirror-guttermarker-subtle {
+  color: #999;
+}
+.night-owlish .CodeMirror-cursor {
+  border-left: 2px solid #394d6c;
+  border-right: 0;
+  margin-left: 0px;
+  width: 0;
+}
+.night-owlish .CodeMirror div.CodeMirror-secondarycursor {
+  border-left: 1px solid silver;
+}
+.night-owlish .cm-fat-cursor .CodeMirror-cursor {
+  width: auto;
+  border: 0 !important;
+  background: #7e7;
+}
+.night-owlish .cm-fat-cursor div.CodeMirror-cursors {
+  z-index: 1;
+}
+.night-owlish .cm-fat-cursor-mark {
+  background-color: rgba(20, 255, 20, 0.5);
+  -webkit-animation: blink 1.06s steps(1) infinite;
+  -moz-animation: blink 1.06s steps(1) infinite;
+  animation: blink 1.06s steps(1) infinite;
+}
+.night-owlish .cm-animate-fat-cursor {
+  width: auto;
+  border: 0;
+  -webkit-animation: blink 1.06s steps(1) infinite;
+  -moz-animation: blink 1.06s steps(1) infinite;
+  animation: blink 1.06s steps(1) infinite;
+  background-color: #7e7;
+}
+@-moz-keyframes blink {
+  50% {
+    background-color: transparent;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    background-color: transparent;
+  }
+}
+@keyframes blink {
+  50% {
+    background-color: transparent;
+  }
+}
+.night-owlish .cm-tab {
+  display: inline-block;
+  text-decoration: inherit;
+}
+.night-owlish .CodeMirror-rulers {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -50px;
+  bottom: -20px;
+  overflow: hidden;
+}
+.night-owlish .CodeMirror-ruler {
+  border-left: 1px solid #ccc;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+.night-owlish .cm-s-default .cm-header {
+  color: blue;
+}
+.night-owlish .cm-s-default .cm-quote {
+  color: #090;
+}
+.night-owlish .cm-negative {
+  color: #d44;
+}
+.night-owlish .cm-positive {
+  color: #292;
+}
+.night-owlish .cm-header,
+.night-owlish .cm-strong {
+  font-weight: bold;
+}
+.night-owlish .cm-em {
+  font-style: italic;
+}
+.night-owlish .cm-link {
+  text-decoration: underline;
+}
+.night-owlish .cm-strikethrough {
+  text-decoration: line-through;
+}
+.night-owlish .cm-s-default .cm-keyword {
+  color: #f19dfd;
+}
+.night-owlish .cm-s-default .cm-atom {
+  color: #219;
+}
+.night-owlish .cm-s-default .cm-number {
+  color: #164;
+}
+.night-owlish .cm-s-default .cm-def {
+  color: #00f;
+}
+.night-owlish .cm-variable {
+  color: #d6deeb;
+}
+.night-owlish .cm-s-default .cm-variable-2 {
+  color: #d6deeb;
+}
+.night-owlish .cm-s-default .cm-variable-3,
+.night-owlish .cm-s-default .cm-type {
+  color: #d6deeb;
+}
+.night-owlish .cm-s-default .cm-comment {
+  color: #a50;
+}
+.night-owlish .cm-s-default .cm-string {
+  color: #fff;
+}
+.night-owlish .cm-s-default .cm-string-2 {
+  color: #f50;
+}
+.night-owlish .cm-s-default .cm-meta {
+  color: #ffbaba;
+}
+.night-owlish .cm-s-default .cm-qualifier {
+  color: #555;
+}
+.night-owlish .cm-s-default .cm-builtin {
+  color: #3dc0ff;
+}
+.night-owlish .cm-s-default .cm-bracket {
+  color: #997;
+}
+.night-owlish .cm-s-default .cm-tag {
+  color: #170;
+}
+.night-owlish .cm-s-default .cm-attribute {
+  color: #00c;
+}
+.night-owlish .cm-s-default .cm-hr {
+  color: #999;
+}
+.night-owlish .cm-s-default .cm-link {
+  color: #00c;
+}
+.night-owlish .cm-s-default .cm-error {
+  color: red;
+}
+.night-owlish .cm-invalidchar {
+  color: red;
+}
+.night-owlish .CodeMirror-composing {
+  border-bottom: 2px solid;
+}
+.night-owlish div.CodeMirror span.CodeMirror-matchingbracket {
+  color: #0b0;
+}
+.night-owlish div.CodeMirror span.CodeMirror-nonmatchingbracket {
+  color: #a22;
+}
+.night-owlish .CodeMirror-matchingtag {
+  background: rgba(255, 150, 0, 0.3);
+}
+.night-owlish .CodeMirror-activeline-background {
+  background: #242f38;
+}
+.night-owlish .CodeMirror {
+  position: relative;
+  overflow: hidden;
+  background: white;
+}
+.night-owlish .CodeMirror-scroll {
+  overflow: scroll !important;
+  margin-bottom: -30px;
+  margin-right: -30px;
+  padding-bottom: 30px;
+  height: 100%;
+  outline: 0;
+  position: relative;
+}
+.night-owlish .CodeMirror-sizer {
+  position: relative;
+  border-right: 30px solid transparent;
+}
+.night-owlish .CodeMirror-vscrollbar,
+.night-owlish .CodeMirror-hscrollbar,
+.night-owlish .CodeMirror-scrollbar-filler,
+.night-owlish .CodeMirror-gutter-filler {
+  position: absolute;
+  z-index: 6;
+  display: none;
+}
+.night-owlish .CodeMirror-vscrollbar {
+  right: 0;
+  top: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+.night-owlish .CodeMirror-hscrollbar {
+  bottom: 0;
+  left: 0;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+.night-owlish .CodeMirror-scrollbar-filler {
+  right: 0;
+  bottom: 0;
+}
+.night-owlish .CodeMirror-gutter-filler {
+  left: 0;
+  bottom: 0;
+}
+.night-owlish .CodeMirror-gutters {
+  position: absolute;
+  left: 0;
+  top: 0;
+  min-height: 100%;
+  z-index: 3;
+}
+.night-owlish .CodeMirror-gutter {
+  white-space: normal;
+  height: 100%;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: -30px;
+}
+.night-owlish .CodeMirror-gutter-wrapper {
+  position: absolute;
+  z-index: 4;
+  background: none !important;
+  border: none !important;
+}
+.night-owlish .CodeMirror-gutter-background {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  z-index: 4;
+}
+.night-owlish .CodeMirror-gutter-elt {
+  position: absolute;
+  cursor: default;
+  z-index: 4;
+}
+.night-owlish .CodeMirror-gutter-wrapper ::selection {
+  background-color: transparent;
+}
+.night-owlish .CodeMirror-gutter-wrapper ::-moz-selection {
+  background-color: transparent;
+}
+.night-owlish .CodeMirror-lines {
+  cursor: text;
+  min-height: 1px;
+}
+.night-owlish .CodeMirror pre {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  border-width: 0;
+  background: transparent;
+  font-family: 'Dank Mono' !important;
+  font-size: inherit;
+  margin: 0;
+  white-space: pre;
+  word-wrap: normal;
+  line-height: inherit;
+  color: inherit;
+  z-index: 2;
+  position: relative;
+  overflow: visible;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-font-variant-ligatures: contextual;
+  font-variant-ligatures: contextual;
+}
+.night-owlish .CodeMirror-wrap pre {
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  word-break: normal;
+}
+.night-owlish .CodeMirror-linebackground {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 0;
+}
+.night-owlish .CodeMirror-linewidget {
+  position: relative;
+  z-index: 2;
+  padding: 0.1px;
+}
+.night-owlish .CodeMirror-rtl pre {
+  direction: rtl;
+}
+.night-owlish .CodeMirror-code {
+  outline: 0;
+}
+.night-owlish .CodeMirror-scroll,
+.night-owlish .CodeMirror-sizer,
+.night-owlish .CodeMirror-gutter,
+.night-owlish .CodeMirror-gutters,
+.night-owlish .CodeMirror-linenumber {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.night-owlish .CodeMirror-measure {
+  position: absolute;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.night-owlish .CodeMirror-cursor {
+  position: absolute;
+  pointer-events: none;
+}
+.night-owlish .CodeMirror-measure pre {
+  position: static;
+}
+.night-owlish div.CodeMirror-cursors {
+  visibility: hidden;
+  position: relative;
+  z-index: 3;
+}
+.night-owlish div.CodeMirror-dragcursors {
+  visibility: visible;
+}
+.night-owlish .CodeMirror-focused div.CodeMirror-cursors {
+  visibility: visible;
+}
+.night-owlish .CodeMirror-selected {
+  background: #d9d9d9;
+}
+.night-owlish .CodeMirror-focused .CodeMirror-selected {
+  background: #d7d4f0;
+}
+.night-owlish .CodeMirror-crosshair {
+  cursor: crosshair;
+}
+.night-owlish .CodeMirror-line::selection,
+.night-owlish .CodeMirror-line > span::selection,
+.night-owlish .CodeMirror-line > span > span::selection {
+  background: #d7d4f0;
+}
+.night-owlish .CodeMirror-line::-moz-selection,
+.night-owlish .CodeMirror-line > span::-moz-selection,
+.night-owlish .CodeMirror-line > span > span::-moz-selection {
+  background: #d7d4f0;
+}
+.night-owlish .cm-searching {
+  background-color: #ffa;
+  background-color: rgba(255, 255, 0, 0.4);
+}
+.night-owlish .cm-force-border {
+  padding-right: 0.1px;
+}
+@media print {
+  .night-owlish .CodeMirror div.CodeMirror-cursors {
+    visibility: hidden;
+  }
+}
+.night-owlish .cm-tab-wrap-hack:after {
+  content: '';
+}
+.night-owlish span.CodeMirror-selectedtext {
+  background: 0;
+}
+.night-owlish .rm-embed.rm-embed--page.rm-embed-container {
+  background: #2e3250;
+}
+.night-owlish .rm-embed-inner-block-hide {
+  background: #2e3250;
+}
+.night-owlish #right-sidebar {
+  color: white;
+}
+.night-owlish .rm-code-block {
+  color: #2e3250;
+}
+.night-owlish blockquote.rm-bq {
+  color: orange;
+}
+.night-owlish .rm-inline-references {
+  background: #2e3250;
+}

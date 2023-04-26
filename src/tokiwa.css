@@ -1,0 +1,160 @@
+.tokiwa {
+  --background-color: #f7fafc;
+  --eucalyptus-100: #e6f3ef;
+  --eucalyptus-200: #c0e1d7;
+  --eucalyptus-300: #9acfbf;
+  --eucalyptus-400: #4eab90;
+  --eucalyptus-500: #028760;
+  --eucalyptus-600: #027a56;
+  --eucalyptus-700: #01513a;
+  --eucalyptus-800: #013d2b;
+  --eucalyptus-900: #01291d;
+  --java-100: #edf9f8;
+  --java-200: #d2efed;
+  --java-300: #b6e5e2;
+  --java-400: #80d2cd;
+  --java-500: #49beb7;
+  --java-600: #42aba5;
+  --java-700: #2c726e;
+  --java-800: #215652;
+  --java-900: #163937;
+  --golden-tainoi-100: #fffaef;
+  --golden-tainoi-200: #fef3d6;
+  --golden-tainoi-300: #fdecbd;
+  --golden-tainoi-400: #fcdd8c;
+  --golden-tainoi-500: #facf5a;
+  --golden-tainoi-600: #e1ba51;
+  --golden-tainoi-700: #967c36;
+  --golden-tainoi-800: #715d29;
+  --golden-tainoi-900: #4b3e1b;
+  --medium-red-violet-100: #f9ecf4;
+  --medium-red-violet-200: #f1d0e4;
+  --medium-red-violet-300: #e8b3d3;
+  --medium-red-violet-400: #d77ab2;
+  --medium-red-violet-500: #c64191;
+  --medium-red-violet-600: #b23b83;
+  --medium-red-violet-700: #772757;
+  --medium-red-violet-800: #591d41;
+  --medium-red-violet-900: #3b142c;
+  /**
+  sync icon
+  **/
+  /**
+  title
+  **/
+  /**
+  bullets
+  **/
+  /**
+  checkboxes
+  **/
+  /**
+  unlinked reference
+  **/
+}
+.tokiwa .block-border-left {
+  border-left: 1px solid var(--eucalyptus-300);
+}
+.tokiwa .roam-log-container .roam-log-page {
+  border-top: 1px solid var(--eucalyptus-300);
+}
+.tokiwa .rm-synced {
+  background-color: var(--java-600) !important;
+}
+.tokiwa .rm-saving-remote {
+  background-color: var(--golden-tainoi-600) !important;
+}
+.tokiwa .rm-db-title {
+  color: var(--eucalyptus-700) !important;
+}
+.tokiwa .roam-bullet-closed {
+  background-color: var(--eucalyptus-200) !important;
+}
+.tokiwa .simple-bullet-inner {
+  background-color: var(--eucalyptus-400) !important;
+}
+.tokiwa .check-container input:checked ~ .checkmark {
+  background-color: var(--eucalyptus-300);
+  border: none !important;
+}
+.tokiwa .checkmark {
+  border: 1px solid var(--eucalyptus-200) !important;
+  background-color: white;
+}
+.tokiwa .rm-reference-main strong[style] {
+  color: var(--eucalyptus-400) !important;
+}
+.tokiwa .rm-reference-container div[style] {
+  color: var(--eucalyptus-400) !important;
+}
+.tokiwa .checkmark input:not:checked {
+  background-color: white;
+}
+.tokiwa .roam-sidebar-container,
+.tokiwa .roam-body-main,
+.tokiwa .roam-topbar,
+.tokiwa #right-sidebar {
+  background-color: var(--background-color) !important;
+}
+.tokiwa #roam-sidebar-logo img {
+  position: relative;
+  filter: invert(1);
+}
+.tokiwa h1,
+.tokiwa .rm-ref-page-view-title a span {
+  color: var(--eucalyptus-700) !important;
+}
+.tokiwa .roam-body-main,
+.tokiwa .starred-pages div,
+.tokiwa .roam-sidebar-container span,
+.tokiwa .log-button {
+  color: var(--eucalyptus-800) !important;
+}
+.tokiwa .roam-body-main div,
+.tokiwa textarea {
+  font-family: Arial !important;
+  line-height: 1.625;
+}
+.tokiwa textarea::selection,
+.tokiwa *::selection,
+.tokiwa .block-highlight-blue,
+.tokiwa .block-highlight-blue a,
+.tokiwa .block-highlight-blue .rm-page-ref:not(.rm-page-ref-tag),
+.tokiwa .block-highlight-blue .rm-alias {
+  color: var(--java-100) !important;
+  background-color: var(--java-700);
+}
+.tokiwa .starred-pages a div:hover,
+.tokiwa .log-button:hover,
+.tokiwa .top-row:hover,
+.tokiwa #roam-sidebar-logo:hover {
+  background-color: var(--eucalyptus-100) !important;
+}
+.tokiwa .roam-body-main a,
+.tokiwa .rm-reference-container a {
+  color: var(--eucalyptus-500) !important;
+}
+.tokiwa .roam-body-main code {
+  background: repeating-linear-gradient(45deg, var(--java-300), var(--java-300) 1px, var(--java-100) 0, var(--java-100) 5px);
+  border: 1px solid var(--java-400);
+  border-radius: 0;
+}
+.tokiwa .rm-page-ref {
+  color: var(--java-700);
+  text-decoration: italic !important;
+}
+.tokiwa .rm-page-ref-brackets {
+  color: var(--java-400) !important;
+}
+.tokiwa a {
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0 100%;
+  background-repeat: no-repeat;
+  background-size: 0 2px;
+  transition: background-size 0.3s cubic-bezier(0, 0.5, 0, 1);
+}
+.tokiwa a:hover {
+  text-decoration: none;
+  background-size: 100% 2px;
+}

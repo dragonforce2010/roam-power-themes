@@ -1,0 +1,13 @@
+{
+  "name": "roam-theme-leyendarker",
+  "version": "1.0.0",
+  "scripts": {
+    "prebuild:roam": "npm install",
+    "build:roam": "roamjs-scripts build --depot"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "roamjs-scripts": "0.26.26",
+    "tslib": "^2.5.0"
+  }
+}

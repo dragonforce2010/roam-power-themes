@@ -1,0 +1,581 @@
+/*  Make sure you have the fonts Lato, Open Sans, and IBM Plex installed locally on your machine.
+They're free to download from Google:
+https://fonts.google.com/specimen/Lato
+https://fonts.google.com/specimen/Open+Sans
+https://fonts.google.com/featured/Plex
+*/
+.leyendecker {
+  --header-font: 'Lato', sans-serif;
+  --body-font: 'Open Sans', sans-serif;
+  --code-font: 'IBM Plex', monospace;
+  --font-size: 0.95rem;
+  --bg-color: #f8f9fb;
+  --page-color: rgba(255, 255, 255, 0.95);
+  --text-color: #3f4758;
+  --light-text-color: #7086a9;
+  --page-tag-color: #9dafca;
+  --color-primary: #ec6f35;
+  --color-primary-light: #ff913c;
+  --color-primary-highlight: #fcc1786d;
+  --color-secondary: #7056f2;
+  --color-subtle-border: #dbe4e8;
+  /* Body Colours */
+  /* Typography */
+  /* Embed Blocks */
+  /* Code Syntax */
+  /* Queries */
+  /* Bullet Points */
+  /* Kanban */
+  /* Block references */
+  /* Headings */
+  /* URL links */
+  /* Set the colour of popover tooltip text to white */
+  /* Page Link and Tag Colours */
+  /* -------------------------- */
+  /* Custom Data Tags and Pages */
+  /* -------------------------- */
+  /* -------------------------- */
+  /* Block Styles by Tag */
+  /* -------------------------- */
+}
+.leyendecker body,
+.leyendecker #app {
+  background: var(--bg-color);
+}
+.leyendecker .roam-article {
+  padding-right: 10px !important;
+  padding-left: 20px !important;
+}
+.leyendecker .roam-article > div {
+  padding: 30px 50px 50px 50px;
+  background: var(--page-color);
+  box-shadow: var(--page-shadow);
+  border: 1px solid #e5ecf1;
+  border-radius: 6px;
+  margin-top: 10px !important;
+  width: auto;
+}
+.leyendecker .roam-body-main {
+  top: 0 !important;
+  height: 100% !important;
+  width: auto !important;
+  position: relative !important;
+  /* padding-left: 50px; */
+}
+.leyendecker .roam-main {
+  width: unset !important;
+  max-width: 100% !important;
+  height: 100%;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  margin: auto;
+  transition: padding-left 0.15s ease-out;
+}
+.leyendecker .block-highlight-blue {
+  background-color: var(--color-primary-highlight) !important;
+  z-index: 99;
+}
+.leyendecker div::selection,
+.leyendecker textarea::selection {
+  background-color: var(--color-primary-highlight);
+}
+.leyendecker h1,
+.leyendecker h2,
+.leyendecker h3,
+.leyendecker h4,
+.leyendecker h5,
+.leyendecker h6,
+.leyendecker .rm-level1,
+.leyendecker .rm-level2,
+.leyendecker .rm-level3 .rm-title-editing-display {
+  font-family: var(--header-font);
+}
+.leyendecker .rm-title-editing-display textarea {
+  font-family: var(--header-font);
+  font-size: 1em;
+}
+.leyendecker div,
+.leyendecker textarea {
+  font-family: var(--body-font);
+  font-size: var(--font-size);
+  color: var(--text-color);
+}
+.leyendecker .rm-embed-container {
+  background: #fcfdfd;
+  border: 1px solid var(--color-subtle-border);
+  border-radius: 4px;
+  padding: 0.6em 0.4em;
+  margin: 0.4em 0;
+}
+.leyendecker .block-highlight-yellow {
+  background-color: white;
+}
+.leyendecker code {
+  font-family: var(--code-font);
+  background: #f0f4f8;
+  color: var(--text-color);
+  border: none;
+  padding: 4px 6px;
+  opacity: 90%;
+}
+.leyendecker .rm-query {
+  border: 0.5px solid #e4e9ec;
+  border-radius: 5px;
+}
+.leyendecker .rm-query .rm-query-title {
+  background-color: #f7f8f8;
+  padding: 0.8em;
+  color: #d1dbe2;
+  font-size: 80%;
+}
+.leyendecker .rm-reference-main.rm-query-content {
+  padding: 0.8em;
+}
+.leyendecker .rm-reference-main,
+.leyendecker .rm-reference-item {
+  font-size: 95%;
+  opacity: 95%;
+}
+.leyendecker .rm-reference-main .rm-reference-item .controls {
+  margin-left: -1em;
+}
+.leyendecker .rm-ref-page-view {
+  padding: 0.4em 0.2em;
+}
+.leyendecker
+  .roam-body
+  .roam-app
+  .roam-sidebar-container
+  .roam-sidebar-content
+  .starred-pages-wrapper
+  .starred-pages
+  .page {
+  padding: 6px;
+}
+.leyendecker
+  .roam-body
+  .roam-app
+  .roam-sidebar-container
+  .roam-sidebar-content
+  .top-row:hover {
+  background-color: white;
+}
+.leyendecker div.flex-v-box.starred-pages-wrapper > div.flex-h-box > span {
+  font-size: 14px;
+  opacity: 80%;
+  letter-spacing: 0.04em;
+}
+.leyendecker div.roam-sidebar-container.noselect > div > div {
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+.leyendecker #block-input {
+  background: white;
+}
+.leyendecker .roam-body #block-input > span > div {
+  padding: 6px 24px;
+  background: white;
+}
+.leyendecker .rm-block-text,
+.leyendecker .roam-block {
+  font-size: 1.1em;
+}
+.leyendecker #right-sidebar > div {
+  background-color: white;
+  border-left: 1px solid #e9ebef;
+  padding: 20px;
+  overflow: none;
+}
+.leyendecker .rm-page-ref-brackets {
+  display: none;
+}
+.leyendecker .rm-bullet .rm-bullet__inner {
+  box-sizing: content-box;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 50%;
+  width: 5px;
+  height: 5px;
+  background-clip: content-box;
+  border: 4px solid transparent;
+  background-color: #e3ecf2;
+}
+.leyendecker .rm-bullet.rm-bullet--closed .rm-bullet__inner {
+  box-sizing: content-box;
+  border: 4px solid #d8e5ee;
+}
+.leyendecker .block-border-left {
+  border-left: 1px solid #fff;
+}
+.leyendecker .kanban-board {
+  background-color: #fff;
+}
+.leyendecker .kanban-card {
+  background-color: white;
+  margin: 8px;
+  box-shadow: 0px 1px 2px #9eb3c0;
+  padding: 10px;
+  border-radius: 2px;
+}
+.leyendecker .kanban-title {
+  text-align: center;
+  font-weight: bold;
+  padding-top: 6px;
+}
+.leyendecker .kanban-column {
+  background-color: #e4edf2;
+  margin: 0px 4px 0px 4px;
+  padding: 4px;
+  border-radius: 3px;
+}
+.leyendecker .rm-block-ref::before {
+  content: '';
+  display: inline-block;
+  width: 2px;
+  border-radius: 2px;
+  height: 10px;
+  background: var(--color-primary-light);
+  margin-right: 6px;
+}
+.leyendecker .rm-block-ref:hover {
+  background: none;
+  cursor: pointer;
+}
+.leyendecker .rm-block-ref {
+  border-bottom: none;
+  font-size: 1em;
+  color: var(--text-color);
+  opacity: 90%;
+}
+.leyendecker .block-ref-count-button {
+  color: var(--color-primary);
+  font-weight: 800;
+  top: -10px;
+}
+.leyendecker .checkmark {
+  background: #fff;
+}
+.leyendecker .check-container input:checked ~ .checkmark {
+  background: #33bdea;
+}
+.leyendecker .check-container input:checked ~ .checkmark:after {
+  border-color: #fff;
+}
+.leyendecker .rm-reference-item {
+  margin-top: 8px;
+  border-radius: 6px;
+  border: 1px solid #e4e9ee;
+  margin-right: 8px;
+  flex: 1 1 100%;
+  word-break: break-word;
+  background-color: #f7f9fb;
+  padding: 8px;
+}
+.leyendecker .rm-level1 div,
+.leyendecker .rm-level1 textarea {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.leyendecker .rm-level2 div,
+.leyendecker .rm-level2 textarea {
+  font-size: 1.4rem;
+}
+.leyendecker .rm-level3 div,
+.leyendecker .rm-level3 textarea {
+  color: var(--light-text-color);
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+.leyendecker a {
+  color: var(--color-secondary);
+  font-weight: 600;
+}
+.leyendecker .intercom-app,
+.leyendecker .intercom-launcher-frame,
+.leyendecker #intercom-container {
+  display: none;
+}
+.leyendecker .roam-body .roam-app .roam-sidebar-container {
+  background-color: white;
+  border-right: 1px #eee solid;
+}
+.leyendecker
+  .roam-body
+  .roam-app
+  .roam-sidebar-container
+  .roam-sidebar-content
+  .starred-pages-wrapper
+  .starred-pages
+  .page,
+.leyendecker .roam-body .roam-app .roam-sidebar-container > * {
+  opacity: 80%;
+  box-shadow: none;
+}
+.leyendecker
+  .roam-body
+  .roam-app
+  .roam-sidebar-container
+  .roam-sidebar-content
+  .starred-pages-wrapper
+  .starred-pages
+  .page:hover,
+.leyendecker
+  .roam-body
+  .roam-app
+  .roam-sidebar-container
+  .roam-sidebar-content
+  .log-button:hover {
+  background: white;
+  color: black;
+  opacity: 100%;
+}
+.leyendecker #buffer.tall {
+  height: calc(100vh - 50px);
+}
+.leyendecker .check-container {
+  padding-right: 4px;
+}
+.leyendecker span.rm-page-ref {
+  border-radius: 2px;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+.leyendecker .center-proj {
+  text-align: center;
+}
+.leyendecker .rm-alias--external,
+.leyendecker .rm-alias--external:hover {
+  font-weight: 600;
+}
+.leyendecker .bp3-tooltip .bp3-popover-content div {
+  color: white;
+}
+.leyendecker .rm-page-ref--tag {
+  color: var(--page-tag-color);
+}
+.leyendecker .rm-page-ref--link {
+  color: var(--color-primary);
+  font-weight: 600;
+}
+.leyendecker span.rm-page-ref[data-tag='Tweet'],
+.leyendecker span[data-link-title^='Tweet'] .rm-page-ref {
+  background: #81d5ed !important;
+  color: white !important;
+  padding: 3px 7px;
+  line-height: 2em;
+  font-weight: 500;
+}
+.leyendecker span.rm-page-ref[data-tag='Literature Notes'],
+.leyendecker span[data-link-title^='Literature Notes'] .rm-page-ref {
+  background: #9769ff !important;
+  color: white !important;
+  padding: 3px 7px;
+  font-weight: 500;
+  line-height: 2em;
+}
+.leyendecker span.rm-page-ref[data-tag='Evergreens'],
+.leyendecker span[data-link-title^='Evergreens'] .rm-page-ref {
+  background: #0dbac6 !important;
+  color: #fff !important;
+  padding: 3px 8px;
+  line-height: 2em;
+  font-weight: 500;
+}
+.leyendecker span.rm-page-ref[data-tag='Seedling'],
+.leyendecker span[data-link-title^='Seedling'] .rm-page-ref {
+  color: #0dbac6 !important;
+  padding: 2px;
+  font-weight: 600;
+  line-height: 1.4em;
+  font-size: 0.7em;
+  vertical-align: 10%;
+  opacity: 80%;
+}
+.leyendecker span.rm-page-ref[data-tag='Idea Bank'],
+.leyendecker span[data-link-title^='Idea Bank'] .rm-page-ref {
+  color: #fcb815 !important;
+  padding: 3px 4px;
+  font-weight: 700;
+  line-height: 1.4em;
+}
+.leyendecker span.rm-page-ref[data-tag='Idea Bank']:before {
+  content: '✦ ';
+}
+.leyendecker span.rm-page-ref[data-tag='Illustrated Notes'],
+.leyendecker span[data-link-title^='Illustrated Notes'] .rm-page-ref {
+  color: #7172fc;
+  padding: 3px 4px;
+  font-weight: 700;
+  line-height: 1.4em;
+}
+.leyendecker span.rm-page-ref[data-tag='Garden Notes'],
+.leyendecker span[data-link-title^='Garden Notes'] .rm-page-ref {
+  color: #9dbc13;
+  padding: 3px 4px;
+  font-weight: 700;
+  line-height: 1.4em;
+}
+.leyendecker span.rm-page-ref[data-tag='Video Tutorial'] {
+  color: #db3b8d;
+  padding: 3px 4px;
+  line-height: 1.4em;
+  font-weight: 700;
+}
+.leyendecker span.rm-page-ref[data-tag='Essay'],
+.leyendecker span[data-link-title^='Essay'] .rm-page-ref {
+  background: #adcb2a;
+  color: #fff;
+  padding: 3px 7px;
+  line-height: 2em;
+  font-weight: 500;
+}
+.leyendecker span.rm-page-ref[data-tag='Livestream'],
+.leyendecker span[data-link-title^='Livestream'] .rm-page-ref {
+  color: #b979cf;
+  padding: 3px 4px;
+  line-height: 1.4em;
+  font-weight: 700;
+}
+.leyendecker span.rm-page-ref[data-tag='Talk'],
+.leyendecker span[data-link-title^='Talk'] .rm-page-ref {
+  background: #7172fc;
+  color: #fff;
+  padding: 3px 7px;
+  line-height: 2em;
+  font-weight: 500;
+}
+.leyendecker span.rm-page-ref[data-tag='Waiting'],
+.leyendecker span[data-link-title^='Waiting'] .rm-page-ref {
+  background: #f9c866;
+  color: #fff;
+  padding: 3px 7px;
+  line-height: 2em;
+  font-weight: 500;
+}
+.leyendecker span.rm-page-ref[data-tag='Researching'],
+.leyendecker span[data-link-title^='Researching'] .rm-page-ref {
+  background: #ff9d66 !important;
+  color: #fff;
+  padding: 3px 7px;
+  line-height: 2em;
+  font-weight: 500;
+}
+.leyendecker span.rm-page-ref[data-tag='Synthesising'],
+.leyendecker span[data-link-title^='Synthesising'] .rm-page-ref {
+  background: #fc766f !important;
+  color: #fff !important;
+  padding: 3px 7px;
+  line-height: 2em;
+  font-weight: 500;
+}
+.leyendecker span.rm-page-ref[data-tag='Alive'],
+.leyendecker span[data-link-title^='Alive'] .rm-page-ref {
+  background: #ee5f85 !important;
+  color: #fff !important;
+  padding: 3px 7px;
+  line-height: 2em;
+  font-weight: 500;
+}
+.leyendecker span[data-link-title^='Book/'] .rm-page-ref {
+  color: #119bf0 !important;
+  font-weight: 600;
+}
+.leyendecker span[data-link-title^='Evergreen/'] .rm-page-ref {
+  color: #00acc0 !important;
+  font-weight: 600;
+}
+.leyendecker span[data-link-title^='➽'] .rm-page-ref {
+  color: #35b2d4 !important;
+  font-weight: 700;
+}
+.leyendecker span[data-link-title^='Video/'] .rm-page-ref {
+  color: #119bf0 !important;
+  font-weight: 600;
+}
+.leyendecker span[data-link-title^='Project/'] .rm-page-ref {
+  color: #5135d4 !important;
+  font-weight: 700;
+}
+.leyendecker span[data-link-title^='Area/'] .rm-page-ref {
+  color: #d4357f !important;
+  font-weight: 600;
+}
+.leyendecker span[data-link-title^='Article/'] .rm-page-ref {
+  color: #119bf0 !important;
+  font-weight: 600;
+}
+.leyendecker span[data-link-title^='Course/'] .rm-page-ref {
+  color: #5391f8 !important;
+  font-weight: 600;
+}
+.leyendecker span[data-link-title^='Idea/'] .rm-page-ref {
+  color: #fcb815 !important;
+  padding: 3px 4px;
+  font-weight: 700;
+  line-height: 1.4em;
+}
+.leyendecker span[data-link-title^='Idea/'] .rm-page-ref::before {
+  content: '✦ ';
+}
+.leyendecker .roam-block-container[data-page-links*='Claim'] {
+  background: #fdf8ee;
+  border-radius: 6px;
+  padding: 0.6em 0.4em 0.4em 0em;
+}
+.leyendecker span.rm-page-ref[data-tag='Claim'],
+.leyendecker span[data-link-title^='Claim'] .rm-page-ref {
+  opacity: 70%;
+  font-size: 80%;
+  color: #ffc585;
+}
+.leyendecker .roam-block-container[data-page-links*='Questions'] {
+  background: #ecf5fb;
+  border-radius: 6px;
+  padding: 0.6em 0.4em 0.4em 0em;
+}
+.leyendecker span.rm-page-ref[data-tag='Questions'],
+.leyendecker span[data-link-title^='Questions'] .rm-page-ref {
+  opacity: 70%;
+  font-size: 80%;
+  color: #91b9e5;
+}
+.leyendecker .roam-block-container[data-page-links*='Response'] {
+  background: #f3f1fd;
+  margin-top: 2px;
+  border-radius: 6px;
+  padding: 0.6em 0.4em 0.4em 0em;
+}
+.leyendecker span.rm-page-ref[data-tag='Response'],
+.leyendecker span[data-link-title^='Response'] .rm-page-ref {
+  opacity: 70%;
+  font-size: 80%;
+  color: #afa0e1;
+}
+.leyendecker .roam-block-container[data-page-links*='Evidence'] {
+  background: #feeded;
+  margin-top: 2px;
+  border-radius: 6px;
+  padding: 0.6em 0.4em 0.4em 0em;
+}
+.leyendecker span.rm-page-ref[data-tag='Evidence'],
+.leyendecker span[data-link-title^='Evidence'] .rm-page-ref {
+  opacity: 70%;
+  font-size: 80%;
+  color: #f99292;
+}
+.leyendecker .roam-block-container[data-page-links*='DirectQuote'] {
+  background: #f4f6d8;
+  margin-top: 2px;
+  border-radius: 6px;
+  padding: 0.6em 0.4em 0.4em 0em;
+}
+.leyendecker span.rm-page-ref[data-tag='DirectQuote'],
+.leyendecker span[data-link-title^='DirectQuote'] .rm-page-ref {
+  opacity: 70%;
+  font-size: 80%;
+  color: #a5c16a;
+}
+.leyendecker .rm-embed-margin-action + .rm-page__title {
+  font-size: 1.25em;
+}

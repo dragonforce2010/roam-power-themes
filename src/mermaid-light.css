@@ -1,0 +1,364 @@
+.mermaid-light {
+  --background-colour: #eff2f1;
+  --edges-colour: #dcdcdc;
+  --edges-colour-semi-transparent: #dcdcdc;
+  --contrast-colour: #333333;
+  --title-colour: #39a2ae;
+  --highlight-colour-1: #cc76a1;
+  /* === Full page styling === */
+  /* Scrollbar */
+  /* All pages styling */
+  /* === Navigation styling === */
+  /* Graphs menu */
+  /* === Topbar styling === */
+  /* === Main content styling === */
+  /* Subtitles */
+  /* Bullet */
+  /* === Content blocks === */
+  /* External link */
+  /* Datepicker */
+  /* Query */
+  /* Diagram */
+  /* Kanban board */
+  /* === References section (bottom of page) === */
+  /* === Right sidebar === */
+  /* === Popup menus === */
+  /*Popup menu, Slash dropdown menu, Filter popup menu, Filter menu buttons */
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh7USew8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6uyw4BMUTPHvxk.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh6UVew8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh50Xew8.ttf) format('truetype');
+}
+.mermaid-light body,
+.mermaid-light div,
+.mermaid-light textarea {
+  font-family: 'Lato', sans-serif !important;
+}
+.mermaid-light .roam-body {
+  background-color: var(--background-colour);
+}
+.mermaid-light .roam-body-main {
+  scrollbar-color: var(--edges-colour) var(--background-colour);
+}
+.mermaid-light body::-webkit-scrollbar-track {
+  background: var(--background-colour);
+}
+.mermaid-light body::-webkit-scrollbar-thumb {
+  background-color: var(--edges-colour);
+}
+.mermaid-light .bp3-button::before,
+.mermaid-light .bp3-icon-small::before,
+.mermaid-light .bp3-icon::before,
+.mermaid-light .bp3-icon-standard::before,
+.mermaid-light .bp3-icon svg {
+  /* Icons */
+  color: var(--highlight-colour-1) !important;
+}
+.mermaid-light .bp3-button {
+  color: var(--contrast-colour) !important;
+}
+.mermaid-light #buffer {
+  display: none !important;
+}
+.mermaid-light #rm-all-pages-column-titles,
+.mermaid-light .sorted-header-text,
+.mermaid-light #rm-all-pages-column-titles .rm-pages-title-col {
+  /* Table headings */
+  background-color: var(--edges-colour);
+  color: var(--contrast-colour);
+}
+.mermaid-light .rm-pages-row .bp3-control-indicator::before {
+  /* Checkbox */
+  border: 1px solid var(--edges-colour);
+  background-color: var(--background-colour);
+}
+.mermaid-light .rm-pages-row .rm-pages-title-text {
+  color: var(--contrast-colour);
+}
+.mermaid-light .rm-pages-row .title-children-text {
+  color: var(--edges-colour);
+}
+.mermaid-light .rm-pages-row .rm-pages-col > span {
+  color: var(--title-colour);
+}
+.mermaid-light .rm-pages-row .rm-clickable-pill {
+  background-color: var(--highlight-colour-1);
+  color: var(--background-colour);
+}
+.mermaid-light .rm-pages-row .empty-pill {
+  background-color: var(--edges-colour);
+  color: var(--contrast-colour);
+}
+.mermaid-light .roam-sidebar-container {
+  background-color: var(--background-colour) !important;
+  border-right: 1px solid var(--edges-colour);
+}
+.mermaid-light .rm-graph-dropdown li,
+.mermaid-light .rm-graph-dropdown a {
+  color: var(--highlight-colour-1) !important;
+}
+.mermaid-light .rm-graph-dropdown h6 {
+  color: var(--contrast-colour) !important;
+}
+.mermaid-light .roam-sidebar-container button div {
+  /* Email */
+  color: var(--contrast-colour) !important;
+}
+.mermaid-light .roam-sidebar-container .log-button {
+  /* Page titles */
+  font-weight: 300 !important;
+  color: var(--title-colour) !important;
+}
+.mermaid-light .starred-pages-wrapper span {
+  /* Shortcuts title */
+  color: var(--highlight-colour-1);
+}
+.mermaid-light .starred-pages .page {
+  /* Starred page */
+  color: var(--title-colour) !important;
+  font-weight: 300 !important;
+}
+.mermaid-light #roam-sidebar-logo {
+  /* Roam logo */
+  opacity: 0.7;
+}
+.mermaid-light .roam-topbar {
+  background-color: var(--background-colour);
+  border-bottom: 1px solid var(--edges-colour);
+}
+.mermaid-light .rm-sync--saving-remote {
+  /* Saving icon (saving) */
+  background-color: var(--highlight-colour-1) !important;
+}
+.mermaid-light .rm-sync--synced {
+  /* Saving icon (saved) */
+  background-color: var(--title-colour) !important;
+}
+.mermaid-light .rm-find-or-create-wrapper .bp3-icon-search {
+  /* Search icon */
+  color: var(--contrast-colour);
+}
+.mermaid-light #find-or-create-input {
+  /* Search input */
+  color: var(--highlight-colour-1);
+  background-color: var(--background-colour);
+  border: 1px solid var(--contrast-colour);
+}
+.mermaid-light .roam-article h1,
+.mermaid-light .rm-title-display,
+.mermaid-light .rm-title-display span {
+  /* Page heading */
+  color: var(--title-colour) !important;
+  font-weight: 700;
+}
+.mermaid-light h1.rm-level1 {
+  color: var(--contrast-colour) !important;
+  font-weight: 800;
+}
+.mermaid-light h2.rm-level2 {
+  color: var(--contrast-colour);
+  font-weight: 700;
+}
+.mermaid-light h3.rm-level3 {
+  color: var(--contrast-colour);
+  font-weight: 400;
+}
+.mermaid-light .roam-block-container {
+  /* Main text */
+  color: var(--contrast-colour);
+  background-color: var(--background-colour);
+}
+.mermaid-light .rm-edit-view-wrapper {
+  /* Remove avatars */
+  display: none;
+}
+.mermaid-light .simple-bullet-inner {
+  background-color: var(--highlight-colour-1) !important;
+}
+.mermaid-light .roam-bullet-closed {
+  background-color: var(--contrast-colour) !important;
+}
+.mermaid-light .roam-bullet-closed .simple-bullet-inner {
+  background-color: var(--background-colour) !important;
+}
+.mermaid-light .block-highlight-blue {
+  /* Block select highlighting */
+  background-color: var(--edges-colour);
+}
+.mermaid-light .block-ref-count-button {
+  /* Block reference count */
+  color: var(--contrast-colour) !important;
+}
+.mermaid-light .rm-page-ref,
+.mermaid-light .rm-page-ref--link,
+.mermaid-light .rm-page-ref--namespace {
+  /* Page link */
+  color: var(--title-colour);
+}
+.mermaid-light .rm-page-ref-tag {
+  /* Hashtag */
+  color: var(--contrast-colour);
+  opacity: 0.4;
+}
+.mermaid-light .rm-block-ref:hover {
+  /* Quote */
+  background-color: var(--contrast-colour);
+  color: var(--background-colour);
+}
+.mermaid-light .rm-embed-container,
+.mermaid-light .rm-embed-container .roam-block-container {
+  /* Block embed */
+  background-color: var(--edges-colour-semi-transparent);
+}
+.mermaid-light .rm-block-text a,
+.mermaid-light .rm-block-text a:visited {
+  color: var(--title-colour);
+}
+.mermaid-light rm-block-text a:hover {
+  color: var(--highlight-colour-1);
+}
+.mermaid-light .rm-alias {
+  /* Alias */
+  color: var(--title-colour);
+}
+.mermaid-light .roam-highlight {
+  /* Text highlight */
+  background-color: var(--highlight-colour-1);
+  color: var(--background-colour);
+}
+.mermaid-light .rm-block-text button.bp3-button {
+  /* Word count, Pomodoro */
+  background-color: var(--background-colour);
+  background-image: none;
+  border: 1px solid var(--edges-colour);
+}
+.mermaid-light .rm-encrypted-block {
+  /* Encrypted block */
+  background-color: var(--background-colour);
+  color: var(--contrast-colour);
+}
+.mermaid-light .bp3-popover-target span {
+  /* Calc block */
+  color: var(--title-colour) !important;
+}
+.mermaid-light select {
+  /* Options list and other form elements */
+  background-color: var(--background-colour);
+}
+.mermaid-light .bp3-datepicker {
+  background-color: var(--background-colour);
+  border: 1px solid var(--edges-colour);
+}
+.mermaid-light .bp3-datepicker select {
+  color: var(--contrast-colour);
+}
+.mermaid-light .rm-query {
+  border: 1px solid var(--edges-colour);
+}
+.mermaid-light .rm-query-title {
+  color: var(--contrast-colour) !important;
+  background-color: var(--edges-colour-semi-transparent) !important;
+}
+.mermaid-light .bp3-slider .bp3-intent-primary,
+.mermaid-light span.bp3-slider-label {
+  /*Slider */
+  background-color: var(--title-colour) !important;
+}
+.mermaid-light .roam-center svg,
+.mermaid-light #right-sidebar svg {
+  color: var(--contrast-colour);
+  background-color: var(--background-colour) !important;
+  border: 1px solid var(--edges-colour) !important;
+}
+.mermaid-light .roam-center svg rect,
+.mermaid-light #right-sidebar svg rect {
+  fill: var(--background-colour);
+  stroke: var(--contrast-colour);
+}
+.mermaid-light .kanban-board {
+  background-color: var(--background-colour);
+  border: 1px solid var(--edges-colour);
+}
+.mermaid-light .kanban-column {
+  background-color: var(--edges-colour-semi-transparent);
+  border: 1px solid var(--edges-colour);
+}
+.mermaid-light .kanban-card {
+  background-color: var(--background-colour);
+}
+.mermaid-light .rm-reference-main,
+.mermaid-light .rm-reference-main strong {
+  /*References */
+  color: var(--contrast-colour) !important;
+}
+.mermaid-light .rm-mentions .rm-ref-page-view-title a {
+  /* References page title */
+  color: var(--title-colour);
+}
+.mermaid-light .rm-reference-item {
+  /* Reference item */
+  background-color: var(--background-colour);
+}
+.mermaid-light .parent-path-wrapper {
+  /* Breadcrumbs in reference */
+  color: var(--contrast-colour);
+}
+.mermaid-light #right-sidebar {
+  background-color: var(--background-colour) !important;
+}
+.mermaid-light #roam-right-sidebar-content {
+  color: var(--title-colour);
+}
+.mermaid-light #right-sidebar h1 a,
+.mermaid-light #right-sidebar h2 a,
+.mermaid-light #right-sidebar h3 a {
+  /* Headings */
+  color: var(--title-colour);
+}
+.mermaid-light .bp3-menu,
+.mermaid-light .bp3-elevation-3,
+.mermaid-light .bp3-popover-content,
+.mermaid-light .bp3-popover-content .bp3-button {
+  background-color: var(--background-colour) !important;
+  border: 1px solid var(--edges-colour);
+  color: var(--contrast-colour) !important;
+}
+.mermaid-light .bp3-popover-arrow {
+  display: none;
+}
+.mermaid-light .bp3-popover-content .bp3-button {
+  /*Filter menu button */
+  background-image: none;
+}
+.mermaid-light .bp3-button sub {
+  padding-left: 5px;
+}
+.mermaid-light .bp3-menu button {
+  /*Buttons in bullet popup menu */
+  background-color: var(--background-colour) !important;
+  border: none;
+}
