@@ -482,6 +482,11 @@
   color: var(--color-secondary) !important;
   font-weight: 600;
 }
+
+.zenithdecker .rm-extensions-settings .bp3-popover-content .bp3-menu {
+  background-color: var(--bg-color);
+}
+
 .zenithdecker .roam-article {
   padding-right: 10px !important;
   /* max-width: 740px; */

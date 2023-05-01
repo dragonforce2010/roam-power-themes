@@ -194,7 +194,16 @@
 }
 .leyendarker .bp3-popover-target button {
   border: 1px solid var(--color-primary) !important;
+  color: var(--color-primary);
   border-radius: 6em !important;
+  opacity: 60% !important;
+  padding: 0 !important;
+}
+
+.leyendarker .rm-extensions-settings .bp3-popover-target button {
+  border: none;
+  color: var(--color-primary);
+  border-radius: 1em !important;
   opacity: 60% !important;
   padding: 0 !important;
 }

@@ -3,7 +3,6 @@
 This Extension gives you 23 beautiful theme as below
 - Theme Manager
     - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FTDzPIseMY_.31.47.gif?alt=media&token=69075b59-b268-4eb7-a28e-f0ad113212d4)
-    - 
 - Leyendarker
     - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2F3_HoYe1F0A.png?alt=media&token=94a64645-ff8e-4a0f-98e3-b11771027ea0)
 - Leyendecker
@@ -50,6 +49,14 @@ This Extension gives you 23 beautiful theme as below
     - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2Fy4qqFE18er.png?alt=media&token=64b5e072-c91b-4add-b710-454df481f1e2)
 - tokiwa
     - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2F8t1InLIpTY.png?alt=media&token=f305c1f2-bbaf-4131-b3ec-37a9d4bc1f53)
+
+## How to switch the themes
+you have two ways to switch between different themes
+1. Using the configure panel
+![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2Ffww0dGvrd6.01.01.gif?alt=media&token=a774bfba-e979-4617-ab4b-0b0250fdc047)
+   
+2. Using the command palette
+![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FeMyWdCUbyn.03.12.gif?alt=media&token=c6c8757a-1e4a-4c9a-947e-bfd256019f6b)
 
 
 ## Support This Project

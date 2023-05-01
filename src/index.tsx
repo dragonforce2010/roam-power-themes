@@ -23,9 +23,15 @@ import './tokiwa.css'
 import './zenithdecker.css'
 
 import { ExtensionAPI, OnloadArgs } from '../types'
+import { loadSettings } from './config'
 
 
 const themConfigKey = 'themConfig'
+let interval: NodeJS.Timer
+let currentTheme = ""
+let prevTheme = ""
+let defaultTheme = "darkage"
+
 let themeConfig = [
   {
     extensionName: 'roam-theme-bear-gotham',
@@ -158,24 +164,6 @@ const registeThemeCommands = () => {
   }
 }
 
-const loadThemeConfig = () => {
-  let defaultThemeConfig = {
-    themeName: 'darkage'
-  }
-  const themeConfig = localStorage.getItem(themConfigKey)
-  if (!themeConfig)
-    return defaultThemeConfig
-
-  return JSON.parse(themeConfig)
-}
-
-const saveThemeConfig = (theme: string) => {
-  localStorage.setItem(themConfigKey, JSON.stringify({
-    themeName: theme
-  }))
-}
-
-
 const removeThemeCommands = () => {
   for (let config of themeConfig) {
     window.roamAlphaAPI.ui
@@ -185,20 +173,38 @@ const removeThemeCommands = () => {
 }
 
 
+const roamThemeSettingKey = 'roam_default_theme'
 const switchRoamTheme = (newTheme: string) => {
-  document.body.className = newTheme
-  saveThemeConfig(newTheme)
+  window.extensionAPI.settings.set(roamThemeSettingKey, newTheme).then(() => {
+    updateTheme(newTheme)
+  })
+
 }
 
 function onload({ extensionAPI }: OnloadArgs) {
-  const themeConfig = loadThemeConfig()
-  document.body.className = themeConfig.themeName
+  window.extensionAPI = extensionAPI
+  loadSettings(extensionAPI, defaultTheme)
+  updateTheme(defaultTheme)
+
   registeThemeCommands()
+
+  interval = setInterval(() => {
+    const selectedTheme = extensionAPI.settings.get(roamThemeSettingKey) as string
+    updateTheme(selectedTheme)
+  }, 1000)
+}
+
+function updateTheme(newTheme: string) {
+  prevTheme = currentTheme
+  currentTheme = newTheme
+  if (prevTheme) document.body.classList.remove(prevTheme)
+  if (currentTheme) document.body.classList.add(currentTheme)
 }
 
 function onunload() {
   removeThemeCommands()
-  document.body.className = ''
+  document.body.classList.remove(currentTheme)
+  clearInterval(interval)
 }
 
 export default {

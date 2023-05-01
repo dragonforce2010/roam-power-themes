@@ -494,10 +494,6 @@
 .rails-orange .rm-pages-row .rm-pages-title-col a strong:hover {
   text-decoration: underline;
 }
-.rails-orange .bp3-icon-export {
-  margin-left: 30px;
-  /* TODO this is a fix to added some much needed space between export and delete buttons!!! */
-}
 .rails-orange .bp3-control .bp3-control-indicator {
   background-color: var(--rm-todo-checkmark__background-color);
   background-image: var(--rm-pages-checkmark__background-image);

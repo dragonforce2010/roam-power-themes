@@ -382,7 +382,7 @@
   margin-right: 8px;
   flex: 1 1 100%;
   word-break: break-word;
-  background-color: var(--color-brighten-5);
+  background-color: #c8cde675;
   padding: 8px;
 }
 .gambler .rm-inline-references {

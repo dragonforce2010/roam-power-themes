@@ -70,6 +70,10 @@
 .lilac-dark body::-webkit-scrollbar-thumb {
   background-color: var(--edges-colour);
 }
+.lilac-dark .roam-title-day-banner {
+  color: white;
+  padding-top: 10px;
+}
 .lilac-dark .bp3-button::before,
 .lilac-dark .bp3-icon-small::before,
 .lilac-dark .bp3-icon::before,

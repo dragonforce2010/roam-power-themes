@@ -188,6 +188,13 @@
   background-color: var(--background-colour);
   border: 1px solid var(--contrast-colour);
 }
+.bubblegum-dark .bp3-input[type='search'],
+.bubblegum-dark .bp3-input.bp3-round {
+  border-radius: 1px !important;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 10px;
+}
 .bubblegum-dark .roam-article h1,
 .bubblegum-dark .rm-title-display,
 .bubblegum-dark .rm-title-display span {

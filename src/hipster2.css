@@ -260,7 +260,7 @@
 .hipster2 .bp3-popover .bp3-popover-content {
   pointer-events: auto;
   background-color: var(--page-color) !important;
-  color: var(--text-color) !important;
+  color: black !important;
 }
 .hipster2 .bp3-popover .bp3-button {
   background-color: var(--bg-color);

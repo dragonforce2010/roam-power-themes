@@ -417,6 +417,9 @@ inspired by Matt Goldenberg
   --masonry-border: 1px solid rgba(228, 124, 67, 0.25);
   --masonry-resizer-color: var(--rm-icon__color);
 }
+.rails-purple .bp3-button {
+  border: 0 !important;
+}
 .rails-purple .bp3-button > sub {
   padding-left: 3px;
   color: var(--rm-filter__color_subscript);
