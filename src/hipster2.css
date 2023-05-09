@@ -317,6 +317,9 @@
   left: calc(50% - 600px / 2);
   cursor: text;
 }
+.hipster2 body > div.rm-autocomplete__results.bp3-elevation-3 > div:nth-child(1) {
+  background: #bcc6ce87;
+}
 .hipster2 #find-or-create-input {
   border-radius: 10px 10px 0px 0px;
   font-size: 18px;

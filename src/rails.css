@@ -420,6 +420,11 @@
   --masonry-border: 1px solid rgba(228, 124, 67, 0.25);
   --masonry-resizer-color: var(--rm-icon__color);
 }
+
+.rails-orange .rm-autocomplete-result {
+  color: teal;
+}
+
 .rails-orange .bp3-button > sub {
   padding-left: 3px;
   color: var(--rm-filter__color_subscript);
