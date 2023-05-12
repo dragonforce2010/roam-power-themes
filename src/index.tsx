@@ -153,7 +153,7 @@ let themeConfig = [
 
 const registeThemeCommands = () => {
   for (let config of themeConfig) {
-    window.roamAlphaAPI.ui
+    window.extensionAPI.ui
       .commandPalette
       .addCommand({
         label: config.commandLabel,
@@ -166,7 +166,7 @@ const registeThemeCommands = () => {
 
 const removeThemeCommands = () => {
   for (let config of themeConfig) {
-    window.roamAlphaAPI.ui
+    window.extensionAPI.ui
       .commandPalette
       .removeCommand({ label: config.commandLabel })
   }
@@ -183,15 +183,10 @@ const switchRoamTheme = (newTheme: string) => {
 
 function onload({ extensionAPI }: OnloadArgs) {
   window.extensionAPI = extensionAPI
-  loadSettings(extensionAPI, defaultTheme)
+  loadSettings(extensionAPI, defaultTheme, updateTheme)
   updateTheme(defaultTheme)
 
   registeThemeCommands()
-
-  interval = setInterval(() => {
-    const selectedTheme = extensionAPI.settings.get(roamThemeSettingKey) as string
-    updateTheme(selectedTheme)
-  }, 1000)
 }
 
 function updateTheme(newTheme: string) {

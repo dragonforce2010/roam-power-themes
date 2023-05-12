@@ -362,6 +362,12 @@ export declare type ExtensionAPI = {
     };
     set: (k: string, v: unknown) => Promise<void>;
   };
+  ui: {
+    commandPalette: {
+      addCommand: (c: AddCommandOptions) => Promise<void>;
+      removeCommand: (c: RemoveCommandOptions) => Promise<void>;
+    };
+  };
 }
 
 export declare type OnloadArgs = {
