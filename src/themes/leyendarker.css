@@ -578,14 +578,20 @@
   border-top: 0;
 }
 .leyendarker #roam-right-sidebar-content > div > div:not(.flex-h-box) {
-  padding: 0px 50px 0px 40px;
+  padding: 0px 10px 0px 10px;
 }
 .leyendarker #roam-right-sidebar-content > div > .flex-h-box > .bp3-button,
 .leyendarker #roam-right-sidebar-content .flex-h-box > .bp3-popover-wrapper {
   margin: auto !important;
   width: 20px !important;
   text-align: center;
+  margin-right: 10px !important;
 }
+
+.leyendarker .bp3-popover-wrapper {
+  display: flex;
+}
+
 .leyendarker
   #roam-right-sidebar-content
   > div
@@ -979,7 +985,7 @@
 .leyendarker .bp3-button,
 .leyendarker .roam-block div[style*='100vh'] > button {
   background-image: none !important;
-  padding: 0px 10px !important;
+  /* padding-right: 0px !important; */
   border: none !important;
   border-radius: 5px !important;
 }

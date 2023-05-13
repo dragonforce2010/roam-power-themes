@@ -1,4 +1,5 @@
 import { ExtensionAPI, PanelConfig } from '../types';
+import { THEME_BEAR_GOTHAM, THEME_BEAR_PANIC, THEME_BUBBLEGUM_DARK, THEME_BUBBLEGUM_LIGHT, THEME_CAESAR_LIGHT, THEME_DARKAGE, THEME_DRACULA, THEME_FLOAT, THEME_GAMBLER, THEME_HIPSTER1, THEME_HIPSTER2, THEME_LEYENDARKER, THEME_LILAC_DARK, THEME_LILAC_LIGHT, THEME_MAGAZINE, THEME_MERMAID_DARK, THEME_MERMAID_LIGHT, THEME_NIGHT_OWLISH, THEME_RAILS_ORANGE, THEME_RAILS_PURPLE, THEME_TOKIWA, THEME_ZENITHDECKER, roamThemeSettingKey } from './constants';
 
 const panelConfig = (onChange: Function): PanelConfig => {
   return {
@@ -11,29 +12,29 @@ const panelConfig = (onChange: Function): PanelConfig => {
         action: {
           type: 'select',
           items: [
-            "bear-gotham",
-            "bear-panic",
-            "bubblegum-dark",
-            "bubblegum-light",
-            "caesar-light",
-            "darkage",
-            "dracula",
-            "float",
-            "gambler",
-            "hipster1",
-            "hipster2",
-            "leyendarker",
-            "leyendecker",
-            "lilac-dark",
-            "lilac-light",
-            "magazine",
-            "mermaid-dark",
-            "mermaid-light",
-            "night-owlish",
-            "rails-orange",
-            "rails-purple",
-            "tokiwa",
-            "zenithdecker"
+            THEME_BEAR_GOTHAM,
+            THEME_BEAR_PANIC,
+            THEME_BUBBLEGUM_DARK,
+            THEME_BUBBLEGUM_LIGHT,
+            THEME_CAESAR_LIGHT,
+            THEME_DARKAGE,
+            THEME_DRACULA,
+            THEME_FLOAT,
+            THEME_GAMBLER,
+            THEME_HIPSTER1,
+            THEME_HIPSTER2,
+            THEME_LEYENDARKER,
+            THEME_LEYENDARKER,
+            THEME_LILAC_DARK,
+            THEME_LILAC_LIGHT,
+            THEME_MAGAZINE,
+            THEME_MERMAID_DARK,
+            THEME_MERMAID_LIGHT,
+            THEME_NIGHT_OWLISH,
+            THEME_RAILS_ORANGE,
+            THEME_RAILS_PURPLE,
+            THEME_TOKIWA,
+            THEME_ZENITHDECKER,
           ],
           onChange(e: any) {
             onChange(e.toString())
@@ -44,9 +45,12 @@ const panelConfig = (onChange: Function): PanelConfig => {
   }
 }
 
-export const loadSettings = (extensionAPI: ExtensionAPI, defaultTheme: string, updateTheme: Function) => {
+export const loadSettings = (extensionAPI: ExtensionAPI, updateTheme: Function) => {
   extensionAPI.settings.panel.create(panelConfig(updateTheme));
-  const currentTheme = extensionAPI.settings.get('roam_default_theme')
-  if (!currentTheme)
-    extensionAPI.settings.set('roam_default_theme', defaultTheme)
+  const currentTheme = extensionAPI.settings.get(roamThemeSettingKey)
+  if (!currentTheme) {
+    extensionAPI.settings.set(roamThemeSettingKey, currentTheme)
+  } else {
+    updateTheme(currentTheme)
+  }
 }

@@ -50,28 +50,28 @@
   font-style: normal;
   font-weight: 300;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh7USew8.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh7USew8.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lato/v23/S6uyw4BMUTPHvxk.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6uyw4BMUTPHvxk.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh6UVew8.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh6UVew8.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Lato';
   font-style: normal;
   font-weight: 900;
   font-display: swap;
-  src: url(https://fonts.gstatic.com/s/lato/v23/S6u9w4BMUTPHh50Xew8.ttf) format('truetype');
+  src: url(https://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh50Xew8.ttf) format('truetype');
 }
 .bubblegum-dark body,
 .bubblegum-dark div,
@@ -100,6 +100,9 @@
 }
 .bubblegum-dark .bp3-button {
   color: var(--contrast-colour) !important;
+}
+.bubblegum-dark .roam-title-day-banner {
+  color: orange;
 }
 .bubblegum-dark #buffer {
   display: none !important;
@@ -184,6 +187,7 @@
 }
 .bubblegum-dark #find-or-create-input {
   /* Search input */
+  padding-left: 30px;
   color: var(--highlight-colour-1);
   background-color: var(--background-colour);
   border: 1px solid var(--contrast-colour);
@@ -193,7 +197,7 @@
   border-radius: 1px !important;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  padding-left: 10px;
+  padding-left: 30px;
 }
 .bubblegum-dark .roam-article h1,
 .bubblegum-dark .rm-title-display,
