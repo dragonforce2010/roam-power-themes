@@ -247,7 +247,7 @@
   font-style: italic;
   border-color: rgba(141, 156, 176, 0.2);
   transition: border-color 0.26s ease;
-  background-color: var(--color-brighten-10);
+  background-color: #564a4a73;
 }
 .gambler .rm-block-ref:hover {
   background: none;
@@ -378,12 +378,15 @@
 .gambler .rm-reference-item {
   margin-top: 8px;
   border-radius: 3px;
-  border: 1px solid var(--color-foreground-faded-50);
   margin-right: 8px;
   flex: 1 1 100%;
   word-break: break-word;
-  background-color: #c8cde675;
+  background-color: #353d6552 !important;
   padding: 8px;
+}
+.gambler .rm-autocomplete-result {
+  word-break: break-word;
+  color: #3889b7;
 }
 .gambler .rm-inline-references {
   background-color: var(--color-darken-25);
@@ -391,6 +394,9 @@
 }
 .gambler .rm-zoom-item {
   color: var(--color-foreground-faded-bright) !important;
+}
+.gambler .rm-block__input {
+  min-height: 24px !important;
 }
 .gambler .rm-embed-container {
   background-color: var(--color-brighten-5);
