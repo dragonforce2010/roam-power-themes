@@ -32,8 +32,8 @@
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
-.bear-panic div {
-  font-size: var(--font-size) !important;
+.bear-panic body div {
+  font-size: var(--font-size);
 }
 .bear-panic .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button {
   padding: 8px 20px;
@@ -58,35 +58,16 @@
   background-color: var(--background-color);
   border-right: 1px solid var(--border-color);
 }
-.bear-panic
-  .roam-body
-  .roam-app
-  .roam-sidebar-container
-  .roam-sidebar-content
-  .starred-pages-wrapper {
+.bear-panic .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper {
   color: var(--primary-color);
 }
 .bear-panic .flex-v-box .starred-pages-wrapper:first-child {
   background-color: var(--sidebar-color);
 }
-.bear-panic
-  .roam-body
-  .roam-app
-  .roam-sidebar-container
-  .roam-sidebar-content
-  .starred-pages-wrapper
-  .starred-pages
-  .page {
+.bear-panic .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page {
   color: var(--primary-color);
 }
-.bear-panic
-  .roam-body
-  .roam-app
-  .roam-sidebar-container
-  .roam-sidebar-content
-  .starred-pages-wrapper
-  .starred-pages
-  .page:hover {
+.bear-panic .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page:hover {
   color: var(--primary-color);
 }
 .bear-panic #right-sidebar {

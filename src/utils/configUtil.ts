@@ -17,7 +17,7 @@ export const genFontSizeSetting = (
   propName: string
 ) => {
   return {
-    id: themeName + '-' + propName,
+    id: propName,
     name,
     description,
     action: {
@@ -58,7 +58,7 @@ export const genColorSetting = (
   placeholder: string,
 ) => {
   return {
-    id: themeName + '-' + propName,
+    id: propName,
     name,
     description,
     action: {
@@ -79,7 +79,7 @@ export const genFontWeightSetting = (
   placeholder: string,
 ) => {
   return {
-    id: themeName + '-' + propName,
+    id: propName,
     name,
     description,
     action: {
@@ -105,9 +105,29 @@ export const genFontFamilySetting = (
     description,
     action: {
       type: "select",
-      items: ["Arial, sans-serif", "Georgia, serif", "Times New Roman, serif", "Verdana, sans-serif"],
-      onChange: (evt: ChangeEvent<HTMLInputElement>) => {
-        findStyleRule(themeName, (rule: CSSStyleRule) => rule.style.setProperty(propName, evt.target.value));
+      items: [
+        "Arial, sans-serif",
+        "Georgia, serif",
+        'Josefin Sans, sans-serif',
+        'Noto Sans SC, sans-serif',
+        'Roboto, sans-serif',
+        'Rubik, sans-serif',
+        'ZCOOL XiaoWei, sans-serif',
+        // "Times New Roman, serif",
+        // "Verdana, sans-serif",
+        // "iA Writer Quattro S",
+        // "iA Writer Quattro V",
+        // "iA Writer Mono S",
+        // "Nunito Sans",
+        // "Ibarra Real Nova",
+        // "Inconsolata",
+        // "Lato",
+        // "Roboto Mono",
+        // "WindsorEF",
+      ],
+      onChange: (evt: string) => {
+        console.log('font family on change: ', evt)
+        findStyleRule(themeName, (rule: CSSStyleRule) => rule.style.setProperty(propName, evt));
       },
     },
   }

@@ -2,6 +2,7 @@ import { ExtensionAPI, OnloadArgs } from '../types'
 import { initConfig } from './config'
 import { roamThemeSettingKey } from './constants'
 import { updateTheme, themeConfig } from './theme-manager'
+import './styles/font-face.css'
 
 const themConfigKey = 'themConfig'
 let interval: NodeJS.Timer
