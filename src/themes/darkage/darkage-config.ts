@@ -1,4 +1,6 @@
 import { ChangeEvent } from 'react';
+import { findStyleRule } from '../../utils/configUtil';
+
 const fontSetting = {
   id: "theme-font-size",
   name: "Theme Font Size",
@@ -6,7 +8,7 @@ const fontSetting = {
   action: {
     type: "select",
     items: ["extra small", "small", "medium", "large", "extra large",],
-    onChange: (evt: string) => {
+    onChange: (evt) => {
       let fontSize = '14px'
       switch (evt) {
         case 'extra small':
@@ -27,11 +29,10 @@ const fontSetting = {
         default:
           fontSize = '14px'
       }
-
-      findStyleRule('.bear-panic', (rule: any) => rule.style.setProperty('--font-size', fontSize))
+      findStyleRule('.bear-panic', (rule: CSSStyleRule) => rule.style.setProperty('--font-size', fontSize))
     },
   },
-}
+};
 
 const primaryColorSetting = {
   id: "theme-primary-color",
@@ -40,12 +41,11 @@ const primaryColorSetting = {
   action: {
     type: "input",
     placeholder: '#6f4ebb',
-    onChange: (evt: ChangeEvent<HTMLInputElement>) => {
-      console.log(evt)
-      findStyleRule('.bear-panic', (rule: any) => rule.style.setProperty('--primary-color', evt.target.value))
+    onChange: (evt) => {
+      findStyleRule('.bear-panic', (rule: CSSStyleRule) => rule.style.setProperty('--primary-color', evt.target.value))
     },
   },
-}
+};
 
 const fontFamilySetting = {
   id: "theme-font-family",
@@ -54,11 +54,11 @@ const fontFamilySetting = {
   action: {
     type: "select",
     items: ["Arial, sans-serif", "Georgia, serif", "Times New Roman, serif", "Verdana, sans-serif"],
-    onChange: (evt: string) => {
+    onChange: (evt) => {
       findStyleRule('.bear-panic', (rule: CSSStyleRule) => rule.style.setProperty('--font-family', evt));
     },
   },
-}
+};
 
 const backgroundColorSetting = {
   id: "theme-background-color",
@@ -67,11 +67,11 @@ const backgroundColorSetting = {
   action: {
     type: "input",
     placeholder: '#111c2a',
-    onChange: (evt: ChangeEvent<HTMLInputElement>) => {
+    onChange: (evt) => {
       findStyleRule('.bear-panic', (rule: CSSStyleRule) => rule.style.setProperty('--background-color', evt.target.value));
     },
   },
-}
+};
 
 const borderColorSetting = {
   id: "theme-border-color",
@@ -80,11 +80,11 @@ const borderColorSetting = {
   action: {
     type: "input",
     placeholder: '#090b10',
-    onChange: (evt: ChangeEvent<HTMLInputElement>) => {
+    onChange: (evt) => {
       findStyleRule('.bear-panic', (rule: CSSStyleRule) => rule.style.setProperty('--border-color', evt.target.value));
     },
   },
-}
+};
 
 const textColorSetting = {
   id: "theme-text-color",
@@ -93,11 +93,11 @@ const textColorSetting = {
   action: {
     type: "input",
     placeholder: '#f6f7ed',
-    onChange: (evt: ChangeEvent<HTMLInputElement>) => {
+    onChange: (evt) => {
       findStyleRule('.bear-panic', (rule: CSSStyleRule) => rule.style.setProperty('--text-color', evt.target.value));
     },
   },
-}
+};
 
 const sidebarColorSetting = {
   id: "theme-sidebar-color",
@@ -106,11 +106,11 @@ const sidebarColorSetting = {
   action: {
     type: "input",
     placeholder: '#090b10',
-    onChange: (evt: ChangeEvent<HTMLInputElement>) => {
+    onChange: (evt) => {
       findStyleRule('.bear-panic', (rule: CSSStyleRule) => rule.style.setProperty('--sidebar-color', evt.target.value));
     },
   },
-}
+};
 
 const highlightColorSetting = {
   id: "theme-highlight-color",
@@ -119,11 +119,11 @@ const highlightColorSetting = {
   action: {
     type: "input",
     placeholder: '#6f4ebb',
-    onChange: (evt: ChangeEvent<HTMLInputElement>) => {
+    onChange: (evt) => {
       findStyleRule('.bear-panic', (rule: CSSStyleRule) => rule.style.setProperty('--highlight-color', evt.target.value));
     },
   },
-}
+};
 
 const bracketsColorSetting = {
   id: "theme-brackets-color",
@@ -132,11 +132,11 @@ const bracketsColorSetting = {
   action: {
     type: "input",
     placeholder: '#8e743d',
-    onChange: (evt: ChangeEvent<HTMLInputElement>) => {
+    onChange: (evt) => {
       findStyleRule('.bear-panic', (rule: CSSStyleRule) => rule.style.setProperty('--brackets-color', evt.target.value));
     },
   },
-}
+};
 
 const highlightBlueSetting = {
   id: "theme-highlight-blue",
@@ -145,11 +145,11 @@ const highlightBlueSetting = {
   action: {
     type: "input",
     placeholder: '#1c2e3e',
-    onChange: (evt: ChangeEvent<HTMLInputElement>) => {
+    onChange: (evt) => {
       findStyleRule('.bear-panic', (rule: CSSStyleRule) => rule.style.setProperty('--highlight-blue', evt.target.value));
     },
   },
-}
+};
 
 const referenceBgSetting = {
   id: "theme-reference-bg",
@@ -158,11 +158,11 @@ const referenceBgSetting = {
   action: {
     type: "input",
     placeholder: '#172133',
-    onChange: (evt: ChangeEvent<HTMLInputElement>) => {
+    onChange: (evt) => {
       findStyleRule('.bear-panic', (rule: CSSStyleRule) => rule.style.setProperty('--reference-bg', evt.target.value));
     },
   },
-}
+};
 
 const referenceBorderSetting = {
   id: "theme-reference-border",
@@ -171,11 +171,11 @@ const referenceBorderSetting = {
   action: {
     type: "input",
     placeholder: '#1e3745',
-    onChange: (evt: ChangeEvent<HTMLInputElement>) => {
+    onChange: (evt) => {
       findStyleRule('.bear-panic', (rule: CSSStyleRule) => rule.style.setProperty('--reference-border', evt.target.value));
     },
   },
-}
+};
 
 const linkColorSetting = {
   id: "theme-link-color",
@@ -184,11 +184,11 @@ const linkColorSetting = {
   action: {
     type: "input",
     placeholder: '#53c1dc',
-    onChange: (evt: ChangeEvent<HTMLInputElement>) => {
+    onChange: (evt) => {
       findStyleRule('.bear-panic', (rule: CSSStyleRule) => rule.style.setProperty('--link-color', evt.target.value));
     },
   },
-}
+};
 
 const codeColorSetting = {
   id: "theme-code-color",
@@ -197,11 +197,11 @@ const codeColorSetting = {
   action: {
     type: "input",
     placeholder: '#f6f7ee',
-    onChange: (evt: ChangeEvent<HTMLInputElement>) => {
+    onChange: (evt) => {
       findStyleRule('.bear-panic', (rule: CSSStyleRule) => rule.style.setProperty('--code-color', evt.target.value));
     },
   },
-}
+};
 
 const gutterBgSetting = {
   id: "theme-gutter-bg",
@@ -210,11 +210,11 @@ const gutterBgSetting = {
   action: {
     type: "input",
     placeholder: '#091722',
-    onChange: (evt: ChangeEvent<HTMLInputElement>) => {
+    onChange: (evt) => {
       findStyleRule('.bear-panic', (rule: CSSStyleRule) => rule.style.setProperty('--gutter-bg', evt.target.value));
     },
   },
-}
+};
 
 const lineColorSetting = {
   id: "theme-line-color",
@@ -222,73 +222,40 @@ const lineColorSetting = {
   description: "Select the color of code editor lines",
   action: {
     type: "input",
-    placeholder: '#a0a2b6',
-    onChange: (evt: ChangeEvent<HTMLInputElement>) => {
+    placeholder: '#091722',
+    onChange: (evt) => {
       findStyleRule('.bear-panic', (rule: CSSStyleRule) => rule.style.setProperty('--line-color', evt.target.value));
     },
   },
-}
+};
 
 const activeLineBgSetting = {
   id: "theme-active-line-bg",
   name: "Theme Active Line Background",
-  description: "Select the background color of the active line in code editor",
+  description: "Select the background color of the active code editor line",
   action: {
     type: "input",
-    placeholder: '#0d2030',
-    onChange: (evt: ChangeEvent<HTMLInputElement>) => {
+    placeholder: '#091722',
+    onChange: (evt) => {
       findStyleRule('.bear-panic', (rule: CSSStyleRule) => rule.style.setProperty('--active-line-bg', evt.target.value));
     },
   },
-}
+};
 
 const keywordColorSetting = {
   id: "theme-keyword-color",
   name: "Theme Keyword Color",
-  description: "Select the color of keywords in code editor",
+  description: "Select the color of keywords in your theme",
   action: {
     type: "input",
-    placeholder: '#5393a2',
-    onChange: (evt: ChangeEvent<HTMLInputElement>) => {
+    placeholder: '#f6a425',
+    onChange: (evt) => {
       findStyleRule('.bear-panic', (rule: CSSStyleRule) => rule.style.setProperty('--keyword-color', evt.target.value));
     },
   },
-}
+};
 
-const findStyleRule = (selectorText: string, onFind: Function): any => {
-  [...document.styleSheets].forEach(styleSheet => {
-    const rules = [...styleSheet.cssRules]
-    const index = rules.findIndex(rule => (rule as any).selectorText === selectorText)
-    if (index != -1) {
-      onFind(rules[index])
-    }
-  })
-}
-
-const loadSettings = () => {
-  findStyleRule('.bear-panic', (rule: any) => {
-    rule.style.setProperty('--font-size', window.extensionAPI.settings.get('theme-font-size'));
-    rule.style.setProperty('--primary-color', window.extensionAPI.settings.get('theme-primary-color'));
-    rule.style.setProperty('--font-family', window.extensionAPI.settings.get('theme-font-family'));
-    rule.style.setProperty('--background-color', window.extensionAPI.settings.get('theme-background-color'));
-    rule.style.setProperty('--border-color', window.extensionAPI.settings.get('theme-border-color'));
-    rule.style.setProperty('--text-color', window.extensionAPI.settings.get('theme-text-color'));
-    rule.style.setProperty('--sidebar-color', window.extensionAPI.settings.get('theme-sidebar-color'));
-    rule.style.setProperty('--highlight-color', window.extensionAPI.settings.get('theme-highlight-color'));
-    rule.style.setProperty('--brackets-color', window.extensionAPI.settings.get('theme-brackets-color'));
-    rule.style.setProperty('--highlight-blue', window.extensionAPI.settings.get('theme-highlight-blue'));
-    rule.style.setProperty('--reference-bg', window.extensionAPI.settings.get('theme-reference-bg'));
-    rule.style.setProperty('--reference-border', window.extensionAPI.settings.get('theme-reference-border'));
-    rule.style.setProperty('--link-color', window.extensionAPI.settings.get('theme-link-color'));
-    rule.style.setProperty('--code-color', window.extensionAPI.settings.get('theme-code-color'));
-    rule.style.setProperty('--gutter-bg', window.extensionAPI.settings.get('theme-gutter-bg'));
-    rule.style.setProperty('--line-color', window.extensionAPI.settings.get('theme-line-color'));
-    rule.style.setProperty('--active-line-bg', window.extensionAPI.settings.get('theme-active-line-bg'));
-    rule.style.setProperty('--keyword-color', window.extensionAPI.settings.get('theme-keyword-color'));
-  })
-}
-
-const bearpanicThemeConfig = [
+const bearpanicThemeSettings = [
   fontSetting,
   primaryColorSetting,
   fontFamilySetting,
@@ -309,7 +276,4 @@ const bearpanicThemeConfig = [
   keywordColorSetting,
 ];
 
-export {
-  bearpanicThemeConfig,
-  loadSettings
-}
+export default bearpanicThemeSettings;

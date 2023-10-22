@@ -1,7 +1,9 @@
 import { ExtensionAPI, PanelConfig } from '../types';
 import { THEME_BEAR_GOTHAM, THEME_BEAR_PANIC, THEME_BUBBLEGUM_DARK, THEME_BUBBLEGUM_LIGHT, THEME_CAESAR_LIGHT, THEME_DARKAGE, THEME_DRACULA, THEME_FLOAT, THEME_GAMBLER, THEME_HIPSTER1, THEME_HIPSTER2, THEME_LEYENDARKER, THEME_LILAC_DARK, THEME_LILAC_LIGHT, THEME_MAGAZINE, THEME_MERMAID_DARK, THEME_MERMAID_LIGHT, THEME_NIGHT_OWLISH, THEME_RAILS_ORANGE, THEME_RAILS_PURPLE, THEME_TOKIWA, THEME_ZENITHDECKER, roamThemeSettingKey } from './constants';
 import { initTheme, updateTheme } from './theme-manager';
-import { bearpanicThemeConfig } from './themes/bearpanic/config';
+import { bearpanicThemeSettings, loadBearpanicThemeSettings } from './themes/bearpanic/bearpanic-config';
+import { bubblegumDarkThemeSettings, loadBubblegumDarkThemeSettings } from './themes/bubblegum/bugglegum-dark-config'
+import { bubblegumLightThemeSettings, loadbubblegumLightThemeSettings } from './themes/bubblegum/bugglegum-light-config'
 
 
 let themeDetailSettings: any = []
@@ -41,8 +43,17 @@ const themeSetting: any = {
       updateTheme(selectedTheme);
       switch (selectedTheme) {
         case THEME_BEAR_PANIC:
-          themeDetailSettings = bearpanicThemeConfig
+          themeDetailSettings = bearpanicThemeSettings
+          loadBearpanicThemeSettings()
           break;
+        case THEME_BUBBLEGUM_LIGHT:
+          themeDetailSettings = bubblegumLightThemeSettings
+          loadbubblegumLightThemeSettings()
+          break
+        case THEME_BUBBLEGUM_DARK:
+          themeDetailSettings = bubblegumDarkThemeSettings
+          loadBubblegumDarkThemeSettings()
+          break
         default:
           themeDetailSettings = []
       }
