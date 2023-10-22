@@ -3,6 +3,7 @@
   --header-font: 'WindsorEF', 'Source Sans Pro', 'Inter', sans-serif;
   --body-font: "iA Writer Quattro V'", 'Source Sans Pro', 'Inter', sans-serif;
   --bg-color: #ece9e5;
+  --bg-sidebar-color: #000000;
   --light-bg-color: #fbfbfb;
   --page-color: rgba(255, 255, 255, 0.95);
   --bullet-color: rgba(0, 0, 0, 0.2);
@@ -142,7 +143,7 @@
   transition: all 0.25s ease-out;
   width: 300px !important;
   padding-right: 68px;
-  background: #000000 !important;
+  background: var(--bg-sidebar-color) !important;
 }
 .hipster2 .roam-sidebar-container > .roam-sidebar-content {
   display: block !important;

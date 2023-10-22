@@ -36,25 +36,12 @@ const bubblegumLightThemeSettings = [
   rmLevel3FontWeightSetting,
 ];
 
-
 const loadBubblegumLightThemeSettings = () => {
-  findStyleRule(themeName, (rule: any) => {
-    rule.style.setProperty('--background-colour', window.extensionAPI.settings.get('--background-colour'));
-    rule.style.setProperty('--edges-colour', window.extensionAPI.settings.get('--edges-colour'));
-    rule.style.setProperty('--edges-colour-semi-transparent', window.extensionAPI.settings.get('--edges-colour-semi-transparent'));
-    rule.style.setProperty('--contrast-colour', window.extensionAPI.settings.get('--contrast-colour'));
-    rule.style.setProperty('--title-colour', window.extensionAPI.settings.get('--title-colour'));
-    rule.style.setProperty('--highlight-colour-1', window.extensionAPI.settings.get('--highlight-colour-1'));
-    rule.style.setProperty('--command-palette-active-background', window.extensionAPI.settings.get('--command-palette-active-background'));
-    rule.style.setProperty('--command-palette-shortcut-background', window.extensionAPI.settings.get('--command-palette-shortcut-background'));
-    rule.style.setProperty('--heading-font-size', window.extensionAPI.settings.get('--heading-font-size'));
-    rule.style.setProperty('--level1-font-size', window.extensionAPI.settings.get('--level1-font-size'));
-    rule.style.setProperty('--level2-font-size', window.extensionAPI.settings.get('--level2-font-size'));
-    rule.style.setProperty('--level3-font-size', window.extensionAPI.settings.get('--level3-font-size'));
-    rule.style.setProperty('--rm-level1-font-weight', window.extensionAPI.settings.get('--rm-level1-font-weight'));
-    rule.style.setProperty('--rm-level2-font-weight', window.extensionAPI.settings.get('--rm-level2-font-weight'));
-    rule.style.setProperty('--rm-level3-font-weight', window.extensionAPI.settings.get('--rm-level3-font-weight'));
-  });
+  bubblegumLightThemeSettings.forEach(setting => {
+    findStyleRule(themeName, (rule: any) => {
+      rule.style.setProperty(setting.name, window.extensionAPI.settings.get(setting.name));
+    })
+  })
 };
 
 export {

@@ -22,85 +22,6 @@
   --subtle-border-color: #374153;
   --body-background-color: #343639;
   --reference-item-background: hsl(212, 6%, 25%);
-  /* Start of "Better Roam" theming */
-  /* ----- Start of my Theming -----*/
-  /* ----- Pomo styling -----*/
-  /* ----- Query styling -----*/
-  /* ------ Reference Items ------ */
-  /* ----- Make left borders and bullets subtle -----*/
-  /* ------ Kanbans ------ */
-  /* ------ Block Refs ------ */
-  /* ------ Checkmarks ------ */
-  /* ------- Zenith Features -------*/
-  /* hide scrollbars */
-  /* hide scrollbars */
-  /* -------------------------- */
-  /*         PAGE CARDS         */
-  /* -------------------------- */
-  /* -------------------------- */
-  /*       RIGHT SIDEBAR        */
-  /* -------------------------- */
-  /* hide icon to close sidebar */
-  /* spacing and scrolling */
-  /* position minus button */
-  /* position filter button */
-  /* position references button */
-  /* position close button */
-  /* fix positioning problems with menu icon */
-  /* -------------------------- */
-  /*        LEFT SIDEBAR        */
-  /* -------------------------- */
-  /* HIDE LOGO*/
-  /* fix height with absolute positioning of email address */
-  /* SOME BLACKMAGIC TO GET SEARCH ICON TO FUNCTION LIKE OTHER BUTTONS */
-  /* style contains `200px` if search bar is NOT selected */
-  /* hovering search bar in this mode == hovering icon itself */
-  /* we must however have the search bar in front of the icon (but invisible) so that it can focus on click */
-  /* very hacky :P */
-  /* fix centering on calendar icon */
-  /* -------------------------- */
-  /*       POPOVER STYLES       */
-  /* -------------------------- */
-  /* what a mess! */
-  /*.roam-body-main .bp3-popover .bp3-popover-content, .roam-body-main .bp3-menu,
-.roam-sidebar-container .bp3-popover .bp3-popover-content, .roam-sidebar-container .bp3-menu {
-    background-color: rgb(var(--color-secondary)) !important;
-}
-.roam-body-main .bp3-popover .bp3-popover-content, .roam-body-main .bp3-popover .bp3-popover-content *,
-.roam-sidebar-container .bp3-popover .bp3-popover-content, .roam-sidebar-container .bp3-popover .bp3-popover-content * {
-    color: var(--color-secondary-contrast) !important;
-}*/
-  /* -------------------------- */
-  /*         SEARCH BAR         */
-  /* -------------------------- */
-  /* if input is empty (no menu) then use all-around border-radius*/
-  /* highlight around search box */
-  /* styling dropdown menu*/
-  /* prevent coloured menu */
-  /* properly position search menu overlay */
-  /* new page text */
-  /* selected search result */
-  /* search results highlighted words */
-  /* -------------------------- */
-  /*          DIAGRAM           */
-  /* -------------------------- */
-  /* SELECTION */
-  /* -------------------------- */
-  /*       SEARCH PAGE          */
-  /* -------------------------- */
-  /* use wrench icon for actions header rather than "AC..." */
-  /* style new page button */
-  /* new search page */
-  /*.rm-pages-col-word-count > div > .sorting-button-group::before {
-    content: "WORDS";
-    font-size: 0.8em;
-}
-.rm-pages-col-word-count + div > div > .sorting-button-group::before {
-    content: "REFS";
-    font-size: 0.8em;
-}*/
-  /* fix width change on border */
-  /* ------------ Custom data tags ------------ */
 }
 .leyendarker .roam-center {
   max-width: 740px;
@@ -242,12 +163,7 @@
 .leyendarker .CodeMirror {
   font-size: 13px !important;
 }
-.leyendarker
-  .roam-body
-  .roam-app
-  .roam-sidebar-container
-  .roam-sidebar-content
-  .log-button:hover,
+.leyendarker .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button:hover,
 .leyendarker
   .roam-body
   .roam-app
@@ -568,10 +484,7 @@
   border-radius: 6px;
   border-top: 0;
 }
-.leyendarker
-  #roam-right-sidebar-content
-  > *
-  > div:last-child:not(:first-child) {
+.leyendarker #roam-right-sidebar-content > * > div:last-child:not(:first-child) {
   border-radius: 0px 0px 6px 6px;
   padding-bottom: 50px !important;
   width: 600px;
@@ -592,20 +505,12 @@
   display: flex;
 }
 
-.leyendarker
-  #roam-right-sidebar-content
-  > div
-  > .flex-h-box
-  > .bp3-button:first-child,
+.leyendarker #roam-right-sidebar-content > div > .flex-h-box > .bp3-button:first-child,
 .leyendarker #roam-right-sidebar-content .flex-h-box > .bp3-button:last-child {
   display: block;
 }
 .leyendarker #roam-right-sidebar-content > div .bp3-icon-plus ~ .bp3-button,
-.leyendarker
-  #roam-right-sidebar-content
-  > div
-  .bp3-icon-plus
-  ~ .bp3-popover-wrapper {
+.leyendarker #roam-right-sidebar-content > div .bp3-icon-plus ~ .bp3-popover-wrapper {
   display: none;
 }
 .leyendarker #roam-right-sidebar-content > div .bp3-icon-minus,
@@ -614,29 +519,17 @@
   top: 20px;
   left: 20px;
 }
-.leyendarker
-  #roam-right-sidebar-content
-  > div
-  .bp3-icon-minus
-  ~ .bp3-popover-wrapper {
+.leyendarker #roam-right-sidebar-content > div .bp3-icon-minus ~ .bp3-popover-wrapper {
   position: absolute;
   top: 20px;
   left: 50px;
 }
-.leyendarker
-  #roam-right-sidebar-content
-  > div
-  .bp3-icon-minus
-  ~ button.bp3-button {
+.leyendarker #roam-right-sidebar-content > div .bp3-icon-minus ~ button.bp3-button {
   position: absolute;
   top: 20px;
   left: 80px;
 }
-.leyendarker
-  #roam-right-sidebar-content
-  > div
-  .bp3-icon-minus
-  ~ .bp3-button.bp3-icon-cross {
+.leyendarker #roam-right-sidebar-content > div .bp3-icon-minus ~ .bp3-button.bp3-icon-cross {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -659,11 +552,7 @@
 .leyendarker #roam-right-sidebar-content > div .bp3-icon-plus ~ h1 {
   margin-top: 10px !important;
 }
-.leyendarker
-  #roam-right-sidebar-content
-  > div
-  .bp3-icon-plus
-  ~ .bp3-button:last-child {
+.leyendarker #roam-right-sidebar-content > div .bp3-icon-plus ~ .bp3-button:last-child {
   margin-top: 20px !important;
 }
 .leyendarker #roam-right-sidebar-content > div .bp3-icon-plus,
@@ -764,10 +653,7 @@
 .leyendarker .roam-sidebar-container:not([style*='top: 0px']) {
   left: -170px !important;
 }
-.leyendarker
-  .roam-sidebar-container[style*='top: 0px']
-  > .roam-sidebar-content
-  > * {
+.leyendarker .roam-sidebar-container[style*='top: 0px'] > .roam-sidebar-content > * {
   opacity: 1 !important;
 }
 .leyendarker .roam-sidebar-container[style*='top: 0px'] + .roam-main {
@@ -893,11 +779,7 @@
 .leyendarker .bp3-popover .bp3-button * {
   color: var(--text-color) !important;
 }
-.leyendarker
-  body
-  > .bp3-portal
-  *[style*='rgba(72, 176, 240, 0.5)']
-  > span::before,
+.leyendarker body > .bp3-portal *[style*='rgba(72, 176, 240, 0.5)'] > span::before,
 .leyendarker body > .bp3-portal *[style*='rgba(72, 176, 240, 0.5)'] * {
   color: var(--color-secondary-contrast) !important;
 }
@@ -934,8 +816,7 @@
   border-radius: 10px;
 }
 .leyendarker #find-or-create-input:focus {
-  box-shadow: 0 0 0 1px var(--color-primary-highlight),
-    0 0 0 3px var(--color-primary-highlight),
+  box-shadow: 0 0 0 1px var(--color-primary-highlight), 0 0 0 3px var(--color-primary-highlight),
     inset 0 1px 1px rgba(16, 22, 26, 0.2);
 }
 .leyendarker .rm-find-or-create-wrapper .bp3-popover {
@@ -960,11 +841,7 @@
 .leyendarker .rm-find-or-create-wrapper .rm-menu-item[style*='background'] {
   background-color: rgba(0, 0, 0, 0.1) !important;
 }
-.leyendarker
-  .rm-find-or-create-wrapper
-  .rm-menu-item
-  .rm-search-list-item
-  span[style*='yellow'],
+.leyendarker .rm-find-or-create-wrapper .rm-menu-item .rm-search-list-item span[style*='yellow'],
 .leyendarker .rm-pages-title-col span[style*='yellow'] {
   background-color: var(--color-primary-highlight) !important;
   color: var(--text-color);
@@ -996,10 +873,7 @@
 .leyendarker .roam-block div[style*='100vh'] > button:hover {
   background-color: var(--color-primary) !important;
 }
-.leyendarker
-  .roam-block
-  div[style*='100vh']
-  div[style*='background-color: white'] {
+.leyendarker .roam-block div[style*='100vh'] div[style*='background-color: white'] {
   background-color: var(--page-color) !important;
   border-color: var(--bg-color) !important;
 }
@@ -1015,13 +889,7 @@
   border: 1px solid transparent;
 }
 .leyendarker .roam-center svg > g > rect[stroke='red'] + foreignObject,
-.leyendarker
-  #roam-right-sidebar-content
-  > div
-  svg
-  > g
-  > rect[stroke='red']
-  + foreignObject {
+.leyendarker #roam-right-sidebar-content > div svg > g > rect[stroke='red'] + foreignObject {
   border-color: var(--color-primary-highlight);
 }
 .leyendarker .roam-center svg > g > rect[style*='stroke: red'] + foreignObject,
@@ -1035,41 +903,21 @@
   border-color: var(--color-primary-highlight);
 }
 .leyendarker .roam-center svg > g > rect[style*='rgba'] + foreignObject,
-.leyendarker
-  #roam-right-sidebar-content
-  > div
-  svg
-  > g
-  > rect[style*='rgba']
-  + foreignObject {
+.leyendarker #roam-right-sidebar-content > div svg > g > rect[style*='rgba'] + foreignObject {
   background-color: white;
 }
 .leyendarker .roam-center svg > g > foreignObject > input:first-child,
-.leyendarker
-  #roam-right-sidebar-content
-  > div
-  svg
-  > g
-  > foreignObject
-  > input:first-child {
+.leyendarker #roam-right-sidebar-content > div svg > g > foreignObject > input:first-child {
   background-color: var(--color-primary-highlight) !important;
   color: var(--color-primary-contrast);
   height: 30px;
 }
 .leyendarker .roam-center svg > line[style*='stroke: red'],
-.leyendarker
-  #roam-right-sidebar-content
-  > div
-  svg
-  > line[style*='stroke: red'] {
+.leyendarker #roam-right-sidebar-content > div svg > line[style*='stroke: red'] {
   stroke: var(--color-secondary) !important;
 }
 .leyendarker .roam-center svg > rect[style*='fill: rgba(55, 141, 240, 0.5)'],
-.leyendarker
-  #roam-right-sidebar-content
-  > div
-  svg
-  > rect[style*='fill: rgba(55, 141, 240, 0.5)'] {
+.leyendarker #roam-right-sidebar-content > div svg > rect[style*='fill: rgba(55, 141, 240, 0.5)'] {
   fill: var(--color-secondary) !important;
   stroke: var(--color-secondary) !important;
 }

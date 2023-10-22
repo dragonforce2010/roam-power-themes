@@ -21,30 +21,6 @@ const lineColorSetting = genColorSetting('Theme Line Color', 'Select the color o
 const activeLineBgSetting = genColorSetting('Theme Active Line Background', 'Select the background color of the active line in code editor', themeName, '--active-line-bg', '#0d2030');
 const keywordColorSetting = genColorSetting('Theme Keyword Color', 'Select the color of keywords in code editor', themeName, '--keyword-color', '#5393a2');
 
-
-const loadBearpanicThemeSettings = () => {
-  findStyleRule(themeName, (rule: any) => {
-    rule.style.setProperty('--font-size', window.extensionAPI.settings.get('theme-font-size'));
-    rule.style.setProperty('--primary-color', window.extensionAPI.settings.get('theme-primary-color'));
-    rule.style.setProperty('--font-family', window.extensionAPI.settings.get('theme-font-family'));
-    rule.style.setProperty('--background-color', window.extensionAPI.settings.get('theme-background-color'));
-    rule.style.setProperty('--border-color', window.extensionAPI.settings.get('theme-border-color'));
-    rule.style.setProperty('--text-color', window.extensionAPI.settings.get('theme-text-color'));
-    rule.style.setProperty('--sidebar-color', window.extensionAPI.settings.get('theme-sidebar-color'));
-    rule.style.setProperty('--highlight-color', window.extensionAPI.settings.get('theme-highlight-color'));
-    rule.style.setProperty('--brackets-color', window.extensionAPI.settings.get('theme-brackets-color'));
-    rule.style.setProperty('--highlight-blue', window.extensionAPI.settings.get('theme-highlight-blue'));
-    rule.style.setProperty('--reference-bg', window.extensionAPI.settings.get('theme-reference-bg'));
-    rule.style.setProperty('--reference-border', window.extensionAPI.settings.get('theme-reference-border'));
-    rule.style.setProperty('--link-color', window.extensionAPI.settings.get('theme-link-color'));
-    rule.style.setProperty('--code-color', window.extensionAPI.settings.get('theme-code-color'));
-    rule.style.setProperty('--gutter-bg', window.extensionAPI.settings.get('theme-gutter-bg'));
-    rule.style.setProperty('--line-color', window.extensionAPI.settings.get('theme-line-color'));
-    rule.style.setProperty('--active-line-bg', window.extensionAPI.settings.get('theme-active-line-bg'));
-    rule.style.setProperty('--keyword-color', window.extensionAPI.settings.get('theme-keyword-color'));
-  })
-}
-
 const bearpanicThemeSettings = [
   fontSetting,
   primaryColorSetting,
@@ -65,6 +41,14 @@ const bearpanicThemeSettings = [
   activeLineBgSetting,
   keywordColorSetting,
 ];
+
+const loadBearpanicThemeSettings = () => {
+  bearpanicThemeSettings.forEach(setting => {
+    findStyleRule(themeName, (rule: any) => {
+      rule.style.setProperty(setting.name, window.extensionAPI.settings.get(setting.name));
+    })
+  })
+}
 
 export {
   bearpanicThemeSettings,

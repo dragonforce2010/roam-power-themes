@@ -100,7 +100,7 @@ export const genFontFamilySetting = (
   propName: string,
 ) => {
   return {
-    id: themeName + '-' + propName,
+    id: propName,
     name,
     description,
     action: {
