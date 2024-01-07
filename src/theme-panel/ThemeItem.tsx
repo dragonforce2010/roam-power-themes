@@ -6,16 +6,18 @@ import { updateTheme } from '../theme-manager/theme-manager';
 interface Theme {
   name?: string
   label?: string
+  cover?: string
 }
 
 const ThemeItem: React.FC<Theme> = ({
   label,
   name,
+  cover
 }) => {
   return <Card
     hoverable
     style={{ width: 240 }}
-    cover={<img alt="example" src={`/theme-cover/${name}.png`} />}
+    cover={<img alt="example" src={cover} />}
     onClick={() => updateTheme(name)}
   >
     <Meta title={label} />

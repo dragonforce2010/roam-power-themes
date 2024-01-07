@@ -2,10 +2,10 @@ import ReactDOM from 'react-dom';
 import React from 'react';
 import { Button, Tooltip } from "@blueprintjs/core";
 import SideBarButton from './sideBarButton';
+import { extension_helper } from '../helper/extension-helper';
 
 
 export const initSidebar = () => {
-  // const menu = document.querySelector('.roam-sidebar-content');
   const target = document.querySelector('.rm-left-sidebar__all-pages');
   const el = document.createElement('div');
   ReactDOM.render(
@@ -14,4 +14,9 @@ export const initSidebar = () => {
   );
 
   target.parentNode.insertBefore(el, target.nextSibling);
+
+  extension_helper.on_uninstall(() => {
+    ReactDOM.unmountComponentAtNode(el);
+    el.parentElement.removeChild(el);
+  });
 };

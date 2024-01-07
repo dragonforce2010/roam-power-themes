@@ -39,7 +39,7 @@ const ThemeSettings = () => {
     >
       <div className='themeItemContainer'>
         {allThemes.map((theme: any) => {
-          return <ThemeItem label={theme.label} name={theme.name}></ThemeItem>
+          return <ThemeItem label={theme.label} name={theme.name} cover={theme.cover}></ThemeItem>
         })}
       </div>
     </Drawer>

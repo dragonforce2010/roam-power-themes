@@ -7,6 +7,8 @@ import { initSidebar } from './sidebar/initSidebar'
 import { initThemeSettingPanel } from './theme-panel/initThemeSettingPanel'
 import UseDrawerState from './hooks/useDrawerState'
 import { initToolBar } from './toolbar/initToolBar'
+import ReactDOM from 'react-dom'
+import { extension_helper } from './helper/extension-helper'
 
 const themConfigKey = 'themConfig'
 let interval: NodeJS.Timer
@@ -55,6 +57,8 @@ function onunload() {
   removeThemeCommands()
   document.body.classList.remove(currentTheme)
   clearInterval(interval)
+
+  extension_helper.uninstall();
 }
 
 export default {
