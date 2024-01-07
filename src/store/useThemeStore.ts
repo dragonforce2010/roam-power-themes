@@ -30,112 +30,112 @@ const useThemeStore = create((set) => ({
     {
       name: THEME_BEAR_GOTHAM,
       label: 'Bear Gotham',
-      previewPic: ''
+      cover: 'https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2F3_HoYe1F0A.png?alt=media&token=94a64645-ff8e-4a0f-98e3-b11771027ea0'
     },
     {
       name: THEME_BEAR_PANIC,
       label: 'Bear Panic',
-      previewPic: ''
+      cover: ''
     },
     {
       name: THEME_BUBBLEGUM_DARK,
       label: 'Bubblegum Dark',
-      previewPic: ''
+      cover: ''
     },
     {
       name: THEME_BUBBLEGUM_LIGHT,
       label: 'Bubblegum Light',
-      previewPic: ''
+      cover: ''
     },
     {
       name: THEME_CAESAR_LIGHT,
       label: 'Caesar Light',
-      previewPic: ''
+      cover: ''
     },
     {
       name: THEME_DARKAGE,
       label: 'Darkage',
-      previewPic: ''
+      cover: ''
     },
     {
       name: THEME_DRACULA,
       label: 'Dracula',
-      previewPic: ''
+      cover: ''
     },
     {
       name: THEME_FLOAT,
       label: 'Float',
-      previewPic: ''
+      cover: ''
     },
     {
       name: THEME_GAMBLER,
       label: 'Gambler',
-      previewPic: ''
+      cover: ''
     },
     {
       name: THEME_HIPSTER1,
       label: 'Hipster 1',
-      previewPic: ''
+      cover: ''
     },
     {
       name: THEME_HIPSTER2,
       label: 'Hipster 2',
-      previewPic: ''
+      cover: ''
     },
     {
       name: THEME_LEYENDARKER,
       label: 'Leyenda Darker',
-      previewPic: ''
+      cover: ''
     },
     {
       name: THEME_LILAC_DARK,
       label: 'Lilac Dark',
-      previewPic: ''
+      cover: ''
     },
     {
       name: THEME_LILAC_LIGHT,
       label: 'Lilac Light',
-      previewPic: ''
+      cover: ''
     },
     {
       name: THEME_MAGAZINE,
       label: 'Magazine',
-      previewPic: ''
+      cover: ''
     },
     {
       name: THEME_MERMAID_DARK,
       label: 'Mermaid Dark',
-      previewPic: ''
+      cover: ''
     },
     {
       name: THEME_MERMAID_LIGHT,
       label: 'Mermaid Light',
-      previewPic: ''
+      cover: ''
     },
     {
       name: THEME_NIGHT_OWLISH,
       label: 'Night Owlish',
-      previewPic: ''
+      cover: ''
     },
     {
       name: THEME_RAILS_ORANGE,
       label: 'Rails Orange',
-      previewPic: ''
+      cover: ''
     },
     {
       name: THEME_RAILS_PURPLE,
       label: 'Rails Purple',
-      previewPic: ''
+      cover: ''
     },
     {
       name: THEME_TOKIWA,
       label: 'Tokiwa',
-      previewPic: ''
+      cover: ''
     },
     {
       name: THEME_ZENITHDECKER,
       label: 'Zenith Decker',
-      previewPic: ''
+      cover: ''
     }
   ],
 

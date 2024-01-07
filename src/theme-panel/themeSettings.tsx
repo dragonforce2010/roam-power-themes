@@ -26,7 +26,10 @@ const ThemeSettings = () => {
       onClick={() => showThemeSettingPanel()}
     >Power Themes</Button>
     <Drawer
-      title={<><ThemeIconRoundedSolid></ThemeIconRoundedSolid>Theme Cener</>}
+      title={<>
+        <ThemeIconRoundedSolid></ThemeIconRoundedSolid>
+        <span className='drawerTitle'>Theme Cener</span>
+      </>}
       size='large'
       placement="right"
       closable={false}
@@ -36,7 +39,7 @@ const ThemeSettings = () => {
     >
       <div className='themeItemContainer'>
         {allThemes.map((theme: any) => {
-          return <ThemeItem label={theme.label}></ThemeItem>
+          return <ThemeItem label={theme.label} name={theme.name}></ThemeItem>
         })}
       </div>
     </Drawer>
