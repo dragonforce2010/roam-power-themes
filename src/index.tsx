@@ -1,8 +1,12 @@
 import { ExtensionAPI, OnloadArgs } from '../types'
-import { initConfig } from './config'
-import { roamThemeSettingKey } from './constants'
-import { updateTheme, themeConfig } from './theme-manager'
+import { initConfig } from './config/config'
+import { roamThemeSettingKey } from './common/constants'
+import { updateTheme, themeConfig } from './theme-manager/theme-manager'
 import './styles/font-face.css'
+import { initSidebar } from './sidebar/initSidebar'
+import { initThemeSettingPanel } from './theme-panel/initThemeSettingPanel'
+import UseDrawerState from './hooks/useDrawerState'
+import { initToolBar } from './toolbar/initToolBar'
 
 const themConfigKey = 'themConfig'
 let interval: NodeJS.Timer
@@ -42,6 +46,9 @@ function onload({ extensionAPI }: OnloadArgs) {
   window.extensionAPI = extensionAPI
   initConfig()
   registeThemeCommands()
+  initSidebar()
+  initToolBar()
+  initThemeSettingPanel()
 }
 
 function onunload() {

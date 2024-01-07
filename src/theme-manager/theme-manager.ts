@@ -1,26 +1,26 @@
-import './themes/bearpanic/bearpanic.css'
-import './themes/bubblegum/bubblegum-dark.css'
-import './themes/bubblegum/bubblegum-light.css'
-import './themes/caesar/caesar-light.css'
-import './themes/darkage/darkage.css'
-import './themes/dracula/dracula.css'
-import './themes/float/float.css'
-import './themes/gambler/gambler.css'
-import './themes/gotham/gotham.css'
-import './themes/hipster/hipster1.css'
-import './themes/hipster/hipster2.css'
-import './themes/leyendarker/leyendarker.css'
-import './themes/leyendecker/leyendecker.css'
-import './themes/lilac/lilac-dark.css'
-import './themes/lilac/lilac-light.css'
-import './themes/magazine/magazine.css'
-import './themes/mermaid/mermaid-dark.css'
-import './themes/mermaid/mermaid-light.css'
-import './themes/night-owl/night-owl.css'
-import './themes/rails/rails-purple.css'
-import './themes/rails/rails.css'
-import './themes/tokiwa/tokiwa.css'
-import './themes/zenithdecker/zenithdecker.css'
+import '../themes/bearpanic/bearpanic.css'
+import '../themes/bubblegum/bubblegum-dark.css'
+import '../themes/bubblegum/bubblegum-light.css'
+import '../themes/caesar/caesar-light.css'
+import '../themes/darkage/darkage.css'
+import '../themes/dracula/dracula.css'
+import '../themes/float/float.css'
+import '../themes/gambler/gambler.css'
+import '../themes/gotham/gotham.css'
+import '../themes/hipster/hipster1.css'
+import '../themes/hipster/hipster2.css'
+import '../themes/leyendarker/leyendarker.css'
+import '../themes/leyendecker/leyendecker.css'
+import '../themes/lilac/lilac-dark.css'
+import '../themes/lilac/lilac-light.css'
+import '../themes/magazine/magazine.css'
+import '../themes/mermaid/mermaid-dark.css'
+import '../themes/mermaid/mermaid-light.css'
+import '../themes/night-owl/night-owl.css'
+import '../themes/rails/rails-purple.css'
+import '../themes/rails/rails.css'
+import '../themes/tokiwa/tokiwa.css'
+import '../themes/zenithdecker/zenithdecker.css'
 
 import {
   THEME_BEAR_GOTHAM,
@@ -47,7 +47,7 @@ import {
   THEME_TOKIWA,
   THEME_ZENITHDECKER,
   roamThemeSettingKey
-} from './constants'
+} from '../common/constants'
 
 
 let currentTheme = ""
