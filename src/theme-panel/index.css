@@ -4,9 +4,35 @@
 }
 
 .ant-card {
-  padding: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
 .drawerTitle {
-  margin-left: 5px
+  margin-left: 5px;
+}
+
+.ant-drawer-body {
+  padding: 20px !important;
+}
+
+.themeCard:hover {
+  transform: scale(1.1);
+  transition: transform 0.2s ease-in-out;
+  z-index: 999;
+}
+
+.selectedTheme {
+  width: 240px;
+  border: solid 3px #4dcc64;
+}
+
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.ant-card-body {
+  padding: 12px !important;
 }

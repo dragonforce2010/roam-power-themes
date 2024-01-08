@@ -1,7 +1,8 @@
-import React from 'react';
-import { Card } from 'antd'
+import React, { useState } from 'react';
+import { Button, Card } from 'antd'
 import Meta from 'antd/es/card/Meta';
-import { updateTheme } from '../theme-manager/theme-manager';
+import { getCurrentTheme, updateTheme } from '../theme-manager/theme-manager';
+import useThemeStore from '../store/useThemeStore';
 
 interface Theme {
   name?: string
@@ -14,13 +15,38 @@ const ThemeItem: React.FC<Theme> = ({
   name,
   cover
 }) => {
+  const [prevTheme, setPrevTheme] = useState<string>()
+  const hideThemeSettingPanel = useThemeStore((state: any) => state.hideThemeSettingPanel)
+  const [isSelectTheme, setIsSelectTheme] = useState<boolean>(false)
+
   return <Card
+    className={`themeCard ${isSelectTheme ? 'selectedTheme' : ''}`}
     hoverable
     style={{ width: 240 }}
     cover={<img alt="example" src={cover} />}
-    onClick={() => updateTheme(name)}
+    onClick={() => {
+      // hideThemeSettingPanel()
+      updateTheme(name)
+      setIsSelectTheme(!isSelectTheme)
+    }}
+  // onMouseEnter={() => {
+  //   if (isSelectTheme)
+  //     return
+  //   const currTheme = getCurrentTheme()
+  //   setPrevTheme(currTheme)
+  //   updateTheme(name)
+  // }}
+
+  // onMouseLeave={() => {
+  //   if (isSelectTheme)
+  //     return
+  //   updateTheme(prevTheme)
+  // }}
   >
-    <Meta title={label} />
+    <div className='cardFooter'>
+      <Meta title={label} />
+      <Button type='primary'>设置</Button>
+    </div>
   </Card>
 }
 

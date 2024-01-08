@@ -143,9 +143,13 @@ const useThemeStore = create((set) => ({
     isThemeSettingPanelOpen: true
   })),
 
-  hideThemeSettingPanel: () => set(() => ({
-    isThemeSettingPanelOpen: false
-  }))
+  hideThemeSettingPanel: (callBackFun: any) => {
+    set(() => ({
+      isThemeSettingPanelOpen: false
+    }))
+    if (callBackFun)
+      callBackFun()
+  }
 }))
 
 export default useThemeStore
