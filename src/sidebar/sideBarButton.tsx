@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import UseDrawerState from '../hooks/useDrawerState';
 import useThemeStore from '../store/useThemeStore';
 import { Button } from 'antd';
@@ -9,17 +9,31 @@ import { ThemeIcon2StraightRegular } from '../icons/ThemeIcon2StraightRegular';
 
 
 const SideBarButton = () => {
-  const showThemeSettingPanel = useThemeStore((state: any) => state.showThemeSettingPanel)
+  const showThemeSettingPanel = useThemeStore((state: any) => {
+    return state.showThemeSettingPanel
+  })
+  const isShowSidebarButton = useThemeStore((state: any) => {
+    // @ts-ignore
+    window.showSidebarButton = state.showSidebarButton
+    // @ts-ignore
+    window.hideSidebarButton = state.hideSidebarButton
+    // @ts-ignore
+    window.showToolbarButton = state.showToolbarButton
+    // @ts-ignore
+    window.hideToolbarButton = state.hideToolbarButton
+    return state.isShowSidebarButton
+  })
 
-
-  return <Button
-    type='text'
-    icon={<ThemeIcon1></ThemeIcon1>}
-    className="log-button no-outline"
-    onClick={() => {
-      showThemeSettingPanel()
-      console.log('clicked');
-    }}>Power Themes</Button>
+  return <>
+    {isShowSidebarButton && <Button
+      type='text'
+      icon={<ThemeIcon1></ThemeIcon1>}
+      className="log-button no-outline"
+      onClick={() => {
+        showThemeSettingPanel()
+        console.log('clicked');
+      }}>Power Themes</Button>}
+  </>
 }
 
 export default SideBarButton

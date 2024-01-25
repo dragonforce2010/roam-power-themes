@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, Card } from 'antd'
 import Meta from 'antd/es/card/Meta';
 import { getCurrentTheme, updateTheme } from '../theme-manager/theme-manager';
@@ -16,38 +16,41 @@ const ThemeItem: React.FC<Theme> = ({
   cover
 }) => {
   const [prevTheme, setPrevTheme] = useState<string>()
-  const hideThemeSettingPanel = useThemeStore((state: any) => state.hideThemeSettingPanel)
   const [isSelectTheme, setIsSelectTheme] = useState<boolean>(false)
 
-  return <Card
-    className={`themeCard ${isSelectTheme ? 'selectedTheme' : ''}`}
-    hoverable
-    style={{ width: 240 }}
-    cover={<img alt="example" src={cover} />}
-    onClick={() => {
-      // hideThemeSettingPanel()
-      updateTheme(name)
-      setIsSelectTheme(!isSelectTheme)
-    }}
-  // onMouseEnter={() => {
-  //   if (isSelectTheme)
-  //     return
-  //   const currTheme = getCurrentTheme()
-  //   setPrevTheme(currTheme)
-  //   updateTheme(name)
-  // }}
+  return <>
+    <Card
+      // className={`themeCard ${isSelectTheme ? 'selectedTheme' : ''}`}
+      className={`themeCard`}
+      hoverable
+      style={{ width: 240 }}
+      cover={<img alt="example" src={cover} />}
+      onClick={() => {
+        // hideThemeSettingPanel()
+        updateTheme(name)
+        setIsSelectTheme(!isSelectTheme)
+      }}
+    // onMouseEnter={() => {
+    //   if (isSelectTheme)
+    //     return
+    //   const currTheme = getCurrentTheme()
+    //   setPrevTheme(currTheme)
+    //   updateTheme(name)
+    // }}
 
-  // onMouseLeave={() => {
-  //   if (isSelectTheme)
-  //     return
-  //   updateTheme(prevTheme)
-  // }}
-  >
-    <div className='cardFooter'>
-      <Meta title={label} />
-      <Button type='primary'>设置</Button>
-    </div>
-  </Card>
+    // onMouseLeave={() => {
+    //   if (isSelectTheme)
+    //     return
+    //   updateTheme(prevTheme)
+    // }}
+    >
+      <div className='cardFooter'>
+        <Meta title={label} />
+        {/* <Button type='primary'>设置</Button> */}
+      </div>
+    </Card>
+  </>
+
 }
 
 export default ThemeItem

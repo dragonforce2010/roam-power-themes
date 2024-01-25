@@ -25,7 +25,6 @@ import {
 } from '../common/constants';
 
 const useThemeStore = create((set) => ({
-  isThemeSettingPanelOpen: true,
   allThemes: [
     {
       name: THEME_BEAR_GOTHAM,
@@ -139,6 +138,10 @@ const useThemeStore = create((set) => ({
     }
   ],
 
+  isThemeSettingPanelOpen: true,
+  isShowSidebarButton: true,
+  isShowToolbarButton: true,
+
   showThemeSettingPanel: () => set(() => ({
     isThemeSettingPanelOpen: true
   })),
@@ -149,7 +152,26 @@ const useThemeStore = create((set) => ({
     }))
     if (callBackFun)
       callBackFun()
-  }
+  },
+
+  showSidebarButton: () => set(() => ({
+    isShowSidebarButton: true
+  })),
+
+  hideSidebarButton: () => set(() => ({
+    isShowSidebarButton: false
+  })),
+
+  showToolbarButton: () => set(() => ({
+    isShowToolbarButton: true
+  })),
+
+  hideToolbarButton: () => set(() => ({
+    isShowToolbarButton: false
+  }))
+
+
+
 }))
 
 export default useThemeStore

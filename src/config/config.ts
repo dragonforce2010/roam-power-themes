@@ -122,6 +122,44 @@ const themeSetting: any = {
   }
 };
 
+const sidebarConfigCenterSetting: any = {
+  id: 'sidebar_config_center_setting',
+  name: 'Show config center sidebar button',
+  description: 'Show sidebar button to open the config center',
+  action: {
+    type: 'switch',
+    onChange: (e: any) => {
+      console.log(e.target.checked)
+      if (e.target.checked) {
+        // @ts-ignore
+        window.showSidebarButton()
+      } else {
+        // @ts-ignore
+        window.hideSidebarButton()
+      }
+    }
+  }
+}
+
+const toolbarConfigCenterSetting: any = {
+  id: 'toolbar_config_center_setting',
+  name: 'Show config center toolbar button',
+  description: 'Show toolbar button to open the config center',
+  action: {
+    type: 'switch',
+    onChange: (e: any) => {
+      console.log(e.target.checked)
+      if (e.target.checked) {
+        // @ts-ignore
+        window.showToolbarButton()
+      } else {
+        // @ts-ignore
+        window.hideToolbarButton()
+      }
+    }
+  }
+}
+
 
 // 定义一个panelConfig函数，接收一个onChange参数，返回一个PanelConfig对象
 const panelConfig = (): PanelConfig => {
@@ -130,13 +168,17 @@ const panelConfig = (): PanelConfig => {
     tabTitle: "Roam Power Themes",
     settings: [
       themeSetting,
-      ...themeDetailSettings
+      ...themeDetailSettings,
+      sidebarConfigCenterSetting,
+      toolbarConfigCenterSetting
     ]
   }
 }
 
 const initConfigPanel = () => {
   window.extensionAPI.settings.panel.create(panelConfig());
+  window.extensionAPI.settings.set('sidebar_config_center_setting', true)
+  window.extensionAPI.settings.set('toolbar_config_center_setting', true)
 }
 
 const initConfig = () => {
