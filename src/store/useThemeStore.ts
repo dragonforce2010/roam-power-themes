@@ -138,7 +138,7 @@ const useThemeStore = create((set) => ({
     }
   ],
 
-  isThemeSettingPanelOpen: true,
+  isThemeSettingPanelOpen: false,
   isShowSidebarButton: true,
   isShowToolbarButton: true,
 
