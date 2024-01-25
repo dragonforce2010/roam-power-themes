@@ -17,6 +17,7 @@ const ThemeItem: React.FC<Theme> = ({
 }) => {
   const [prevTheme, setPrevTheme] = useState<string>()
   const [isSelectTheme, setIsSelectTheme] = useState<boolean>(false)
+  const setCurrentTheme = useThemeStore((state: any) => state.setCurrentTheme)
 
   return <>
     <Card
@@ -28,6 +29,8 @@ const ThemeItem: React.FC<Theme> = ({
       onClick={() => {
         // hideThemeSettingPanel()
         updateTheme(name)
+        setCurrentTheme(label)
+        console.log('theme label', label)
         setIsSelectTheme(!isSelectTheme)
       }}
     // onMouseEnter={() => {

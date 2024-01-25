@@ -58,7 +58,7 @@ const useThemeStore = create((set) => ({
     },
     {
       name: THEME_DRACULA,
-      label: 'Dracula',
+      label: 'Dracula Dark',
       cover: 'https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2F_ALiT7BaL6.png?alt=media&token=be0ff15f-0916-4203-96f4-b2154b8c6308'
     },
     {
@@ -68,7 +68,7 @@ const useThemeStore = create((set) => ({
     },
     {
       name: THEME_GAMBLER,
-      label: 'Gambler',
+      label: 'Gambler Dark',
       cover: 'https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FLEDx0a_pAi.png?alt=media&token=ac6b4849-b17e-45f1-a4e8-201f1f1464f6'
     },
     {
@@ -83,7 +83,7 @@ const useThemeStore = create((set) => ({
     },
     {
       name: THEME_LEYENDARKER,
-      label: 'Leyenda Darker',
+      label: 'Leyenda Dark',
       cover: 'https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2F3_HoYe1F0A.png?alt=media&token=94a64645-ff8e-4a0f-98e3-b11771027ea0'
     },
     {
@@ -113,12 +113,12 @@ const useThemeStore = create((set) => ({
     },
     {
       name: THEME_NIGHT_OWLISH,
-      label: 'Night Owlish',
+      label: 'Night Owlish Dark',
       cover: 'https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2Fy4qqFE18er.png?alt=media&token=64b5e072-c91b-4add-b710-454df481f1e2'
     },
     {
       name: THEME_RAILS_ORANGE,
-      label: 'Rails Orange',
+      label: 'Rails Orange Dark',
       cover: 'https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2F0AefF5_goy.png?alt=media&token=3c874467-20f0-4cd6-86ae-6d2a7f9bbab7'
     },
     {
@@ -141,6 +141,7 @@ const useThemeStore = create((set) => ({
   isThemeSettingPanelOpen: false,
   isShowSidebarButton: true,
   isShowToolbarButton: true,
+  currentTheme: '',
 
   showThemeSettingPanel: () => set(() => ({
     isThemeSettingPanelOpen: true
@@ -168,9 +169,11 @@ const useThemeStore = create((set) => ({
 
   hideToolbarButton: () => set(() => ({
     isShowToolbarButton: false
+  })),
+
+  setCurrentTheme: (themeName: string) => set(() => ({
+    currentTheme: themeName
   }))
-
-
 
 }))
 

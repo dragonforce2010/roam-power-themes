@@ -8,14 +8,18 @@ import { ThemeIconRoundedSolid } from '../icons/ThemeIcon2RoundedSolid';
 const ToolBarButton = () => {
   const showThemeSettingPanel = useThemeStore((state: any) => state.showThemeSettingPanel)
   const isShowToolbarButton = useThemeStore((state: any) => state.isShowToolbarButton)
+  const currentTheme = useThemeStore((state: any) => {
+    console.log(`currentTheme.toLowerCase().indexOf('dark')`, state.currentTheme.toLowerCase().indexOf('dark'))
+    return state.currentTheme
+  })
+
   return <>
     {isShowToolbarButton && <Button
       type='text'
-      icon={<ThemeIconRoundedSolid></ThemeIconRoundedSolid>}
+      icon={currentTheme.toLowerCase().indexOf('dark') != -1 ? <ThemeIcon1></ThemeIcon1> : <ThemeIconRoundedSolid></ThemeIconRoundedSolid>}
       className="log-button no-outline"
       onClick={() => {
         showThemeSettingPanel()
-        console.log('clicked');
       }}></Button>}
   </>
 }
