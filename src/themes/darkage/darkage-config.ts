@@ -1,5 +1,5 @@
 import { ChangeEvent } from 'react';
-import { findStyleRule, genColorSetting, genFontFamilySetting, genFontSizeSetting } from '../../utils/configUtil';
+import { findStyleRuleWithCallBack, genColorSetting, genFontFamilySetting, genFontSizeSetting } from '../../utils/configUtil';
 
 const themeName = '.darkage';
 
@@ -105,7 +105,7 @@ const darkageThemeSettings = [
 
 const loadDarkageThemeSettings = () => {
   darkageThemeSettings.forEach(setting => {
-    findStyleRule(themeName, (rule: any) => {
+    findStyleRuleWithCallBack(themeName, (rule: any) => {
       rule.style.setProperty(setting.name, window.extensionAPI.settings.get(setting.name));
     })
   })

@@ -35,4 +35,39 @@
 
 .ant-card-body {
   padding: 12px !important;
+  border: none !important;
+}
+
+.sectionTitle {
+  font-size: 1.4em;
+  margin-top: 40px;
+  font-weight: 900;
+}
+
+.headLinks {
+  width: 100%;
+  margin: 0px;
+  background: white;
+  position: fixed;
+  z-index: 9999;
+  width: 100%;
+  top: 61px;
+  padding-top: 10px;
+}
+
+.themeTag {
+  margin-right: 20px;
+  width: 120px;
+}
+
+.ant-card:not(.ant-card-bordered) {
+  box-shadow: none;
+}
+
+.ant-card .ant-card-cover img {
+  height: 150px !important;
+}
+
+.ant-drawer-mask {
+  background: rgb(0 0 0 / 16%) !important;
 }

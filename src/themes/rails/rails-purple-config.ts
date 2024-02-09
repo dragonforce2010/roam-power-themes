@@ -1,5 +1,5 @@
 import { ChangeEvent } from 'react';
-import { findStyleRule, genColorSetting, genFontFamilySetting, genFontSizeSetting, genFontWeightSetting } from '../../utils/configUtil';
+import { findStyleRuleWithCallBack, genColorSetting, genFontFamilySetting, genFontSizeSetting, genFontWeightSetting } from '../../utils/configUtil';
 
 const themeName = '.rails-purple';
 
@@ -133,7 +133,7 @@ const railsPurpleThemeSettings = [
 
 const loadRailsPurpleThemeSettings = () => {
   railsPurpleThemeSettings.forEach(setting => {
-    findStyleRule(themeName, (rule: any) => {
+    findStyleRuleWithCallBack(themeName, (rule: any) => {
       rule.style.setProperty(setting.name, window.extensionAPI.settings.get(setting.name));
     })
   })

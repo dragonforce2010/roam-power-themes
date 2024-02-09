@@ -1,5 +1,5 @@
 import { ChangeEvent } from 'react';
-import { findStyleRule, genColorSetting } from '../../utils/configUtil';
+import { findStyleRuleWithCallBack, genColorSetting } from '../../utils/configUtil';
 
 const themeName = '.mermaid-light';
 const backgroundColourSetting = genColorSetting('Theme Background Colour', 'Select the background colour of your theme', themeName, '--background-colour', '#eff2f1');
@@ -20,7 +20,7 @@ const mermaidLightThemeSettings = [
 
 const loadMermaidLightThemeSettings = () => {
   mermaidLightThemeSettings.forEach(setting => {
-    findStyleRule(themeName, (rule: any) => {
+    findStyleRuleWithCallBack(themeName, (rule: any) => {
       rule.style.setProperty(setting.name, window.extensionAPI.settings.get(setting.name));
     })
   })

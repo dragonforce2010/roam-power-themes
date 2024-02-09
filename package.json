@@ -13,9 +13,13 @@
     "antd": "^5.12.6",
     "globalthis": "^1.0.3",
     "react": "^18.2.0",
+    "react-color": "^2.19.3",
     "react-dom": "^18.2.0",
     "roamjs-scripts": "0.27.0",
     "tslib": "^2.5.0",
     "zustand": "^4.4.7"
+  },
+  "devDependencies": {
+    "@types/react-color": "^3.0.11"
   }
 }

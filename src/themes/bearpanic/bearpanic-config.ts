@@ -1,5 +1,5 @@
 import { ChangeEvent } from 'react';
-import { findStyleRule, genColorSetting, genFontFamilySetting, genFontSizeSetting } from '../../utils/configUtil';
+import { findStyleRuleWithCallBack, genColorSetting, genFontFamilySetting, genFontSizeSetting } from '../../utils/configUtil';
 
 const themeName = '.bear-panic'
 const fontSetting = genFontSizeSetting('Theme Font Size', 'Select the font size of your theme', themeName, '--font-size')
@@ -44,7 +44,7 @@ const bearpanicThemeSettings = [
 
 const loadBearpanicThemeSettings = () => {
   bearpanicThemeSettings.forEach(setting => {
-    findStyleRule(themeName, (rule: any) => {
+    findStyleRuleWithCallBack(themeName, (rule: any) => {
       rule.style.setProperty(setting.name, window.extensionAPI.settings.get(setting.name));
     })
   })

@@ -1,5 +1,5 @@
 import { ChangeEvent } from 'react';
-import { findStyleRule, genColorSetting } from '../../utils/configUtil';
+import { findStyleRuleWithCallBack, genColorSetting } from '../../utils/configUtil';
 
 const themeName = '.gambler';
 
@@ -59,7 +59,7 @@ const gamblerThemeSettings = [
 
 const loadGamblerThemeSettings = () => {
   gamblerThemeSettings.forEach(setting => {
-    findStyleRule(themeName, (rule: any) => {
+    findStyleRuleWithCallBack(themeName, (rule: any) => {
       rule.style.setProperty(setting.name, window.extensionAPI.settings.get(setting.name));
     });
   });

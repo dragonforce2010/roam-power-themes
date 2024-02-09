@@ -1,4 +1,4 @@
-import { findStyleRule, genColorSetting, genFontFamilySetting, genFontSizeSetting, genFontWeightSetting } from '../../utils/configUtil';
+import { findStyleRuleWithCallBack, genColorSetting, genFontFamilySetting, genFontSizeSetting, genFontWeightSetting } from '../../utils/configUtil';
 import { ChangeEvent } from 'react';
 
 const themeName = '.bubblegum-dark'
@@ -39,7 +39,7 @@ const bubblegumDarkThemeSettings = [
 
 const loadBubblegumDarkThemeSettings = () => {
   bubblegumDarkThemeSettings.forEach(setting => {
-    findStyleRule(themeName, (rule: any) => {
+    findStyleRuleWithCallBack(themeName, (rule: any) => {
       rule.style.setProperty(setting.name, window.extensionAPI.settings.get(setting.name));
     })
   })

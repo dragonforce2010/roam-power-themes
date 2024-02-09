@@ -1,5 +1,5 @@
 import { ChangeEvent } from 'react';
-import { findStyleRule, genColorSetting, genFontFamilySetting, genFontSizeSetting } from '../../utils/configUtil';
+import { findStyleRuleWithCallBack, genColorSetting, genFontFamilySetting, genFontSizeSetting } from '../../utils/configUtil';
 
 const themeName = '.zenithdecker';
 const headerFontSetting = genFontFamilySetting('Theme Header Font', 'Select the header font of your theme', themeName, '--header-font');
@@ -50,7 +50,7 @@ const zenithdeckerThemeSettings = [
 
 const loadZenithdeckerThemeSettings = () => {
   zenithdeckerThemeSettings.forEach(setting => {
-    findStyleRule(themeName, (rule: any) => {
+    findStyleRuleWithCallBack(themeName, (rule: any) => {
       rule.style.setProperty(setting.name, window.extensionAPI.settings.get(setting.name));
     })
   })

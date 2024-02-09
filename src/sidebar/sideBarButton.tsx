@@ -9,8 +9,8 @@ import { ThemeIcon2StraightRegular } from '../icons/ThemeIcon2StraightRegular';
 
 
 const SideBarButton = () => {
-  const showThemeSettingPanel = useThemeStore((state: any) => {
-    return state.showThemeSettingPanel
+  const showThemeListPanel = useThemeStore((state: any) => {
+    return state.showThemeListPanel
   })
   const isShowSidebarButton = useThemeStore((state: any) => {
     // @ts-ignore
@@ -30,7 +30,7 @@ const SideBarButton = () => {
       icon={<ThemeIcon1></ThemeIcon1>}
       className="log-button no-outline"
       onClick={() => {
-        showThemeSettingPanel()
+        showThemeListPanel()
         console.log('clicked');
       }}>Power Themes</Button>}
   </>

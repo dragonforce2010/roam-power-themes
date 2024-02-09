@@ -1,11 +1,12 @@
 import { ChangeEvent } from 'react';
 
-export const findStyleRule = (selectorText: string, onFind: Function): any => {
+export const findStyleRuleWithCallBack = (selectorText: string, onFind: Function): any => {
   [...document.styleSheets].forEach(styleSheet => {
     const rules = [...styleSheet.cssRules]
     const index = rules.findIndex(rule => (rule as any).selectorText === selectorText)
     if (index != -1) {
       onFind(rules[index])
+      console.log('执行', onFind, '参数', rules[index])
     }
   })
 }
@@ -44,7 +45,7 @@ export const genFontSizeSetting = (
           default:
             fontSize = '14px'
         }
-        findStyleRule(themeName, (rule: CSSStyleRule) => rule.style.setProperty(propName, fontSize))
+        findStyleRuleWithCallBack(themeName, (rule: CSSStyleRule) => rule.style.setProperty(propName, fontSize))
       },
     },
   }
@@ -65,7 +66,8 @@ export const genColorSetting = (
       type: "input",
       placeholder: placeholder,
       onChange: (evt: ChangeEvent<HTMLInputElement>) => {
-        findStyleRule(themeName, (rule: CSSStyleRule) => rule.style.setProperty(propName, evt.target.value))
+        console.log(propName, themeName, evt.target.value)
+        findStyleRuleWithCallBack(themeName, (rule: CSSStyleRule) => rule.style.setProperty(propName, evt.target.value))
       },
     },
   }
@@ -86,7 +88,7 @@ export const genFontWeightSetting = (
       type: "input",
       placeholder: placeholder,
       onChange: (evt: ChangeEvent<HTMLInputElement>) => {
-        findStyleRule(themeName, (rule: CSSStyleRule) => rule.style.setProperty(propName, evt.target.value));
+        findStyleRuleWithCallBack(themeName, (rule: CSSStyleRule) => rule.style.setProperty(propName, evt.target.value));
       },
     },
   }
@@ -127,7 +129,7 @@ export const genFontFamilySetting = (
       ],
       onChange: (evt: string) => {
         console.log('font family on change: ', evt)
-        findStyleRule(themeName, (rule: CSSStyleRule) => rule.style.setProperty(propName, evt));
+        findStyleRuleWithCallBack(themeName, (rule: CSSStyleRule) => rule.style.setProperty(propName, evt));
       },
     },
   }

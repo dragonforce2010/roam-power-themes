@@ -1,5 +1,5 @@
 import { ChangeEvent } from 'react';
-import { findStyleRule, genColorSetting, genFontFamilySetting, genFontSizeSetting } from '../../utils/configUtil';
+import { findStyleRuleWithCallBack, genColorSetting, genFontFamilySetting, genFontSizeSetting } from '../../utils/configUtil';
 
 const themeName = '.leyendarker';
 const headerFontSetting = genFontFamilySetting('Header Font', 'Select the font for headers in your theme', themeName, '--header-font');
@@ -52,7 +52,7 @@ const leyendarkerThemeSettings = [
 
 const loadLeyendarkerThemeSettings = () => {
   leyendarkerThemeSettings.forEach(setting => {
-    findStyleRule(themeName, (rule: any) => {
+    findStyleRuleWithCallBack(themeName, (rule: any) => {
       rule.style.setProperty(setting.name, window.extensionAPI.settings.get(setting.name));
     });
   });

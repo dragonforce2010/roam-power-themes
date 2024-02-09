@@ -1,4 +1,4 @@
-import { findStyleRule, genColorSetting } from '../../utils/configUtil';
+import { findStyleRuleWithCallBack, genColorSetting } from '../../utils/configUtil';
 
 const themeName = '.dracula';
 
@@ -49,7 +49,7 @@ const draculaThemeSettings = [
 
 const loadDraculaThemeSettings = () => {
   draculaThemeSettings.forEach(setting => {
-    findStyleRule(themeName, (rule: any) => {
+    findStyleRuleWithCallBack(themeName, (rule: any) => {
       rule.style.setProperty(setting.name, window.extensionAPI.settings.get(setting.name));
     })
   })

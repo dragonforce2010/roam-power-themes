@@ -138,21 +138,32 @@ const useThemeStore = create((set) => ({
     }
   ],
 
-  isThemeSettingPanelOpen: false,
+  isThemeListPanelOpen: false,
+  isThemeSettingPannelOpen: false,
   isShowSidebarButton: true,
   isShowToolbarButton: true,
   currentTheme: '',
 
-  showThemeSettingPanel: () => set(() => ({
-    isThemeSettingPanelOpen: true
+  showThemeListPanel: () => set(() => ({
+    isThemeListPanelOpen: true
   })),
 
-  hideThemeSettingPanel: (callBackFun: any) => {
+  showThemeSettingPannel: () => set(() => ({
+    isThemeSettingPannelOpen: true
+  })),
+
+  hideThemeListPanel: (callBackFun: any) => {
     set(() => ({
-      isThemeSettingPanelOpen: false
+      isThemeListPanelOpen: false
     }))
     if (callBackFun)
       callBackFun()
+  },
+
+  hideThemeSettingPannel: () => {
+    set(() => ({
+      isThemeSettingPannelOpen: false
+    }))
   },
 
   showSidebarButton: () => set(() => ({

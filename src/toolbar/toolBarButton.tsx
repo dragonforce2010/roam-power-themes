@@ -6,7 +6,7 @@ import { ThemeIcon1 } from '../icons/ThemeIcon1';
 import { ThemeIconRoundedSolid } from '../icons/ThemeIcon2RoundedSolid';
 
 const ToolBarButton = () => {
-  const showThemeSettingPanel = useThemeStore((state: any) => state.showThemeSettingPanel)
+  const showThemeListPanel = useThemeStore((state: any) => state.showThemeListPanel)
   const isShowToolbarButton = useThemeStore((state: any) => state.isShowToolbarButton)
   const currentTheme = useThemeStore((state: any) => {
     console.log(`currentTheme.toLowerCase().indexOf('dark')`, state.currentTheme.toLowerCase().indexOf('dark'))
@@ -19,7 +19,7 @@ const ToolBarButton = () => {
       icon={currentTheme.toLowerCase().indexOf('dark') != -1 ? <ThemeIcon1></ThemeIcon1> : <ThemeIconRoundedSolid></ThemeIconRoundedSolid>}
       className="log-button no-outline"
       onClick={() => {
-        showThemeSettingPanel()
+        showThemeListPanel()
       }}></Button>}
   </>
 }

@@ -1,5 +1,5 @@
 import { ChangeEvent } from 'react';
-import { findStyleRule, genColorSetting } from '../../utils/configUtil';
+import { findStyleRuleWithCallBack, genColorSetting } from '../../utils/configUtil';
 
 const themeName = '.tokiwa';
 
@@ -83,7 +83,7 @@ const tokiwaThemeSettings = [
 
 const loadTokiwaThemeSettings = () => {
   tokiwaThemeSettings.forEach(setting => {
-    findStyleRule(themeName, (rule: any) => {
+    findStyleRuleWithCallBack(themeName, (rule: any) => {
       rule.style.setProperty(setting.name, window.extensionAPI.settings.get(setting.name));
     })
   })
