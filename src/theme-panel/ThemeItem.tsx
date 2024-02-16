@@ -8,17 +8,20 @@ interface Theme {
   name?: string
   label?: string
   cover?: string
+  config?: []
 }
 
-const ThemeItem: React.FC<Theme> = ({
-  label,
-  name,
-  cover
-}) => {
+const ThemeItem: React.FC<Theme> = (theme) => {
+  const {
+    label,
+    name,
+    cover,
+  } = theme
   const [prevTheme, setPrevTheme] = useState<string>()
   const [isSelectTheme, setIsSelectTheme] = useState<boolean>(false)
   const setCurrentTheme = useThemeStore((state: any) => state.setCurrentTheme)
   const showThemeSettingPannel = useThemeStore((state: any) => state.showThemeSettingPannel)
+  const isThemeSettingPannelOpen = useThemeStore((state: any) => state.isThemeSettingPannelOpen);
 
   return <>
     <Card
@@ -31,9 +34,9 @@ const ThemeItem: React.FC<Theme> = ({
       onClick={() => {
         // hideThemeListPanel()
         updateTheme(name)
-        setCurrentTheme(name)
-        console.log('theme label', label)
-        console.log('theme name', name)
+        // setCurrentTheme(name)
+        setCurrentTheme(theme)
+        console.log('currentTheme', theme)
         setIsSelectTheme(!isSelectTheme)
       }}
     // onMouseEnter={() => {
@@ -56,6 +59,8 @@ const ThemeItem: React.FC<Theme> = ({
           type='primary'
           onClick={() => {
             showThemeSettingPannel()
+            console.log('设置setting pannel to open')
+            console.log('isThemeSettingPannelOpen', isThemeSettingPannelOpen)
           }}
         >设置</Button>
       </div>

@@ -23,6 +23,7 @@ import {
   THEME_TOKIWA,
   THEME_ZENITHDECKER,
 } from '../common/constants';
+import { bearPanic } from '../themes/theme-config';
 
 const useThemeStore = create((set) => ({
   allThemes: [
@@ -33,6 +34,7 @@ const useThemeStore = create((set) => ({
     },
     {
       name: THEME_BEAR_PANIC,
+      config: bearPanic,
       label: 'Bear Panic',
       cover: 'https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2Fwu0huc3JzK.png?alt=media&token=a96e986e-1642-4f2a-ba72-229fe5679075'
     },
@@ -142,7 +144,7 @@ const useThemeStore = create((set) => ({
   isThemeSettingPannelOpen: false,
   isShowSidebarButton: true,
   isShowToolbarButton: true,
-  currentTheme: '',
+  currentTheme: {},
 
   showThemeListPanel: () => set(() => ({
     isThemeListPanelOpen: true
@@ -182,8 +184,8 @@ const useThemeStore = create((set) => ({
     isShowToolbarButton: false
   })),
 
-  setCurrentTheme: (themeName: string) => set(() => ({
-    currentTheme: themeName
+  setCurrentTheme: (theme: any) => set(() => ({
+    currentTheme: theme
   }))
 
 }))

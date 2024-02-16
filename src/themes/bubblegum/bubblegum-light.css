@@ -15,25 +15,6 @@
   --rm-level1-font-weight: 800;
   --rm-level2-font-weight: 700;
   --rm-level3-font-weight: 400;
-  /* === Full page styling === */
-  /* Scrollbar */
-  /* All pages styling */
-  /* === Navigation styling === */
-  /* Graphs menu */
-  /* === Topbar styling === */
-  /* === Main content styling === */
-  /* 子标题样式 */
-  /* Bullet */
-  /* === Content blocks === */
-  /* External link */
-  /* Datepicker */
-  /* Query */
-  /* Diagram */
-  /* Kanban board */
-  /* === References section (bottom of page) === */
-  /* === Right sidebar === */
-  /* === Popup menus === */
-  /*Popup menu, Slash dropdown menu, Filter popup menu, Filter menu buttons */
 }
 .bubblegum-light body,
 .bubblegum-light div,
@@ -347,10 +328,7 @@
   background-color: var(--background-colour) !important;
   border: none;
 }
-.bubblegum-light
-  .rm-command-palette__scroll-container
-  .rm-command-palette__menu
-  .rm-menu-item--active {
+.bubblegum-light .rm-command-palette__scroll-container .rm-command-palette__menu .rm-menu-item--active {
   background-color: var(--command-palette-active-background);
 }
 .bubblegum-light .rm-command-palette__shortcut {

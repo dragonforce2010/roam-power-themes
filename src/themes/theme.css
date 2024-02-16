@@ -1,6 +1,6 @@
 /* Variables */
 /* h1 - h6 styles */
-.bear-panic {
+.roam-power-theme {
   --font-size: 16px;
   --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
   --primary-color: #f9b637;
@@ -48,7 +48,7 @@
   --level3-font-color: #11b6d7;
   --level3-font-weight: 400;
 }
-.bear-panic body {
+.roam-power-theme body {
   background-color: var(--background-color);
   font-size: var(--font-size);
   font-family: var(--font-family);
@@ -57,198 +57,198 @@
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
-.bear-panic .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button {
+.roam-power-theme .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button {
   padding: 8px 20px;
   font-weight: 900;
   cursor: pointer;
   font-size: var(--font-size);
   color: var(--primary-color);
 }
-.bear-panic .roam-body .roam-app h1 {
+.roam-power-theme .roam-body .roam-app h1 {
   color: var(--primary-color) !important;
   font-family: var(--font-family);
   font-weight: bold;
 }
-.bear-panic .roam-topbar {
+.roam-power-theme .roam-topbar {
   background-color: var(--background-color);
   border-bottom: 1px solid var(--border-color);
 }
-.bear-panic .roam-body .roam-app .roam-sidebar-container {
+.roam-power-theme .roam-body .roam-app .roam-sidebar-container {
   background-color: var(--background-color);
   border-right: 1px solid var(--border-color);
 }
-.bear-panic .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper {
+.roam-power-theme .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper {
   color: var(--primary-color);
 }
-.bear-panic .flex-v-box .starred-pages-wrapper:first-child {
+.roam-power-theme .flex-v-box .starred-pages-wrapper:first-child {
   background-color: var(--sidebar-color);
 }
-.bear-panic .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page {
+.roam-power-theme .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .starred-pages-wrapper .starred-pages .page {
   color: var(--primary-color);
 }
-.bear-panic #right-sidebar {
+.roam-power-theme #right-sidebar {
   background-color: var(--background-color) !important;
   border-left: 1px solid var(--border-color);
   font-size: 15px;
 }
-.bear-panic #right-sidebar .flex-h-box .bp3-button .bp3-minimal .bp3-small {
+.roam-power-theme #right-sidebar .flex-h-box .bp3-button .bp3-minimal .bp3-small {
   color: var(--primary-color);
 }
-.bear-panic .roam-log-container .roam-log-page {
+.roam-power-theme .roam-log-container .roam-log-page {
   border-top: 1px solid var(--brackets-color);
 }
-.bear-panic .rm-page-ref-tag {
+.roam-power-theme .rm-page-ref-tag {
   color: var(--text-color) !important;
   background: var(--highlight-color);
   padding: 0.1em 0.6em;
   border-radius: 12px;
 }
-.bear-panic .rm-page-ref-brackets {
+.roam-power-theme .rm-page-ref-brackets {
   color: var(--brackets-color);
 }
-.bear-panic .block-border-left {
+.roam-power-theme .block-border-left {
   border-left: 1px solid var(--brackets-color);
 }
-.bear-panic .rm-block-ref {
+.roam-power-theme .rm-block-ref {
   border-bottom: 1px solid var(--primary-color);
 }
-.bear-panic .rm-block-ref:hover {
+.roam-power-theme .rm-block-ref:hover {
   background: var(--highlight-color);
   border: 1px solid var(--background-color);
 }
-.bear-panic .rm-page-ref-tag:hover {
+.roam-power-theme .rm-page-ref-tag:hover {
   text-decoration: underline;
 }
-.bear-panic .block-highlight-blue {
+.roam-power-theme .block-highlight-blue {
   background-color: var(--highlight-color);
 }
-.bear-panic .rm-reference-item {
+.roam-power-theme .rm-reference-item {
   background-color: var(--reference-bg);
   margin-top: 12px;
   border: 1px solid var(--reference-border);
   border-radius: 4px;
 }
-.bear-panic .rm-reference-item .roam-block {
+.roam-power-theme .rm-reference-item .roam-block {
   padding-top: 8px;
   padding-bottom: 8px;
 }
-.bear-panic .rm-reference-item .controls {
+.roam-power-theme .rm-reference-item .controls {
   padding-top: 10px;
   padding-bottom: 4px;
 }
-.bear-panic .rm-page-ref.rm-page-ref-link-color {
+.roam-power-theme .rm-page-ref.rm-page-ref-link-color {
   color: var(--highlight-color);
 }
-.bear-panic .rm-page-ref:hover {
+.roam-power-theme .rm-page-ref:hover {
   color: var(--highlight-color);
 }
-.bear-panic .rm-page-ref.rm-page-ref-link-color {
+.roam-power-theme .rm-page-ref.rm-page-ref-link-color {
   color: var(--highlight-color);
 }
-.bear-panic .bp3-text-overflow-ellipsis {
+.roam-power-theme .bp3-text-overflow-ellipsis {
   color: var(--primary-color) !important;
 }
-.bear-panic .bp3-elevation-3 {
+.roam-power-theme .bp3-elevation-3 {
   color: var(--background-color) !important;
   border: 1px solid var(--gutter-bg);
 }
-.bear-panic a {
+.roam-power-theme a {
   color: var(--link-color);
 }
-.bear-panic a:focus {
+.roam-power-theme a:focus {
   color: var(--link-color);
 }
-.bear-panic a:hover {
+.roam-power-theme a:hover {
   color: var(--link-color);
 }
-.bear-panic .CodeMirror {
+.roam-power-theme .CodeMirror {
   background: var(--gutter-bg);
   color: var(--line-color);
 }
-.bear-panic .CodeMirror-lines {
+.roam-power-theme .CodeMirror-lines {
   color: var(--line-color);
 }
-.bear-panic .CodeMirror-gutters {
+.roam-power-theme .CodeMirror-gutters {
   background-color: var(--gutter-bg);
   border-right: 1px solid var(--background-color);
 }
-.bear-panic .CodeMirror-activeline-background {
+.roam-power-theme .CodeMirror-activeline-background {
   background: var(--active-line-bg);
 }
-.bear-panic .cm-s-default .cm-keyword {
+.roam-power-theme .cm-s-default .cm-keyword {
   color: var(--keyword-color);
 }
-.bear-panic .cm-s-default .cm-bracket .CodeMirror-matchingbracket {
+.roam-power-theme .cm-s-default .cm-bracket .CodeMirror-matchingbracket {
   text-decoration: var(--keyword-color);
   color: white !important;
 }
-.bear-panic .rm-inline-code-block {
+.roam-power-theme .rm-inline-code-block {
   color: var(--keyword-color);
 }
-.bear-panic .roam-article {
+.roam-power-theme .roam-article {
   color: var(--primary-color);
 }
-.bear-panic .rm-title-display,
-.bear-panic .rm-title-display span {
+.roam-power-theme .rm-title-display,
+.roam-power-theme .rm-title-display span {
   font-weight: var(--rm-level1-font-weight);
   font-size: var(--heading-font-size);
 }
-.bear-panic .bear-panic .roam-article h6 {
+.roam-power-theme .bear-panic .roam-article h6 {
   color: var(--h6-font-color);
   font-weight: var(--h6-font-weight);
   font-size: var(--h6-font-size);
 }
-.bear-panic .bear-panic .roam-article h5 {
+.roam-power-theme .bear-panic .roam-article h5 {
   color: var(--h5-font-color);
   font-weight: var(--h5-font-weight);
   font-size: var(--h5-font-size);
 }
-.bear-panic .bear-panic .roam-article h4 {
+.roam-power-theme .bear-panic .roam-article h4 {
   color: var(--h4-font-color);
   font-weight: var(--h4-font-weight);
   font-size: var(--h4-font-size);
 }
-.bear-panic .bear-panic .roam-article h3 {
+.roam-power-theme .bear-panic .roam-article h3 {
   color: var(--h3-font-color);
   font-weight: var(--h3-font-weight);
   font-size: var(--h3-font-size);
 }
-.bear-panic .bear-panic .roam-article h2 {
+.roam-power-theme .bear-panic .roam-article h2 {
   color: var(--h2-font-color);
   font-weight: var(--h2-font-weight);
   font-size: var(--h2-font-size);
 }
-.bear-panic .bear-panic .roam-article h1 {
+.roam-power-theme .bear-panic .roam-article h1 {
   color: var(--h1-font-color);
   font-weight: var(--h1-font-weight);
   font-size: var(--h1-font-size);
 }
-.bear-panic .rm-level6 {
+.roam-power-theme .rm-level6 {
   font-size: var(--level6-font-size);
   color: var(--level6-font-color);
   font-weight: var(--level6-font-weight);
 }
-.bear-panic .rm-level5 {
+.roam-power-theme .rm-level5 {
   font-size: var(--level5-font-size);
   color: var(--level5-font-color);
   font-weight: var(--level5-font-weight);
 }
-.bear-panic .rm-level4 {
+.roam-power-theme .rm-level4 {
   font-size: var(--level4-font-size);
   color: var(--level4-font-color);
   font-weight: var(--level4-font-weight);
 }
-.bear-panic .rm-level3 {
+.roam-power-theme .rm-level3 {
   font-size: var(--level3-font-size);
   color: var(--level3-font-color);
   font-weight: var(--level3-font-weight);
 }
-.bear-panic .rm-level2 {
+.roam-power-theme .rm-level2 {
   font-size: var(--level2-font-size);
   color: var(--level2-font-color);
   font-weight: var(--level2-font-weight);
 }
-.bear-panic .rm-level1 {
+.roam-power-theme .rm-level1 {
   font-size: var(--level1-font-size);
   color: var(--level1-font-color);
   font-weight: var(--level1-font-weight);

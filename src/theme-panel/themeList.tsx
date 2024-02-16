@@ -57,7 +57,7 @@ const ThemeList = () => {
       <hr></hr>
       <div className='themeItemContainer'>
         {allThemes.filter(filterFunc).map((theme: any) => {
-          return <ThemeItem label={theme.label} name={theme.name} cover={theme.cover}></ThemeItem>
+          return <ThemeItem label={theme.label} name={theme.name} cover={theme.cover} config={theme.config}></ThemeItem>
         })}
       </div>
     </>
@@ -81,10 +81,9 @@ const ThemeList = () => {
       open={isThemeListPanelOpen}
       getContainer={false}
     >
-      {/* <HeadLinks></HeadLinks> */}
       {renderHeader()}
-      {renderThemeBlock(allThemes, 'Light Themes', theme => theme.label.toLowerCase().indexOf('dark') == -1)}
-      {renderThemeBlock(allThemes, 'Dark Themes', theme => theme.label.toLowerCase().indexOf('dark') != -1)}
+      {renderThemeBlock(allThemes, 'Light Themes', theme => theme?.label?.toLowerCase().indexOf('dark') == -1)}
+      {renderThemeBlock(allThemes, 'Dark Themes', theme => theme?.label?.toLowerCase().indexOf('dark') != -1)}
 
     </Drawer>
 

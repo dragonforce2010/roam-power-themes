@@ -1,55 +1,9 @@
 .darkage {
   /* GLOBAL FONT */
   /* Global font (will granulate soon) */
-  --secondary-font: "Courier", monospaced;
-  /* GLOBAL WIDTH FOR BLOCKS */
-  /* DEFAULT 568px;  Increase these two padding values to increase */
-  /* DEFAULT 1032px; the global width of your blocks on the page */
-  /* TEXT COLORS */
-  /* [[Page Link]] */
-  /* Attribute:: */
-  /* https://www.google.com */
-  /* hover color of all links */
-  /* #hashtag #[[hash tags]] */
-  /* general body text */
-  /* __italicized text__ */
-  /* **bolded text** */
-  /* highlighted text color */
-  /* highlighter color */
-  /* main page background */
-  /* sidebar background */
-  /* sidebar text  */
-  /* Page Title (i.e. roam/css) */
-  /* Daily Notes date heading */
-  /* h1, h2, h3 */
-  /* bullet color */
-  /* closed bullet color */
-  /* reference underline color */
+  --secondary-font: 'Courier', monospaced;
   --reference-underline: 0px;
-  /* underline beneath reference. 0px = no underline */
   --reference-border: 0px;
-  /* border around reference number indicator. 0px = no border */
-  /* block reference color */
-  /* Namespace/color (win: ctrl+c ctrl+L) or (mac: cmd+c cmd+L) */
-  /* mentions pill on ALl Pages */
-  /* cursor color */
-  /* ICON COLORS */
-  /* icons color */
-  /* icons hover color */
-  /* filter icon color */
-  /* FONT SIZES */
-  /* DEFAULT 1em. Can change to px, e.g. 12px, or minor increments like 1.01em */
-  /* DEFAULT 36px. page heading */
-  /* DEFAULT 2em. h1 size */
-  /* DEFAULT 1.6em. h2 size */
-  /* DEFAULT 1.2em. h3 size */
-  /* DEFAULT 26px. sidebar page headings */
-  /* DROPDOWN MENU */
-  /* Dropdown menu background color */
-  /* Dropdown menu item highlight */
-  /* Text color in dropdown menus */
-  /* SEARCH BAR */
-  /* KANBAN CARD COLORS */
   --global-font: 'Inter', sans-serif;
   /* Global font (will granulate soon) */
   /* GLOBAL WIDTH FOR BLOCKS */
@@ -58,21 +12,21 @@
   --reduce-padding-left: 1032px;
   /* DEFAULT 1032px; the global width of your blocks on the page */
   /* TEXT COLORS */
-  --page-links: #D5A979;
+  --page-links: #d5a979;
   /* [[Page Link]] */
-  --attributes-color: #CEA2A1;
+  --attributes-color: #cea2a1;
   /* Attribute:: */
-  --external-links: #53A6C8;
+  --external-links: #53a6c8;
   /* https://www.google.com */
-  --links-hover: #EE8443;
+  --links-hover: #ee8443;
   /* hover color of all links */
-  --hashtags: #FFFFFF84;
+  --hashtags: #ffffff84;
   /* #hashtag #[[hash tags]] */
-  --body-text: #FFFFFFB2;
+  --body-text: #ffffffb2;
   /* general body text */
-  --italics-color: #FFFFFFB2;
+  --italics-color: #ffffffb2;
   /* __italicized text__ */
-  --bold-color: #FFFFFFB2;
+  --bold-color: #ffffffb2;
   /* **bolded text** */
   --highlight-text-color: #d8dadb;
   /* highlighted text color */
@@ -80,36 +34,36 @@
   /* highlighter color */
   --background: #26272a;
   /* main page background */
-  --sidebar-background: #1E1E1E;
+  --sidebar-background: #1e1e1e;
   /* sidebar background */
-  --sidebar-text: #FFFFFFB2;
+  --sidebar-text: #ffffffb2;
   /* sidebar text  */
-  --page-heading: #FFFFFFB2;
+  --page-heading: #ffffffb2;
   /* Page Title (i.e. roam/css) */
-  --daily-heading: #FFFFFFB2;
+  --daily-heading: #ffffffb2;
   /* Daily Notes date heading */
-  --headings: #FFFFFFB2;
+  --headings: #ffffffb2;
   /* h1, h2, h3 */
   --bullets: #394b59;
   /* bullet color */
-  --closed-bullets: #FFFFFF7C;
+  --closed-bullets: #ffffff7c;
   /* closed bullet color */
-  --references: #A3B47D;
+  --references: #a3b47d;
   /* reference underline color */
-  --block-reference-text: #A3B47D;
+  --block-reference-text: #a3b47d;
   /* block reference color */
-  --namespaces: #1CD247;
+  --namespaces: #1cd247;
   /* Namespace/color (win: ctrl+c ctrl+L) or (mac: cmd+c cmd+L) */
-  --all-pages-mentions: #F79A18;
+  --all-pages-mentions: #f79a18;
   /* mentions pill on ALl Pages */
-  --cursor: #FFFFFF;
+  --cursor: #ffffff;
   /* cursor color */
   /* ICON COLORS */
   --icons: #13744c;
   /* icons color */
   --icons-hover: #a06427;
   /* icons hover color */
-  --filter-icon: #FF0000;
+  --filter-icon: #ff0000;
   /* filter icon color */
   /* FONT SIZES */
   --main-font-size: 1em;
@@ -129,152 +83,17 @@
   /* Dropdown menu background color */
   --dropdown-menu-highlight: #3e3d3d;
   /* Dropdown menu item highlight */
-  --dropdown-menu-text: #FFFFFFB2;
+  --dropdown-menu-text: #ffffffb2;
   /* Text color in dropdown menus */
-  --dropdown-newpage: #1AD546;
+  --dropdown-newpage: #1ad546;
   /* SEARCH BAR */
   --search-bar-background: #26272a;
-  --search-bar-text: #FFFFFF;
+  --search-bar-text: #ffffff;
   /* KANBAN CARD COLORS */
   --kanban-main-background: #2b2a2a;
   --kanban-column-background: #2b2a2a;
   --kanban-card-background: #5959591c;
   --kanban-text-hover: #00ee6b;
-  /*////////////////////////////////*/
-  /*                                */
-  /*     Container Sizing Fixes     */
-  /*                                */
-  /*////////////////////////////////*/
-  /*
-.roam-block {  this is making empty blocks wrong height
-    min-height: calc(1em + 8px);
-}
-*/
-  /* Global Font style */
-  /* Table Cell sizing */
-  /* Menu Overlay fix */
-  /* Vertical centering Horizontal rules and headings  */
-  /*/////////////////////////////////////*/
-  /*                                     */
-  /*     General Background Coloring     */
-  /*                                     */
-  /*/////////////////////////////////////*/
-  /* MAIN BACKGROUND COLOR */
-  /* TOPBAR  & SIDEBAR BACKGROUND COLORS */
-  /* BLOCKS BACKGROUND */
-  /*//////////////////////////////*/
-  /*                              */
-  /*     General Text Styling     */
-  /*                              */
-  /*//////////////////////////////*/
-  /* Main Font Size  WIP */
-  /* Heading Sizes */
-  /* sidebar h1 */
-  /* Cursor color */
-  /* Body text color */
-  /* sidebar text color */
-  /* sidebar text hover color */
-  /* Heading/Header Colors, includes Date header on daily notes */
-  /* Page title & Daily date color */
-  /* main link coloring + hover */
-  /* Internal Roam Links [[Roam]] & #Roam & #[[Roam]] */
-  /* Attribute links */
-  /* ToDos color + Z-index Fix */
-  /* remove underlining on links */
-  /* path text color for linked references */
-  /* block reference */
-  /* Namespace text color [[roam/css]] when using CTRL+C CTRL+L || CMD+C CMD+L */
-  /* Highlights */
-  /*///////////////////////////*/
-  /*                           */
-  /*     Reference Section     */
-  /*                           */
-  /*///////////////////////////*/
-  /* Reference Background Color + Spacing Fixes */
-  /* Reference Section Divider */
-  /*///////////////////*/
-  /*                   */
-  /*     Search Box    */
-  /*                   */
-  /*///////////////////*/
-  /* Search box background color */
-  /* Search box placeholder text color */
-  /* Search box input text color */
-  /* Dropdown page menu hover highlight */
-  /* New page text color */
-  /*///////////////////////////////////*/
-  /*                                   */
-  /*     Code & Code Block styling     */
-  /*                                   */
-  /*///////////////////////////////////*/
-  /* CSS Variables */
-  /*/////////////////////////////////////*/
-  /*                                     */
-  /*     "All Pages" Section Styling     */
-  /*                                     */
-  /*/////////////////////////////////////*/
-  /* Top bar size fixes */
-  /* Row background color */
-  /* Title Header */
-  /* Mentions Pill */
-  /* Checkbox */
-  /*///////////////////////////////*/
-  /*                               */
-  /*     Dropdown Menu Styling     */
-  /*                               */
-  /*///////////////////////////////*/
-  /*////////////////////////*/
-  /*                        */
-  /*     Button Styling     */
-  /*                        */
-  /*////////////////////////*/
-  /* remove shadow border around calendar icon */
-  /*/////////////////////////////*/
-  /*                             */
-  /*     Kanban Card Styling     */
-  /*                             */
-  /*/////////////////////////////*/
-  /*//////////////////////////*/
-  /*                          */
-  /*         Pomodoro         */
-  /*    thx to @Mappletons    */
-  /*                          */
-  /*//////////////////////////*/
-  /* NEW */
-  /* Pro / Con Option tag coloring */
-  /* Word Count */
-  /* Query */
-  /* Alias */
-  /* diagram */
-  /* chart */
-  /* Calculation */
-  /* Calendar */
-  /* Astrolabe */
-  /* ROAM BREADCRUMBS STYLING */
-  /* this broke with recent update, was using it to not cut off icon for # of references on a block
-.bp3-popover-wrapper {
-    min-width: 24px;
-}   */
-  /* GLOBAL WIDTH */
-  /* fix for width when left sidebar open */
-  /* fix for width when left sidebar closed */
-  /* hide sidebar button visibility */
-  /* sidebar dropdown menu */
-  /*/////////////////////////*/
-  /*                         */
-  /*     Sidebar Styling     */
-  /*                         */
-  /*/////////////////////////*/
-  /* David's flex width fix */
-  /*/////////////////////////////////*/
-  /*                                 */
-  /*     {{[[roam/js]]}} Styling     */
-  /*                                 */
-  /*/////////////////////////////////*/
-  /* MISC */
-  /* scroll bars */
-  /*---------------------------------------------------------------------------*/
-  /* Block quote styling */
 }
 .darkage .rm-files-dropzone {
   background: var(--sidebar-background);
@@ -374,7 +193,7 @@
   font-size: var(--h3-font-size) !important;
   color: var(--headings);
 }
-.darkage .level2[style*="margin: 0px"] {
+.darkage .level2[style*='margin: 0px'] {
   font-size: var(--sidebar-h1-size) !important;
 }
 .darkage .roam-body .roam-app {
@@ -482,11 +301,11 @@
   text-decoration: none !important;
   transition: color 0.3s ease;
 }
-.darkage strong[tabindex="-1"] {
+.darkage strong[tabindex='-1'] {
   color: var(--attributes-color) !important;
 }
 .darkage .check-container input:checked ~ .checkmark {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   background-color: #1b9f1c;
 }
 .darkage .check-container {
@@ -505,7 +324,7 @@
   color: var(--bold-color);
 }
 .darkage .roam-block .rm-block-ref,
-.darkage span[style*="color: red"] {
+.darkage span[style*='color: red'] {
   background-color: transparent !important;
   color: var(--block-reference-text) !important;
   transition: color 0.3s ease, border 0.3s ease;
@@ -711,14 +530,14 @@
 .darkage .bp3-menu-item-label {
   color: #ffffffc7 !important;
 }
-.darkage .bp3-elevation-3 .dont-unfocus-block[style*="background-color: rgb(213, 218, 223);"],
-.darkage .bp3-popover-content .rm-menu-item[style*="background-color: rgb(213, 218, 223);"] {
+.darkage .bp3-elevation-3 .dont-unfocus-block[style*='background-color: rgb(213, 218, 223);'],
+.darkage .bp3-popover-content .rm-menu-item[style*='background-color: rgb(213, 218, 223);'] {
   background-color: #0000001c !important;
 }
 .darkage .bp3-text-overflow-ellipsis {
   color: var(--dropdown-menu-text) !important;
 }
-.darkage button[style*="padding: 4px 8px;"] {
+.darkage button[style*='padding: 4px 8px;'] {
   color: black;
 }
 .darkage .bp3-button {
@@ -727,7 +546,7 @@
   /*margin-right: 5px;*/
   border: 0px !important;
 }
-.darkage .bp3-button[class*="bp3-icon-"]::before,
+.darkage .bp3-button[class*='bp3-icon-']::before,
 .darkage .bp3-icon-filter,
 .darkage .bp3-button.bp3-minimal.bp3-small,
 .darkage .bp3-icon.bp3-icon-calendar.filter-icon,
@@ -737,8 +556,8 @@
   background: transparent !important;
   opacity: 1;
 }
-.darkage .bp3-button[class*="bp3-icon-"]:hover,
-.darkage .bp3-button[class*="bp3-icon-"]:hover::before,
+.darkage .bp3-button[class*='bp3-icon-']:hover,
+.darkage .bp3-button[class*='bp3-icon-']:hover::before,
 .darkage .bp3-icon-filter:hover,
 .darkage .bp3-button.bp3-minimal:hover,
 .darkage .bp3-icon.bp3-icon-calendar.filter-icon:hover,
@@ -748,13 +567,13 @@
   color: var(--icons-hover) !important;
   opacity: 1;
 }
-.darkage .bp3-button:not([class*="bp3-intent-"]),
-.darkage .bp3-button:not([class*="bp3-intent-"]):hover {
+.darkage .bp3-button:not([class*='bp3-intent-']),
+.darkage .bp3-button:not([class*='bp3-intent-']):hover {
   box-shadow: none;
 }
 .darkage .block-ref-count-button {
   font-family: 'Inter', sans-serif !important;
-  background: transparent  !important;
+  background: transparent !important;
   border-radius: 100px !important;
   z-index: 1000 !important;
   transition: color 0.3s ease, border 0.3s ease !important;
@@ -779,10 +598,10 @@
   z-index: 9999 !important;
   transition: color 0.3s ease, border 0.3s ease !important;
 }
-.darkage .bp3-icon.bp3-icon-filter[style*="color: rgb(168, 42, 42);"] {
+.darkage .bp3-icon.bp3-icon-filter[style*='color: rgb(168, 42, 42);'] {
   color: var(--filter-icon) !important;
 }
-.darkage div[style*="position: absolute; z-index: 1000; top: 0px; right: 0px; opacity: 0.5;"] {
+.darkage div[style*='position: absolute; z-index: 1000; top: 0px; right: 0px; opacity: 0.5;'] {
   opacity: 1 !important;
 }
 .darkage .bp3-popover-content .bp3-button {
@@ -811,16 +630,16 @@
 .darkage .kanban-card {
   background-color: var(--kanban-card-background);
 }
-.darkage span[data-link-title="DONE"] .rm-page-ref {
+.darkage span[data-link-title='DONE'] .rm-page-ref {
   color: #00ee6b !important;
 }
-.darkage span[data-link-title="TODO"] .rm-page-ref {
+.darkage span[data-link-title='TODO'] .rm-page-ref {
   color: #ee4f00 !important;
 }
-.darkage span[data-link-title="DOING"] .rm-page-ref {
+.darkage span[data-link-title='DOING'] .rm-page-ref {
   color: #ffa900 !important;
 }
-.darkage span[data-link-title="TODO"] .rm-page-ref {
+.darkage span[data-link-title='TODO'] .rm-page-ref {
   color: #ee4f00 !important;
 }
 .darkage .kanban-card:hover {
@@ -832,23 +651,23 @@
   color: white !important;
 }
 .darkage .bp3-button.rm-pomodoro.running {
-  background: #E91E63 !important;
+  background: #e91e63 !important;
   color: white !important;
 }
 .darkage .dont-focus-block.bp3-button.rm-pomodoro {
   font-family: var(--secondary-font);
 }
 .darkage .bp3-button.rm-pomodoro.break {
-  background: #4CAF50 !important;
+  background: #4caf50 !important;
   color: var(--body-text) !important;
 }
-.darkage span[data-tag="pro"],
-.darkage span[data-tag="p"] {
+.darkage span[data-tag='pro'],
+.darkage span[data-tag='p'] {
   color: #00ee6b !important;
 }
-.darkage span[data-link-title="pro"] span,
-.darkage span[data-link-title="p"] span,
-.darkage span[data-link-title="+"] span {
+.darkage span[data-link-title='pro'] span,
+.darkage span[data-link-title='p'] span,
+.darkage span[data-link-title='+'] span {
   background: #00ee6b !important;
   padding: 1px 5px;
   border-radius: 150px;
@@ -858,9 +677,9 @@
   font-family: Courier New;
   transition: background 2s ease;
 }
-.darkage span[data-link-title="con"] span,
-.darkage span[data-link-title="c"] span,
-.darkage span[data-link-title="-"] span {
+.darkage span[data-link-title='con'] span,
+.darkage span[data-link-title='c'] span,
+.darkage span[data-link-title='-'] span {
   background: #ee4f00 !important;
   padding: 1px 5px;
   border-radius: 150px;
@@ -870,37 +689,37 @@
   font-family: Courier New;
   transition: background 1s ease;
 }
-.darkage span[data-link-title="pro"] span:hover,
-.darkage span[data-link-title="p"] span:hover,
-.darkage span[data-link-title="+"] span:hover,
-.darkage span[data-link-title="con"] span:hover,
-.darkage span[data-link-title="c"] span:hover,
-.darkage span[data-link-title="-"] span:hover {
+.darkage span[data-link-title='pro'] span:hover,
+.darkage span[data-link-title='p'] span:hover,
+.darkage span[data-link-title='+'] span:hover,
+.darkage span[data-link-title='con'] span:hover,
+.darkage span[data-link-title='c'] span:hover,
+.darkage span[data-link-title='-'] span:hover {
   color: var(--background) !important;
   background: var(--page-links) !important;
   transition: background 0.3s ease;
 }
-.darkage span[data-tag="con"],
-.darkage span[data-tag="c"] {
+.darkage span[data-tag='con'],
+.darkage span[data-tag='c'] {
   color: #ee4f00 !important;
 }
-.darkage span[data-tag="choice"] {
-  color: #EEAA00 !important;
+.darkage span[data-tag='choice'] {
+  color: #eeaa00 !important;
 }
-.darkage select[style*="background-color: white;"] {
+.darkage select[style*='background-color: white;'] {
   background: transparent !important;
 }
 .darkage select option {
   background: rgba(0, 0, 0, 0.7) !important;
   color: white;
 }
-.darkage .bp3-button:not([class*="bp3-intent-"]) {
+.darkage .bp3-button:not([class*='bp3-intent-']) {
   /*background: transparent !important; not sure this is needed? */
   color: var(--body-text) !important;
   font-family: Courier New;
   transition: color 0.3s ease;
 }
-.darkage .bp3-button:not([class*="bp3-intent-"]):hover {
+.darkage .bp3-button:not([class*='bp3-intent-']):hover {
   transition: color 0.3s ease;
   color: var(--icons-hover) !important;
 }
@@ -909,13 +728,13 @@
   color: var(--references) !important;
   font-weight: 600;
 }
-.darkage span[style*="background-color: rgb(235, 241, 245);"] {
+.darkage span[style*='background-color: rgb(235, 241, 245);'] {
   background: var(--sidebar-background) !important;
   color: var(--body-text) !important;
   border: 1px solid var(--body-text);
   transition: color 0.3s ease, border 0.3s ease;
 }
-.darkage span[style*="background-color: rgb(235, 241, 245);"]:hover {
+.darkage span[style*='background-color: rgb(235, 241, 245);']:hover {
   background: var(--sidebar-background) !important;
   color: var(--links-hover) !important;
   border: 1px solid var(--links-hover);
@@ -924,45 +743,45 @@
 .darkage button {
   background: transparent !important;
 }
-.darkage svg[style*="background-color: rgb(86, 112, 134);"] {
+.darkage svg[style*='background-color: rgb(86, 112, 134);'] {
   background: var(--background) !important;
 }
-.darkage div[style*="background-color: white"] {
+.darkage div[style*='background-color: white'] {
   background: var(--background) !important;
 }
 .darkage g rect {
   fill: var(--background) !important;
 }
-.darkage rect[fill*="#fff"] {
+.darkage rect[fill*='#fff'] {
   fill: var(--links-hover) !important;
 }
-.darkage textarea[autocapitalize*="none"] {
+.darkage textarea[autocapitalize*='none'] {
   color: var(--body-text) !important;
 }
 .darkage foreignObject {
   cursor: -webkit-grab;
   cursor: grab;
 }
-.darkage button[style*="border: 0.5px solid rgb(206, 217, 224);"] {
+.darkage button[style*='border: 0.5px solid rgb(206, 217, 224);'] {
   background: var(--body-text) !important;
 }
-.darkage button[style*="border: none"] {
+.darkage button[style*='border: none'] {
   background: var(--links-hover) !important;
 }
 .darkage .rm-emoji-button {
   background: transparent !important;
   border: 1px solid #c3bca8 !important;
 }
-.darkage div[style*="color: rgb(14, 90, 138);"] {
+.darkage div[style*='color: rgb(14, 90, 138);'] {
   color: var(--page-links) !important;
 }
-.darkage svg[style*="background-color: white;"] {
-  background: transparent  !important;
+.darkage svg[style*='background-color: white;'] {
+  background: transparent !important;
 }
 .darkage g circle {
   fill: var(--links-hover) !important;
 }
-.darkage span[style*="color: rgb(14, 90, 138);"] {
+.darkage span[style*='color: rgb(14, 90, 138);'] {
   font-family: Courier New;
   color: var(--page-links) !important;
   font-weight: 600;
@@ -970,7 +789,7 @@
 .darkage .bp3-popover-arrow-fill {
   fill: transparent !important;
 }
-.darkage .bp3-popover[style*="transform-origin: left 15px;"] .bp3-popover-content {
+.darkage .bp3-popover[style*='transform-origin: left 15px;'] .bp3-popover-content {
   color: var(--page-links) !important;
   padding: 0 10px;
 }
@@ -982,7 +801,7 @@
   opacity: 0.4;
 }
 .darkage .loading-astrolabe {
-  content: url("https://i.imgur.com/ucITJk7.gif");
+  content: url('https://i.imgur.com/ucITJk7.gif');
 }
 .darkage .roam-topbar .bp3-popover-wrapper,
 .darkage .rm-find-or-create-wrapper {
@@ -994,7 +813,7 @@
   /* search bar background color */
 }
 .darkage .linkNumber {
-  font-family: "Courier New";
+  font-family: 'Courier New';
   margin-right: 3px;
   color: #ffffff !important;
 }
@@ -1008,11 +827,11 @@
   padding-right: calc((100% - var(--reduce-padding-right)) / 2) !important;
   padding-left: calc((100% - var(--reduce-padding-left)) / 2) !important;
 }
-.darkage div[style*="padding-right: calc((100% - 568px) / 2); padding-left: calc((100% - 1032px) / 2);"] {
+.darkage div[style*='padding-right: calc((100% - 568px) / 2); padding-left: calc((100% - 1032px) / 2);'] {
   padding-right: calc((100% - var(--reduce-padding-right)) / 2) !important;
   padding-left: calc((100% - var(--reduce-padding-left)) / 2) !important;
 }
-.darkage div[style*="padding-right: calc((100% - 800px) / 2); padding-left: calc((100% - 800px) / 2);"] {
+.darkage div[style*='padding-right: calc((100% - 800px) / 2); padding-left: calc((100% - 800px) / 2);'] {
   padding-right: calc((100% - calc((var(--reduce-padding-right) + var(--reduce-padding-left)) / 2)) / 2) !important;
   padding-left: calc((100% - calc((var(--reduce-padding-right) + var(--reduce-padding-left)) / 2)) / 2) !important;
 }
@@ -1036,27 +855,27 @@
   resize: horizontal !important;
   overflow: auto !important;
 }
-.darkage div[style="color: rgb(114, 28, 36); background: rgb(248, 215, 218); padding: 10px;"] {
+.darkage div[style='color: rgb(114, 28, 36); background: rgb(248, 215, 218); padding: 10px;'] {
   background: #5874d9 !important;
   color: var(--body-text) !important;
   opacity: 0.8;
   border-radius: 8px;
 }
-.darkage button.bp3-button.dont-focus-block[style="color: rgb(255, 255, 255); background: rgb(220, 53, 69);"],
-.darkage button.bp3-button.dont-focus-block[style="color: rgb(33, 37, 41); background: rgb(255, 193, 7);"] {
+.darkage button.bp3-button.dont-focus-block[style='color: rgb(255, 255, 255); background: rgb(220, 53, 69);'],
+.darkage button.bp3-button.dont-focus-block[style='color: rgb(33, 37, 41); background: rgb(255, 193, 7);'] {
   background: var(--background) !important;
   color: var(--body-text) !important;
 }
-.darkage div[style*="background: rgb(255, 243, 205);"] {
+.darkage div[style*='background: rgb(255, 243, 205);'] {
   background: var(--icons) !important;
   color: var(--body-text) !important;
   opacity: 0.8;
   border-radius: 8px;
 }
-.darkage button.bp3-button.dont-focus-block[style="color: rgb(255, 255, 255); background: rgb(220, 53, 69);"]:hover {
+.darkage button.bp3-button.dont-focus-block[style='color: rgb(255, 255, 255); background: rgb(220, 53, 69);']:hover {
   background: var(--icons) !important;
 }
-.darkage button.bp3-button.dont-focus-block[style="color: rgb(33, 37, 41); background: rgb(255, 193, 7);"]:hover {
+.darkage button.bp3-button.dont-focus-block[style='color: rgb(33, 37, 41); background: rgb(255, 193, 7);']:hover {
   background: var(--icons-hover) !important;
 }
 .darkage .block-border-left {
@@ -1102,13 +921,13 @@
   font-size: 1.1em;
 }
 .darkage .rm-bq::before {
-  content: "❝\A";
+  content: '❝\A';
   white-space: pre;
   font-size: 100%;
   color: var(--references);
 }
 .darkage .rm-bq::after {
-  content: "\A❞";
+  content: '\A❞';
   white-space: pre;
   color: var(--references);
   font-size: 100%;

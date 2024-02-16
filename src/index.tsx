@@ -10,6 +10,7 @@ import { initToolBar } from './toolbar/initToolBar'
 import ReactDOM from 'react-dom'
 import { extension_helper } from './helper/extension-helper'
 import { initThemeSettingPanel } from './theme-panel/initThemeSettingPanel'
+import './themes/theme.css'
 
 const themConfigKey = 'themConfig'
 let interval: NodeJS.Timer

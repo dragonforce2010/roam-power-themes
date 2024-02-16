@@ -1,0 +1,12 @@
+.config {
+  display: flex;
+  align-items: center;
+}
+
+.configItem {
+  margin-right: 10px;
+}
+
+.slider {
+  flex-grow: 1;
+}

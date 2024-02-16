@@ -71,3 +71,7 @@
 .ant-drawer-mask {
   background: rgb(0 0 0 / 16%) !important;
 }
+
+.themeSettingDrawer {
+  width: 45%;
+}
