@@ -75,31 +75,31 @@
   --keyword-color: @keyword-color;
   /* h1 - h6 styles */
   --h1-font-size: 20px;
-  --h1-font-color: @primary-color;
+  --h1-font-color: @h1-font-color;
   --h1-font-weight: 800;
   --h2-font-size: 20px;
-  --h2-font-color: @primary-color;
+  --h2-font-color: @h2-font-color;
   --h2-font-weight: 800;
   --h3-font-size: 20px;
-  --h3-font-color: @primary-color;
+  --h3-font-color: @h3-font-color;
   --h3-font-weight: 800;
   --h4-font-size: 20px;
-  --h4-font-color: @primary-color;
+  --h4-font-color: @h4-font-color;
   --h4-font-weight: 800;
   --h5-font-size: 20px;
-  --h5-font-color: @primary-color;
+  --h5-font-color: @h5-font-color;
   --h5-font-weight: 800;
   --h6-font-size: 20px;
-  --h6-font-color: @primary-color;
+  --h6-font-color: @h6-font-color;
   --h6-font-weight: 800;
   --level1-font-size: 20px;
-  --level1-font-color: #f9b637;
+  --level1-font-color: @level1-font-color;
   --level1-font-weight: 800;
   --level2-font-size: 18px;
-  --level2-font-color: #37f9bf;
+  --level2-font-color: @level2-font-color;
   --level2-font-weight: 600;
   --level3-font-size: 16px;
-  --level3-font-color: #11b6d7;
+  --level3-font-color: @level3-font-color;
   --level3-font-weight: 400;
 
   body {
@@ -265,7 +265,7 @@
   
 
 .roam-article-heading-style(@index) when (@index > 0) {
-  .bear-panic .roam-article h@{index} {
+  .roam-article .rm-heading-level-@{index} {
     color: var(~'--h@{index}-font-color');
     font-weight: var(~'--h@{index}-font-weight');
     font-size: var(~'--h@{index}-font-size');

@@ -1,16 +1,14 @@
-import { ExtensionAPI, OnloadArgs } from '../types'
-import { initConfig } from './config/config'
+import { OnloadArgs } from '../types'
 import { roamThemeSettingKey } from './common/constants'
-import { updateTheme, themeConfig } from './theme-manager/theme-manager'
-import './styles/font-face.css'
-import { initSidebar } from './sidebar/initSidebar'
-import { initThemeListPanel } from './theme-panel/initThemeListPanel'
-import UseDrawerState from './hooks/useDrawerState'
-import { initToolBar } from './toolbar/initToolBar'
-import ReactDOM from 'react-dom'
+import { initConfig } from './config/config'
 import { extension_helper } from './helper/extension-helper'
+import { initSidebar } from './sidebar/initSidebar'
+import './styles/font-face.css'
+import { themeConfig } from './theme-manager/theme-manager'
+import { initThemeListPanel } from './theme-panel/initThemeListPanel'
 import { initThemeSettingPanel } from './theme-panel/initThemeSettingPanel'
 import './themes/theme.css'
+import { initToolBar } from './toolbar/initToolBar'
 
 const themConfigKey = 'themConfig'
 let interval: NodeJS.Timer
@@ -42,7 +40,7 @@ const removeThemeCommands = () => {
 
 const switchRoamTheme = (newTheme: string) => {
   window.extensionAPI.settings.set(roamThemeSettingKey, newTheme).then(() => {
-    updateTheme(newTheme)
+    // updateTheme(newTheme)
   })
 }
 

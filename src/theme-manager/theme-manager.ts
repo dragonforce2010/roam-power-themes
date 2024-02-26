@@ -23,6 +23,7 @@ import '../themes/tokiwa/tokiwa.css'
 import '../themes/zenithdecker/zenithdecker.css'
 
 import {
+  ROAM_POWER_THEME_NAMESPACE,
   THEME_BEAR_GOTHAM,
   THEME_BEAR_PANIC,
   THEME_BUBBLEGUM_DARK,
@@ -48,6 +49,8 @@ import {
   THEME_ZENITHDECKER,
   roamThemeSettingKey
 } from '../common/constants'
+import { ConfigItem, ThemeConfig } from './theme-config';
+import { findStyleRuleWithCallBack } from '../utils/configUtil'
 
 
 let currentTheme = ""
@@ -148,29 +151,64 @@ let themeConfig = [
   },
 ]
 
-const updateTheme = (newTheme: string) => {
-  prevTheme = currentTheme
-  currentTheme = newTheme
-  if (prevTheme) document.body.classList.remove(prevTheme)
-  if (currentTheme) document.body.classList.add(currentTheme)
-}
+// old logic, to deprecate
+// const updateTheme = (newTheme: string) => {
+//   prevTheme = currentTheme
+//   currentTheme = newTheme
+//   if (prevTheme) document.body.classList.remove(prevTheme)
+//   if (currentTheme) document.body.classList.add(currentTheme)
+// }
 
 const getCurrentTheme = () => {
   return window.extensionAPI.settings.get(roamThemeSettingKey) as string
 }
 
 const initTheme = () => {
-  const currentTheme = getCurrentTheme()
-  if (!currentTheme) {
-    window.extensionAPI.settings.set(roamThemeSettingKey, currentTheme)
-  } else {
-    updateTheme(currentTheme)
+  // const currentTheme = getCurrentTheme()
+  // if (!currentTheme) {
+  //   window.extensionAPI.settings.set(roamThemeSettingKey, currentTheme)
+  // } else {
+  //   updateTheme(currentTheme)
+  // }
+  document.body.classList.add('roam-power-theme')
+}
+
+const loadAndApplyThemeStyleProperties = (themeConfig: ThemeConfig) => {
+  for (let item of themeConfig?.configItems) {
+    let styleValue = window.extensionAPI.settings.get([ROAM_POWER_THEME_NAMESPACE, themeConfig.name, item.name].join('-'))
+    findStyleRuleWithCallBack('.' + ROAM_POWER_THEME_NAMESPACE, (rule: CSSStyleRule) => rule.style.setProperty(item.name, styleValue ?? item.value))
+    item.value = styleValue ?? item.value
   }
+  return themeConfig
+}
+
+const combineThemeStyleProperties = (themeConfig: ThemeConfig) => {
+  console.log('TestLog: ~ combineThemeStyleProperties ~ themeConfig before:', themeConfig)
+  if (!themeConfig || !themeConfig.configItems)
+    return themeConfig
+
+  for (let item of themeConfig.configItems) {
+    let styleValue = window.extensionAPI.settings.get([ROAM_POWER_THEME_NAMESPACE, themeConfig.name, item.name].join('-'))
+    if (styleValue) {
+      console.log('TestLog: ~ combineThemeStyleProperties ~ styleValue exists:', styleValue)
+    }
+    item.value = styleValue ?? item.value
+  }
+  console.log('TestLog: ~ combineThemeStyleProperties ~ themeConfig after:', themeConfig)
+  return themeConfig
+}
+
+const updateThemeStyleProperty = (themeConfig: ThemeConfig, item: ConfigItem, value: string) => {
+  findStyleRuleWithCallBack('.' + ROAM_POWER_THEME_NAMESPACE, (rule: CSSStyleRule) => rule.style.setProperty(item.name, value))
+  window.extensionAPI.settings.set([ROAM_POWER_THEME_NAMESPACE, themeConfig.name, item.name].join('-'), value)
 }
 
 export {
   themeConfig,
   initTheme,
   getCurrentTheme,
-  updateTheme,
+  // updateTheme,
+  loadAndApplyThemeStyleProperties,
+  updateThemeStyleProperty,
+  combineThemeStyleProperties
 }

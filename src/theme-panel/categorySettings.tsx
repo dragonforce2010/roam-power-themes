@@ -1,5 +1,5 @@
 import React from 'react'
-import { Category, ConfigItem, ThemeConfig } from '../themes/theme-config'
+import { Category, ConfigItem, ThemeConfig } from '../theme-manager/theme-config'
 import SectionSettings from './sectionSettings'
 
 interface Props {

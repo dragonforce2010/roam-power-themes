@@ -1,5 +1,5 @@
 import React from 'react'
-import { ConfigItem, Section } from '../themes/theme-config';
+import { ConfigItem, Section } from '../theme-manager/theme-config';
 import renderManager from './renders/renderManager';
 
 interface Props {

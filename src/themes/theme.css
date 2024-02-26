@@ -42,10 +42,10 @@
   --level1-font-color: #f9b637;
   --level1-font-weight: 800;
   --level2-font-size: 18px;
-  --level2-font-color: #37f9bf;
+  --level2-font-color: #f9b637;
   --level2-font-weight: 600;
   --level3-font-size: 16px;
-  --level3-font-color: #11b6d7;
+  --level3-font-color: #f9b637;
   --level3-font-weight: 400;
 }
 .roam-power-theme body {
@@ -193,32 +193,32 @@
   font-weight: var(--rm-level1-font-weight);
   font-size: var(--heading-font-size);
 }
-.roam-power-theme .bear-panic .roam-article h6 {
+.roam-power-theme .roam-article .rm-heading-level-6 {
   color: var(--h6-font-color);
   font-weight: var(--h6-font-weight);
   font-size: var(--h6-font-size);
 }
-.roam-power-theme .bear-panic .roam-article h5 {
+.roam-power-theme .roam-article .rm-heading-level-5 {
   color: var(--h5-font-color);
   font-weight: var(--h5-font-weight);
   font-size: var(--h5-font-size);
 }
-.roam-power-theme .bear-panic .roam-article h4 {
+.roam-power-theme .roam-article .rm-heading-level-4 {
   color: var(--h4-font-color);
   font-weight: var(--h4-font-weight);
   font-size: var(--h4-font-size);
 }
-.roam-power-theme .bear-panic .roam-article h3 {
+.roam-power-theme .roam-article .rm-heading-level-3 {
   color: var(--h3-font-color);
   font-weight: var(--h3-font-weight);
   font-size: var(--h3-font-size);
 }
-.roam-power-theme .bear-panic .roam-article h2 {
+.roam-power-theme .roam-article .rm-heading-level-2 {
   color: var(--h2-font-color);
   font-weight: var(--h2-font-weight);
   font-size: var(--h2-font-size);
 }
-.roam-power-theme .bear-panic .roam-article h1 {
+.roam-power-theme .roam-article .rm-heading-level-1 {
   color: var(--h1-font-color);
   font-weight: var(--h1-font-weight);
   font-size: var(--h1-font-size);

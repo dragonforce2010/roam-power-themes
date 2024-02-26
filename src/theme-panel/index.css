@@ -45,7 +45,7 @@
 }
 
 .headLinks {
-  width: 100%;
+  width: 300px !important;
   margin: 0px;
   background: white;
   position: fixed;
@@ -53,6 +53,16 @@
   width: 100%;
   top: 61px;
   padding-top: 10px;
+}
+
+.tabConfigRadioGroup {
+  margin-bottom: 20px;
+}
+
+.ant-tabs .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #1677ff;
+  text-shadow: 0 0 0.25px currentcolor;
+  font-weight: 600;
 }
 
 .themeTag {

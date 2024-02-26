@@ -3,6 +3,7 @@ import { ChangeEvent } from 'react';
 export const findStyleRuleWithCallBack = (selectorText: string, onFind: Function): any => {
   [...document.styleSheets].forEach(styleSheet => {
     const rules = [...styleSheet.cssRules]
+
     const index = rules.findIndex(rule => (rule as any).selectorText === selectorText)
     if (index != -1) {
       onFind(rules[index])

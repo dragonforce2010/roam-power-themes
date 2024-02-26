@@ -1,27 +1,34 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Card } from 'antd'
 import Meta from 'antd/es/card/Meta';
-import { getCurrentTheme, updateTheme } from '../theme-manager/theme-manager';
 import useThemeStore from '../store/useThemeStore';
+import { ConfigItem, ThemeConfig } from '../theme-manager/theme-config';
+import { findStyleRuleWithCallBack } from '../utils/configUtil';
+import { combineThemeStyleProperties, loadAndApplyThemeStyleProperties } from '../theme-manager/theme-manager';
 
-interface Theme {
-  name?: string
-  label?: string
-  cover?: string
-  config?: []
+interface ThemeItemProps {
+  themeConfig: ThemeConfig
 }
 
-const ThemeItem: React.FC<Theme> = (theme) => {
-  const {
-    label,
-    name,
-    cover,
-  } = theme
+const ThemeItem: React.FC<ThemeItemProps> = ({
+  themeConfig
+}) => {
   const [prevTheme, setPrevTheme] = useState<string>()
   const [isSelectTheme, setIsSelectTheme] = useState<boolean>(false)
   const setCurrentTheme = useThemeStore((state: any) => state.setCurrentTheme)
+  const currentTheme = useThemeStore((state: any) => state.currentTheme)
   const showThemeSettingPannel = useThemeStore((state: any) => state.showThemeSettingPannel)
   const isThemeSettingPannelOpen = useThemeStore((state: any) => state.isThemeSettingPannelOpen);
+
+  const loadAndApplyTheme = () => {
+    // setCurrentTheme({})
+    console.log('TestLog: ~ 点击准备apply theme config:', themeConfig)
+    const latestThemeConfig = loadAndApplyThemeStyleProperties(themeConfig)
+    console.log('TestLog: ~ 设置currentTheme:', themeConfig)
+    setCurrentTheme(latestThemeConfig)
+    console.log('currentTheme', latestThemeConfig)
+    setIsSelectTheme(!isSelectTheme)
+  }
 
   return <>
     <Card
@@ -30,15 +37,8 @@ const ThemeItem: React.FC<Theme> = (theme) => {
       hoverable
       bordered={false}
       style={{ width: 240, border: 'none' }}
-      cover={<img alt="example" src={cover} />}
-      onClick={() => {
-        // hideThemeListPanel()
-        updateTheme(name)
-        // setCurrentTheme(name)
-        setCurrentTheme(theme)
-        console.log('currentTheme', theme)
-        setIsSelectTheme(!isSelectTheme)
-      }}
+      cover={<img alt="example" src={themeConfig.coverUrl} />}
+      onClick={loadAndApplyTheme}
     // onMouseEnter={() => {
     //   if (isSelectTheme)
     //     return
@@ -54,13 +54,13 @@ const ThemeItem: React.FC<Theme> = (theme) => {
     // }}
     >
       <div className='cardFooter'>
-        <Meta title={label} />
+        <Meta title={themeConfig.label} />
         <Button
           type='primary'
           onClick={() => {
+            loadAndApplyTheme()
             showThemeSettingPannel()
             console.log('设置setting pannel to open')
-            console.log('isThemeSettingPannelOpen', isThemeSettingPannelOpen)
           }}
         >设置</Button>
       </div>
