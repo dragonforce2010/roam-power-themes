@@ -9,11 +9,13 @@ interface Props {
 
 const CategorySettings: React.FC<Props> = ({ categorySetting, configItems }) => {
   console.log('categorySetting, configItems', categorySetting, configItems)
+
   const renderSections = () => {
-    return categorySetting?.sections.map((section, index) => <SectionSettings
+    const sections = categorySetting?.sections.map((section, index) => <SectionSettings
       section={section}
       configItems={configItems}
     ></SectionSettings>)
+    return sections
   }
 
   return <>

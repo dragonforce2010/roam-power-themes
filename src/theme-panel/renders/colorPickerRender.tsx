@@ -22,20 +22,7 @@ const ColorPickerRender: React.FC<ColorPickerRenderProps> = ({ configItem }) => 
   function handleValueChange(value: Color, hex: string): void {
     configItem.value = hex
     updateThemeStyleProperty(currentTheme, configItem, hex)
-    // setCurrentTheme({
-    //   ...currentTheme,
-    //   configItems: [
-    //     ...currentTheme.configItems.map((ele: ConfigItem) => {
-    //       if (ele.name === configItem.name) {
-    //         return {
-    //           ...ele,
-    //           value: hex
-    //         };
-    //       }
-    //       return ele;
-    //     })
-    //   ]
-    // })
+    setCurrentTheme({ ...currentTheme });
   }
 
   return <div className='config'>

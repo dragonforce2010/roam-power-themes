@@ -8,8 +8,11 @@
   "dependencies": {
     "@ant-design/icons": "^5.2.6",
     "@blueprintjs/core": "^5.7.2",
+    "@codemirror/lang-javascript": "^6.2.2",
+    "@codemirror/lang-json": "^6.0.1",
     "@types/react": "^18.2.47",
     "@types/react-dom": "^18.2.18",
+    "@uiw/react-codemirror": "^4.21.24",
     "antd": "^5.12.6",
     "globalthis": "^1.0.3",
     "react": "^18.2.0",

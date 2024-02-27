@@ -94,7 +94,7 @@ const ThemeList = () => {
         <span className='drawerTitle'>Theme Cener</span>
       </>}
       extra={headerConfigButton()}
-      size='large'
+      width={"50%"}
       placement={drawerPosition}
       closable={false}
       onClose={onClose}
