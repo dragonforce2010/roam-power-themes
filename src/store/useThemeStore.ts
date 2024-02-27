@@ -49,9 +49,17 @@ const useThemeStore = create((set) => ({
     isShowToolbarButton: false
   })),
 
-  setCurrentTheme: (theme: any) => set(() => ({
-    currentTheme: theme
-  })),
+  setCurrentTheme: (theme: any) => set(() => {
+    return {
+      currentTheme: theme
+    }
+  }),
+
+  setAllThemes: (themes: any) => set(() => {
+    return {
+      allThemes: themes
+    }
+  }),
 
   setDrawerPosition: (position: 'top' | 'right' | 'bottom' | 'left') => set(() => ({
     drawerPosition: position

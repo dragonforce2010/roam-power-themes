@@ -53,7 +53,7 @@
   width: 100%;
   top: 61px;
   padding-top: 10px;
-  top: 10px;
+  top: 0px;
 }
 
 .tabConfigRadioGroup {
@@ -90,4 +90,11 @@
 
 .themeSettingDrawer {
   width: 45%;
+}
+
+.basicInfoSettings input {
+  margin: 10px;
+}
+.basicInfoSettings span {
+  margin-right: 10px;
 }

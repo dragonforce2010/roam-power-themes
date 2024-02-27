@@ -9,75 +9,6 @@ const getThemeTemplateWithDefaultConfigValue: () => ThemeConfig = () => {
     commandLabel: 'Roam Theme: xxx',
     "categories": [
       {
-        "name": "fontsize",
-        "label": "Font Size Settings",
-        "sections": [
-          {
-            "name": "headers",
-            "label": "Header Font Sizes",
-            "configItems": [
-              "--page-title-font-size",
-              "--h1-font-size",
-              "--h2-font-size",
-              "--h3-font-size",
-              "--h4-font-size",
-              "--h5-font-size",
-              "--h6-font-size"
-            ]
-          },
-          {
-            "name": "base",
-            "label": "Base Font Size",
-            "configItems": [
-              "--font-size"
-            ]
-          },
-          {
-            "name": "levels",
-            "label": "Content Levels Font Sizes",
-            "configItems": [
-              "--level1-font-size",
-              "--level2-font-size",
-              "--level3-font-size",
-              "--level4-font-size",
-              "--level5-font-size",
-              "--level6-font-size"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "fontweight",
-        "label": "Font Weight Settings",
-        "sections": [
-          {
-            "name": "headers",
-            "label": "Header Font Weights",
-            "configItems": [
-              "--page-title-font-weight",
-              "--h1-font-weight",
-              "--h2-font-weight",
-              "--h3-font-weight",
-              "--h4-font-weight",
-              "--h5-font-weight",
-              "--h6-font-weight"
-            ]
-          },
-          {
-            "name": "levels",
-            "label": "Content Levels Font Weights",
-            "configItems": [
-              "--level1-font-weight",
-              "--level2-font-weight",
-              "--level3-font-weight",
-              "--level4-font-weight",
-              "--level5-font-weight",
-              "--level6-font-weight"
-            ]
-          }
-        ]
-      },
-      {
         "name": "colors",
         "label": "Color Settings",
         "sections": [
@@ -181,7 +112,77 @@ const getThemeTemplateWithDefaultConfigValue: () => ThemeConfig = () => {
           },
 
         ]
-      }
+      },
+      {
+        "name": "fontsize",
+        "label": "Font Size Settings",
+        "sections": [
+          {
+            "name": "headers",
+            "label": "Header Font Sizes",
+            "configItems": [
+              "--page-title-font-size",
+              "--h1-font-size",
+              "--h2-font-size",
+              "--h3-font-size",
+              "--h4-font-size",
+              "--h5-font-size",
+              "--h6-font-size"
+            ]
+          },
+          {
+            "name": "base",
+            "label": "Base Font Size",
+            "configItems": [
+              "--font-size"
+            ]
+          },
+          {
+            "name": "levels",
+            "label": "Content Levels Font Sizes",
+            "configItems": [
+              "--level1-font-size",
+              "--level2-font-size",
+              "--level3-font-size",
+              "--level4-font-size",
+              "--level5-font-size",
+              "--level6-font-size"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "fontweight",
+        "label": "Font Weight Settings",
+        "sections": [
+          {
+            "name": "headers",
+            "label": "Header Font Weights",
+            "configItems": [
+              "--page-title-font-weight",
+              "--h1-font-weight",
+              "--h2-font-weight",
+              "--h3-font-weight",
+              "--h4-font-weight",
+              "--h5-font-weight",
+              "--h6-font-weight"
+            ]
+          },
+          {
+            "name": "levels",
+            "label": "Content Levels Font Weights",
+            "configItems": [
+              "--level1-font-weight",
+              "--level2-font-weight",
+              "--level3-font-weight",
+              "--level4-font-weight",
+              "--level5-font-weight",
+              "--level6-font-weight"
+            ]
+          }
+        ]
+      },
+
     ],
     configItems: [
       {
