@@ -176,7 +176,9 @@ const initTheme = () => {
 const loadAndApplyThemeStyleProperties = (themeConfig: ThemeConfig) => {
   for (let item of themeConfig?.configItems) {
     let styleValue = window.extensionAPI.settings.get([ROAM_POWER_THEME_NAMESPACE, themeConfig.name, item.name].join('-'))
-    findStyleRuleWithCallBack('.' + ROAM_POWER_THEME_NAMESPACE, (rule: CSSStyleRule) => rule.style.setProperty(item.name, styleValue ?? item.value))
+    const propetyValue = styleValue ?? (item.unit && item.value ? (item.value + item.unit) : item.value)
+    console.log('property value', propetyValue)
+    findStyleRuleWithCallBack('.' + ROAM_POWER_THEME_NAMESPACE, (rule: CSSStyleRule) => rule.style.setProperty(item.name, propetyValue))
     item.value = styleValue ?? item.value
     item.value = (item.value || '').toString().replace(item.unit, '');
   }

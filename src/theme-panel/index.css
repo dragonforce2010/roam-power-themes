@@ -53,6 +53,7 @@
   width: 100%;
   top: 61px;
   padding-top: 10px;
+  top: 10px;
 }
 
 .tabConfigRadioGroup {
@@ -72,6 +73,11 @@
 
 .ant-card:not(.ant-card-bordered) {
   box-shadow: none;
+}
+
+.ant-drawer .ant-drawer-header {
+  margin: 10px;
+  padding-bottom: 25px;
 }
 
 .ant-card .ant-card-cover img {

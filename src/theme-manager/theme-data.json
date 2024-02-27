@@ -6,7 +6,7 @@
     "type": "dark",
     "commandLabel": "Roam Theme: Bear Panic",
     "configItems": {
-      "--font-size": "16px",
+      "--font-size": 14,
       "--font-family": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
       "--primary-color": "#f9b637",
       "--background-color": "#111c2a",
@@ -75,7 +75,9 @@
       "--page-title-font-weight": 800,
       "--page-title-font-size": 40,
       "--page-title-font-color": "#f9b637",
-      "--page-title-background-color": "none"
+      "--page-title-background-color": "none",
+      "--left-sidebar-onhover-background": "grey",
+      "--blockquote-background-color": "#f9b637"
     }
   },
   {
@@ -87,7 +89,7 @@
     "configItems": {
       "--background-color": "#11151c",
       "--font-family": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
-      "--font-size": "16px",
+      "--font-size": 14,
       "--primary-color": "#2eb88c",
       "--border-color": "#1c373e",
       "--text-color": "#6aa9b9",
@@ -162,7 +164,9 @@
       "--page-title-font-weight": 800,
       "--page-title-font-size": 40,
       "--page-title-font-color": "#2eb88c",
-      "--page-title-background-color": "none"
+      "--page-title-background-color": "none",
+      "--left-sidebar-onhover-background": "grey",
+      "--blockquote-background-color": "#f9b637"
     }
   },
   {
@@ -222,7 +226,8 @@
       "--page-title-font-weight": 800,
       "--page-title-font-size": 40,
       "--page-title-font-color": "#e573ac",
-      "--page-title-background-color": "none"
+      "--page-title-background-color": "none",
+      "--left-sidebar-onhover-background": "grey"
     }
   },
   {
@@ -232,7 +237,7 @@
     "coverUrl": "https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FxuaFKvayDK.png?alt=media&token=960f88cb-8b3b-4e84-8a11-dd0bbff8e1f0",
     "commandLabel": "Roam Theme: Bubblegum Light",
     "configItems": {
-      "--font-size": "14px",
+      "--font-size": 14,
       "--font-family": "'Lato', sans-serif",
       "--primary-color": "#ac006d",
       "--sidebar-right-border-color": "#dcdcdc",
@@ -301,7 +306,9 @@
       "--page-title-font-weight": 800,
       "--page-title-font-size": 40,
       "--page-title-font-color": "#ac006d",
-      "--page-title-background-color": "none"
+      "--page-title-background-color": "none",
+      "--left-sidebar-onhover-background": "grey",
+      "--blockquote-background-color": "#f9b637"
     }
   },
   {
@@ -311,7 +318,7 @@
     "coverUrl": "https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FrsceGSXYzB.png?alt=media&token=dd630f1d-429d-4517-b4cb-6b0f516d43ae",
     "commandLabel": "Roam Theme: Bubblegum Light",
     "configItems": {
-      "--font-size": "14px",
+      "--font-size": 14,
       "--font-family": "'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
       "--primary-color": "#db3737",
       "--sidebar-right-border-color": "#eee",
@@ -376,7 +383,9 @@
       "--page-title-font-weight": 800,
       "--page-title-font-size": 40,
       "--page-title-font-color": "#db3737",
-      "--page-title-background-color": "none"
+      "--page-title-background-color": "none",
+      "--left-sidebar-onhover-background": "grey",
+      "--blockquote-background-color": "#f9b637"
     }
   },
   {
@@ -386,7 +395,7 @@
     "coverUrl": "https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2Fv1wNnHLf_i.png?alt=media&token=6309f709-1e8a-4ac4-b245-898856447f6f",
     "commandLabel": "Roam Theme: Darkage",
     "configItems": {
-      "--font-size": "1em",
+      "--font-size": 14,
       "--font-family": "'Inter', sans-serif",
       "--primary-color": "#D5A979",
       "--sidebar-right-border-color": "#1E1E1E",
@@ -447,7 +456,9 @@
       "--page-title-font-weight": 800,
       "--page-title-font-size": 40,
       "--page-title-font-color": "#D5A979",
-      "--page-title-background-color": "none"
+      "--page-title-background-color": "none",
+      "--left-sidebar-onhover-background": "grey",
+      "--blockquote-background-color": "#f9b637"
     }
   },
   {
@@ -457,7 +468,7 @@
     "coverUrl": "https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2F_ALiT7BaL6.png?alt=media&token=be0ff15f-0916-4203-96f4-b2154b8c6308",
     "commandLabel": "Roam Theme: Dracula Dark",
     "configItems": {
-      "--font-size": "16px",
+      "--font-size": 14,
       "--font-family": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
       "--primary-color": "#50fa7b",
       "--sidebar-right-border-color": "#f1fa8c",
@@ -526,7 +537,9 @@
       "--page-title-font-weight": 800,
       "--page-title-font-size": 40,
       "--page-title-font-color": "#50fa7b",
-      "--page-title-background-color": "none"
+      "--page-title-background-color": "none",
+      "--left-sidebar-onhover-background": "grey",
+      "--blockquote-background-color": "#f9b637"
     }
   },
   {
@@ -536,7 +549,7 @@
     "coverUrl": "https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2Fqzuqiy-8WV.png?alt=media&token=d011bc66-b603-401a-8627-5357e8bee45c",
     "commandLabel": "Roam Theme: Float",
     "configItems": {
-      "--font-size": "16px",
+      "--font-size": 14,
       "--font-family": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol'",
       "--primary-color": "#a4b9b9",
       "--sidebar-right-border-color": "#292929",
@@ -605,7 +618,9 @@
       "--page-title-font-weight": 800,
       "--page-title-font-size": 40,
       "--page-title-font-color": "#a4b9b9",
-      "--page-title-background-color": "none"
+      "--page-title-background-color": "none",
+      "--left-sidebar-onhover-background": "grey",
+      "--blockquote-background-color": "#f9b637"
     }
   },
   {
@@ -615,7 +630,7 @@
     "coverUrl": "https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FLEDx0a_pAi.png?alt=media&token=ac6b4849-b17e-45f1-a4e8-201f1f1464f6",
     "commandLabel": "Roam Theme: Gambler Dark",
     "configItems": {
-      "--font-size": "16px",
+      "--font-size": 14,
       "--font-family": "'Fira Code', 'Operator Mono', Menlo, Monaco, 'Courier New', monospace",
       "--primary-color": "#f8f8f2",
       "--sidebar-right-border-color": "rgba(255, 255, 255, 0.06)",
@@ -684,86 +699,91 @@
       "--page-title-font-weight": 800,
       "--page-title-font-size": 40,
       "--page-title-font-color": "#f8f8f2",
-      "--page-title-background-color": "none"
+      "--page-title-background-color": "none",
+      "--left-sidebar-onhover-background": "grey",
+      "--blockquote-background-color": "#f9b637"
     }
   },
+
   {
-    "name": "hipster1",
-    "label": "Hipster 1",
+    "name": "float",
+    "label": "Float",
     "type": "light",
-    "coverUrl": "https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2Fxh9JQbObf9.png?alt=media&token=0588bc9b-8317-4374-81bd-f4b55d97032c",
-    "commandLabel": "Roam Theme: Hispter 1",
+    "coverUrl": "https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2Fqzuqiy-8WV.png?alt=media&token=d011bc66-b603-401a-8627-5357e8bee45c",
+    "commandLabel": "Roam Theme: Float",
     "configItems": {
-      "--font-size": "16px",
-      "--font-family": "'Fira Code', 'Operator Mono', Menlo, Monaco, 'Courier New', monospace",
-      "--primary-color": "#f8f8f2",
-      "--sidebar-right-border-color": "rgba(255, 255, 255, 0.06)",
-      "--page-ref-tag-color": "#ffb86c",
-      "--sidebar-color": "#212431",
-      "--highlight-color": "rgba(251, 234, 0, 0.25)",
-      "--brackets-color": "#50fa7b",
-      "--reference-bg": "#353d6552",
-      "--reference-border": "rgba(141, 156, 176, 0.2)",
-      "--active-line-bg": "rgba(255, 255, 255, 0.1)",
-      "--codeblock-color": "#8be9fd",
-      "--page-ref-link-color": "#50fa7b",
-      "--right-sidebar-background": "#212431",
-      "--right-sidebar-outline-background": "rgba(255, 255, 255, 0.06)",
-      "--right-sidebar-color": "#bd93f9",
-      "--roam-body-background": "#282a36",
-      "--roam-article-background": "#44475a",
-      "--h1-font-size": "1.8em",
-      "--h1-font-color": "#ff79c6",
-      "--h1-font-weight": 900,
-      "--h1-background-color": "#282a36",
-      "--level1-font-size": "1.8em",
-      "--level1-font-color": "#ff79c6",
-      "--level1-font-weight": 900,
-      "--level1-background-color": "#282a36",
-      "--h2-font-size": "1.4em",
-      "--h2-font-color": "#ff79c6",
-      "--h2-font-weight": 900,
-      "--h2-background-color": "#282a36",
-      "--level2-font-size": "1.4em",
-      "--level2-font-color": "#ff79c6",
-      "--level2-font-weight": 900,
-      "--level2-background-color": "#282a36",
-      "--h3-font-size": "1.2em",
-      "--h3-font-color": "#ff79c6",
-      "--h3-font-weight": 900,
-      "--h3-background-color": "#282a36",
-      "--level3-font-size": "1.2em",
-      "--level3-font-color": "#ff79c6",
-      "--level3-font-weight": 900,
-      "--level3-background-color": "#282a36",
-      "--h4-font-size": "1em",
-      "--h4-font-color": "#6272a4",
-      "--h4-font-weight": 500,
-      "--h4-background-color": "#282a36",
-      "--level4-font-size": "1em",
-      "--level4-font-color": "#6272a4",
-      "--level4-font-weight": 500,
-      "--level4-background-color": "#282a36",
-      "--h5-font-size": "0.83em",
-      "--h5-font-color": "#6272a4",
-      "--h5-font-weight": 500,
-      "--h5-background-color": "#282a36",
-      "--level5-font-size": "0.83em",
-      "--level5-font-color": "#6272a4",
-      "--level5-font-weight": 500,
-      "--level5-background-color": "#282a36",
-      "--h6-font-size": "0.67em",
-      "--h6-font-color": "#6272a4",
-      "--h6-font-weight": 500,
-      "--h6-background-color": "#282a36",
-      "--level6-font-size": "0.67em",
-      "--level6-font-color": "#6272a4",
-      "--level6-font-weight": 500,
-      "--level6-background-color": "#282a36",
-      "--page-title-font-weight": 800,
-      "--page-title-font-size": 40,
-      "--page-title-font-color": "#f8f8f2",
-      "--page-title-background-color": "none"
+      "--font-size": "14",
+      "--primary-color": "#23caf5",
+      "--roam-body-background": "#fff9f9",
+      "--roam-article-background": "#fff9f9",
+      "--left-sidebar-onhover-background": "grey",
+      "--blockquote-background-color": "#5a564e35",
+      "--rm-alias--page-color": "#e49b4f",
+      "--sidebar-right-border-color": "#292929",
+      "--sidebar-color": "#11151c",
+      "--highlight-color": "#1c2e3e",
+      "--brackets-color": "#5393a2",
+      "--reference-bg": "#0b1721",
+      "--reference-border": "#1e3745",
+      "--link-color": "#fb633b",
+      "--right-sidebar-background": "#1f1f1f",
+      "--right-sidebar-outline-background": "#292929",
+      "--right-sidebar-color": "#6bdefe",
+      "--codeblock-color": "#a0a2b6",
+      "--page-ref-link-color": "#ed7c3c",
+      "--active-line-bg": "#0d2030",
+      "--page-title-font-size": "40",
+      "--page-title-font-color": "#3cb0d7",
+      "--page-title-font-weight": "800",
+      "--h1-font-size": "14",
+      "--h1-font-color": "#838ada",
+      "--h1-font-weight": "800",
+      "--h2-font-size": "14",
+      "--h2-font-color": "#6bdefe",
+      "--h2-font-weight": "800",
+      "--h3-font-size": "14",
+      "--h3-font-color": "#6bdefe",
+      "--h3-font-weight": "800",
+      "--h4-font-size": "14",
+      "--h4-font-color": "orange",
+      "--h4-font-weight": "800",
+      "--h5-font-size": "14",
+      "--h5-font-color": "orange",
+      "--h5-font-weight": "800",
+      "--h6-font-size": "14",
+      "--h6-font-color": "orange",
+      "--h6-font-weight": "800",
+      "--level1-font-size": "14",
+      "--level1-font-color": "#51d0f1",
+      "--level1-font-weight": "800",
+      "--level2-font-size": "14",
+      "--level2-font-color": "#6bdefe",
+      "--level2-font-weight": "700",
+      "--level3-font-size": "14",
+      "--level3-font-color": "#6bdefe",
+      "--level3-font-weight": "600",
+      "--level4-font-size": "14",
+      "--level4-font-color": "orange",
+      "--level4-font-weight": "600",
+      "--level5-font-size": "14",
+      "--level5-font-color": "orange",
+      "--level5-font-weight": "600",
+      "--level6-font-size": "14",
+      "--level6-font-color": "orange",
+      "--level6-font-weight": "600",
+      "--page-title-background-color": "none",
+      "--h1-background-color": "#191919",
+      "--h2-background-color": "#191919",
+      "--h3-background-color": "#faf6f6",
+      "--h4-background-color": "orange",
+      "--h5-background-color": "orange",
+      "--h6-background-color": "orange",
+      "--level1-background-color": "#f8f8f800",
+      "--level2-background-color": "#f8f4f4",
+      "--level3-background-color": "#f5f4f4",
+      "--level4-background-color": "orange",
+      "--level5-background-color": "orange",
+      "--level6-background-color": "orange"
     }
   },
   {
@@ -773,76 +793,78 @@
     "coverUrl": "https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FLk6j51h1xB.png?alt=media&token=b0932fb7-911b-458c-a551-978443f0c01b",
     "commandLabel": "Roam Theme: Hister2",
     "configItems": {
-      "--font-size": "14px",
-      "--font-family": "'iA Writer Quattro V', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif",
-      "--primary-color": "rgb(200, 200, 200)",
+      "--font-size": 14,
+      "--primary-color": "#0e0e0e",
+      "--roam-body-background": "#ece9e5",
+      "--roam-article-background": "#ece9e5",
+      "--rm-alias--page-color": "#fbfaf9",
       "--sidebar-right-border-color": "#ece9e5",
-      "--page-ref-tag-color": "#000000",
       "--sidebar-color": "#fbfbfb",
       "--highlight-color": "rgba(255, 255, 255, 0.95)",
       "--brackets-color": "rgba(0, 0, 0, 0.2)",
       "--reference-bg": "transparent",
       "--reference-border": "none",
-      "--active-line-bg": "#ece9e5",
-      "--codeblock-color": "black",
-      "--page-ref-link-color": "#000000",
+      "--link-color": "#53c1dc",
       "--right-sidebar-background": "rgba(255, 255, 255, 0.95)",
       "--right-sidebar-outline-background": "#000000",
       "--right-sidebar-color": "rgb(200, 200, 200)",
-      "--roam-body-background": "#ece9e5",
-      "--roam-article-background": "#ece9e5",
-      "--h1-font-size": "42px",
-      "--h1-font-color": "#000000",
-      "--h1-font-weight": 700,
-      "--h1-background-color": "transparent",
-      "--level1-font-size": "20px",
-      "--level1-font-color": "#000000",
-      "--level1-font-weight": 700,
-      "--level1-background-color": "transparent",
-      "--h2-font-size": "18px",
+      "--codeblock-color": "black",
+      "--page-ref-link-color": "#000000",
+      "--active-line-bg": "#ece9e5",
+      "--page-title-font-size": "40",
+      "--page-title-font-color": "#0e0e0e",
+      "--page-title-font-weight": "800",
+      "--h1-font-size": "20",
+      "--h1-font-color": "#0f0f0f",
+      "--h1-font-weight": "800",
+      "--h2-font-size": "20",
       "--h2-font-color": "#000000",
-      "--h2-font-weight": 700,
-      "--h2-background-color": "transparent",
-      "--level2-font-size": "18px",
-      "--level2-font-color": "#000000",
-      "--level2-font-weight": 700,
-      "--level2-background-color": "transparent",
-      "--h3-font-size": "16px",
+      "--h2-font-weight": "800",
+      "--h3-font-size": "20",
       "--h3-font-color": "#000000",
-      "--h3-font-weight": 700,
-      "--h3-background-color": "transparent",
-      "--level3-font-size": "16px",
-      "--level3-font-color": "#000000",
-      "--level3-font-weight": 700,
-      "--level3-background-color": "transparent",
-      "--h4-font-size": "14px",
+      "--h3-font-weight": "800",
+      "--h4-font-size": "20",
       "--h4-font-color": "#000000",
-      "--h4-font-weight": 700,
-      "--h4-background-color": "transparent",
-      "--level4-font-size": "14px",
-      "--level4-font-color": "#000000",
-      "--level4-font-weight": 700,
-      "--level4-background-color": "transparent",
-      "--h5-font-size": "13px",
+      "--h4-font-weight": "800",
+      "--h5-font-size": "20",
       "--h5-font-color": "#000000",
-      "--h5-font-weight": 700,
-      "--h5-background-color": "transparent",
-      "--level5-font-size": "13px",
-      "--level5-font-color": "#000000",
-      "--level5-font-weight": 700,
-      "--level5-background-color": "transparent",
-      "--h6-font-size": "12px",
+      "--h5-font-weight": "800",
+      "--h6-font-size": "20",
       "--h6-font-color": "#000000",
-      "--h6-font-weight": 700,
-      "--h6-background-color": "transparent",
-      "--level6-font-size": "12px",
+      "--h6-font-weight": "800",
+      "--level1-font-size": "20",
+      "--level1-font-color": "#000000",
+      "--level1-font-weight": "800",
+      "--level2-font-size": "18",
+      "--level2-font-color": "#000000",
+      "--level2-font-weight": "700",
+      "--level3-font-size": "16",
+      "--level3-font-color": "#000000",
+      "--level3-font-weight": "600",
+      "--level4-font-size": "16",
+      "--level4-font-color": "#000000",
+      "--level4-font-weight": "600",
+      "--level5-font-size": "16",
+      "--level5-font-color": "#000000",
+      "--level5-font-weight": "600",
+      "--level6-font-size": "16",
       "--level6-font-color": "#000000",
-      "--level6-font-weight": 700,
+      "--level6-font-weight": "600",
+      "--page-title-background-color": "none",
+      "--h1-background-color": "transparent",
+      "--h2-background-color": "transparent",
+      "--h3-background-color": "transparent",
+      "--h4-background-color": "transparent",
+      "--h5-background-color": "transparent",
+      "--h6-background-color": "transparent",
+      "--level1-background-color": "transparent",
+      "--level2-background-color": "transparent",
+      "--level3-background-color": "transparent",
+      "--level4-background-color": "transparent",
+      "--level5-background-color": "transparent",
       "--level6-background-color": "transparent",
-      "--page-title-font-weight": 800,
-      "--page-title-font-size": 40,
-      "--page-title-font-color": "rgb(200, 200, 200)",
-      "--page-title-background-color": "none"
+      "--left-sidebar-onhover-background": "grey",
+      "--blockquote-background-color": "#f9b637"
     }
   },
   {
@@ -852,7 +874,7 @@
     "coverUrl": "https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2F3_HoYe1F0A.png?alt=media&token=94a64645-ff8e-4a0f-98e3-b11771027ea0",
     "commandLabel": "Roam Theme: Leyenda Dark",
     "configItems": {
-      "--font-size": "1.02em",
+      "--font-size": 14,
       "--font-family": "'GT Walsheim Pro', sans-serif",
       "--primary-color": "#cd7f52",
       "--sidebar-right-border-color": "#374356",
@@ -921,7 +943,9 @@
       "--page-title-font-weight": 800,
       "--page-title-font-size": 40,
       "--page-title-font-color": "#cd7f52",
-      "--page-title-background-color": "none"
+      "--page-title-background-color": "none",
+      "--left-sidebar-onhover-background": "grey",
+      "--blockquote-background-color": "#f9b637"
     }
   },
   {
@@ -931,7 +955,7 @@
     "coverUrl": "https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2F_jn_M3IkQj.png?alt=media&token=acda7b0b-9b00-4604-af8c-9b72567e3194",
     "commandLabel": "Roam Theme: Lilack Dark",
     "configItems": {
-      "--font-size": "14px",
+      "--font-size": 14,
       "--font-family": "'Lato', sans-serif !important",
       "--primary-color": "#e0aaff",
       "--sidebar-right-border-color": "#394b59",
@@ -1000,7 +1024,9 @@
       "--page-title-font-weight": 800,
       "--page-title-font-size": 40,
       "--page-title-font-color": "#e0aaff",
-      "--page-title-background-color": "none"
+      "--page-title-background-color": "none",
+      "--left-sidebar-onhover-background": "grey",
+      "--blockquote-background-color": "#f9b637"
     }
   },
   {
@@ -1010,7 +1036,7 @@
     "coverUrl": "https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2F7aUcG1mB6y.png?alt=media&token=43fc842d-fe8a-4917-a7a7-1c2ec1e18b0d",
     "commandLabel": "Roam Theme: Lilac Light",
     "configItems": {
-      "--font-size": "14px",
+      "--font-size": 14,
       "--font-family": "'Lato', sans-serif !important",
       "--primary-color": "#7b2cbf",
       "--sidebar-right-border-color": "#dcdcdc",
@@ -1079,7 +1105,9 @@
       "--page-title-font-weight": 800,
       "--page-title-font-size": 40,
       "--page-title-font-color": "#7b2cbf",
-      "--page-title-background-color": "none"
+      "--page-title-background-color": "none",
+      "--left-sidebar-onhover-background": "grey",
+      "--blockquote-background-color": "#f9b637"
     }
   },
   {
@@ -1089,7 +1117,7 @@
     "coverUrl": "https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FGJRcpJjx4S.png?alt=media&token=6a1d33fe-99e0-4ef5-a7c2-79d60b72cee3",
     "commandLabel": "Roam Theme: Magazine",
     "configItems": {
-      "--font-size": "16px",
+      "--font-size": 16,
       "--font-family": "'Oswald', sans-serif",
       "--primary-color": "#5c7080",
       "--sidebar-right-border-color": "#f7e4e7",
@@ -1158,7 +1186,9 @@
       "--page-title-font-weight": 800,
       "--page-title-font-size": 40,
       "--page-title-font-color": "#5c7080",
-      "--page-title-background-color": "none"
+      "--page-title-background-color": "none",
+      "--left-sidebar-onhover-background": "grey",
+      "--blockquote-background-color": "#f9b637"
     }
   },
   {
@@ -1168,7 +1198,7 @@
     "coverUrl": "https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FIRNmesIqg7.png?alt=media&token=d87bb6ed-917a-49e2-8bf5-6285d8a0526d",
     "commandLabel": "Roam Theme: Mermaid Dark",
     "configItems": {
-      "--font-size": "14px",
+      "--font-size": 14,
       "--font-family": "'Lato', sans-serif",
       "--primary-color": "#a5ccd1",
       "--sidebar-right-border-color": "#394b59",
@@ -1237,7 +1267,9 @@
       "--page-title-font-weight": 800,
       "--page-title-font-size": 40,
       "--page-title-font-color": "#a5ccd1",
-      "--page-title-background-color": "none"
+      "--page-title-background-color": "none",
+      "--left-sidebar-onhover-background": "grey",
+      "--blockquote-background-color": "#f9b637"
     }
   },
   {
@@ -1247,7 +1279,7 @@
     "coverUrl": "https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FqdoBYLPM-B.png?alt=media&token=ade5c972-56ba-42f7-bacf-bbabee7ade87",
     "commandLabel": "Roam Theme: Mermaid Light",
     "configItems": {
-      "--font-size": "14px",
+      "--font-size": 14,
       "--font-family": "'Lato', sans-serif",
       "--primary-color": "#39a2ae",
       "--sidebar-right-border-color": "#dcdcdc",
@@ -1316,768 +1348,91 @@
       "--page-title-font-weight": 800,
       "--page-title-font-size": 40,
       "--page-title-font-color": "#39a2ae",
-      "--page-title-background-color": "none"
+      "--page-title-background-color": "none",
+      "--left-sidebar-onhover-background": "grey",
+      "--blockquote-background-color": "#f9b637"
     }
   },
   {
     "name": "night-owl-dark",
     "label": "Night Owlish Dark",
-    "coverUrl": "https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2Fy4qqFE18er.png?alt=media&token=64b5e072-c91b-4add-b710-454df481f1e2",
     "type": "dark",
+    "coverUrl": "https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2Fy4qqFE18er.png?alt=media&token=64b5e072-c91b-4add-b710-454df481f1e2",
     "commandLabel": "Roam Theme: Night Owl Dark",
-    "categories": [
-      {
-        "name": "fontsize",
-        "label": "Font Size Settings",
-        "sections": [
-          {
-            "name": "headers",
-            "label": "Header Font Sizes",
-            "configItems": [
-              "--page-title-font-size",
-              "--h1-font-size",
-              "--h2-font-size",
-              "--h3-font-size",
-              "--h4-font-size",
-              "--h5-font-size",
-              "--h6-font-size"
-            ]
-          },
-          {
-            "name": "base",
-            "label": "Base Font Size",
-            "configItems": ["--font-size"]
-          },
-          {
-            "name": "levels",
-            "label": "Content Levels Font Sizes",
-            "configItems": [
-              "--level1-font-size",
-              "--level2-font-size",
-              "--level3-font-size",
-              "--level4-font-size",
-              "--level5-font-size",
-              "--level6-font-size"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "fontweight",
-        "label": "Font Weight Settings",
-        "sections": [
-          {
-            "name": "headers",
-            "label": "Header Font Weights",
-            "configItems": [
-              "--page-title-font-weight",
-              "--h1-font-weight",
-              "--h2-font-weight",
-              "--h3-font-weight",
-              "--h4-font-weight",
-              "--h5-font-weight",
-              "--h6-font-weight"
-            ]
-          },
-          {
-            "name": "levels",
-            "label": "Content Levels Font Weights",
-            "configItems": [
-              "--level1-font-weight",
-              "--level2-font-weight",
-              "--level3-font-weight",
-              "--level4-font-weight",
-              "--level5-font-weight",
-              "--level6-font-weight"
-            ]
-          }
-        ]
-      },
-      {
-        "name": "colors",
-        "label": "Color Settings",
-        "sections": [
-          {
-            "name": "primary",
-            "label": "Primary Colors",
-            "configItems": [
-              "--primary-color",
-              "--page-title-font-color",
-              "--link-color",
-              "--page-ref-link-color",
-              "--rm-alias--page-color"
-            ]
-          },
-          {
-            "name": "background",
-            "label": "Background Colors",
-            "configItems": [
-              "--page-title-background-color",
-              "--sidebar-color",
-              "--reference-bg",
-              "--active-line-bg",
-              "--roam-body-background",
-              "--roam-article-background"
-            ]
-          },
-          {
-            "name": "headersFont",
-            "label": "Header Font Colors",
-            "configItems": [
-              "--h1-font-color",
-              "--h2-font-color",
-              "--h3-font-color",
-              "--h4-font-color",
-              "--h5-font-color",
-              "--h6-font-color"
-            ]
-          },
-          {
-            "name": "headersBackground",
-            "label": "Header Background Colors",
-            "configItems": [
-              "--h1-background-color",
-              "--h2-background-color",
-              "--h3-background-color",
-              "--h4-background-color",
-              "--h5-background-color",
-              "--h6-background-color"
-            ]
-          },
-          {
-            "name": "text",
-            "label": "Text Colors",
-            "configItems": [
-              "--codeblock-color",
-              "--right-sidebar-background",
-              "--right-sidebar-outline-background",
-              "--right-sidebar-color"
-            ]
-          },
-          {
-            "name": "border-color",
-            "label": "Border Colors",
-            "configItems": ["--sidebar-right-border-color", "--reference-border"]
-          },
-          {
-            "name": "highlight",
-            "label": "Highlight Colors",
-            "configItems": ["--highlight-color"]
-          },
-          {
-            "name": "levelsFont",
-            "label": "Content Levels Font Colors",
-            "configItems": [
-              "--level1-font-color",
-              "--level2-font-color",
-              "--level3-font-color",
-              "--level4-font-color",
-              "--level5-font-color",
-              "--level6-font-color"
-            ]
-          },
-          {
-            "name": "levelsBackground",
-            "label": "Content Levels Background Colors",
-            "configItems": [
-              "--level1-background-color",
-              "--level2-background-color",
-              "--level3-background-color",
-              "--level4-background-color",
-              "--level5-background-color",
-              "--level6-background-color"
-            ]
-          }
-        ]
-      }
-    ],
-    "configItems": [
-      {
-        "name": "--font-size",
-        "label": "Base Font Size",
-        "render": "sliderRender",
-        "valueType": "number",
-        "value": "16",
-        "minValue": 12,
-        "maxValue": 96,
-        "step": 1,
-        "unit": "px"
-      },
-      {
-        "name": "--primary-color",
-        "label": "Primary Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "#f2407b"
-      },
-      {
-        "name": "--roam-body-background",
-        "label": "Roam Body Background Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "#011627"
-      },
-      {
-        "name": "--roam-article-background",
-        "label": "Roam Article Background Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "none"
-      },
-      {
-        "name": "--rm-alias--page-color",
-        "label": "Roam Aias Page Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "#fbfaf9"
-      },
-      {
-        "name": "--sidebar-right-border-color",
-        "label": "Sidebar Right Border Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "#051e33"
-      },
-      {
-        "name": "--sidebar-color",
-        "label": "Left Sidebar Background Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "#0c2233"
-      },
-      {
-        "name": "--highlight-color",
-        "label": "Highlight Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "#a599e9"
-      },
-      {
-        "name": "--brackets-color",
-        "label": "Brackets Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "#9eb3c0"
-      },
-      {
-        "name": "--reference-bg",
-        "label": "Reference Background",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "#2e3250"
-      },
-      {
-        "name": "--reference-border",
-        "label": "Reference Border",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "none"
-      },
-      {
-        "name": "--link-color",
-        "label": "Link Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "#53c1dc"
-      },
-      {
-        "name": "--right-sidebar-background",
-        "label": "Right Sidebar Background Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "#011627"
-      },
-      {
-        "name": "--right-sidebar-outline-background",
-        "label": "Right Sidebar Outline Background Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "#2e3250"
-      },
-      {
-        "name": "--right-sidebar-color",
-        "label": "Right Sidebar Text Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "white"
-      },
-      {
-        "name": "--codeblock-color",
-        "label": "Code Block Background Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "#2e3250"
-      },
-      {
-        "name": "--page-ref-link-color",
-        "label": "Page Ref Link Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "#7e57c2cc"
-      },
-      {
-        "name": "--active-line-bg",
-        "label": "Active Line Background",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "#242f38"
-      },
-      {
-        "name": "--page-title-font-size",
-        "label": "Page Title Font Size",
-        "render": "sliderRender",
-        "valueType": "number",
-        "value": "20",
-        "minValue": 12,
-        "maxValue": 96,
-        "step": 1,
-        "unit": "px"
-      },
-      {
-        "name": "--page-title-font-color",
-        "label": "Page Title Font Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "#ffa7c4"
-      },
-      {
-        "name": "--page-title-font-weight",
-        "label": "Page Title Font Weight",
-        "render": "sliderRender",
-        "valueType": "number",
-        "value": "800",
-        "minValue": 100,
-        "maxValue": 900,
-        "step": 100
-      },
-      {
-        "name": "--h1-font-size",
-        "label": "H1 Font Size",
-        "render": "sliderRender",
-        "valueType": "number",
-        "value": "20",
-        "minValue": 12,
-        "maxValue": 96,
-        "step": 1,
-        "unit": "px"
-      },
-      {
-        "name": "--h1-font-color",
-        "label": "H1 Font Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "white"
-      },
-      {
-        "name": "--h1-font-weight",
-        "label": "H1 Font Weight",
-        "render": "sliderRender",
-        "valueType": "number",
-        "value": "800",
-        "minValue": 100,
-        "maxValue": 900,
-        "step": 100
-      },
-      {
-        "name": "--h2-font-size",
-        "label": "H2 Font Size",
-        "render": "sliderRender",
-        "valueType": "number",
-        "value": "20",
-        "minValue": 12,
-        "maxValue": 96,
-        "step": 1,
-        "unit": "px"
-      },
-      {
-        "name": "--h2-font-color",
-        "label": "H2 Font Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "white"
-      },
-      {
-        "name": "--h2-font-weight",
-        "label": "H2 Font Weight",
-        "render": "sliderRender",
-        "valueType": "number",
-        "value": "800",
-        "minValue": 100,
-        "maxValue": 900,
-        "step": 100
-      },
-      {
-        "name": "--h3-font-size",
-        "label": "H3 Font Size",
-        "render": "sliderRender",
-        "valueType": "number",
-        "value": "20",
-        "minValue": 12,
-        "maxValue": 96,
-        "step": 1,
-        "unit": "px"
-      },
-      {
-        "name": "--h3-font-color",
-        "label": "H3 Font Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "#8390b2"
-      },
-      {
-        "name": "--h3-font-weight",
-        "label": "H3 Font Weight",
-        "render": "sliderRender",
-        "valueType": "number",
-        "value": "800",
-        "minValue": 100,
-        "maxValue": 900,
-        "step": 100
-      },
-      {
-        "name": "--h4-font-size",
-        "label": "H4 Font Size",
-        "render": "sliderRender",
-        "valueType": "number",
-        "value": "20",
-        "minValue": 12,
-        "maxValue": 96,
-        "step": 1,
-        "unit": "px"
-      },
-      {
-        "name": "--h4-font-color",
-        "label": "H4 Font Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "white"
-      },
-      {
-        "name": "--h4-font-weight",
-        "label": "H4 Font Weight",
-        "render": "sliderRender",
-        "valueType": "number",
-        "value": "800",
-        "minValue": 100,
-        "maxValue": 900,
-        "step": 100
-      },
-      {
-        "name": "--h5-font-size",
-        "label": "H5 Font Size",
-        "render": "sliderRender",
-        "valueType": "number",
-        "value": "20",
-        "minValue": 12,
-        "maxValue": 96,
-        "step": 1,
-        "unit": "px"
-      },
-      {
-        "name": "--h5-font-color",
-        "label": "H5 Font Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "white"
-      },
-      {
-        "name": "--h5-font-weight",
-        "label": "H5 Font Weight",
-        "render": "sliderRender",
-        "valueType": "number",
-        "value": "800",
-        "minValue": 100,
-        "maxValue": 900,
-        "step": 100
-      },
-      {
-        "name": "--h6-font-size",
-        "label": "H6 Font Size",
-        "render": "sliderRender",
-        "valueType": "number",
-        "value": "20",
-        "minValue": 12,
-        "maxValue": 96,
-        "step": 1,
-        "unit": "px"
-      },
-      {
-        "name": "--h6-font-color",
-        "label": "H6 Font Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "white"
-      },
-      {
-        "name": "--h6-font-weight",
-        "label": "H6 Font Weight",
-        "render": "sliderRender",
-        "valueType": "number",
-        "value": "800",
-        "minValue": 100,
-        "maxValue": 900,
-        "step": 100
-      },
-      {
-        "name": "--level1-font-size",
-        "label": "Level 1 Font Size",
-        "render": "sliderRender",
-        "valueType": "number",
-        "value": "20",
-        "minValue": 12,
-        "maxValue": 96,
-        "step": 1,
-        "unit": "px"
-      },
-      {
-        "name": "--level1-font-color",
-        "label": "Level 1 Font Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "white"
-      },
-      {
-        "name": "--level1-font-weight",
-        "label": "Level 1 Font Weight",
-        "render": "sliderRender",
-        "valueType": "number",
-        "value": "800",
-        "minValue": 100,
-        "maxValue": 900,
-        "step": 100
-      },
-      {
-        "name": "--level2-font-size",
-        "label": "Level 2 Font Size",
-        "render": "sliderRender",
-        "valueType": "number",
-        "value": "18",
-        "minValue": 12,
-        "maxValue": 96,
-        "step": 1,
-        "unit": "px"
-      },
-      {
-        "name": "--level2-font-color",
-        "label": "Level 2 Font Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "white"
-      },
-      {
-        "name": "--level2-font-weight",
-        "label": "Level 2 Font Weight",
-        "render": "sliderRender",
-        "valueType": "number",
-        "value": "700",
-        "minValue": 100,
-        "maxValue": 900,
-        "step": 100
-      },
-      {
-        "name": "--level3-font-size",
-        "label": "Level 3 Font Size",
-        "render": "sliderRender",
-        "valueType": "number",
-        "value": "16",
-        "minValue": 12,
-        "maxValue": 96,
-        "step": 1,
-        "unit": "px"
-      },
-      {
-        "name": "--level3-font-color",
-        "label": "Level 3 Font Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "#8390b2"
-      },
-      {
-        "name": "--level3-font-weight",
-        "label": "Level 3 Font Weight",
-        "render": "sliderRender",
-        "valueType": "number",
-        "value": "600",
-        "minValue": 100,
-        "maxValue": 900,
-        "step": 100
-      },
-      {
-        "name": "--level4-font-size",
-        "label": "Level 4 Font Size",
-        "render": "sliderRender",
-        "valueType": "number",
-        "value": "16",
-        "minValue": 12,
-        "maxValue": 96,
-        "step": 1,
-        "unit": "px"
-      },
-      {
-        "name": "--level4-font-color",
-        "label": "Level 4 Font Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "white"
-      },
-      {
-        "name": "--level4-font-weight",
-        "label": "Level 4 Font Weight",
-        "render": "sliderRender",
-        "valueType": "number",
-        "value": "600",
-        "minValue": 100,
-        "maxValue": 900,
-        "step": 100
-      },
-      {
-        "name": "--level5-font-size",
-        "label": "Level 5 Font Size",
-        "render": "sliderRender",
-        "valueType": "number",
-        "value": "16",
-        "minValue": 12,
-        "maxValue": 96,
-        "step": 1,
-        "unit": "px"
-      },
-      {
-        "name": "--level5-font-color",
-        "label": "Level 5 Font Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "white"
-      },
-      {
-        "name": "--level5-font-weight",
-        "label": "Level 5 Font Weight",
-        "render": "sliderRender",
-        "valueType": "number",
-        "value": "600",
-        "minValue": 100,
-        "maxValue": 900,
-        "step": 100
-      },
-      {
-        "name": "--level6-font-size",
-        "label": "Level 6 Font Size",
-        "render": "sliderRender",
-        "valueType": "number",
-        "value": "16",
-        "minValue": 12,
-        "maxValue": 96,
-        "step": 1,
-        "unit": "px"
-      },
-      {
-        "name": "--level6-font-color",
-        "label": "Level 6 Font Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "white"
-      },
-      {
-        "name": "--level6-font-weight",
-        "label": "Level 6 Font Weight",
-        "render": "sliderRender",
-        "valueType": "number",
-        "value": "600",
-        "minValue": 100,
-        "maxValue": 900,
-        "step": 100
-      },
-      {
-        "name": "--page-title-background-color",
-        "label": "Page Title Background Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "none"
-      },
-      {
-        "name": "--h1-background-color",
-        "label": "H1 Background Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "#011627"
-      },
-      {
-        "name": "--h2-background-color",
-        "label": "H2 Background Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "#011627"
-      },
-      {
-        "name": "--h3-background-color",
-        "label": "H3 Background Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "#011627"
-      },
-      {
-        "name": "--h4-background-color",
-        "label": "H4 Background Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "#011627"
-      },
-      {
-        "name": "--h5-background-color",
-        "label": "H5 Background Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "#011627"
-      },
-      {
-        "name": "--h6-background-color",
-        "label": "H6 Background Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "#011627"
-      },
-      {
-        "name": "--level1-background-color",
-        "label": "Level 1 Background Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "#011627"
-      },
-      {
-        "name": "--level2-background-color",
-        "label": "Level 2 Background Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "#011627"
-      },
-      {
-        "name": "--level3-background-color",
-        "label": "Level 3 Background Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "#011627"
-      },
-      {
-        "name": "--level4-background-color",
-        "label": "Level 4 Background Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "#011627"
-      },
-      {
-        "name": "--level5-background-color",
-        "label": "Level 5 Background Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "#011627"
-      },
-      {
-        "name": "--level6-background-color",
-        "label": "Level 6 Background Color",
-        "render": "colorPickerRender",
-        "valueType": "string",
-        "value": "#011627"
-      }
-    ]
+    "configItems": {
+      "--font-size": 14,
+      "--primary-color": "#f7f6f7",
+      "--roam-body-background": "#0d3c53",
+      "--roam-article-background": "#0d3c53",
+      "--rm-alias--page-color": "#9f5810",
+      "--sidebar-right-border-color": "#090b10",
+      "--sidebar-color": "#090b10",
+      "--highlight-color": "#6f4ebb",
+      "--brackets-color": "#8e743d",
+      "--reference-bg": "#4a689c",
+      "--reference-border": "#1e3745",
+      "--link-color": "#66e5e4",
+      "--right-sidebar-background": "#399fc1",
+      "--right-sidebar-outline-background": "#53c1dc",
+      "--right-sidebar-color": "#92e749",
+      "--codeblock-color": "#f0f1e8",
+      "--page-ref-link-color": "#a2eda2",
+      "--active-line-bg": "#0d2030",
+      "--page-title-font-size": "40",
+      "--page-title-font-color": "#111111",
+      "--page-title-font-weight": "800",
+      "--h1-font-size": "20",
+      "--h1-font-color": "#f9b637",
+      "--h1-font-weight": "800",
+      "--h2-font-size": "20",
+      "--h2-font-color": "#f9b637",
+      "--h2-font-weight": "800",
+      "--h3-font-size": "20",
+      "--h3-font-color": "#f9b637",
+      "--h3-font-weight": "800",
+      "--h4-font-size": "20",
+      "--h4-font-color": "#f9b637",
+      "--h4-font-weight": "800",
+      "--h5-font-size": "20",
+      "--h5-font-color": "#f9b637",
+      "--h5-font-weight": "800",
+      "--h6-font-size": "20",
+      "--h6-font-color": "#f9b637",
+      "--h6-font-weight": "800",
+      "--level1-font-size": "20",
+      "--level1-font-color": "#f8f7f7",
+      "--level1-font-weight": "800",
+      "--level2-font-size": "18",
+      "--level2-font-color": "#786747",
+      "--level2-font-weight": "700",
+      "--level3-font-size": "16",
+      "--level3-font-color": "#b08225",
+      "--level3-font-weight": "600",
+      "--level4-font-size": "16",
+      "--level4-font-color": "#f9b637",
+      "--level4-font-weight": "600",
+      "--level5-font-size": "16",
+      "--level5-font-color": "#f9b637",
+      "--level5-font-weight": "600",
+      "--level6-font-size": "16",
+      "--level6-font-color": "#f9b637",
+      "--level6-font-weight": "600",
+      "--page-title-background-color": "#fcfbfa",
+      "--h1-background-color": "#e19e1d",
+      "--h2-background-color": "#378341",
+      "--h3-background-color": "#73654a00",
+      "--h4-background-color": "#f9b637",
+      "--h5-background-color": "#f9b637",
+      "--h6-background-color": "#f9b637",
+      "--level1-background-color": "#f9b6370",
+      "--level2-background-color": "#f9b6370",
+      "--level3-background-color": "#f9b6370",
+      "--level4-background-color": "#f9b6370",
+      "--level5-background-color": "#edbf67",
+      "--level6-background-color": "#ccb487",
+      "--left-sidebar-onhover-background": "grey",
+      "--blockquote-background-color": "#f9b637"
+    }
   },
   {
     "name": "rails-orange-dark",
@@ -2086,7 +1441,7 @@
     "coverUrl": "https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2F0AefF5_goy.png?alt=media&token=3c874467-20f0-4cd6-86ae-6d2a7f9bbab7",
     "commandLabel": "Roam Theme: Rails Orange Dark",
     "configItems": {
-      "--font-size": "14px",
+      "--font-size": 14,
       "--font-family": "'Source Code Pro', monospace",
       "--primary-color": "#ff6000",
       "--sidebar-right-border-color": "#e9892475",
@@ -2155,7 +1510,9 @@
       "--page-title-font-weight": 800,
       "--page-title-font-size": 40,
       "--page-title-font-color": "#ff6000",
-      "--page-title-background-color": "none"
+      "--page-title-background-color": "none",
+      "--left-sidebar-onhover-background": "grey",
+      "--blockquote-background-color": "#f9b637"
     }
   },
   {
@@ -2165,7 +1522,7 @@
     "coverUrl": "https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FVbunxswOKX.png?alt=media&token=9f8083e2-7a01-4221-8273-8db315ccc418",
     "commandLabel": "Roam Theme: Rails Purple",
     "configItems": {
-      "--font-size": "14px",
+      "--font-size": 14,
       "--font-family": "'Inter', sans-serif",
       "--primary-color": "#137cbd",
       "--sidebar-right-border-color": "rgba(228, 124, 67, 0.25)",
@@ -2234,7 +1591,9 @@
       "--page-title-font-weight": 800,
       "--page-title-font-size": 40,
       "--page-title-font-color": "#137cbd",
-      "--page-title-background-color": "none"
+      "--page-title-background-color": "none",
+      "--left-sidebar-onhover-background": "grey",
+      "--blockquote-background-color": "#f9b637"
     }
   },
   {
@@ -2244,7 +1603,7 @@
     "coverUrl": "https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2F8t1InLIpTY.png?alt=media&token=f305c1f2-bbaf-4131-b3ec-37a9d4bc1f53",
     "commandLabel": "Roam Theme: Tokiwa",
     "configItems": {
-      "--font-size": "14px",
+      "--font-size": 14,
       "--font-family": "Arial",
       "--primary-color": "#028760",
       "--sidebar-right-border-color": "#9acfbf",
@@ -2309,7 +1668,9 @@
       "--page-title-font-weight": 800,
       "--page-title-font-size": 40,
       "--page-title-font-color": "#028760",
-      "--page-title-background-color": "none"
+      "--page-title-background-color": "none",
+      "--left-sidebar-onhover-background": "grey",
+      "--blockquote-background-color": "#f9b637"
     }
   },
   {
@@ -2319,7 +1680,7 @@
     "coverUrl": "https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FVbkUDW66_x.png?alt=media&token=db91e8c5-646d-4522-98bd-a5ae7e26f4b5",
     "commandLabel": "Roam Theme: Zenithdecker",
     "configItems": {
-      "--font-size": "1.02em",
+      "--font-size": 14,
       "--font-family": "'Inter', sans-serif",
       "--primary-color": "#ec6f35",
       "--sidebar-right-border-color": "#eee",
@@ -2388,7 +1749,9 @@
       "--page-title-font-weight": 800,
       "--page-title-font-size": 40,
       "--page-title-font-color": "#ec6f35",
-      "--page-title-background-color": "none"
+      "--page-title-background-color": "none",
+      "--left-sidebar-onhover-background": "grey",
+      "--blockquote-background-color": "#f9b637"
     }
   }
 ]
