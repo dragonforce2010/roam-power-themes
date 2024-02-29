@@ -9,6 +9,7 @@ import { Category, ThemeConfig } from '../theme-manager/theme-config';
 import CategorySettings from './categorySettings';
 import { ROAM_POWER_THEME_NAMESPACE } from '../common/constants';
 import { findStyleRuleWithCallBack } from '../utils/configUtil';
+import { transformCurrentThemeData } from '../theme-manager/theme-manager';
 const { Title, Text } = Typography;
 
 const ThemeSetting: React.FC = () => {
@@ -16,39 +17,42 @@ const ThemeSetting: React.FC = () => {
   const drawerPosition = useThemeStore((state: any) => state.drawerPosition)
   const setDrawerPosition = useThemeStore((state: any) => state.setDrawerPosition)
   const [tabPosition, setTabPosition] = useState<'left' | 'right' | 'top' | 'bottom'>('left')
-  console.log('isThemeSettingPanelOpen', isThemeSettingPannelOpen)
+  // console.log('isThemeSettingPanelOpen', isThemeSettingPannelOpen)
 
   const hideThemeSettingPannel = useThemeStore((state: any) => state.hideThemeSettingPannel);
   const allThemes = useThemeStore((state: any) => state.allThemes)
   const setAllThemes = useThemeStore((state: any) => state.setAllThemes)
   const currentTheme = useThemeStore((state: any) => state.currentTheme as ThemeConfig);
   const setCurrentTheme = useThemeStore((state: any) => state.setCurrentTheme)
+  const themeMode = useThemeStore((state: any) => state.themeMode as string)
+  const setThemeMode = useThemeStore((state: any) => state.setThemeMode)
   const config = currentTheme as ThemeConfig;
   const [codeEditorValue, setCodeEditorValue] = useState<any>();
 
-  const transformCurrentThemeData = () => {
-    const themeConfigData = {
-      name: currentTheme.name,
-      label: currentTheme.label,
-      type: currentTheme.type,
-      coverUrl: currentTheme.coverUrl,
-      commandLabel: currentTheme.commandLabel,
-      configItems: {}
-    }
-    const configItems: { [key: string]: any } = {}
-    for (let item of currentTheme.configItems || []) {
-      configItems[item.name] = item.value
-    }
-    themeConfigData.configItems = configItems
-
-    console.log(themeConfigData)
-
-    return themeConfigData
-  }
-
   useEffect(() => {
-    setCodeEditorValue(transformCurrentThemeData())
+    setCodeEditorValue(transformCurrentThemeData(currentTheme))
   }, [currentTheme])
+
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     const mode = window.extensionAPI.settings.get('css-appearance')
+  //     console.log('TestLog: ~ interval ~ theme mode:', mode)
+
+  //     if (mode === themeMode || !mode)
+  //       return
+  //     setThemeMode(mode)
+  //   }, 1000)
+
+  //   return () => {
+  //     clearInterval(interval)
+  //   }
+  // }, [])
+
+  // useEffect(() => {
+  //   console.log('themeMode change', themeMode)
+  //   const theme = allThemes.filter((theme: ThemeConfig) => theme.type === themeMode?.toLowerCase() && theme.label === currentTheme.label)[0]
+  //   setCurrentTheme(theme)
+  // }, [themeMode])
 
   const handleClose = () => {
     hideThemeSettingPannel();
@@ -90,7 +94,7 @@ const ThemeSetting: React.FC = () => {
       // 使用 Clipboard API 来复制文本
       navigator.clipboard.writeText(JSON.stringify(codeEditorValue, null, 2)).then(() => {
         // 成功复制后的操作，比如弹出提示信息
-        console.log('Theme config copied.');
+        // console.log('Theme config copied.');
       }, (err) => {
         // 异常处理
         console.error('Could not copy theme config: ', err);
@@ -98,22 +102,43 @@ const ThemeSetting: React.FC = () => {
     };
 
     const handleUpdateThemeSettings = () => {
-      const themeSettingsItems = codeEditorValue?.configItems;
-      console.log('TestLog: ~ handleUpdateThemeSettings ~ themeSettingsItems:', themeSettingsItems)
-
-      for (let key of codeEditorValue) {
-        if (key === 'configItems' || key === 'name' || !codeEditorValue[key]) continue
-        window.extensionAPI.settings.set([ROAM_POWER_THEME_NAMESPACE, currentTheme.name, key].join('-'), codeEditorValue[key])
+      if (!currentTheme) {
+        throw new Error('current theme is null!')
       }
 
-      for (let key of Object.keys(themeSettingsItems)) {
+      const themeSettingsItems = codeEditorValue?.configItems || {};
+      // console.log('TestLog: ~ handleUpdateThemeSettings ~ themeSettingsItems- themeSettignsItems:', themeSettingsItems)
+      // console.log('TestLog: ~ handleUpdateThemeSettings ~ themeSettingsItems - codeEditorValue: ', codeEditorValue)
+      // console.log('TestLog: ~ handleUpdateThemeSettings ~ themeSettingsItems - currentTheme: ', currentTheme)
+
+      for (let key in codeEditorValue) {
+        if (!Object.hasOwnProperty.call(codeEditorValue, key))
+          continue
+        if (key === 'configItems' || key === 'name' || !codeEditorValue[key]) continue
+        window.extensionAPI.settings.set([ROAM_POWER_THEME_NAMESPACE, currentTheme.name, key].join('-'), codeEditorValue[key])
+        currentTheme[key] = codeEditorValue[key]
+      }
+
+
+      const currentThemeConfigItems = currentTheme?.configItems;
+      for (let key of Object.keys(themeSettingsItems || {})) {
         const value = themeSettingsItems[key];
-        const propertyValue = value + (currentTheme.configItems.find(item => item.name === key)?.unit ?? '')
+        // console.log('TestLog: ~ handleUpdateThemeSettings ~ themeSettingsItems - key, value: ', key, value)
+        // console.log('TestLog: ~ handleUpdateThemeSettings ~ themeSettingsItems - currentTheme: ', currentTheme)
+        const currentThemeConfigItem = (currentThemeConfigItems || [])?.find(item => item.name === key)
+        const propertyValue = value + (currentThemeConfigItem?.unit ?? '')
+        currentThemeConfigItem.value = propertyValue?.replace(currentThemeConfigItem.unit, '')
+        // console.log('continue----')
         findStyleRuleWithCallBack('.' + ROAM_POWER_THEME_NAMESPACE, (rule: CSSStyleRule) => rule.style.setProperty(key, propertyValue))
         console.log('update the settings from code', key, propertyValue)
         window.extensionAPI.settings.set([ROAM_POWER_THEME_NAMESPACE, currentTheme.name, key].join('-'), propertyValue)
         console.log('update the settings from code - extension API', [ROAM_POWER_THEME_NAMESPACE, currentTheme.name, key].join('-'), propertyValue)
       }
+
+      setCurrentTheme({
+        ...currentTheme,
+        configItems: currentThemeConfigItems
+      })
     }
 
     const codeTab = {
@@ -128,7 +153,10 @@ const ThemeSetting: React.FC = () => {
           value={JSON.stringify(codeEditorValue, null, 2)}
           extensions={[javascript({ jsx: true, }), json()]}
           aria-multiline={true}
-          onChange={(value) => setCodeEditorValue(JSON.parse(value))}
+          onChange={(value) => {
+            // console.log('code editor value', value)
+            setCodeEditorValue(JSON.parse(value))
+          }}
         ></CodeMirror>
       </React.Fragment>)
     }
@@ -150,15 +178,9 @@ const ThemeSetting: React.FC = () => {
           <Input
             value={currentTheme.label}
             onChange={(e) => {
-              //  do nothing
-              console.log('TestLog: ~ handle input change ~ value:', e)
               window.extensionAPI.settings.set([ROAM_POWER_THEME_NAMESPACE, currentTheme.name, 'name'].join('-'), e.target.value)
               const updatedCurrentTheme = { ...currentTheme, label: e.target.value };
               setCurrentTheme(updatedCurrentTheme)
-              setAllThemes([
-                ...allThemes.filter((theme: ThemeConfig) => theme.name !== currentTheme.name),
-                setCurrentTheme(updatedCurrentTheme)
-              ])
             }}></Input>
 
           <InfoCircleFilled></InfoCircleFilled>
@@ -166,15 +188,10 @@ const ThemeSetting: React.FC = () => {
           <Input
             defaultValue={currentTheme.coverUrl}
             onChange={(e) => {
-              //  do nothing
-              console.log('TestLog: ~ handle input change ~ value:', e)
+              // console.log('TestLog: ~ handle input change ~ value:', e)
               window.extensionAPI.settings.set([ROAM_POWER_THEME_NAMESPACE, currentTheme.name, 'coverUrl'].join('-'), e.target.value)
               const updatedCurrentTheme = { ...currentTheme, coverUrl: e.target.value };
               setCurrentTheme(updatedCurrentTheme)
-              setAllThemes([
-                ...allThemes.filter((theme: ThemeConfig) => theme.name !== currentTheme.name),
-                updatedCurrentTheme
-              ])
             }}></Input>
         </div>
       </React.Fragment>)
@@ -182,7 +199,7 @@ const ThemeSetting: React.FC = () => {
 
     const items = []
     const themeConfigTabs = config?.categories?.map((category: Category, index: number) => {
-      console.log('TestLog: ~ config?.categories?.map ~ category:', category);
+      // console.log('TestLog: ~ config?.categories?.map ~ category:', category);
       return {
         label: category.label,
         key: index + '',

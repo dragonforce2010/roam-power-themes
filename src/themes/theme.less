@@ -1,10 +1,6 @@
 /* Variables */
 .roam-power-theme {
-  .genVariable(6);
-
-  --font-size: 14px;
-  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji',
-  'Segoe UI Emoji', 'Segoe UI Symbol';
+  --left-sidebar-font-size: 14px;
   --primary-color: orange;
   --sidebar-right-border-color: orange;
   --page-ref-tag-color: orange;
@@ -18,7 +14,6 @@
   --page-ref-link-color: orange;
   --right-sidebar-background: white;
   --right-sidebar-outline-background: white;
-  --right-sidebar-color: orange;
   --roam-body-background: white;
   --roam-article-background: white;
   --page-title-font-weight: 800;
@@ -27,10 +22,13 @@
   --page-title-background-color: white;
   --link-color: orange;
   --blockquote-background-color: orange;
+  --main-article-text-color: orange;
+  --right-sidebar-text-color: orange;
+  --right-sidebar-font-size: 14px;
+  --right-sidebar-font-weight: 300;
+  --roam-main-font-size: 14px;
 
   body { 
-    font-size: var(--font-size);
-    font-family: var(--font-family);
     letter-spacing: -0.001em;
     line-height: 1.5;
     -webkit-font-smoothing: antialiased;
@@ -38,31 +36,43 @@
   }
 
   blockquote.rm-bq {
-    background: var(--blockquote-background-color);
+    background: var(--blockquote-background-color) !important;
+  }
+
+  .roam-main span {
+    font-size: var(--roam-main-font-size);
+  }
+
+  #roam-right-sidebar-content span {
+    color: var(--right-sidebar-text-color);
+    font-size: var(--right-sidebar-font-size);
+    font-weight: var(--right-sidebar-font-weight);
   }
 
   #right-sidebar .rm-sidebar-outline {
     background: var(--right-sidebar-outline-background) !important;
-    color: var(--right-sidebar-color);
   }
 
   .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button {
     padding: 8px 20px;
     font-weight: 900;
     cursor: pointer;
-    font-size: var(--font-size);
-    color: var(--primary-color);
+    color: var(--primary-color) !important;
+  }
+  
+   .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content span, .starred-pages-wrapper a div {
+    font-size: var(--left-sidebar-font-size) !important;
   }
 
   .rm-alias--page {
-    color: var(--page-ref-link-color);
+    color: var(--page-ref-link-color) !important;
   }
-  .roam-body {
-   background: var(--roam-body-background);
+  .roam-main {
+   background: var(--roam-body-background) !important;
   }
 
   .roam-body .roam-article {
-    background: var(--roam-article-background);
+    background: var(--roam-article-background) !important;
   }
 
   .roam-body .roam-app h1 {
@@ -71,15 +81,16 @@
     font-weight: bold;
   }
 
-  .roam-body .roam-app {
-    border-right: 1px solid var(--sidebar-right-border-color) !important;
-  }
   .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content, .starred-pages-wrapper {
-    color: var(--primary-color);
-    background: var(--sidebar-color);
+    color: var(--primary-color) !important;
+    background: var(--sidebar-color) !important;
   }
   .rm-block__input--active {
-    background: var(--active-line-bg);
+    background: var(--active-line-bg) !important;
+  }
+
+  .rm-block-text {
+    color: var(--main-article-text-color);
   }
 
   .roam-body
@@ -89,31 +100,31 @@
   .starred-pages-wrapper
   .starred-pages
   .page {
-    color: var(--primary-color);
+    color: var(--primary-color) !important;
   }
   
   .roam-sidebar-container {
-    border-right: 1px solid var(--sidebar-right-border-color);
+    border-right: 1px solid var(--sidebar-right-border-color) !important;
   }
 
-  #right-sidebar {
+  #roam-right-sidebar-content {
     background-color: var(--right-sidebar-background) !important;
     font-size: 15px;
   }
   #right-sidebar .flex-h-box .bp3-button .bp3-minimal .bp3-small {
-    color: var(--primary-color);
+    color: var(--primary-color) !important;
   }
   .roam-log-container .roam-log-page {
     border-top: 1px solid var(--brackets-color);
   }
   .rm-page-ref-tag {
     color: var(--page-ref-tag-color) !important;
-    background: var(--highlight-color);
+    background: var(--highlight-color) !important;
     padding: 0.1em 0.6em;
     border-radius: 12px;
   }
   .rm-page-ref-brackets {
-    color: var(--brackets-color);
+    color: var(--brackets-color) !important;
   }
   .block-border-left {
     border-left: 1px solid var(--brackets-color);
@@ -122,14 +133,14 @@
     border-bottom: 1px solid var(--primary-color);
   }
   .rm-block-ref:hover {
-    background: var(--highlight-color);
+    background: var(--highlight-color) !important;
     // border: 1px solid var(--background-color);
   }
   .rm-page-ref-tag:hover {
     text-decoration: underline;
   }
   .rm-reference-item {
-    background-color: var(--reference-bg);
+    background-color: var(--reference-bg) !important;
     margin-top: 12px;
     border: 1px solid var(--reference-border);
     border-radius: 4px;
@@ -143,37 +154,37 @@
     padding-bottom: 4px;
   }
   .rm-page-ref.rm-page-ref-link-color {
-    color: var(--highlight-color);
+    color: var(--highlight-color) !important;
   }
   .rm-page-ref:hover {
-    color: var(--highlight-color);
+    color: var(--highlight-color) !important;
   }
   .rm-page-ref.rm-page-ref-link-color {
-    color: var(--highlight-color);
+    color: var(--highlight-color) !important;
   }
   .bp3-text-overflow-ellipsis {
     color: var(--primary-color) !important;
   }
   a {
-    color: var(--link-color);
+    color: var(--link-color) !important;
   }
   a:focus {
-    color: var(--link-color);
+    color: var(--link-color) !important;
   }
   a:hover {
-    color: var(--link-color);
+    color: var(--link-color) !important;
   }
 
   .rm-page-ref--link {
-    color: var(--page-ref-link-color);
+    color: var(--page-ref-link-color) !important;
   }
 
   .cm-editor {
-    background: var(--codeblock-color);
+    background: var(--codeblock-color) !important;
   }
 
   .roam-article {
-    color: var(--primary-color);
+    color: var(--primary-color) !important;
   }
   .rm-title-display,
   .rm-title-display span {
@@ -182,19 +193,20 @@
     color: var(--page-title-font-color) !important;
     background: var(--page-title-background-color) !important;
   }
-  .roam-article-heading-style(6);
+  .roam-article-heading-style(3);
   .rm-level-style(6);
 }
 
 .roam-article-heading-style(@index) when (@index > 0) {
   .roam-article .rm-heading-level-@{index} {
-    color: var(~'--h@{index}-font-color');
-    font-weight: var(~'--h@{index}-font-weight');
-    font-size: var(~'--h@{index}-font-size');
+    color: var(~'--h@{index}-font-color') !important;
+    // font-weight: var(~'--h@{index}-font-weight') !important;
+    // font-size: var(~'--h@{index}-font-size') !important;
+    // font-family: var(~'--h@{index}-font-family') !important;
   } 
 
   .roam-article .rm-heading-level-@{index} .rm-block-text {
-    background: var(~'--h@{index}-background-color');
+    background: var(~'--h@{index}-background-color') !important;
   }
 
   .roam-article-heading-style(@index - 1);
@@ -202,26 +214,31 @@
 
 .rm-level-style(@index) when (@index > 0) {
   .rm-block-children.rm-block__children.rm-level-@{index}{
-    font-size:var(~'--level@{index}-font-size');
-    color:var(~'--level@{index}-font-color');
-    background:var(~'--level@{index}-background-color');
-    font-weight:var(~'--level@{index}-font-weight');
+    // font-size:var(~'--level@{index}-font-size') !important;
+    color:var(~'--level@{index}-font-color') !important;
+    background:var(~'--level@{index}-background-color') !important;
+    // font-weight:var(~'--level@{index}-font-weight') !important;
+    // font-family:var(~'--level@{index}-font-family') !important;
   }
 
   .rm-level-style(@index - 1);
 } 
 
-.genVariable(@index) when (@index > 0) {
-  --h@{index}-font-size: 20px;
-  --h@{index}-font-color: orange;
-  --h@{index}-font-weight: 600;
-  --h@{index}-background-color: orange;
+// .genVariable(@index) when (@index > 0) {
+//   --h@{index}-font-size: 20px;
+//   --h@{index}-font-color: orange;
+//   --h@{index}-font-weight: 600;
+//   --h@{index}-font-family: sans-serif;
+//   --h@{index}-background-color: orange;
+  
 
-  --level@{index}-font-size: 20px;
-  --level@{index}-font-color: orange;
-  --level@{index}-font-weight: 600; 
-  --level@{index}-background-color: orange;
+//   --level@{index}-font-size: 20px;
+//   --level@{index}-font-color: orange;
+//   --level@{index}-font-weight: 600; 
+//   --level@{index}-font-family: sans-serif;
+//   --level@{index}-background-color: orange;
 
-  .genVariable(@index - 1);
-}
+
+//   .genVariable(@index - 1);
+// }
  

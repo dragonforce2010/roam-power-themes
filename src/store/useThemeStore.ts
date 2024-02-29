@@ -1,6 +1,7 @@
 import { create } from 'zustand'
-import { loadAllThemes } from '../theme-manager/theme-loader'
-
+import { loadAllThemes, loadCurrentTheme } from '../theme-manager/theme-loader'
+import { ThemeConfig } from '../theme-manager/theme-config';
+import { CURRENT_THEME_NAME } from '../common/constants';
 
 const useThemeStore = create((set) => ({
   allThemes: loadAllThemes(),
@@ -10,6 +11,7 @@ const useThemeStore = create((set) => ({
   isShowSidebarButton: true,
   isShowToolbarButton: true,
   currentTheme: {},
+  themeMode: 'light',
 
   showThemeListPanel: () => set(() => ({
     isThemeListPanelOpen: true
@@ -49,13 +51,24 @@ const useThemeStore = create((set) => ({
     isShowToolbarButton: false
   })),
 
-  setCurrentTheme: (theme: any) => set(() => {
+  setCurrentTheme: (theme: ThemeConfig) => set((state: any) => {
+    if (!theme || JSON.stringify(theme) == '{}') {
+      return
+    }
+
+    window.extensionAPI.settings.set(CURRENT_THEME_NAME, theme.name)
+    state.setAllThemes([
+      ...(state.allThemes || [])?.filter((t: ThemeConfig) => t.name !== theme.name),
+      theme
+    ])
+
     return {
-      currentTheme: theme
+      currentTheme: theme,
     }
   }),
 
-  setAllThemes: (themes: any) => set(() => {
+  setAllThemes: (themes: any) => set((state: any) => {
+    console.log('set all themes called')
     return {
       allThemes: themes
     }
@@ -63,7 +76,13 @@ const useThemeStore = create((set) => ({
 
   setDrawerPosition: (position: 'top' | 'right' | 'bottom' | 'left') => set(() => ({
     drawerPosition: position
-  }))
+  })),
+
+  setThemeMode: (themeMode: string) => set(() => {
+    return {
+      themeMode: themeMode
+    }
+  }),
 }))
 
 export default useThemeStore

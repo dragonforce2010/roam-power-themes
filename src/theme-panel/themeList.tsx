@@ -1,21 +1,23 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Button, Col, Drawer, Radio, RadioChangeEvent, Row, Space, Tag, theme } from 'antd';
-import { FireOutlined, SettingFilled } from '@ant-design/icons'
+import { ExportOutlined, FireOutlined, SettingFilled } from '@ant-design/icons'
 import UseDrawerState from '../hooks/useDrawerState';
 import useThemeStore from '../store/useThemeStore';
 import ThemeItem from './ThemeItem';
 import './index.css'
 import { ThemeIconRoundedSolid } from '../icons/ThemeIcon2RoundedSolid';
 import ThemeSetting from './themeSetting'
-import { ThemeConfig } from '../theme-manager/theme-config'
-import { themeConfig } from '../theme-manager/theme-manager';
+import { ThemeConfig } from '../theme-manager/theme-config';
+import { loadAndApplyThemeStyleProperties, themeConfig, transformCurrentThemeData } from '../theme-manager/theme-manager';
+import { loadCurrentTheme } from '../theme-manager/theme-loader';
 
 
 const ThemeList = () => {
   const allThemes = useThemeStore((state: any) => state.allThemes)
+  const currentTheme = useThemeStore((state: any) => state.currentTheme as ThemeConfig);
+  const setCurrentTheme = useThemeStore((state: any) => state.setCurrentTheme)
   const drawerPosition = useThemeStore((state: any) => state.drawerPosition)
   const setDrawerPosition = useThemeStore((state: any) => state.setDrawerPosition)
-  console.log('TestLog: ~ ThemeList ~ allThemes:', allThemes)
   const isThemeListPanelOpen = useThemeStore((state: any) => state.isThemeListPanelOpen)
   const showThemeListPanel = useThemeStore((state: any) => state.showThemeListPanel)
   const hideThemeListPanel = useThemeStore((state: any) => state.hideThemeListPanel)
@@ -23,6 +25,12 @@ const ThemeList = () => {
   const onClose = () => {
     hideThemeListPanel()
   }
+
+  useEffect(() => {
+    const currentTheme = loadCurrentTheme()
+    setCurrentTheme(currentTheme)
+    loadAndApplyThemeStyleProperties(currentTheme)
+  }, [])
 
   const headerConfigButton = () => {
     function changeTabPosition(e: RadioChangeEvent): void {
@@ -35,7 +43,15 @@ const ThemeList = () => {
         <Radio.Button value="left">left</Radio.Button>
         <Radio.Button value="right">right</Radio.Button>
       </Radio.Group>
-    </Space>
+      <ExportOutlined onClick={() => {
+        const exportThemes = allThemes.map((theme: ThemeConfig) => transformCurrentThemeData(theme))
+        const dataUrl = `data:text/json;charset=utf-8,${encodeURIComponent(JSON.stringify(exportThemes))}`
+        const anchor = document.createElement('a')
+        anchor.href = dataUrl
+        anchor.download = 'theme.json'
+        anchor.click()
+      }}></ExportOutlined>
+    </Space >
   }
 
   const renderHeader = () => {
@@ -75,9 +91,12 @@ const ThemeList = () => {
       </div>
       <hr></hr>
       <div className='themeItemContainer'>
-        {allThemes.filter(filterFunc).map((theme) => {
-          return <ThemeItem themeConfig={theme} ></ThemeItem>
-        })}
+        {allThemes
+          .filter(filterFunc)
+          .sort((a, b) => a.name.localeCompare(b.name))
+          .map((theme) => {
+            return <ThemeItem themeConfig={theme} ></ThemeItem>
+          })}
       </div>
     </>
   }

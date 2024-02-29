@@ -31,7 +31,6 @@ const SideBarButton = () => {
       className="log-button no-outline"
       onClick={() => {
         showThemeListPanel()
-        console.log('clicked');
       }}>Power Themes</Button>}
   </>
 }

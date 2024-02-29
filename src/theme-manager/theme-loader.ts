@@ -1,12 +1,10 @@
+import { CURRENT_THEME_NAME, roamThemeSettingKey } from '../common/constants';
 import { ThemeConfig } from './theme-config';
 
 import allThemes from './theme-data.json';
 import getThemeTemplateWithDefaultConfigValue from './theme-template';
 
 const loadAllThemes = (): ThemeConfig[] => {
-
-  console.log('TestLog: ~ loadAllThemes ~ loadAllThemes:', loadAllThemes)
-
   let allThemeConigs: ThemeConfig[] = []
   for (let themeData of allThemes) {
     const themeConfig = getThemeTemplateWithDefaultConfigValue()
@@ -31,6 +29,16 @@ const loadAllThemes = (): ThemeConfig[] => {
   return allThemeConigs
 }
 
+const loadCurrentTheme = (): ThemeConfig => {
+  const allThemes = loadAllThemes()
+  const currentThemeName = window.extensionAPI.settings.get(CURRENT_THEME_NAME)
+  if (currentThemeName) {
+    return allThemes.find(theme => theme.name === currentThemeName) ?? allThemes[0]
+  }
+  return allThemes[0]
+}
+
 export {
-  loadAllThemes
+  loadAllThemes,
+  loadCurrentTheme
 };

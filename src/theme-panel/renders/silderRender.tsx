@@ -17,11 +17,10 @@ const SilderRender: React.FC<SliderRenderProps> = ({ configItem }) => {
   const currentTheme = useThemeStore((state: any) => state.currentTheme);
   // const [value, setValue] = useState<number>(configItem.value);
   const setCurrentTheme = useThemeStore((state: any) => state.setCurrentTheme);
-  console.log('TestLog: ~  sliderRender configItem:', configItem)
-
+  // console.log('TestLog: ~  sliderRender configItem:', configItem)
   function handleValueChange(value: number): void {
-    console.log('TestLog: ~ handleValueChange ~ value:', value)
-    console.log('TestLog: ~ handleValueChange ~ configItem.name:', configItem.name)
+    // console.log('TestLog: ~ handleValueChange ~ value:', value)
+    // console.log('TestLog: ~ handleValueChange ~ configItem.name:', configItem.name)
     // setValue(value)
     configItem.value = value
     updateThemeStyleProperty(currentTheme, configItem, value + configItem.unit)

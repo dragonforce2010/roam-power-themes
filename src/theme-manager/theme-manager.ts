@@ -151,25 +151,11 @@ let themeConfig = [
   },
 ]
 
-// old logic, to deprecate
-// const updateTheme = (newTheme: string) => {
-//   prevTheme = currentTheme
-//   currentTheme = newTheme
-//   if (prevTheme) document.body.classList.remove(prevTheme)
-//   if (currentTheme) document.body.classList.add(currentTheme)
-// }
-
 const getCurrentTheme = () => {
   return window.extensionAPI.settings.get(roamThemeSettingKey) as string
 }
 
 const initTheme = () => {
-  // const currentTheme = getCurrentTheme()
-  // if (!currentTheme) {
-  //   window.extensionAPI.settings.set(roamThemeSettingKey, currentTheme)
-  // } else {
-  //   updateTheme(currentTheme)
-  // }
   document.body.classList.add('roam-power-theme')
 }
 
@@ -177,7 +163,6 @@ const loadAndApplyThemeStyleProperties = (themeConfig: ThemeConfig) => {
   for (let item of themeConfig?.configItems) {
     let styleValue = window.extensionAPI.settings.get([ROAM_POWER_THEME_NAMESPACE, themeConfig.name, item.name].join('-'))
     const propetyValue = styleValue ?? (item.unit && item.value ? (item.value + item.unit) : item.value)
-    console.log('property value', propetyValue)
     findStyleRuleWithCallBack('.' + ROAM_POWER_THEME_NAMESPACE, (rule: CSSStyleRule) => rule.style.setProperty(item.name, propetyValue))
     item.value = styleValue ?? item.value
     item.value = (item.value || '').toString().replace(item.unit, '');
@@ -186,7 +171,6 @@ const loadAndApplyThemeStyleProperties = (themeConfig: ThemeConfig) => {
 }
 
 const combineThemeStyleProperties = (themeConfig: ThemeConfig) => {
-  console.log('TestLog: ~ combineThemeStyleProperties ~ themeConfig before:', themeConfig)
   if (!themeConfig || !themeConfig.configItems)
     return themeConfig
 
@@ -197,13 +181,32 @@ const combineThemeStyleProperties = (themeConfig: ThemeConfig) => {
     }
     item.value = styleValue ?? item.value
   }
-  console.log('TestLog: ~ combineThemeStyleProperties ~ themeConfig after:', themeConfig)
+  // console.log('TestLog: ~ combineThemeStyleProperties ~ themeConfig after:', themeConfig)
   return themeConfig
 }
 
 const updateThemeStyleProperty = (themeConfig: ThemeConfig, item: ConfigItem, value: string) => {
   findStyleRuleWithCallBack('.' + ROAM_POWER_THEME_NAMESPACE, (rule: CSSStyleRule) => rule.style.setProperty(item.name, value))
   window.extensionAPI.settings.set([ROAM_POWER_THEME_NAMESPACE, themeConfig.name, item.name].join('-'), value)
+}
+
+const transformCurrentThemeData = (theme: ThemeConfig) => {
+  const themeConfigData = {
+    name: theme.name,
+    label: theme.label,
+    type: theme.type,
+    coverUrl: theme.coverUrl,
+    commandLabel: theme.commandLabel,
+    configItems: {}
+  }
+  const configItems: { [key: string]: any } = {}
+  for (let item of theme.configItems || []) {
+    configItems[item.name] = item.value
+  }
+  themeConfigData.configItems = configItems
+
+  // console.log(themeConfigData)
+  return themeConfigData
 }
 
 export {
@@ -213,5 +216,6 @@ export {
   // updateTheme,
   loadAndApplyThemeStyleProperties,
   updateThemeStyleProperty,
-  combineThemeStyleProperties
+  combineThemeStyleProperties,
+  transformCurrentThemeData
 }

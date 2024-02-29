@@ -17,7 +17,7 @@ export interface ColorPickerRenderProps {
 const ColorPickerRender: React.FC<ColorPickerRenderProps> = ({ configItem }) => {
   const currentTheme = useThemeStore((state: any) => state.currentTheme);
   const setCurrentTheme = useThemeStore((state: any) => state.setCurrentTheme);
-  console.log('TestLog: ~ color picker configItem:', configItem)
+  // console.log('TestLog: ~ color picker configItem:', configItem)
 
   function handleValueChange(value: Color, hex: string): void {
     configItem.value = hex

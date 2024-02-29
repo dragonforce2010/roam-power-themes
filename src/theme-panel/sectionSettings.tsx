@@ -11,7 +11,7 @@ const SectionSettings: React.FC<Props> = ({ section, configItems }) => {
   const renderConfigItems = () => {
     return section?.configItems?.filter(configName => configItems.some(c => c.name === configName)).map(configName => {
       const config = configItems.find(item => item.name === configName)
-      console.log('TestLog: ~ renderConfigItems ~ config:', config)
+      // console.log('TestLog: ~ renderConfigItems ~ config:', config)
       return renderManager.renderConfigItem(config)
     })
   }

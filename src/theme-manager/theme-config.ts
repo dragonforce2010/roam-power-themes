@@ -35,4 +35,5 @@ export interface ThemeConfig {
   coverUrl?: string
   categories?: Category[]
   configItems?: ConfigItem[]
+  [key: string]: any
 }

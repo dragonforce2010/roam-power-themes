@@ -5,9 +5,7 @@ import React from 'react'
 
 const renderConfigItem = (configItem: ConfigItem) => {
   const { render } = configItem
-
-  console.log('got render', render, configItem)
-
+  // console.log('got render', render, configItem)
   switch (render) {
     case 'sliderRender':
       return <SilderRender configItem={configItem} />

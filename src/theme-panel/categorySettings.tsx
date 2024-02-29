@@ -8,8 +8,7 @@ interface Props {
 }
 
 const CategorySettings: React.FC<Props> = ({ categorySetting, configItems }) => {
-  console.log('categorySetting, configItems', categorySetting, configItems)
-
+  // console.log('categorySetting, configItems', categorySetting, configItems)
   const renderSections = () => {
     const sections = categorySetting?.sections.map((section, index) => <SectionSettings
       section={section}

@@ -18,7 +18,7 @@ const ToolBarButton = () => {
       icon={currentTheme?.label?.toLowerCase().indexOf('dark') != -1 ? <ThemeIcon1></ThemeIcon1> : <ThemeIconRoundedSolid></ThemeIconRoundedSolid>}
       className="log-button no-outline"
       onClick={() => {
-        showThemeListPanel()
+        // showThemeListPanel()
       }}></Button>}
   </>
 }

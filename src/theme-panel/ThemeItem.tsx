@@ -22,11 +22,12 @@ const ThemeItem: React.FC<ThemeItemProps> = ({
 
   const loadAndApplyTheme = () => {
     // setCurrentTheme({})
-    console.log('TestLog: ~ 点击准备apply theme config:', themeConfig)
+
+    // console.log('TestLog: ~ 点击准备apply theme config:', themeConfig)
     const latestThemeConfig = loadAndApplyThemeStyleProperties(themeConfig)
-    console.log('TestLog: ~ 设置currentTheme:', themeConfig)
+    // console.log('TestLog: ~ 设置currentTheme:', themeConfig)
     setCurrentTheme(latestThemeConfig)
-    console.log('currentTheme', latestThemeConfig)
+    // console.log('currentTheme', latestThemeConfig)
     setIsSelectTheme(!isSelectTheme)
   }
 
