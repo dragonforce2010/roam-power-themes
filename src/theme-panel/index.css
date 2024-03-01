@@ -1,11 +1,17 @@
 .themeItemContainer {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  /* display: grid; */
+  /* grid-template-columns: 1fr 1fr 1fr; */
+  /* /* display: flex; */
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: left;
 }
 
 .ant-card {
   padding: 10px;
   margin-bottom: 10px;
+  width: 220px !important;
 }
 
 .drawerTitle {
@@ -23,8 +29,11 @@
 }
 
 .selectedTheme {
-  width: 240px;
-  border: solid 3px #4dcc64;
+  border: solid 3px #0ca327 !important;
+}
+
+.selectedTheme .ant-card-meta-description {
+  color: green;
 }
 
 .cardFooter {
@@ -42,6 +51,7 @@
   font-size: 1.4em;
   margin-top: 40px;
   font-weight: 900;
+  color: black;
 }
 
 .headLinks {

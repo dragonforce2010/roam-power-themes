@@ -17,7 +17,7 @@ const loadAllThemes = (): ThemeConfig[] => {
     themeConfig.commandLabel = themeData["commandLabel"]
     for (let key of Object.keys(themeData.configItems || [])) {
       themeConfig.configItems.forEach(item => {
-        if (item.name === key && typeof item.value === 'string') {
+        if (item.name === key) {
           item.value = (themeData.configItems as { [key: string]: number | string })[key]
         }
       })

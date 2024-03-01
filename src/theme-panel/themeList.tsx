@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Button, Col, Drawer, Radio, RadioChangeEvent, Row, Space, Tag, theme } from 'antd';
-import { ExportOutlined, FireOutlined, SettingFilled } from '@ant-design/icons'
+import { CloseCircleOutlined, CloseOutlined, ExportOutlined, FireOutlined, SettingFilled } from '@ant-design/icons'
 import UseDrawerState from '../hooks/useDrawerState';
 import useThemeStore from '../store/useThemeStore';
 import ThemeItem from './ThemeItem';
@@ -8,7 +8,7 @@ import './index.css'
 import { ThemeIconRoundedSolid } from '../icons/ThemeIcon2RoundedSolid';
 import ThemeSetting from './themeSetting'
 import { ThemeConfig } from '../theme-manager/theme-config';
-import { loadAndApplyThemeStyleProperties, themeConfig, transformCurrentThemeData } from '../theme-manager/theme-manager';
+import { loadAndApplyThemeStyleProperties, transformCurrentThemeData } from '../theme-manager/theme-manager';
 import { loadCurrentTheme } from '../theme-manager/theme-loader';
 
 
@@ -42,15 +42,18 @@ const ThemeList = () => {
       <Radio.Group value={drawerPosition} onChange={changeTabPosition} buttonStyle='solid'>
         <Radio.Button value="left">left</Radio.Button>
         <Radio.Button value="right">right</Radio.Button>
+        <Radio.Button value="top">top</Radio.Button>
+        <Radio.Button value="bottom">bottom</Radio.Button>
       </Radio.Group>
-      <ExportOutlined onClick={() => {
+      <ExportOutlined style={{ color: 'black' }} onClick={() => {
         const exportThemes = allThemes.map((theme: ThemeConfig) => transformCurrentThemeData(theme))
         const dataUrl = `data:text/json;charset=utf-8,${encodeURIComponent(JSON.stringify(exportThemes))}`
         const anchor = document.createElement('a')
         anchor.href = dataUrl
-        anchor.download = 'theme.json'
+        anchor.download = 'theme-data.json'
         anchor.click()
       }}></ExportOutlined>
+      <CloseOutlined style={{ color: 'black' }} onClick={onClose}></CloseOutlined>
     </Space >
   }
 
@@ -60,7 +63,7 @@ const ThemeList = () => {
       anchorEle.scrollIntoView({ behavior: 'smooth' })
     }
 
-    return <div className="headLinks">
+    return drawerPosition !== 'bottom' ? <div className="headLinks">
       <Row>
         <Col>
           <Button type="primary"
@@ -81,7 +84,7 @@ const ThemeList = () => {
           </Button>
         </Col>
       </Row>
-    </div>
+    </div> : <></>
   }
 
   const renderThemeBlock = (allThemes: ThemeConfig[], themeTypeLabel: string, filterFunc: (themeConfig: ThemeConfig) => boolean) => {
@@ -112,10 +115,11 @@ const ThemeList = () => {
         <ThemeIconRoundedSolid></ThemeIconRoundedSolid>
         <span className='drawerTitle'>Theme Cener</span>
       </>}
+      mask={false}
       extra={headerConfigButton()}
-      width={"50%"}
+      width={"45%"}
       placement={drawerPosition}
-      closable={false}
+      // closable={true}
       onClose={onClose}
       open={isThemeListPanelOpen}
       getContainer={false}

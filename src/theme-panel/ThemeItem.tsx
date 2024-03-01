@@ -33,8 +33,8 @@ const ThemeItem: React.FC<ThemeItemProps> = ({
 
   return <>
     <Card
-      // className={`themeCard ${isSelectTheme ? 'selectedTheme' : ''}`}
-      className={`themeCard`}
+      className={`themeCard ${currentTheme.name === themeConfig.name ? 'selectedTheme' : ''}`}
+      // className={`themeCard`}
       hoverable
       bordered={false}
       style={{ width: 240, border: 'none' }}
@@ -55,7 +55,7 @@ const ThemeItem: React.FC<ThemeItemProps> = ({
     // }}
     >
       <div className='cardFooter'>
-        <Meta title={themeConfig.label} />
+        <Meta title={themeConfig.label} description={currentTheme.name === themeConfig.name ? 'Current Theme' : ''} />
         <Button
           type='primary'
           onClick={() => {
@@ -63,7 +63,7 @@ const ThemeItem: React.FC<ThemeItemProps> = ({
             showThemeSettingPannel()
             console.log('设置setting pannel to open')
           }}
-        >设置</Button>
+        >Settings</Button>
       </div>
     </Card>
   </>

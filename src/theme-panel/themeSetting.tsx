@@ -1,4 +1,4 @@
-import { BgColorsOutlined, CopyOutlined, InfoCircleFilled, SaveFilled, SaveOutlined, SettingFilled, SettingOutlined } from '@ant-design/icons';
+import { BgColorsOutlined, CloseCircleOutlined, CloseOutlined, CopyOutlined, InfoCircleFilled, SaveFilled, SaveOutlined, SettingFilled, SettingOutlined } from '@ant-design/icons';
 import { javascript } from '@codemirror/lang-javascript';
 import { json } from '@codemirror/lang-json';
 import CodeMirror from '@uiw/react-codemirror';
@@ -9,7 +9,7 @@ import { Category, ThemeConfig } from '../theme-manager/theme-config';
 import CategorySettings from './categorySettings';
 import { ROAM_POWER_THEME_NAMESPACE } from '../common/constants';
 import { findStyleRuleWithCallBack } from '../utils/configUtil';
-import { transformCurrentThemeData } from '../theme-manager/theme-manager';
+import { loadAndApplyThemeStyleProperties, transformCurrentThemeData } from '../theme-manager/theme-manager';
 const { Title, Text } = Typography;
 
 const ThemeSetting: React.FC = () => {
@@ -25,7 +25,6 @@ const ThemeSetting: React.FC = () => {
   const currentTheme = useThemeStore((state: any) => state.currentTheme as ThemeConfig);
   const setCurrentTheme = useThemeStore((state: any) => state.setCurrentTheme)
   const themeMode = useThemeStore((state: any) => state.themeMode as string)
-  const setThemeMode = useThemeStore((state: any) => state.setThemeMode)
   const config = currentTheme as ThemeConfig;
   const [codeEditorValue, setCodeEditorValue] = useState<any>();
 
@@ -33,26 +32,21 @@ const ThemeSetting: React.FC = () => {
     setCodeEditorValue(transformCurrentThemeData(currentTheme))
   }, [currentTheme])
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     const mode = window.extensionAPI.settings.get('css-appearance')
-  //     console.log('TestLog: ~ interval ~ theme mode:', mode)
+  useEffect(() => {
+    console.log('themeMode change', themeMode)
+    if (themeMode === 'off') {
+      document.body.classList.remove('roam-power-theme')
+      return
+    } else {
+      document.body.classList.add('roam-power-theme')
+    }
+    const theme = (allThemes || []).find((theme: ThemeConfig) => theme.type?.toLowerCase() === themeMode?.toLowerCase() && theme.label === currentTheme.label)
+    if (!theme)
+      return
 
-  //     if (mode === themeMode || !mode)
-  //       return
-  //     setThemeMode(mode)
-  //   }, 1000)
-
-  //   return () => {
-  //     clearInterval(interval)
-  //   }
-  // }, [])
-
-  // useEffect(() => {
-  //   console.log('themeMode change', themeMode)
-  //   const theme = allThemes.filter((theme: ThemeConfig) => theme.type === themeMode?.toLowerCase() && theme.label === currentTheme.label)[0]
-  //   setCurrentTheme(theme)
-  // }, [themeMode])
+    setCurrentTheme(theme)
+    loadAndApplyThemeStyleProperties(theme)
+  }, [themeMode])
 
   const handleClose = () => {
     hideThemeSettingPannel();
@@ -64,11 +58,12 @@ const ThemeSetting: React.FC = () => {
     }
 
     return <Space>
-      <SettingFilled />
+      <SettingFilled style={{ color: 'black' }} />
       <Radio.Group value={drawerPosition} onChange={changeTabPosition} buttonStyle='solid'>
         <Radio.Button value="left">left</Radio.Button>
         <Radio.Button value="right">right</Radio.Button>
       </Radio.Group>
+      <CloseOutlined style={{ color: 'black' }} onClick={handleClose}></CloseOutlined>
     </Space>
   }
 
@@ -225,10 +220,11 @@ const ThemeSetting: React.FC = () => {
           <span className='drawerTitle'>Theme Settings - {currentTheme.label}</span>
         </>
       }
+      mask={false}
       extra={headerConfigButton()}
-      width={'45%'}
+      width={'40%'}
       placement={drawerPosition}
-      closable={false}
+      // closable={true}
       onClose={handleClose}
       open={isThemeSettingPannelOpen}
       getContainer={false}

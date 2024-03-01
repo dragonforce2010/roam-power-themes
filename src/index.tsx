@@ -4,7 +4,7 @@ import { initConfig } from './config/config'
 import { extension_helper } from './helper/extension-helper'
 import { initSidebar } from './sidebar/initSidebar'
 import './styles/font-face.css'
-import { themeConfig } from './theme-manager/theme-manager'
+import { themeConfig, updateTheme } from './theme-manager/theme-manager-legacy'
 import { initThemeListPanel } from './theme-panel/initThemeListPanel'
 import { initThemeSettingPanel } from './theme-panel/initThemeSettingPanel'
 import './themes/theme.css'
@@ -40,7 +40,7 @@ const removeThemeCommands = () => {
 
 const switchRoamTheme = (newTheme: string) => {
   window.extensionAPI.settings.set(roamThemeSettingKey, newTheme).then(() => {
-    // updateTheme(newTheme)
+    updateTheme(newTheme)
   })
 }
 

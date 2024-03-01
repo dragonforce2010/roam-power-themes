@@ -20,16 +20,28 @@ const getThemeTemplateWithDefaultConfigValue: () => ThemeConfig = () => {
               "--page-title-font-color",
               "--link-color",
               "--page-ref-link-color",
+            ]
+          },
+          {
+            "name": "text",
+            "label": "Text Colors",
+            "configItems": [
               "--main-article-text-color",
+              "--left-sidebar-top-font-color",
               "--right-sidebar-text-color",
+              "--right-sidebar-page-title-font-color",
             ]
           },
           {
             "name": "background",
             "label": "Background Colors",
             "configItems": [
+              "--rm-left-sidebar-toprow-background-color",
+              "--rm-topbar-background-color",
+              "--rm-right-sidebar-toprow-background-color",
+              "--rm-top-search-box-background-color",
               "--page-title-background-color",
-              "--sidebar-color",
+              "--left-sidebar-background-color",
               "--reference-bg",
               "--active-line-bg",
               "--roam-body-background",
@@ -39,28 +51,38 @@ const getThemeTemplateWithDefaultConfigValue: () => ThemeConfig = () => {
               "--right-sidebar-outline-background",
               "--blockquote-background-color",
               "--codeblock-color",
+              "--rm-embed-container-background-color",
+              "--rm-page-ref--tag-background-color",
             ]
           },
           {
-            "name": "text",
-            "label": "Text Colors",
+            "name": "headersFont",
+            "label": "Header Font Colors",
             "configItems": [
-              "--right-sidebar-color",
+              "--h1-font-color",
+              "--h2-font-color",
+              "--h3-font-color",
             ]
           },
           {
-            "name": "border-color",
-            "label": "Border Colors",
+            "name": "headersBackground",
+            "label": "Header Background Colors",
             "configItems": [
-              "--sidebar-right-border-color",
-              "--reference-border"
+              "--h1-background-color",
+              "--h2-background-color",
+              "--h3-background-color",
             ]
           },
           {
-            "name": "highlight",
-            "label": "Highlight Colors",
+            "name": "levelsFont",
+            "label": "Content Levels Font Colors",
             "configItems": [
-              "--highlight-color",
+              "--level1-font-color",
+              "--level2-font-color",
+              "--level3-font-color",
+              "--level4-font-color",
+              "--level5-font-color",
+              "--level6-font-color"
             ]
           },
           {
@@ -75,7 +97,26 @@ const getThemeTemplateWithDefaultConfigValue: () => ThemeConfig = () => {
               "--level6-background-color"
             ]
           },
-
+          {
+            "name": "border-color",
+            "label": "Border Colors",
+            "configItems": [
+              "--sidebar-right-border-color",
+              "--rm-left-sidebar-toprow-border-color",
+              "--rm-topbar-border-color",
+              "--rm-top-search-box-border-color",
+              "--rm-right-sidebar-toprow-border-color",
+              "--reference-border",
+              "--rm-embed-container-border-color",
+            ]
+          },
+          {
+            "name": "highlight",
+            "label": "Highlight Colors",
+            "configItems": [
+              "--highlight-color",
+            ]
+          },
         ]
       },
       {
@@ -90,12 +131,33 @@ const getThemeTemplateWithDefaultConfigValue: () => ThemeConfig = () => {
             ]
           },
           {
+            "name": "heading-fontsize",
+            "label": "Heading Font Size",
+            "configItems": [
+              "--h1-font-size",
+              "--h2-font-size",
+              "--h3-font-size",
+            ]
+          },
+          {
             "name": "content-fontsize",
             "label": "Sidebar Font Size",
             "configItems": [
               "--left-sidebar-font-size",
               "--roam-main-font-size",
               "--right-sidebar-font-size",
+            ]
+          },
+          {
+            "name": "level-fontsize",
+            "label": "Content Level Font Size",
+            "configItems": [
+              "--level1-font-size",
+              "--level2-font-size",
+              "--level3-font-size",
+              "--level4-font-size",
+              "--level5-font-size",
+              "--level6-font-size",
             ]
           },
         ]
@@ -157,6 +219,153 @@ const getThemeTemplateWithDefaultConfigValue: () => ThemeConfig = () => {
         "value": "#f9b637"
       },
       {
+        "name": "--h1-font-color",
+        "label": "H1 Font Color",
+        "render": "colorPickerRender",
+        "valueType": "string",
+        "value": "#f9b637"
+      },
+      {
+        "name": "--h2-font-color",
+        "label": "H2 Font Color",
+        "render": "colorPickerRender",
+        "valueType": "string",
+        "value": "#f9b637"
+      },
+      {
+        "name": "--h3-font-color",
+        "label": "H3 Font Color",
+        "render": "colorPickerRender",
+        "valueType": "string",
+        "value": "#f9b637"
+      },
+      {
+        "name": "--rm-left-sidebar-toprow-background-color",
+        "label": "Left Sidebar TopRow Background Color",
+        "render": "colorPickerRender",
+        "valueType": "string",
+        "value": "#f9b637"
+      },
+      {
+        "name": "--left-sidebar-top-font-color",
+        "label": "Left Sidebar Top Font Color",
+        "render": "colorPickerRender",
+        "valueType": "string",
+        "value": "#f9b637"
+      },
+      {
+        "name": "--rm-right-sidebar-toprow-background-color",
+        "label": "Right Sidebar TopRow Background Color",
+        "render": "colorPickerRender",
+        "valueType": "string",
+        "value": "#f9b637"
+      },
+      {
+        "name": "--rm-topbar-background-color",
+        "label": "Topbar Background Color",
+        "render": "colorPickerRender",
+        "valueType": "string",
+        "value": "none"
+      },
+      {
+        "name": "--rm-embed-container-background-color",
+        "label": "Roam Embeded Block Background Color",
+        "render": "colorPickerRender",
+        "valueType": "string",
+        "value": "none"
+      },
+      {
+        "name": "--rm-page-ref--tag-background-color",
+        "label": "Page Ref Tag Background Color",
+        "render": "colorPickerRender",
+        "valueType": "string",
+        "value": "none"
+      },
+      {
+        "name": "--h1-background-color",
+        "label": "H1 Background Color",
+        "render": "colorPickerRender",
+        "valueType": "string",
+        "value": "none"
+      },
+      {
+        "name": "--h2-background-color",
+        "label": "H2 Background Color",
+        "render": "colorPickerRender",
+        "valueType": "string",
+        "value": "none"
+      },
+      {
+        "name": "--h3-background-color",
+        "label": "H3 Background Color",
+        "render": "colorPickerRender",
+        "valueType": "string",
+        "value": "none"
+      },
+      {
+        "name": "--level1-font-color",
+        "label": "Level 1 Font Color",
+        "render": "colorPickerRender",
+        "valueType": "string",
+        "value": "#f9b637"
+      },
+      {
+        "name": "--level2-font-color",
+        "label": "Level 2 Font Color",
+        "render": "colorPickerRender",
+        "valueType": "string",
+        "value": "#f9b637"
+      },
+      {
+        "name": "--level3-font-color",
+        "label": "Level 3 Font Color",
+        "render": "colorPickerRender",
+        "valueType": "string",
+        "value": "#f9b637"
+      },
+      {
+        "name": "--level4-font-color",
+        "label": "Level 4 Font Color",
+        "render": "colorPickerRender",
+        "valueType": "string",
+        "value": "#f9b637"
+      },
+      {
+        "name": "--level5-font-color",
+        "label": "Level 5 Font Color",
+        "render": "colorPickerRender",
+        "valueType": "string",
+        "value": "#f9b637"
+      },
+      {
+        "name": "--level6-font-color",
+        "label": "Level 6 Font Color",
+        "render": "colorPickerRender",
+        "valueType": "string",
+        "value": "#f9b637"
+      },
+      {
+        "name": "--level1-background-color",
+        "label": "Level 1 Background Color",
+        "render": "colorPickerRender",
+        "valueType": "string",
+        "value": "none"
+      },
+      {
+        "name": "--level2-background-color",
+        "label": "Level 2 Background Color",
+        "render": "colorPickerRender",
+        "valueType": "string",
+        "value": "none"
+      },
+      {
+        "name": "--level3-background-color",
+        "label": "Level 3 Background Color",
+        "render": "colorPickerRender",
+        "valueType": "string",
+        "value": "none"
+      },
+      {
         "name": "--main-article-text-color",
         "label": "Article Text Primary Color",
         "render": "colorPickerRender",
@@ -166,6 +375,13 @@ const getThemeTemplateWithDefaultConfigValue: () => ThemeConfig = () => {
       {
         "name": "--right-sidebar-text-color",
         "label": "Right Sidebar Text Primary Color",
+        "render": "colorPickerRender",
+        "valueType": "string",
+        "value": "#f9b637"
+      },
+      {
+        "name": "--right-sidebar-page-title-font-color",
+        "label": "Right Sidebar Page Title Color",
         "render": "colorPickerRender",
         "valueType": "string",
         "value": "#f9b637"
@@ -207,13 +423,55 @@ const getThemeTemplateWithDefaultConfigValue: () => ThemeConfig = () => {
       },
       {
         "name": "--sidebar-right-border-color",
-        "label": "Sidebar Right Border Color",
+        "label": "Left Sidebar Right Border Color",
+        "render": "colorPickerRender",
+        "valueType": "string",
+        "value": "none"
+      },
+      {
+        "name": "--rm-topbar-border-color",
+        "label": "Roam Topbar Border Color",
+        "render": "colorPickerRender",
+        "valueType": "string",
+        "value": "none"
+      },
+      {
+        "name": "--rm-left-sidebar-toprow-border-color",
+        "label": "Left Sidebar Top Border Color",
+        "render": "colorPickerRender",
+        "valueType": "string",
+        "value": "none"
+      },
+      {
+        "name": "--rm-right-sidebar-toprow-border-color",
+        "label": "Right Sidebar Top Border Color",
         "render": "colorPickerRender",
         "valueType": "string",
         "value": "#090b10"
       },
       {
-        "name": "--sidebar-color",
+        "name": "--sidebar-right-border-color",
+        "label": "Right Sidebar Top Border Color",
+        "render": "colorPickerRender",
+        "valueType": "string",
+        "value": "none"
+      },
+      {
+        "name": "--rm-top-search-box-border-color",
+        "label": "Roam Top Search Border Color",
+        "render": "colorPickerRender",
+        "valueType": "string",
+        "value": "none"
+      },
+      {
+        "name": "--rm-top-search-box-background-color",
+        "label": "Roam Top Search Background Color",
+        "render": "colorPickerRender",
+        "valueType": "string",
+        "value": "none"
+      },
+      {
+        "name": "--left-sidebar-background-color",
         "label": "Left Sidebar Background Color",
         "render": "colorPickerRender",
         "valueType": "string",
@@ -242,6 +500,13 @@ const getThemeTemplateWithDefaultConfigValue: () => ThemeConfig = () => {
       },
       {
         "name": "--reference-border",
+        "label": "Reference Border",
+        "render": "colorPickerRender",
+        "valueType": "string",
+        "value": "#1e3745"
+      },
+      {
+        "name": "--rm-embed-container-border-colorr",
         "label": "Reference Border",
         "render": "colorPickerRender",
         "valueType": "string",
@@ -308,6 +573,105 @@ const getThemeTemplateWithDefaultConfigValue: () => ThemeConfig = () => {
         "unit": "px"
       },
       {
+        "name": "--h1-font-size",
+        "label": "Heading1 Font Size",
+        "render": "sliderRender",
+        "valueType": "number",
+        "value": 24,
+        "minValue": 12,
+        "maxValue": 96,
+        "step": 1,
+        "unit": "px"
+      },
+      {
+        "name": "--h2-font-size",
+        "label": "Heading2 Font Size",
+        "render": "sliderRender",
+        "valueType": "number",
+        "value": 22,
+        "minValue": 12,
+        "maxValue": 96,
+        "step": 1,
+        "unit": "px"
+      },
+      {
+        "name": "--h3-font-size",
+        "label": "Heading3 Font Size",
+        "render": "sliderRender",
+        "valueType": "number",
+        "value": 20,
+        "minValue": 12,
+        "maxValue": 96,
+        "step": 1,
+        "unit": "px"
+      },
+      {
+        "name": "--level1-font-size",
+        "label": "Content Level1 Font Size",
+        "render": "sliderRender",
+        "valueType": "number",
+        "value": 16,
+        "minValue": 12,
+        "maxValue": 96,
+        "step": 1,
+        "unit": "px"
+      },
+      {
+        "name": "--level2-font-size",
+        "label": "Content Level2 Font Size",
+        "render": "sliderRender",
+        "valueType": "number",
+        "value": 15,
+        "minValue": 12,
+        "maxValue": 96,
+        "step": 1,
+        "unit": "px"
+      },
+      {
+        "name": "--level3-font-size",
+        "label": "Content Level3 Font Size",
+        "render": "sliderRender",
+        "valueType": "number",
+        "value": 14,
+        "minValue": 12,
+        "maxValue": 96,
+        "step": 1,
+        "unit": "px"
+      },
+      {
+        "name": "--level4-font-size",
+        "label": "Content Level4 Font Size",
+        "render": "sliderRender",
+        "valueType": "number",
+        "value": 13,
+        "minValue": 12,
+        "maxValue": 96,
+        "step": 1,
+        "unit": "px"
+      },
+      {
+        "name": "--level5-font-size",
+        "label": "Content Level5 Font Size",
+        "render": "sliderRender",
+        "valueType": "number",
+        "value": 12,
+        "minValue": 12,
+        "maxValue": 96,
+        "step": 1,
+        "unit": "px"
+      },
+      {
+        "name": "--level6-font-size",
+        "label": "Content Level6 Font Size",
+        "render": "sliderRender",
+        "valueType": "number",
+        "value": 12,
+        "minValue": 12,
+        "maxValue": 96,
+        "step": 1,
+        "unit": "px"
+      },
+      {
         "name": "--page-title-font-color",
         "label": "Page Title Font Color",
         "render": "colorPickerRender",
@@ -323,17 +687,6 @@ const getThemeTemplateWithDefaultConfigValue: () => ThemeConfig = () => {
         "minValue": 100,
         "maxValue": 900,
         "step": 100
-      },
-      {
-        "name": "--h1-font-size",
-        "label": "H1 Font Size",
-        "render": "sliderRender",
-        "valueType": "number",
-        "value": 14,
-        "minValue": 12,
-        "maxValue": 96,
-        "step": 1,
-        "unit": "px"
       },
       {
         "name": "--level1-font-size",

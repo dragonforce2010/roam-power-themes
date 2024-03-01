@@ -2,6 +2,7 @@ import { create } from 'zustand'
 import { loadAllThemes, loadCurrentTheme } from '../theme-manager/theme-loader'
 import { ThemeConfig } from '../theme-manager/theme-config';
 import { CURRENT_THEME_NAME } from '../common/constants';
+import { removeOldTheme } from '../theme-manager/theme-manager-legacy';
 
 const useThemeStore = create((set) => ({
   allThemes: loadAllThemes(),
@@ -55,6 +56,9 @@ const useThemeStore = create((set) => ({
     if (!theme || JSON.stringify(theme) == '{}') {
       return
     }
+
+    // for lagacy themes to work
+    removeOldTheme()
 
     window.extensionAPI.settings.set(CURRENT_THEME_NAME, theme.name)
     state.setAllThemes([

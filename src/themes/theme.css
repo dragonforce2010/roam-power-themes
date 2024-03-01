@@ -1,10 +1,40 @@
 /* Variables */
 .roam-power-theme {
-  --left-sidebar-font-size: 14px;
+  --h3-font-color: var(--primary-color) !important;
+  --h3-font-size: 16px !important;
+  --h3-background-color: none !important;
+  --h2-font-color: var(--primary-color) !important;
+  --h2-font-size: 16px !important;
+  --h2-background-color: none !important;
+  --h1-font-color: var(--primary-color) !important;
+  --h1-font-size: 16px !important;
+  --h1-background-color: none !important;
+  --level6-font-color: var(--primary-color) !important;
+  --level6-background-color: none !important;
+  --level5-font-color: var(--primary-color) !important;
+  --level5-background-color: none !important;
+  --level4-font-color: var(--primary-color) !important;
+  --level4-background-color: none !important;
+  --level3-font-color: var(--primary-color) !important;
+  --level3-background-color: none !important;
+  --level2-font-color: var(--primary-color) !important;
+  --level2-background-color: none !important;
+  --level1-font-color: var(--primary-color) !important;
+  --level1-background-color: none !important;
   --primary-color: orange;
+  --left-sidebar-background-color: #0c0c0c;
+  --rm-topbar-background-color: none;
+  --rm-topbar-border-color: none;
+  --rm-left-sidebar-toprow-background-color: none;
+  --rm-left-sidebar-toprow-border-color: none;
+  --rm-right-sidebar-toprow-background-color: none;
+  --rm-right-sidebar-toprow-border-color: none;
+  --rm-top-search-box-background-color: none;
+  --rm-top-search-box-border-color: var(--primary-color);
+  --left-sidebar-font-size: 14px;
+  --left-sidebar-top-font-color: var(--rm-right-sidebar-toprow-border-color);
   --sidebar-right-border-color: orange;
   --page-ref-tag-color: orange;
-  --sidebar-color: orange;
   --highlight-color: orange;
   --brackets-color: orange;
   --reference-bg: orange;
@@ -27,12 +57,50 @@
   --right-sidebar-font-size: 14px;
   --right-sidebar-font-weight: 300;
   --roam-main-font-size: 14px;
+  --rm-embed-container-border-color: none;
+  --rm-embed-container-background-color: var(--primary-color);
+  --right-sidebar-page-title-font-color: var(--primary-color);
+  --rm-page-ref--tag-background-color: var(--active-line-bg);
 }
 .roam-power-theme body {
   letter-spacing: -0.001em;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+}
+.roam-power-theme .top-row {
+  background: var(--rm-left-sidebar-toprow-background-color) !important;
+}
+.roam-power-theme .top-row {
+  border-color: var(--rm-left-sidebar-toprow-border-color) !important;
+}
+.roam-power-theme .rm-topbar {
+  background: var(--rm-topbar-background-color) !important;
+}
+.roam-power-theme .rm-topbar {
+  border-color: var(--rm-topbar-border-color) !important;
+}
+.roam-power-theme .rm-embed-container.rm-embed-container--block {
+  background: var(--rm-embed-container-background-color);
+  border: var(--rm-embed-container-border-color);
+}
+.roam-power-theme #find-or-create-input {
+  background: var(--rm-top-search-box-background-color) !important;
+}
+.roam-power-theme #find-or-create-input {
+  border-color: var(--rm-top-search-box-border-color) !important;
+}
+.roam-power-theme #right-sidebar > div.flex-h-box {
+  background: var(--rm-right-sidebar-toprow-background-color) !important;
+}
+.roam-power-theme #right-sidebar .flex-h-box {
+  border-color: var(--rm-right-sidebar-toprow-border-color) !important;
+}
+.roam-power-theme #right-sidebar .flex-h-box > div:nth-child(2) {
+  background: none;
+}
+.roam-power-theme .rm-db-title {
+  color: var(--left-sidebar-top-font-color) !important;
 }
 .roam-power-theme blockquote.rm-bq {
   background: var(--blockquote-background-color) !important;
@@ -61,7 +129,8 @@
 .roam-power-theme .rm-alias--page {
   color: var(--page-ref-link-color) !important;
 }
-.roam-power-theme .roam-main {
+.roam-power-theme .roam-main,
+.roam-power-theme .roam-body-main {
   background: var(--roam-body-background) !important;
 }
 .roam-power-theme .roam-body .roam-article {
@@ -75,7 +144,7 @@
 .roam-power-theme .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content,
 .roam-power-theme .starred-pages-wrapper {
   color: var(--primary-color) !important;
-  background: var(--sidebar-color) !important;
+  background: var(--left-sidebar-background-color) !important;
 }
 .roam-power-theme .rm-block__input--active {
   background: var(--active-line-bg) !important;
@@ -171,45 +240,74 @@
   color: var(--page-title-font-color) !important;
   background: var(--page-title-background-color) !important;
 }
-.roam-power-theme .roam-article .rm-heading-level-3 {
-  color: var(--h3-font-color) !important;
+.roam-power-theme .rm-page-ref.rm-page-ref--tag {
+  background: var(--rm-page-ref--tag-background-color) !important;
 }
-.roam-power-theme .roam-article .rm-heading-level-3 .rm-block-text {
-  background: var(--h3-background-color) !important;
+.roam-power-theme .ant-drawer-content {
+  color: black;
 }
-.roam-power-theme .roam-article .rm-heading-level-2 {
-  color: var(--h2-font-color) !important;
+.roam-power-theme #roam-right-sidebar-content div.rm-sidebar-outline > div:nth-child(1) > h1 > span {
+  color: var(--right-sidebar-page-title-font-color) !important;
 }
-.roam-power-theme .roam-article .rm-heading-level-2 .rm-block-text {
-  background: var(--h2-background-color) !important;
+.roam-power-theme .rm-block__children.rm-level-1 > div:nth-child(2) > div.rm-block-main.rm-block__self {
+  background: var(--level1-background-color) !important;
 }
-.roam-power-theme .roam-article .rm-heading-level-1 {
-  color: var(--h1-font-color) !important;
+.roam-power-theme .rm-block__children.rm-level-1 > div:nth-child(2) > div.rm-block-main.rm-block__self span {
+  color: var(--level1-font-color) !important;
 }
-.roam-power-theme .roam-article .rm-heading-level-1 .rm-block-text {
-  background: var(--h1-background-color) !important;
-}
-.roam-power-theme .rm-block-children.rm-block__children.rm-level-6 {
-  color: var(--level6-font-color) !important;
+.roam-power-theme .rm-block__children.rm-level-6 > div > div.rm-block-main.rm-block__self {
   background: var(--level6-background-color) !important;
 }
-.roam-power-theme .rm-block-children.rm-block__children.rm-level-5 {
-  color: var(--level5-font-color) !important;
+.roam-power-theme .rm-block__children.rm-level-6 > div > div.rm-block-main.rm-block__self span {
+  color: var(--level6-font-color) !important;
+  font-size: var(--level6-font-size) !important;
+}
+.roam-power-theme .rm-block__children.rm-level-5 > div > div.rm-block-main.rm-block__self {
   background: var(--level5-background-color) !important;
 }
-.roam-power-theme .rm-block-children.rm-block__children.rm-level-4 {
-  color: var(--level4-font-color) !important;
+.roam-power-theme .rm-block__children.rm-level-5 > div > div.rm-block-main.rm-block__self span {
+  color: var(--level5-font-color) !important;
+  font-size: var(--level5-font-size) !important;
+}
+.roam-power-theme .rm-block__children.rm-level-4 > div > div.rm-block-main.rm-block__self {
   background: var(--level4-background-color) !important;
 }
-.roam-power-theme .rm-block-children.rm-block__children.rm-level-3 {
-  color: var(--level3-font-color) !important;
+.roam-power-theme .rm-block__children.rm-level-4 > div > div.rm-block-main.rm-block__self span {
+  color: var(--level4-font-color) !important;
+  font-size: var(--level4-font-size) !important;
+}
+.roam-power-theme .rm-block__children.rm-level-3 > div > div.rm-block-main.rm-block__self {
   background: var(--level3-background-color) !important;
 }
-.roam-power-theme .rm-block-children.rm-block__children.rm-level-2 {
-  color: var(--level2-font-color) !important;
+.roam-power-theme .rm-block__children.rm-level-3 > div > div.rm-block-main.rm-block__self span {
+  color: var(--level3-font-color) !important;
+  font-size: var(--level3-font-size) !important;
+}
+.roam-power-theme .rm-block__children.rm-level-2 > div > div.rm-block-main.rm-block__self {
   background: var(--level2-background-color) !important;
 }
-.roam-power-theme .rm-block-children.rm-block__children.rm-level-1 {
-  color: var(--level1-font-color) !important;
-  background: var(--level1-background-color) !important;
+.roam-power-theme .rm-block__children.rm-level-2 > div > div.rm-block-main.rm-block__self span {
+  color: var(--level2-font-color) !important;
+  font-size: var(--level2-font-size) !important;
+}
+.roam-power-theme .roam-body .roam-app .roam-main .roam-article .rm-heading-level-3.rm-block > .rm-block__self {
+  background: var(--h3-background-color) !important;
+}
+.roam-power-theme .roam-body .roam-app .roam-main .roam-article .rm-heading-level-3.rm-block > .rm-block__self span {
+  color: var(--h3-font-color) !important;
+  font-size: var(--h3-font-size) !important;
+}
+.roam-power-theme .roam-body .roam-app .roam-main .roam-article .rm-heading-level-2.rm-block > .rm-block__self {
+  background: var(--h2-background-color) !important;
+}
+.roam-power-theme .roam-body .roam-app .roam-main .roam-article .rm-heading-level-2.rm-block > .rm-block__self span {
+  color: var(--h2-font-color) !important;
+  font-size: var(--h2-font-size) !important;
+}
+.roam-power-theme .roam-body .roam-app .roam-main .roam-article .rm-heading-level-1.rm-block > .rm-block__self {
+  background: var(--h1-background-color) !important;
+}
+.roam-power-theme .roam-body .roam-app .roam-main .roam-article .rm-heading-level-1.rm-block > .rm-block__self span {
+  color: var(--h1-font-color) !important;
+  font-size: var(--h1-font-size) !important;
 }
