@@ -1,5 +1,92 @@
 # Roam Power Themes
 
+
+Change log
+2024.3.1
+- Implemented a robust theme system in Roam Research, enabling users to personalize their research workspace as they wish.
+Powerful configuration center 3.0, user-friendly.
+![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FqJZqqYnATA.png?alt=media&token=fa45867c-5fac-4701-94bc-466ffb12d138)
+![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2F_DjueTcji6.png?alt=media&token=a0d2cc37-b38a-4c66-bdcf-0a1e3bde2763)
+![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FXJavGkd1at.png?alt=media&token=75b2f3a7-f2a4-4b50-97e4-5cc97bbe49dd)
+![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FU-SDtr4COC.png?alt=media&token=3ead3ff9-9faf-4cb5-9616-759cd8c00fb8)
+- Offered 36 themes and 66 preset styles for users to customize, with more on the way.
+- Enabled users to easily share theme settings with others using the config inspector.
+- Allowed users to export theme settings as a JSON file (import feature will be available in the next release).
+- Made it easy for users to switch between themes.
+- Allowed users to conveniently set the configuration panel location while customizing their themes.
+- Comppatilbe with RoamStudio Extension
+- Provided over 36 themes, including both dark and light themes. The themes are as follows:
+- Bear Gotham Light
+    - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FXTS8GFdFVx.png?alt=media&token=dff2f139-6d41-4c4b-9dca-81a717bdfd75)
+- Bear Panic Light
+    - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2Fyt-0Fwsef1.png?alt=media&token=62007536-7a18-4861-82a5-111753747440)
+- Bubblegum Light
+    - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FN86k7jvK-S.png?alt=media&token=855e351f-29c4-4bf8-bf0c-d1585ecbbd0e)
+- Caesar Light
+    - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2F-B_a8ByY5J.png?alt=media&token=d0fd5e47-c091-484f-9ee8-69e5015a7653)
+- Darkage Light
+    - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FUtoO7WsJsi.png?alt=media&token=946140ec-e964-4144-b7e2-6c7ade95795e)
+- Dragula Light
+    - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FhUm0N-yYP-.png?alt=media&token=0b9f3fdf-0de1-45dc-99d8-37e26f21629c)
+- Float Light
+    - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FM-wH_3vjfP.png?alt=media&token=afc26cc4-a896-40d9-8911-d2891d299c34)
+- Gambler Light
+    - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FuBySpLcdcx.png?alt=media&token=212faa69-cf2a-4e12-920a-7618bb13fbd7)
+- Hipster Light
+    - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FMM7FrjK9vH.png?alt=media&token=e4e07afa-7d2b-4609-9b69-fe7aafb04db1)
+- Leyendarker Light
+    - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FuNqe5cmIL4.png?alt=media&token=ada8844e-a71a-4d36-ba83-3c855be81864)
+- Lilac Light
+    - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FqVuMTyj8hL.png?alt=media&token=184c3645-f2c1-4554-8a73-10054622efe2)
+- Magazine Light
+    - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FMDMzHZZNSR.png?alt=media&token=2d984eb3-8a0c-4f49-bec7-78ec11ac268a)
+- Mermaid Light
+    - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FlICTA7DPPj.png?alt=media&token=9e6c70bf-a067-429a-a02d-580d0b242563)
+- Night Owlish Light
+    - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FkVZG-ZEQ0z.png?alt=media&token=1a4f0de0-3634-4cd0-8bbc-aef4a1c3fa38)
+- Rails Orange Light
+    - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FulG8Po4Exl.png?alt=media&token=16aa20ff-20b0-429d-a6f6-e0c7b788d69f)
+- Tokiwa Light
+    - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FNvxsZWQA_o.png?alt=media&token=4cfd2e24-29cb-48fa-8fa0-d34b708e38b7)
+- Zenithdecker Light
+    - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FWnaER4udQq.png?alt=media&token=f2629220-abe5-4781-a088-79884d293da8)
+- Bear Gotham Dark
+    - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2Fvr-tbtKgVQ.png?alt=media&token=72efce6b-00e4-4f8e-979e-63f1bbe9af82)
+- Bear Panic Dark
+    - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FBoD8E4lY_H.png?alt=media&token=cbe3db92-d3e1-4d48-af4a-c1793ca5ab62)
+- Bubblegum Dark
+    - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FDUavIou4ez.png?alt=media&token=32fe1a9d-88b7-4097-87eb-92eb438c1618)
+- Caesar Dark
+    - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FP4fGwVhWOS.png?alt=media&token=79b2a552-6ee8-40f8-9c39-198eb42ae310)
+- Darkage Dark
+    - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FTeuj1-TqSC.png?alt=media&token=61726218-c40d-4cd6-8535-ad24241615f2)
+- Dracula Dark
+    - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FxiDrvnXeCs.png?alt=media&token=d4bf2096-b39c-4671-86ca-4b198b3d955d)
+- Float Dark
+    - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2F8e12BdNki5.png?alt=media&token=a678f416-f789-4a06-9321-92868d9806c2)
+- Gambler Dark
+    - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2Fx66djXg4F6.png?alt=media&token=e76ea992-ed7c-4de9-9b2a-51d4320bf2b2)
+- Hipster Dark
+    - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FdaP6qmtlWy.png?alt=media&token=b77ebc92-b1c4-4ecb-951d-3fa57d6c35a9)
+- Leyendarker Dark
+    - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FOfhuLgEDYt.png?alt=media&token=4c3759df-fdba-45d4-a6ea-ff663e955c1c)
+- Lilac Dark
+    - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FnTYr7rZ8D3.png?alt=media&token=7f66c545-03f8-4386-ac3d-f4091d485e44)
+- Magazine Dark
+    - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FhKHsLpi9xI.png?alt=media&token=3f21ccea-f1a0-4006-aac8-c5d6f8404a37)
+- Mermaid Dark
+    - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FirW-DMqN90.png?alt=media&token=9930f7ab-8d8e-43f4-89b7-ae68264d70f7)
+- Night Owlish Dark
+    - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FvK2TBF2TS7.png?alt=media&token=70d47c71-611e-4bca-b821-dbdd0381963d)
+- Rails Orange Dark
+    - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FAy-2-UJKR7.png?alt=media&token=4304d2cc-4ef0-4daf-bb87-0e551a4ac0d3)
+- Tokiwa Dark
+    - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FLPbWObx9XL.png?alt=media&token=32b466a9-05f3-4e1a-9ccd-4c79c66ae604)
+- Zenithdecker Dark
+    - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FAs9sX-GIP6.png?alt=media&token=b9580c11-43b2-4f16-b02b-a72ec77d1021)
+
+
+older version
 This Extension gives you 23 beautiful theme as below
 - Theme Manager
     - ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FTDzPIseMY_.31.47.gif?alt=media&token=69075b59-b268-4eb7-a28e-f0ad113212d4)

@@ -16,6 +16,7 @@ import { loadMermaidLightThemeSettings, mermaidLightThemeSettings } from '../the
 import { loadRailsPurpleThemeSettings, railsPurpleThemeSettings } from '../themes/rails/rails-purple-config'
 import { loadTokiwaThemeSettings, tokiwaThemeSettings } from '../themes/tokiwa/tokiwa-config'
 import { loadZenithdeckerThemeSettings, zenithdeckerThemeSettings } from '../themes/zenithdecker/zenithdecker-config'
+import { updateTheme } from '../theme-manager/theme-manager-legacy';
 
 
 let themeDetailSettings: any = []
@@ -52,7 +53,7 @@ const themeSetting: any = {
     ],
     onChange(e: any) {
       const selectedTheme = e.toString()
-      // updateTheme(selectedTheme);
+      updateTheme(selectedTheme);
       switch (selectedTheme) {
         case THEME_BEAR_PANIC:
           themeDetailSettings = bearpanicThemeSettings
