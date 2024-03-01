@@ -2,7 +2,9 @@
 
 
 Change log
-2024.3.1
+- 2024.3.1
+demo video is [here](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2F5edGnp6oBS.mp4?alt=media&token=95d6a8cc-49b7-4145-8b7a-83b78c0d0822)
+
 - Implemented a robust theme system in Roam Research, enabling users to personalize their research workspace as they wish.
 Powerful configuration center 3.0, user-friendly.
 ![](https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FqJZqqYnATA.png?alt=media&token=fa45867c-5fac-4701-94bc-466ffb12d138)
