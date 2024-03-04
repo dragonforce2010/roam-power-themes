@@ -149,7 +149,7 @@ const toolbarConfigCenterSetting: any = {
   action: {
     type: 'switch',
     onChange: (e: any) => {
-      console.log(e.target.checked)
+      // console.log(e.target.checked)
       if (e.target.checked) {
         // @ts-ignore
         window.showToolbarButton()

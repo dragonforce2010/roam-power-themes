@@ -20,6 +20,7 @@
 
 .ant-drawer-body {
   padding: 20px !important;
+  margin: 20px;
 }
 
 .themeCard:hover {
@@ -49,20 +50,20 @@
 
 .sectionTitle {
   font-size: 1.4em;
-  margin-top: 40px;
+  /* margin-top: 40px; */
   font-weight: 900;
   color: black;
 }
 
 .headLinks {
   width: 300px !important;
-  margin: 0px;
+  margin: 10px;
+  margin-left: 0px;
   background: white;
   position: fixed;
   z-index: 9999;
   width: 100%;
-  top: 61px;
-  padding-top: 10px;
+  padding-top: 14px;
   top: 0px;
 }
 

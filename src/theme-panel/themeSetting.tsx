@@ -125,9 +125,9 @@ const ThemeSetting: React.FC = () => {
         currentThemeConfigItem.value = propertyValue?.replace(currentThemeConfigItem.unit, '')
         // console.log('continue----')
         findStyleRuleWithCallBack('.' + ROAM_POWER_THEME_NAMESPACE, (rule: CSSStyleRule) => rule.style.setProperty(key, propertyValue))
-        console.log('update the settings from code', key, propertyValue)
+        // console.log('update the settings from code', key, propertyValue)
         window.extensionAPI.settings.set([ROAM_POWER_THEME_NAMESPACE, currentTheme.name, key].join('-'), propertyValue)
-        console.log('update the settings from code - extension API', [ROAM_POWER_THEME_NAMESPACE, currentTheme.name, key].join('-'), propertyValue)
+        // console.log('update the settings from code - extension API', [ROAM_POWER_THEME_NAMESPACE, currentTheme.name, key].join('-'), propertyValue)
       }
 
       setCurrentTheme({

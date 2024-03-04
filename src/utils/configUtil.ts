@@ -7,7 +7,7 @@ export const findStyleRuleWithCallBack = (selectorText: string, onFind: Function
     const index = rules.findIndex(rule => (rule as any).selectorText === selectorText)
     if (index != -1) {
       onFind(rules[index])
-      console.log('执行', onFind, '参数', rules[index])
+      // console.log('执行', onFind, '参数', rules[index])
     }
   })
 }
@@ -67,7 +67,7 @@ export const genColorSetting = (
       type: "input",
       placeholder: placeholder,
       onChange: (evt: ChangeEvent<HTMLInputElement>) => {
-        console.log(propName, themeName, evt.target.value)
+        // console.log(propName, themeName, evt.target.value)
         findStyleRuleWithCallBack(themeName, (rule: CSSStyleRule) => rule.style.setProperty(propName, evt.target.value))
       },
     },
@@ -129,7 +129,7 @@ export const genFontFamilySetting = (
         // "WindsorEF",
       ],
       onChange: (evt: string) => {
-        console.log('font family on change: ', evt)
+        // console.log('font family on change: ', evt)
         findStyleRuleWithCallBack(themeName, (rule: CSSStyleRule) => rule.style.setProperty(propName, evt));
       },
     },

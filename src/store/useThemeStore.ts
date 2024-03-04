@@ -72,7 +72,7 @@ const useThemeStore = create((set) => ({
   }),
 
   setAllThemes: (themes: any) => set((state: any) => {
-    console.log('set all themes called')
+    // console.log('set all themes called')
     return {
       allThemes: themes
     }

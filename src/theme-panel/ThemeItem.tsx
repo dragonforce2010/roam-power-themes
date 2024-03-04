@@ -55,7 +55,7 @@ const ThemeItem: React.FC<ThemeItemProps> = ({
     // }}
     >
       <div className='cardFooter'>
-        <Meta title={themeConfig.label} description={currentTheme.name === themeConfig.name ? 'Current Theme' : ''} />
+        <Meta title={themeConfig.label} description={currentTheme.name === themeConfig.name ? 'Current' : ''} />
         <Button
           type='primary'
           onClick={() => {
