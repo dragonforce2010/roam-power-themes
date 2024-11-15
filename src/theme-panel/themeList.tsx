@@ -104,7 +104,7 @@ const ThemeList = () => {
     </>
   }
 
-  console.log("THEMEsETTINGS initialized！")
+  // console.log("THEMEsETTINGS initialized！")
   return <div className='dongyuhui'>
     {/* <Button
       icon={<FireOutlined />}
