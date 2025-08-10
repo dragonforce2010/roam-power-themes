@@ -7,7 +7,7 @@
   --text-secondary: #666666;
   --text-muted: #999999;
   --border-color: #e0e0e0;
-  --hover-color: #f0f0f0;
+  --hover-color: #e8e8e8;
   --input-bg: #ffffff;
   --button-bg: #f5f5f5;
   --selection-bg: #e6e6e6;
@@ -47,9 +47,14 @@
 }
 
 .kortex-light .rm-left-sidebar .rm-nav-item:hover,
-.kortex-light .rm-left-sidebar .log-button:hover {
+.kortex-light .rm-left-sidebar .log-button:hover,
+.kortex-light .rm-left-sidebar .starred-pages-wrapper:hover,
+.kortex-light .rm-left-sidebar .starred-pages-wrapper .starred-pages:hover,
+.kortex-light .rm-left-sidebar .rm-nav-item a:hover,
+.kortex-light .rm-left-sidebar .sidebar-content .rm-nav-item:hover {
   background-color: var(--hover-color) !important;
   color: var(--text-color) !important;
+  border-radius: 4px !important;
 }
 
 /* Main Content */

@@ -47,9 +47,14 @@
 }
 
 .kortex-dark .rm-left-sidebar .rm-nav-item:hover,
-.kortex-dark .rm-left-sidebar .log-button:hover {
+.kortex-dark .rm-left-sidebar .log-button:hover,
+.kortex-dark .rm-left-sidebar .starred-pages-wrapper:hover,
+.kortex-dark .rm-left-sidebar .starred-pages-wrapper .starred-pages:hover,
+.kortex-dark .rm-left-sidebar .rm-nav-item a:hover,
+.kortex-dark .rm-left-sidebar .sidebar-content .rm-nav-item:hover {
   background-color: var(--hover-color) !important;
   color: var(--text-color) !important;
+  border-radius: 4px !important;
 }
 
 /* Main Content */

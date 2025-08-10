@@ -2587,7 +2587,7 @@
     "name": "kortex-light",
     "label": "Kortex",
     "type": "light",
-    "coverUrl": "https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2Fkortex-light.png?alt=media&token=kortex-light",
+    "coverUrl": "https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2FYzt57_VIJe.png?alt=media&token=d35b1063-05f5-490b-99c4-a329928f4004",
     "commandLabel": "Roam Theme: Kortex Light",
     "configItems": {
       "--left-sidebar-font-size": "14",
@@ -2620,7 +2620,7 @@
       "--right-sidebar-page-title-font-color": "#1a1a1a",
       "--roam-body-background": "#ffffff",
       "--roam-article-background": "#ffffff",
-      "--left-sidebar-onhover-background": "#f0f0f0",
+      "--left-sidebar-onhover-background": "#e8e8e8",
       "--blockquote-background-color": "#f0f0f0",
       "--page-ref-link-color": "#1a1a1a",
       "--sidebar-right-border-color": "#e0e0e0",
@@ -2663,7 +2663,7 @@
     "name": "kortex-dark",
     "label": "Kortex",
     "type": "dark",
-    "coverUrl": "https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2Fkortex-dark.png?alt=media&token=kortex-dark",
+    "coverUrl": "https://firebasestorage.googleapis.com/v0/b/firescript-577a2.appspot.com/o/imgs%2Fapp%2FExploreSpace%2F05aTCLFLPO.png?alt=media&token=5e4213aa-b1b7-4926-b449-eea18c1460e3",
     "commandLabel": "Roam Theme: Kortex Dark",
     "configItems": {
       "--left-sidebar-font-size": "14",
