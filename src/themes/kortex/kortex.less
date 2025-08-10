@@ -1,0 +1,229 @@
+/* Kortex Theme - Modern Dark Theme with Orange Accents */
+.kortex {
+  // Color variables
+  --primary-color: #ff8c00;
+  --background-color: #1a1a1a;
+  --surface-color: #2d2d2d;
+  --text-color: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --border-color: #404040;
+  --hover-color: #333333;
+  --accent-color: #ff8c00;
+
+  // Main application background
+  .roam-app {
+    background-color: var(--background-color);
+    color: var(--text-color);
+  }
+
+  .roam-body {
+    background-color: var(--background-color);
+  }
+
+  // Left sidebar
+  .rm-left-sidebar {
+    background-color: var(--surface-color);
+    border-right: 1px solid var(--border-color);
+
+    &__all-pages {
+      color: var(--text-color);
+
+      &:hover {
+        background-color: var(--hover-color);
+      }
+    }
+  }
+
+  // Main content area
+  .roam-main {
+    background-color: var(--background-color);
+  }
+
+  .roam-article {
+    background-color: var(--background-color);
+  }
+
+  // Block text
+  .rm-block-text {
+    color: var(--text-color);
+  }
+
+  // Page references
+  .rm-page-ref {
+    color: var(--accent-color);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--primary-color);
+      text-decoration: underline;
+    }
+
+    &--link {
+      color: var(--accent-color);
+
+      &:hover {
+        color: var(--primary-color);
+      }
+    }
+  }
+
+  // References
+  .rm-reference-main {
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+  }
+
+  .rm-reference-item {
+    background-color: var(--surface-color);
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  // Block references
+  .rm-block-ref {
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 3px;
+    padding: 2px 4px;
+
+    &:hover {
+      background-color: var(--hover-color);
+    }
+  }
+
+  // Code editor
+  .CodeMirror {
+    background-color: var(--surface-color);
+    color: var(--text-color);
+
+    &-cursor {
+      border-left: 1px solid var(--accent-color);
+    }
+
+    &-selected {
+      background-color: var(--hover-color);
+    }
+  }
+
+  // Code blocks
+  .rm-code-block {
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+  }
+
+  // Titles
+  .rm-title-display,
+  .rm-page-title {
+    color: var(--text-color);
+  }
+
+  // Buttons
+  .bp3-button {
+    background-color: var(--surface-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+
+    &:hover {
+      background-color: var(--hover-color);
+      color: var(--accent-color);
+    }
+
+    &.bp3-intent-primary {
+      background-color: var(--accent-color);
+      color: var(--background-color);
+
+      &:hover {
+        background-color: var(--primary-color);
+      }
+    }
+  }
+
+  // Input fields
+  .bp3-input {
+    background-color: var(--surface-color);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+
+    &:focus {
+      border-color: var(--accent-color);
+      box-shadow: 0 0 0 1px var(--accent-color);
+    }
+  }
+
+  // Top bar
+  .rm-topbar {
+    background-color: var(--surface-color);
+    border-bottom: 1px solid var(--border-color);
+  }
+
+  // Find or create
+  .rm-find-or-create-wrapper {
+    background-color: var(--surface-color);
+  }
+
+  // Menus
+  .rm-menu {
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+
+    &__item {
+      color: var(--text-color);
+
+      &:hover {
+        background-color: var(--hover-color);
+        color: var(--accent-color);
+      }
+    }
+  }
+
+  // Right sidebar
+  .rm-sidebar-outline {
+    background-color: var(--surface-color);
+    border-left: 1px solid var(--border-color);
+
+    .rm-sidebar-outline__item {
+      color: var(--text-secondary);
+
+      &:hover {
+        color: var(--accent-color);
+        background-color: var(--hover-color);
+      }
+    }
+  }
+
+  // Log container
+  .roam-log-container,
+  .roam-log-page {
+    background-color: var(--background-color);
+  }
+
+  // Queries
+  .rm-query {
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+
+    &-title {
+      color: var(--text-color);
+      background-color: var(--surface-color);
+    }
+  }
+
+  // Embeds
+  .rm-embed-container {
+    background-color: var(--surface-color);
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+  }
+
+  // Aliases and hashtags
+  .rm-alias,
+  .rm-hashtag {
+    color: var(--accent-color);
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+}

@@ -21,6 +21,7 @@ import '../themes/rails/rails-purple.css'
 import '../themes/rails/rails.css'
 import '../themes/tokiwa/tokiwa.css'
 import '../themes/zenithdecker/zenithdecker.css'
+import '../themes/kortex/kortex.css'
 
 import {
   ROAM_POWER_THEME_NAMESPACE,
@@ -47,6 +48,7 @@ import {
   THEME_RAILS_PURPLE,
   THEME_TOKIWA,
   THEME_ZENITHDECKER,
+  THEME_KORTEX,
   roamThemeSettingKey
 } from '../common/constants'
 import { ConfigItem, ThemeConfig } from './theme-config';
@@ -150,6 +152,10 @@ let themeConfig = [
   {
     themeKey: THEME_ZENITHDECKER,
     commandLabel: 'Roam Theme: Zenithedecker',
+  },
+  {
+    themeKey: THEME_KORTEX,
+    commandLabel: 'Roam Theme: Kortex',
   },
 ]
 

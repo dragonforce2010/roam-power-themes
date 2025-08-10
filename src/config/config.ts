@@ -1,5 +1,5 @@
 import { ExtensionAPI, PanelConfig } from '../../types';
-import { THEME_BEAR_GOTHAM, THEME_BEAR_PANIC, THEME_BUBBLEGUM_DARK, THEME_BUBBLEGUM_LIGHT, THEME_CAESAR_LIGHT, THEME_DARKAGE, THEME_DRACULA, THEME_FLOAT, THEME_GAMBLER, THEME_HIPSTER1, THEME_HIPSTER2, THEME_LEYENDARKER, THEME_LEYENDECKER, THEME_LILAC_DARK, THEME_LILAC_LIGHT, THEME_MAGAZINE, THEME_MERMAID_DARK, THEME_MERMAID_LIGHT, THEME_NIGHT_OWLISH, THEME_RAILS_ORANGE, THEME_RAILS_PURPLE, THEME_TOKIWA, THEME_ZENITHDECKER, roamThemeSettingKey } from '../common/constants';
+import { THEME_BEAR_GOTHAM, THEME_BEAR_PANIC, THEME_BUBBLEGUM_DARK, THEME_BUBBLEGUM_LIGHT, THEME_CAESAR_LIGHT, THEME_DARKAGE, THEME_DRACULA, THEME_FLOAT, THEME_GAMBLER, THEME_HIPSTER1, THEME_HIPSTER2, THEME_LEYENDARKER, THEME_LEYENDECKER, THEME_LILAC_DARK, THEME_LILAC_LIGHT, THEME_MAGAZINE, THEME_MERMAID_DARK, THEME_MERMAID_LIGHT, THEME_NIGHT_OWLISH, THEME_RAILS_ORANGE, THEME_RAILS_PURPLE, THEME_TOKIWA, THEME_ZENITHDECKER, THEME_KORTEX, roamThemeSettingKey } from '../common/constants';
 import { initTheme } from '../theme-manager/theme-manager';
 import { bearpanicThemeSettings, loadBearpanicThemeSettings } from '../themes/bearpanic/bearpanic-config';
 import { bubblegumDarkThemeSettings, loadBubblegumDarkThemeSettings } from '../themes/bubblegum/bugglegum-dark-config'
@@ -16,6 +16,7 @@ import { loadMermaidLightThemeSettings, mermaidLightThemeSettings } from '../the
 import { loadRailsPurpleThemeSettings, railsPurpleThemeSettings } from '../themes/rails/rails-purple-config'
 import { loadTokiwaThemeSettings, tokiwaThemeSettings } from '../themes/tokiwa/tokiwa-config'
 import { loadZenithdeckerThemeSettings, zenithdeckerThemeSettings } from '../themes/zenithdecker/zenithdecker-config'
+import { kortexConfig, loadKortexConfig } from '../themes/kortex/kortex-config'
 import { updateTheme } from '../theme-manager/theme-manager-legacy';
 
 
@@ -50,6 +51,7 @@ const themeSetting: any = {
       THEME_RAILS_PURPLE,
       THEME_TOKIWA,
       THEME_ZENITHDECKER,
+      THEME_KORTEX,
     ],
     onChange(e: any) {
       const selectedTheme = e.toString()
@@ -114,6 +116,10 @@ const themeSetting: any = {
         case THEME_ZENITHDECKER:
           themeDetailSettings = zenithdeckerThemeSettings
           loadZenithdeckerThemeSettings()
+          break
+        case THEME_KORTEX:
+          themeDetailSettings = kortexConfig.configItems || []
+          loadKortexConfig()
           break
         default:
           themeDetailSettings = []

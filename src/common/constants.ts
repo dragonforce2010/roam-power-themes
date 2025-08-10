@@ -21,6 +21,7 @@ export const THEME_RAILS_ORANGE = "rails-orange"
 export const THEME_RAILS_PURPLE = "rails-purple"
 export const THEME_TOKIWA = "tokiwa"
 export const THEME_ZENITHDECKER = "zenithdecker"
+export const THEME_KORTEX = "kortex"
 export const roamThemeSettingKey = 'roam_default_theme'
 export const CURRENT_THEME_NAME = 'currentThemeName'
 export const ROAM_POWER_THEME_NAMESPACE = 'roam-power-theme'
