@@ -1,70 +1,68 @@
 import { ConfigItem, ThemeConfig } from '../../theme-manager/theme-config';
 
+const primaryColorItem: ConfigItem = {
+  name: 'primary-color',
+  label: 'Primary Color',
+  render: 'color',
+  valueType: 'color',
+  value: '#ff8c00'
+};
+
+const backgroundColorItem: ConfigItem = {
+  name: 'background-color',
+  label: 'Background Color',
+  render: 'color',
+  valueType: 'color',
+  value: '#1a1a1a'
+};
+
+const surfaceColorItem: ConfigItem = {
+  name: 'surface-color',
+  label: 'Surface Color',
+  render: 'color',
+  valueType: 'color',
+  value: '#2d2d2d'
+};
+
+const textColorItem: ConfigItem = {
+  name: 'text-color',
+  label: 'Text Color',
+  render: 'color',
+  valueType: 'color',
+  value: '#e0e0e0'
+};
+
+const accentColorItem: ConfigItem = {
+  name: 'accent-color',
+  label: 'Accent Color',
+  render: 'color',
+  valueType: 'color',
+  value: '#ff8c00'
+};
+
 export const kortexConfig: ThemeConfig = {
   name: 'Kortex',
   label: 'Kortex',
-  type: 'dark',
+  themeKey: 'kortex',
   commandLabel: 'Roam Theme: Kortex',
   configItems: [
-    {
-      name: 'primary-color',
-      label: 'Primary Color',
-      render: 'color',
-      valueType: 'color',
-      value: '#ff8c00'
-    },
-    {
-      name: 'background-color',
-      label: 'Background Color',
-      render: 'color',
-      valueType: 'color',
-      value: '#1a1a1a'
-    },
-    {
-      name: 'surface-color',
-      label: 'Surface Color',
-      render: 'color',
-      valueType: 'color',
-      value: '#2d2d2d'
-    },
-    {
-      name: 'text-color',
-      label: 'Text Color',
-      render: 'color',
-      valueType: 'color',
-      value: '#e0e0e0'
-    },
-    {
-      name: 'text-secondary',
-      label: 'Secondary Text Color',
-      render: 'color',
-      valueType: 'color',
-      value: '#b0b0b0'
-    },
-    {
-      name: 'border-color',
-      label: 'Border Color',
-      render: 'color',
-      valueType: 'color',
-      value: '#404040'
-    },
-    {
-      name: 'hover-color',
-      label: 'Hover Color',
-      render: 'color',
-      valueType: 'color',
-      value: '#333333'
-    },
-    {
-      name: 'accent-color',
-      label: 'Accent Color',
-      render: 'color',
-      valueType: 'color',
-      value: '#ff8c00'
-    }
+    primaryColorItem,
+    backgroundColorItem,
+    surfaceColorItem,
+    textColorItem,
+    accentColorItem,
   ]
 };
 
-export const loadKortexConfig = (): ConfigItem[] => {
-  return kortexConfig.configItems || [];
-};
+export const loadKortexConfig = () => {
+  kortexConfig.configItems?.forEach((item: ConfigItem) => {
+    const value = window.extensionAPI.settings.get(item.name)
+    if (value && typeof value === 'string') {
+      document.documentElement.style.setProperty(`--${item.name}`, value)
+    }
+  })
+}
+
+// Legacy exports for compatibility
+export const kortexThemeSettings = kortexConfig.configItems
+export const loadKortexThemeSettings = () => loadKortexConfig()

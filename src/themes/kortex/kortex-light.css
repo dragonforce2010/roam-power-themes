@@ -1,0 +1,245 @@
+/* Kortex Light Theme - Modern Light Theme with Orange Accents */
+.kortex-light {
+  /* Color Variables */
+  --primary-color: #ff8c00;
+  --background-color: #ffffff;
+  --surface-color: #f8f8f8;
+  --text-color: #333333;
+  --text-secondary: #666666;
+  --border-color: #e0e0e0;
+  --hover-color: #f0f0f0;
+  --accent-color: #ff8c00;
+  --highlight-color: #fff3e6;
+}
+
+/* Main Application */
+.kortex-light .roam-app {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.kortex-light .roam-body {
+  background-color: var(--background-color);
+}
+
+/* Left Sidebar */
+.kortex-light .rm-left-sidebar {
+  background-color: var(--surface-color);
+  border-right: 1px solid var(--border-color);
+}
+
+.kortex-light .rm-left-sidebar__all-pages {
+  color: var(--text-color);
+}
+
+.kortex-light .rm-left-sidebar__all-pages:hover {
+  background-color: var(--hover-color);
+}
+
+/* Main Content */
+.kortex-light .roam-main {
+  background-color: var(--background-color);
+}
+
+.kortex-light .roam-article {
+  background-color: var(--background-color);
+}
+
+/* Text and Typography */
+.kortex-light .rm-block-text {
+  color: var(--text-color);
+}
+
+.kortex-light .rm-page-ref {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.kortex-light .rm-page-ref:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.kortex-light .rm-page-ref--link {
+  color: var(--accent-color);
+}
+
+.kortex-light .rm-page-ref--link:hover {
+  color: var(--primary-color);
+}
+
+/* References */
+.kortex-light .rm-reference-main {
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+.kortex-light .rm-reference-item {
+  background-color: var(--surface-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Block References */
+.kortex-light .rm-block-ref {
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+  padding: 2px 4px;
+}
+
+.kortex-light .rm-block-ref:hover {
+  background-color: var(--hover-color);
+}
+
+/* Code Editor */
+.kortex-light .CodeMirror {
+  background-color: var(--surface-color);
+  color: var(--text-color);
+}
+
+.kortex-light .CodeMirror-cursor {
+  border-left: 1px solid var(--accent-color);
+}
+
+.kortex-light .CodeMirror-selected {
+  background-color: var(--highlight-color);
+}
+
+/* Code Blocks */
+.kortex-light .rm-code-block {
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+/* Titles */
+.kortex-light .rm-title-display,
+.kortex-light .rm-page-title {
+  color: var(--accent-color);
+}
+
+/* Buttons */
+.kortex-light .bp3-button {
+  background-color: var(--surface-color);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+
+.kortex-light .bp3-button:hover {
+  background-color: var(--hover-color);
+  color: var(--accent-color);
+}
+
+.kortex-light .bp3-button.bp3-intent-primary {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+}
+
+.kortex-light .bp3-button.bp3-intent-primary:hover {
+  background-color: var(--primary-color);
+}
+
+/* Input Fields */
+.kortex-light .bp3-input {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+
+.kortex-light .bp3-input:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 1px var(--accent-color);
+}
+
+/* Top Bar */
+.kortex-light .rm-topbar {
+  background-color: var(--background-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Find or Create */
+.kortex-light .rm-find-or-create-wrapper {
+  background-color: var(--background-color);
+}
+
+/* Menus */
+.kortex-light .rm-menu {
+  background-color: var(--background-color);
+  border: 1px solid var(--border-color);
+}
+
+.kortex-light .rm-menu__item {
+  color: var(--text-color);
+}
+
+.kortex-light .rm-menu__item:hover {
+  background-color: var(--hover-color);
+  color: var(--accent-color);
+}
+
+/* Right Sidebar */
+.kortex-light .rm-sidebar-outline {
+  background-color: var(--surface-color);
+  border-left: 1px solid var(--border-color);
+}
+
+.kortex-light .rm-sidebar-outline .rm-sidebar-outline__item {
+  color: var(--text-secondary);
+}
+
+.kortex-light .rm-sidebar-outline .rm-sidebar-outline__item:hover {
+  color: var(--accent-color);
+  background-color: var(--hover-color);
+}
+
+/* Log Container */
+.kortex-light .roam-log-container,
+.kortex-light .roam-log-page {
+  background-color: var(--background-color);
+}
+
+/* Queries */
+.kortex-light .rm-query {
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+.kortex-light .rm-query-title {
+  color: var(--text-color);
+  background-color: var(--surface-color);
+}
+
+/* Embeds */
+.kortex-light .rm-embed-container {
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+/* Aliases and Hashtags */
+.kortex-light .rm-alias,
+.kortex-light .rm-hashtag {
+  color: var(--accent-color);
+}
+
+.kortex-light .rm-alias:hover,
+.kortex-light .rm-hashtag:hover {
+  color: var(--primary-color);
+}
+
+/* Blockquotes */
+.kortex-light .rm-bq {
+  background-color: var(--highlight-color);
+  border-left: 3px solid var(--accent-color);
+  padding: 8px 12px;
+  margin: 8px 0;
+}
+
+/* Highlights */
+.kortex-light .roam-highlight {
+  background-color: var(--highlight-color);
+  padding: 2px 4px;
+  border-radius: 2px;
+}

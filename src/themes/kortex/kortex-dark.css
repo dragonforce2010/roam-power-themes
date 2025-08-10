@@ -1,0 +1,270 @@
+/* Kortex Dark Theme - Modern Dark Theme with Orange Accents */
+.kortex-dark {
+  /* Color Variables */
+  --primary-color: #ff8c00;
+  --background-color: #1a1a1a;
+  --surface-color: #2d2d2d;
+  --text-color: #e0e0e0;
+  --text-secondary: #b0b0b0;
+  --border-color: #404040;
+  --hover-color: #333333;
+  --accent-color: #ff8c00;
+  --highlight-color: #3d2a00;
+}
+
+/* Main Application */
+.kortex-dark .roam-app {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.kortex-dark .roam-body {
+  background-color: var(--background-color);
+}
+
+/* Left Sidebar */
+.kortex-dark .rm-left-sidebar {
+  background-color: var(--surface-color);
+  border-right: 1px solid var(--border-color);
+}
+
+.kortex-dark .rm-left-sidebar__all-pages {
+  color: var(--text-color);
+}
+
+.kortex-dark .rm-left-sidebar__all-pages:hover {
+  background-color: var(--hover-color);
+}
+
+/* Main Content */
+.kortex-dark .roam-main {
+  background-color: var(--background-color);
+}
+
+.kortex-dark .roam-article {
+  background-color: var(--background-color);
+}
+
+/* Text and Typography */
+.kortex-dark .rm-block-text {
+  color: var(--text-color);
+}
+
+.kortex-dark .rm-page-ref {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.kortex-dark .rm-page-ref:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.kortex-dark .rm-page-ref--link {
+  color: var(--accent-color);
+}
+
+.kortex-dark .rm-page-ref--link:hover {
+  color: var(--primary-color);
+}
+
+/* References */
+.kortex-dark .rm-reference-main {
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+.kortex-dark .rm-reference-item {
+  background-color: var(--surface-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Block References */
+.kortex-dark .rm-block-ref {
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 3px;
+  padding: 2px 4px;
+}
+
+.kortex-dark .rm-block-ref:hover {
+  background-color: var(--hover-color);
+}
+
+/* Code Editor */
+.kortex-dark .CodeMirror {
+  background-color: var(--surface-color);
+  color: var(--text-color);
+}
+
+.kortex-dark .CodeMirror-cursor {
+  border-left: 1px solid var(--accent-color);
+}
+
+.kortex-dark .CodeMirror-selected {
+  background-color: var(--hover-color);
+}
+
+/* Code Blocks */
+.kortex-dark .rm-code-block {
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+/* Titles */
+.kortex-dark .rm-title-display,
+.kortex-dark .rm-page-title {
+  color: var(--accent-color);
+}
+
+/* Buttons */
+.kortex-dark .bp3-button {
+  background-color: var(--surface-color);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+
+.kortex-dark .bp3-button:hover {
+  background-color: var(--hover-color);
+  color: var(--accent-color);
+}
+
+.kortex-dark .bp3-button.bp3-intent-primary {
+  background-color: var(--accent-color);
+  color: var(--background-color);
+}
+
+.kortex-dark .bp3-button.bp3-intent-primary:hover {
+  background-color: var(--primary-color);
+}
+
+/* Input Fields */
+.kortex-dark .bp3-input {
+  background-color: var(--surface-color);
+  color: var(--text-color);
+  border: 1px solid var(--border-color);
+}
+
+.kortex-dark .bp3-input:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 1px var(--accent-color);
+}
+
+/* Top Bar */
+.kortex-dark .rm-topbar {
+  background-color: var(--surface-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* Find or Create */
+.kortex-dark .rm-find-or-create-wrapper {
+  background-color: var(--surface-color);
+}
+
+/* Menus */
+.kortex-dark .rm-menu {
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+}
+
+.kortex-dark .rm-menu__item {
+  color: var(--text-color);
+}
+
+.kortex-dark .rm-menu__item:hover {
+  background-color: var(--hover-color);
+  color: var(--accent-color);
+}
+
+/* Right Sidebar */
+.kortex-dark .rm-sidebar-outline {
+  background-color: var(--surface-color);
+  border-left: 1px solid var(--border-color);
+}
+
+.kortex-dark .rm-sidebar-outline .rm-sidebar-outline__item {
+  color: var(--text-secondary);
+}
+
+.kortex-dark .rm-sidebar-outline .rm-sidebar-outline__item:hover {
+  color: var(--accent-color);
+  background-color: var(--hover-color);
+}
+
+/* Log Container */
+.kortex-dark .roam-log-container,
+.kortex-dark .roam-log-page {
+  background-color: var(--background-color);
+}
+
+/* Queries */
+.kortex-dark .rm-query {
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+.kortex-dark .rm-query-title {
+  color: var(--text-color);
+  background-color: var(--surface-color);
+}
+
+/* Embeds */
+.kortex-dark .rm-embed-container {
+  background-color: var(--surface-color);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+/* Aliases and Hashtags */
+.kortex-dark .rm-alias,
+.kortex-dark .rm-hashtag {
+  color: var(--accent-color);
+}
+
+.kortex-dark .rm-alias:hover,
+.kortex-dark .rm-hashtag:hover {
+  color: var(--primary-color);
+}
+
+/* Blockquotes */
+.kortex-dark .rm-bq {
+  background-color: var(--highlight-color);
+  border-left: 3px solid var(--accent-color);
+  padding: 8px 12px;
+  margin: 8px 0;
+}
+
+/* Highlights */
+.kortex-dark .roam-highlight {
+  background-color: var(--highlight-color);
+  padding: 2px 4px;
+  border-radius: 2px;
+}
+
+/* Search */
+.kortex-dark .rm-find-or-create-wrapper .bp3-input {
+  background-color: var(--surface-color);
+  border-color: var(--border-color);
+  color: var(--text-color);
+}
+
+.kortex-dark .rm-find-or-create-wrapper .bp3-input:focus {
+  border-color: var(--accent-color);
+  box-shadow: 0 0 0 1px var(--accent-color);
+}
+
+/* Tags */
+.kortex-dark .rm-page-ref--tag {
+  background-color: var(--highlight-color);
+  color: var(--accent-color);
+  border-radius: 12px;
+  padding: 2px 8px;
+}
+
+.kortex-dark .rm-page-ref--tag:hover {
+  background-color: var(--hover-color);
+  color: var(--primary-color);
+}
