@@ -1,27 +1,26 @@
-/* Kortex Light Theme - Warm Cream Theme with Orange Accents */
+/* Kortex Light Theme - Pure White-Gray Theme (No Orange) */
 .kortex-light {
-  /* Color Variables - Based on target screenshot */
-  --primary-color: #ff9500;
-  --background-color: #faf9f7;
-  --surface-color: #f5f4f2;
-  --text-color: #2c2c2c;
-  --text-secondary: #5c5c5c;
-  --border-color: #e8e7e5;
-  --hover-color: #f0efed;
-  --accent-color: #ff9500;
-  --highlight-color: #fff4e6;
-  --sidebar-bg: #f5f4f2;
-  --main-bg: #faf9f7;
+  /* Color Variables - Strictly based on screenshot */
+  --background-color: #ffffff;
+  --sidebar-bg: #f8f8f8;
+  --text-color: #1a1a1a;
+  --text-secondary: #666666;
+  --text-muted: #999999;
+  --border-color: #e0e0e0;
+  --hover-color: #f0f0f0;
+  --input-bg: #ffffff;
+  --button-bg: #f5f5f5;
+  --selection-bg: #e6e6e6;
 }
 
 /* Main Application */
 .kortex-light .roam-app {
-  background-color: var(--main-bg) !important;
-  color: var(--text-color);
+  background-color: var(--background-color) !important;
+  color: var(--text-color) !important;
 }
 
 .kortex-light .roam-body {
-  background-color: var(--main-bg) !important;
+  background-color: var(--background-color) !important;
 }
 
 /* Left Sidebar */
@@ -40,45 +39,49 @@
 }
 
 /* Sidebar Items */
-.kortex-light .rm-left-sidebar .rm-nav-item {
+.kortex-light .rm-left-sidebar .rm-nav-item,
+.kortex-light .rm-left-sidebar .log-button,
+.kortex-light .rm-left-sidebar .starred-pages-wrapper,
+.kortex-light .rm-left-sidebar .starred-pages-wrapper .starred-pages {
   color: var(--text-secondary) !important;
 }
 
-.kortex-light .rm-left-sidebar .rm-nav-item:hover {
+.kortex-light .rm-left-sidebar .rm-nav-item:hover,
+.kortex-light .rm-left-sidebar .log-button:hover {
   background-color: var(--hover-color) !important;
   color: var(--text-color) !important;
 }
 
 /* Main Content */
 .kortex-light .roam-main {
-  background-color: var(--main-bg) !important;
+  background-color: var(--background-color) !important;
 }
 
 .kortex-light .roam-article {
-  background-color: var(--main-bg) !important;
+  background-color: var(--background-color) !important;
 }
 
 /* Text and Typography */
 .kortex-light .rm-block-text {
-  color: var(--text-color);
+  color: var(--text-color) !important;
 }
 
 .kortex-light .rm-page-ref {
-  color: var(--accent-color);
+  color: var(--text-color) !important;
   text-decoration: none;
 }
 
 .kortex-light .rm-page-ref:hover {
-  color: var(--primary-color);
+  color: var(--text-color) !important;
   text-decoration: underline;
 }
 
 .kortex-light .rm-page-ref--link {
-  color: var(--accent-color);
+  color: var(--text-color) !important;
 }
 
 .kortex-light .rm-page-ref--link:hover {
-  color: var(--primary-color);
+  color: var(--text-color) !important;
 }
 
 /* References */
@@ -133,7 +136,7 @@
 .kortex-light .roam-log-container h1,
 .kortex-light .roam-log-page h1,
 .kortex-light h1 {
-  color: var(--accent-color) !important;
+  color: var(--text-color) !important;
 }
 
 /* Daily Log Date Headers */
@@ -141,66 +144,66 @@
 .kortex-light .rm-log-container h1,
 .kortex-light .rm-daily-log .rm-daily-log-date,
 .kortex-light .rm-daily-log-date {
-  color: var(--accent-color) !important;
+  color: var(--text-color) !important;
 }
 
 /* Buttons */
 .kortex-light .bp3-button {
-  background-color: var(--surface-color);
-  color: var(--text-color);
-  border: 1px solid var(--border-color);
+  background-color: var(--button-bg) !important;
+  color: var(--text-color) !important;
+  border: 1px solid var(--border-color) !important;
 }
 
 .kortex-light .bp3-button:hover {
-  background-color: var(--hover-color);
-  color: var(--accent-color);
+  background-color: var(--hover-color) !important;
+  color: var(--text-color) !important;
 }
 
 .kortex-light .bp3-button.bp3-intent-primary {
-  background-color: var(--accent-color);
-  color: var(--background-color);
+  background-color: var(--button-bg) !important;
+  color: var(--text-color) !important;
 }
 
 .kortex-light .bp3-button.bp3-intent-primary:hover {
-  background-color: var(--primary-color);
+  background-color: var(--hover-color) !important;
 }
 
 /* Input Fields */
 .kortex-light .bp3-input {
-  background-color: var(--background-color);
-  color: var(--text-color);
-  border: 1px solid var(--border-color);
+  background-color: var(--input-bg) !important;
+  color: var(--text-color) !important;
+  border: 1px solid var(--border-color) !important;
 }
 
 .kortex-light .bp3-input:focus {
-  border-color: var(--accent-color);
-  box-shadow: 0 0 0 1px var(--accent-color);
+  border-color: var(--text-secondary) !important;
+  box-shadow: 0 0 0 1px var(--text-secondary) !important;
 }
 
 /* Top Bar */
 .kortex-light .rm-topbar {
-  background-color: var(--background-color);
-  border-bottom: 1px solid var(--border-color);
+  background-color: var(--background-color) !important;
+  border-bottom: 1px solid var(--border-color) !important;
 }
 
 /* Find or Create */
 .kortex-light .rm-find-or-create-wrapper {
-  background-color: var(--background-color);
+  background-color: var(--background-color) !important;
 }
 
 /* Menus */
 .kortex-light .rm-menu {
-  background-color: var(--background-color);
-  border: 1px solid var(--border-color);
+  background-color: var(--background-color) !important;
+  border: 1px solid var(--border-color) !important;
 }
 
 .kortex-light .rm-menu__item {
-  color: var(--text-color);
+  color: var(--text-color) !important;
 }
 
 .kortex-light .rm-menu__item:hover {
-  background-color: var(--hover-color);
-  color: var(--accent-color);
+  background-color: var(--hover-color) !important;
+  color: var(--text-color) !important;
 }
 
 /* Right Sidebar */
@@ -246,25 +249,26 @@
 /* Aliases and Hashtags */
 .kortex-light .rm-alias,
 .kortex-light .rm-hashtag {
-  color: var(--accent-color);
+  color: var(--text-color) !important;
 }
 
 .kortex-light .rm-alias:hover,
 .kortex-light .rm-hashtag:hover {
-  color: var(--primary-color);
+  color: var(--text-color) !important;
 }
 
 /* Blockquotes */
 .kortex-light .rm-bq {
-  background-color: var(--highlight-color);
-  border-left: 3px solid var(--accent-color);
+  background-color: var(--button-bg) !important;
+  border-left: 3px solid var(--text-secondary) !important;
   padding: 8px 12px;
   margin: 8px 0;
 }
 
 /* Highlights */
 .kortex-light .roam-highlight {
-  background-color: var(--highlight-color);
+  background-color: var(--selection-bg) !important;
+  color: var(--text-color) !important;
   padding: 2px 4px;
   border-radius: 2px;
 }
