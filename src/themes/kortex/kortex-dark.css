@@ -1,27 +1,26 @@
-/* Kortex Dark Theme - Deep Blue-Gray Theme with Warm Orange Accents */
+/* Kortex Dark Theme - Pure Gray-Black Theme (No Orange) */
 .kortex-dark {
-  /* Color Variables - Based on target screenshot */
-  --primary-color: #ff9500;
-  --background-color: #1e1e2e;
-  --surface-color: #252538;
-  --text-color: #e6e6f0;
-  --text-secondary: #a8a8b8;
-  --border-color: #3a3a4a;
-  --hover-color: #2a2a3a;
-  --accent-color: #ff9500;
-  --highlight-color: #2a1f0a;
-  --sidebar-bg: #252538;
-  --main-bg: #1e1e2e;
+  /* Color Variables - Strictly based on screenshot */
+  --background-color: #2b2b2b;
+  --sidebar-bg: #252525;
+  --text-color: #ffffff;
+  --text-secondary: #cccccc;
+  --text-muted: #999999;
+  --border-color: #3a3a3a;
+  --hover-color: #333333;
+  --input-bg: #333333;
+  --button-bg: #3a3a3a;
+  --selection-bg: #404040;
 }
 
 /* Main Application */
 .kortex-dark .roam-app {
-  background-color: var(--main-bg) !important;
-  color: var(--text-color);
+  background-color: var(--background-color) !important;
+  color: var(--text-color) !important;
 }
 
 .kortex-dark .roam-body {
-  background-color: var(--main-bg) !important;
+  background-color: var(--background-color) !important;
 }
 
 /* Left Sidebar */
@@ -40,45 +39,49 @@
 }
 
 /* Sidebar Items */
-.kortex-dark .rm-left-sidebar .rm-nav-item {
+.kortex-dark .rm-left-sidebar .rm-nav-item,
+.kortex-dark .rm-left-sidebar .log-button,
+.kortex-dark .rm-left-sidebar .starred-pages-wrapper,
+.kortex-dark .rm-left-sidebar .starred-pages-wrapper .starred-pages {
   color: var(--text-secondary) !important;
 }
 
-.kortex-dark .rm-left-sidebar .rm-nav-item:hover {
+.kortex-dark .rm-left-sidebar .rm-nav-item:hover,
+.kortex-dark .rm-left-sidebar .log-button:hover {
   background-color: var(--hover-color) !important;
   color: var(--text-color) !important;
 }
 
 /* Main Content */
 .kortex-dark .roam-main {
-  background-color: var(--main-bg) !important;
+  background-color: var(--background-color) !important;
 }
 
 .kortex-dark .roam-article {
-  background-color: var(--main-bg) !important;
+  background-color: var(--background-color) !important;
 }
 
 /* Text and Typography */
 .kortex-dark .rm-block-text {
-  color: var(--text-color);
+  color: var(--text-color) !important;
 }
 
 .kortex-dark .rm-page-ref {
-  color: var(--accent-color);
+  color: var(--text-color) !important;
   text-decoration: none;
 }
 
 .kortex-dark .rm-page-ref:hover {
-  color: var(--primary-color);
+  color: var(--text-color) !important;
   text-decoration: underline;
 }
 
 .kortex-dark .rm-page-ref--link {
-  color: var(--accent-color);
+  color: var(--text-color) !important;
 }
 
 .kortex-dark .rm-page-ref--link:hover {
-  color: var(--primary-color);
+  color: var(--text-color) !important;
 }
 
 /* References */
@@ -133,7 +136,7 @@
 .kortex-dark .roam-log-container h1,
 .kortex-dark .roam-log-page h1,
 .kortex-dark h1 {
-  color: var(--accent-color) !important;
+  color: var(--text-color) !important;
 }
 
 /* Daily Log Date Headers */
@@ -141,66 +144,66 @@
 .kortex-dark .rm-log-container h1,
 .kortex-dark .rm-daily-log .rm-daily-log-date,
 .kortex-dark .rm-daily-log-date {
-  color: var(--accent-color) !important;
+  color: var(--text-color) !important;
 }
 
 /* Buttons */
 .kortex-dark .bp3-button {
-  background-color: var(--surface-color);
-  color: var(--text-color);
-  border: 1px solid var(--border-color);
+  background-color: var(--button-bg) !important;
+  color: var(--text-color) !important;
+  border: 1px solid var(--border-color) !important;
 }
 
 .kortex-dark .bp3-button:hover {
-  background-color: var(--hover-color);
-  color: var(--accent-color);
+  background-color: var(--hover-color) !important;
+  color: var(--text-color) !important;
 }
 
 .kortex-dark .bp3-button.bp3-intent-primary {
-  background-color: var(--accent-color);
-  color: var(--background-color);
+  background-color: var(--button-bg) !important;
+  color: var(--text-color) !important;
 }
 
 .kortex-dark .bp3-button.bp3-intent-primary:hover {
-  background-color: var(--primary-color);
+  background-color: var(--hover-color) !important;
 }
 
 /* Input Fields */
 .kortex-dark .bp3-input {
-  background-color: var(--surface-color);
-  color: var(--text-color);
-  border: 1px solid var(--border-color);
+  background-color: var(--input-bg) !important;
+  color: var(--text-color) !important;
+  border: 1px solid var(--border-color) !important;
 }
 
 .kortex-dark .bp3-input:focus {
-  border-color: var(--accent-color);
-  box-shadow: 0 0 0 1px var(--accent-color);
+  border-color: var(--text-secondary) !important;
+  box-shadow: 0 0 0 1px var(--text-secondary) !important;
 }
 
 /* Top Bar */
 .kortex-dark .rm-topbar {
-  background-color: var(--surface-color);
-  border-bottom: 1px solid var(--border-color);
+  background-color: var(--background-color) !important;
+  border-bottom: 1px solid var(--border-color) !important;
 }
 
 /* Find or Create */
 .kortex-dark .rm-find-or-create-wrapper {
-  background-color: var(--surface-color);
+  background-color: var(--background-color) !important;
 }
 
 /* Menus */
 .kortex-dark .rm-menu {
-  background-color: var(--surface-color);
-  border: 1px solid var(--border-color);
+  background-color: var(--input-bg) !important;
+  border: 1px solid var(--border-color) !important;
 }
 
 .kortex-dark .rm-menu__item {
-  color: var(--text-color);
+  color: var(--text-color) !important;
 }
 
 .kortex-dark .rm-menu__item:hover {
-  background-color: var(--hover-color);
-  color: var(--accent-color);
+  background-color: var(--hover-color) !important;
+  color: var(--text-color) !important;
 }
 
 /* Right Sidebar */
@@ -246,50 +249,51 @@
 /* Aliases and Hashtags */
 .kortex-dark .rm-alias,
 .kortex-dark .rm-hashtag {
-  color: var(--accent-color);
+  color: var(--text-color) !important;
 }
 
 .kortex-dark .rm-alias:hover,
 .kortex-dark .rm-hashtag:hover {
-  color: var(--primary-color);
+  color: var(--text-color) !important;
 }
 
 /* Blockquotes */
 .kortex-dark .rm-bq {
-  background-color: var(--highlight-color);
-  border-left: 3px solid var(--accent-color);
+  background-color: var(--input-bg) !important;
+  border-left: 3px solid var(--text-secondary) !important;
   padding: 8px 12px;
   margin: 8px 0;
 }
 
 /* Highlights */
 .kortex-dark .roam-highlight {
-  background-color: var(--highlight-color);
+  background-color: var(--selection-bg) !important;
+  color: var(--text-color) !important;
   padding: 2px 4px;
   border-radius: 2px;
 }
 
 /* Search */
 .kortex-dark .rm-find-or-create-wrapper .bp3-input {
-  background-color: var(--surface-color);
-  border-color: var(--border-color);
-  color: var(--text-color);
+  background-color: var(--input-bg) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-color) !important;
 }
 
 .kortex-dark .rm-find-or-create-wrapper .bp3-input:focus {
-  border-color: var(--accent-color);
-  box-shadow: 0 0 0 1px var(--accent-color);
+  border-color: var(--text-secondary) !important;
+  box-shadow: 0 0 0 1px var(--text-secondary) !important;
 }
 
 /* Tags */
 .kortex-dark .rm-page-ref--tag {
-  background-color: var(--highlight-color);
-  color: var(--accent-color);
+  background-color: var(--input-bg) !important;
+  color: var(--text-secondary) !important;
   border-radius: 12px;
   padding: 2px 8px;
 }
 
 .kortex-dark .rm-page-ref--tag:hover {
-  background-color: var(--hover-color);
-  color: var(--primary-color);
+  background-color: var(--hover-color) !important;
+  color: var(--text-color) !important;
 }
