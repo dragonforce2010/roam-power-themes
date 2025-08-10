@@ -1,48 +1,61 @@
-/* Kortex Dark Theme - Modern Dark Theme with Orange Accents */
+/* Kortex Dark Theme - Deep Blue-Gray Theme with Warm Orange Accents */
 .kortex-dark {
-  /* Color Variables */
-  --primary-color: #ff8c00;
-  --background-color: #1a1a1a;
-  --surface-color: #2d2d2d;
-  --text-color: #e0e0e0;
-  --text-secondary: #b0b0b0;
-  --border-color: #404040;
-  --hover-color: #333333;
-  --accent-color: #ff8c00;
-  --highlight-color: #3d2a00;
+  /* Color Variables - Based on target screenshot */
+  --primary-color: #ff9500;
+  --background-color: #1e1e2e;
+  --surface-color: #252538;
+  --text-color: #e6e6f0;
+  --text-secondary: #a8a8b8;
+  --border-color: #3a3a4a;
+  --hover-color: #2a2a3a;
+  --accent-color: #ff9500;
+  --highlight-color: #2a1f0a;
+  --sidebar-bg: #252538;
+  --main-bg: #1e1e2e;
 }
 
 /* Main Application */
 .kortex-dark .roam-app {
-  background-color: var(--background-color);
+  background-color: var(--main-bg) !important;
   color: var(--text-color);
 }
 
 .kortex-dark .roam-body {
-  background-color: var(--background-color);
+  background-color: var(--main-bg) !important;
 }
 
 /* Left Sidebar */
 .kortex-dark .rm-left-sidebar {
-  background-color: var(--surface-color);
+  background-color: var(--sidebar-bg) !important;
   border-right: 1px solid var(--border-color);
 }
 
 .kortex-dark .rm-left-sidebar__all-pages {
-  color: var(--text-color);
+  color: var(--text-secondary) !important;
 }
 
 .kortex-dark .rm-left-sidebar__all-pages:hover {
-  background-color: var(--hover-color);
+  background-color: var(--hover-color) !important;
+  color: var(--text-color) !important;
+}
+
+/* Sidebar Items */
+.kortex-dark .rm-left-sidebar .rm-nav-item {
+  color: var(--text-secondary) !important;
+}
+
+.kortex-dark .rm-left-sidebar .rm-nav-item:hover {
+  background-color: var(--hover-color) !important;
+  color: var(--text-color) !important;
 }
 
 /* Main Content */
 .kortex-dark .roam-main {
-  background-color: var(--background-color);
+  background-color: var(--main-bg) !important;
 }
 
 .kortex-dark .roam-article {
-  background-color: var(--background-color);
+  background-color: var(--main-bg) !important;
 }
 
 /* Text and Typography */
@@ -113,10 +126,22 @@
   border-radius: 4px;
 }
 
-/* Titles */
+/* Titles and Headers */
 .kortex-dark .rm-title-display,
-.kortex-dark .rm-page-title {
-  color: var(--accent-color);
+.kortex-dark .rm-page-title,
+.kortex-dark .rm-daily-log h1,
+.kortex-dark .roam-log-container h1,
+.kortex-dark .roam-log-page h1,
+.kortex-dark h1 {
+  color: var(--accent-color) !important;
+}
+
+/* Daily Log Date Headers */
+.kortex-dark .roam-log-container .roam-log-preview h1,
+.kortex-dark .rm-log-container h1,
+.kortex-dark .rm-daily-log .rm-daily-log-date,
+.kortex-dark .rm-daily-log-date {
+  color: var(--accent-color) !important;
 }
 
 /* Buttons */

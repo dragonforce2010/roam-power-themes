@@ -1,48 +1,61 @@
-/* Kortex Light Theme - Modern Light Theme with Orange Accents */
+/* Kortex Light Theme - Warm Cream Theme with Orange Accents */
 .kortex-light {
-  /* Color Variables */
-  --primary-color: #ff8c00;
-  --background-color: #ffffff;
-  --surface-color: #f8f8f8;
-  --text-color: #333333;
-  --text-secondary: #666666;
-  --border-color: #e0e0e0;
-  --hover-color: #f0f0f0;
-  --accent-color: #ff8c00;
-  --highlight-color: #fff3e6;
+  /* Color Variables - Based on target screenshot */
+  --primary-color: #ff9500;
+  --background-color: #faf9f7;
+  --surface-color: #f5f4f2;
+  --text-color: #2c2c2c;
+  --text-secondary: #5c5c5c;
+  --border-color: #e8e7e5;
+  --hover-color: #f0efed;
+  --accent-color: #ff9500;
+  --highlight-color: #fff4e6;
+  --sidebar-bg: #f5f4f2;
+  --main-bg: #faf9f7;
 }
 
 /* Main Application */
 .kortex-light .roam-app {
-  background-color: var(--background-color);
+  background-color: var(--main-bg) !important;
   color: var(--text-color);
 }
 
 .kortex-light .roam-body {
-  background-color: var(--background-color);
+  background-color: var(--main-bg) !important;
 }
 
 /* Left Sidebar */
 .kortex-light .rm-left-sidebar {
-  background-color: var(--surface-color);
+  background-color: var(--sidebar-bg) !important;
   border-right: 1px solid var(--border-color);
 }
 
 .kortex-light .rm-left-sidebar__all-pages {
-  color: var(--text-color);
+  color: var(--text-secondary) !important;
 }
 
 .kortex-light .rm-left-sidebar__all-pages:hover {
-  background-color: var(--hover-color);
+  background-color: var(--hover-color) !important;
+  color: var(--text-color) !important;
+}
+
+/* Sidebar Items */
+.kortex-light .rm-left-sidebar .rm-nav-item {
+  color: var(--text-secondary) !important;
+}
+
+.kortex-light .rm-left-sidebar .rm-nav-item:hover {
+  background-color: var(--hover-color) !important;
+  color: var(--text-color) !important;
 }
 
 /* Main Content */
 .kortex-light .roam-main {
-  background-color: var(--background-color);
+  background-color: var(--main-bg) !important;
 }
 
 .kortex-light .roam-article {
-  background-color: var(--background-color);
+  background-color: var(--main-bg) !important;
 }
 
 /* Text and Typography */
@@ -113,10 +126,22 @@
   border-radius: 4px;
 }
 
-/* Titles */
+/* Titles and Headers */
 .kortex-light .rm-title-display,
-.kortex-light .rm-page-title {
-  color: var(--accent-color);
+.kortex-light .rm-page-title,
+.kortex-light .rm-daily-log h1,
+.kortex-light .roam-log-container h1,
+.kortex-light .roam-log-page h1,
+.kortex-light h1 {
+  color: var(--accent-color) !important;
+}
+
+/* Daily Log Date Headers */
+.kortex-light .roam-log-container .roam-log-preview h1,
+.kortex-light .rm-log-container h1,
+.kortex-light .rm-daily-log .rm-daily-log-date,
+.kortex-light .rm-daily-log-date {
+  color: var(--accent-color) !important;
 }
 
 /* Buttons */
