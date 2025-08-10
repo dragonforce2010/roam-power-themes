@@ -1,5 +1,5 @@
 import { ExtensionAPI, PanelConfig } from '../types';
-import { THEME_BEAR_GOTHAM, THEME_BEAR_PANIC, THEME_BUBBLEGUM_DARK, THEME_BUBBLEGUM_LIGHT, THEME_CAESAR_LIGHT, THEME_DARKAGE, THEME_DRACULA, THEME_FLOAT, THEME_GAMBLER, THEME_HIPSTER1, THEME_HIPSTER2, THEME_LEYENDARKER, THEME_LEYENDECKER, THEME_LILAC_DARK, THEME_LILAC_LIGHT, THEME_MAGAZINE, THEME_MERMAID_DARK, THEME_MERMAID_LIGHT, THEME_NIGHT_OWLISH, THEME_RAILS_ORANGE, THEME_RAILS_PURPLE, THEME_TOKIWA, THEME_ZENITHDECKER, roamThemeSettingKey } from './constants';
+import { THEME_BEAR_GOTHAM, THEME_BEAR_PANIC, THEME_BUBBLEGUM_DARK, THEME_BUBBLEGUM_LIGHT, THEME_CAESAR_LIGHT, THEME_DARKAGE, THEME_DRACULA, THEME_FLOAT, THEME_GAMBLER, THEME_HIPSTER1, THEME_HIPSTER2, THEME_KORTEX, THEME_LEYENDARKER, THEME_LEYENDECKER, THEME_LILAC_DARK, THEME_LILAC_LIGHT, THEME_MAGAZINE, THEME_MERMAID_DARK, THEME_MERMAID_LIGHT, THEME_NIGHT_OWLISH, THEME_RAILS_ORANGE, THEME_RAILS_PURPLE, THEME_TOKIWA, THEME_ZENITHDECKER, roamThemeSettingKey } from './constants';
 import { initTheme, updateTheme } from './theme-manager';
 import { bearpanicThemeSettings, loadBearpanicThemeSettings } from './themes/bearpanic/bearpanic-config';
 import { bubblegumDarkThemeSettings, loadBubblegumDarkThemeSettings } from './themes/bubblegum/bugglegum-dark-config'
@@ -8,6 +8,7 @@ import { gamblerThemeSettings, loadGamblerThemeSettings } from './themes/gambler
 import { darkageThemeSettings, loadDarkageThemeSettings } from './themes/darkage/darkage-config'
 import { draculaThemeSettings, loadDraculaThemeSettings } from './themes/dracula/dracula-config'
 import { leyendarkerThemeSettings, loadLeyendarkerThemeSettings } from './themes/leyendarker/leyendarker-config'
+import { kortexThemeSettings, loadKortexThemeSettings } from './themes/kortex/kortex-config'
 import { leyendeckerThemeSettings, loadLeyendeckerThemeSettings } from './themes/leyendecker/leyendecker-config'
 import { lilacDarkThemeSettings, loadLilacDarkThemeSettings } from './themes/lilac/lilac-dark-config'
 import { lilacLightThemeSettings, loadLilacLightThemeSettings } from './themes/lilac/lilac-light-config'
@@ -37,6 +38,7 @@ const themeSetting: any = {
       THEME_GAMBLER,
       THEME_HIPSTER1,
       THEME_HIPSTER2,
+      THEME_KORTEX,
       THEME_LEYENDARKER,
       THEME_LEYENDARKER,
       THEME_LILAC_DARK,
@@ -77,6 +79,10 @@ const themeSetting: any = {
         case THEME_GAMBLER:
           themeDetailSettings = gamblerThemeSettings
           loadGamblerThemeSettings()
+          break
+        case THEME_KORTEX:
+          themeDetailSettings = kortexThemeSettings
+          loadKortexThemeSettings()
           break
         case THEME_LEYENDARKER:
           themeDetailSettings = leyendarkerThemeSettings

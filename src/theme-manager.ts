@@ -9,6 +9,7 @@ import './themes/gambler/gambler.css'
 import './themes/gotham/gotham.css'
 import './themes/hipster/hipster1.css'
 import './themes/hipster/hipster2.css'
+import './themes/kortex/kortex.css'
 import './themes/leyendarker/leyendarker.css'
 import './themes/leyendecker/leyendecker.css'
 import './themes/lilac/lilac-dark.css'
@@ -34,6 +35,7 @@ import {
   THEME_GAMBLER,
   THEME_HIPSTER1,
   THEME_HIPSTER2,
+  THEME_KORTEX,
   THEME_LEYENDARKER,
   THEME_LEYENDECKER,
   THEME_LILAC_DARK,
@@ -99,6 +101,10 @@ let themeConfig = [
     commandLabel: 'Roam Theme: Hipster2',
   },
   {
+    themeKey: THEME_KORTEX,
+    commandLabel: 'Roam Theme: Kortex',
+  },
+  {
     themeKey: THEME_LEYENDARKER,
     commandLabel: 'Roam Theme: Leyendarker',
   },
@@ -151,8 +157,14 @@ let themeConfig = [
 const updateTheme = (newTheme: string) => {
   prevTheme = currentTheme
   currentTheme = newTheme
-  if (prevTheme) document.body.classList.remove(prevTheme)
-  if (currentTheme) document.body.classList.add(currentTheme)
+  // 只有当 prevTheme 不为空且不为空字符串时才移除
+  if (prevTheme && prevTheme.trim() !== '') {
+    document.body.classList.remove(prevTheme)
+  }
+  // 只有当 currentTheme 不为空且不为空字符串时才添加
+  if (currentTheme && currentTheme.trim() !== '') {
+    document.body.classList.add(currentTheme)
+  }
 }
 
 const getCurrentTheme = () => {
@@ -161,8 +173,9 @@ const getCurrentTheme = () => {
 
 const initTheme = () => {
   const currentTheme = getCurrentTheme()
-  if (!currentTheme) {
-    window.extensionAPI.settings.set(roamThemeSettingKey, currentTheme)
+  if (!currentTheme || currentTheme.trim() === '') {
+    // 如果没有设置主题，设置为默认主题（可以是空字符串表示无主题）
+    window.extensionAPI.settings.set(roamThemeSettingKey, '')
   } else {
     updateTheme(currentTheme)
   }
