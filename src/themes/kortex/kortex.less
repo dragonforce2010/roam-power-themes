@@ -1,0 +1,285 @@
+/* Kortex Theme - Modern Dark Theme with Orange Accents */
+.kortex {
+  /* Variables */
+  --font-size: 16px;
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --primary-color: #ff8c00;
+  --background-color: #1a1a1a;
+  --border-color: #333333;
+  --text-color: #f0f0f0;
+  --sidebar-color: #2a2a2a;
+  --highlight-color: #ff8c00;
+  --brackets-color: #ffb347;
+  --highlight-blue: #4a9eff;
+  --reference-bg: #2d2d2d;
+  --reference-border: #404040;
+  --link-color: #4a9eff;
+  --code-color: #e0e0e0;
+  --gutter-bg: #252525;
+  --line-color: #666666;
+  --active-line-bg: #333333;
+  --keyword-color: #ff8c00;
+
+  body {
+    background-color: var(--background-color);
+    font-size: var(--font-size);
+    font-family: var(--font-family);
+    letter-spacing: -0.001em;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+
+    div {
+      font-size: var(--font-size);
+    }
+  }
+
+  /* Sidebar */
+  .roam-body .roam-app .roam-sidebar-container {
+    background-color: var(--sidebar-color);
+    border-right: 1px solid var(--border-color);
+
+    .roam-sidebar-content {
+      background-color: var(--sidebar-color);
+
+      .log-button {
+        padding: 8px 20px;
+        font-weight: 900;
+        cursor: pointer;
+        font-size: var(--font-size);
+        color: var(--primary-color);
+      }
+    }
+  }
+
+  /* Headers */
+  .roam-app {
+    background-color: var(--background-color);
+    color: var(--text-color);
+
+    h1, h2, h3 {
+      color: var(--primary-color) !important;
+      font-family: var(--font-family);
+      font-weight: bold;
+    }
+
+    h2, h3 {
+      font-weight: 600;
+    }
+  }
+
+  .roam-main {
+    background-color: var(--background-color);
+  }
+
+  /* Text and links */
+  .roam-app .roam-block-container {
+    color: var(--text-color);
+  }
+
+  .roam-app .rm-page-ref {
+    color: var(--link-color);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--primary-color);
+      text-decoration: underline;
+    }
+  }
+
+  .roam-app .rm-alias {
+    color: var(--link-color);
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+
+  /* Blocks */
+  .roam-block {
+    color: var(--text-color);
+
+    .rm-block-text {
+      color: var(--text-color);
+    }
+  }
+
+  /* References */
+  .rm-reference-main {
+    background-color: var(--reference-bg);
+    border: 1px solid var(--reference-border);
+    border-radius: 4px;
+  }
+
+  .rm-reference-item {
+    background-color: var(--reference-bg);
+    border-left: 3px solid var(--primary-color);
+  }
+
+  /* Code blocks */
+  .CodeMirror {
+    background-color: var(--gutter-bg);
+    color: var(--code-color);
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+
+    .CodeMirror-gutters {
+      background-color: var(--gutter-bg);
+      border-right: 1px solid var(--border-color);
+    }
+
+    .CodeMirror-linenumber {
+      color: var(--line-color);
+    }
+
+    .CodeMirror-activeline-background {
+      background-color: var(--active-line-bg);
+    }
+
+    .cm-keyword {
+      color: var(--keyword-color);
+    }
+
+    .cm-string {
+      color: #98c379;
+    }
+
+    .cm-comment {
+      color: var(--line-color);
+      font-style: italic;
+    }
+  }
+
+  /* Inline code */
+  code {
+    background-color: var(--reference-bg);
+    color: var(--code-color);
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  }
+
+  /* Search and autocomplete */
+  .bp3-menu {
+    background-color: var(--sidebar-color);
+    border: 1px solid var(--border-color);
+  }
+
+  .bp3-menu-item {
+    color: var(--text-color);
+
+    &:hover {
+      background-color: var(--reference-bg);
+      color: var(--primary-color);
+    }
+  }
+
+  /* Buttons */
+  .bp3-button {
+    background-color: var(--reference-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+
+    &:hover {
+      background-color: var(--primary-color);
+      color: var(--background-color);
+    }
+  }
+
+  .bp3-intent-primary {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+  }
+
+  /* Input fields */
+  .bp3-input {
+    background-color: var(--reference-bg);
+    border: 1px solid var(--border-color);
+    color: var(--text-color);
+
+    &:focus {
+      border-color: var(--primary-color);
+      box-shadow: 0 0 0 1px var(--primary-color);
+    }
+  }
+
+  /* Popover */
+  .bp3-popover .bp3-popover-content {
+    background-color: var(--sidebar-color);
+    border: 1px solid var(--border-color);
+  }
+
+  /* Tags */
+  .rm-page-ref-tag {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border-radius: 12px;
+    padding: 2px 8px;
+    font-size: 0.85em;
+  }
+
+  /* Breadcrumbs */
+  .rm-zoom-item {
+    color: var(--text-color);
+
+    &:hover {
+      color: var(--primary-color);
+    }
+  }
+
+  /* Daily notes */
+  .roam-log-container {
+    background-color: var(--background-color);
+  }
+
+  .roam-log-page {
+    border-top: 1px solid var(--border-color);
+  }
+
+  /* Block references */
+  .rm-block-ref {
+    background-color: var(--reference-bg);
+    border-left: 3px solid var(--highlight-blue);
+    padding: 4px 8px;
+    margin: 2px 0;
+    border-radius: 0 4px 4px 0;
+  }
+
+  /* Highlights */
+  .roam-highlight {
+    background-color: var(--highlight-color);
+    color: var(--background-color);
+    padding: 1px 2px;
+    border-radius: 2px;
+  }
+
+  /* Checkboxes */
+  .check-container input[type="checkbox"] {
+    accent-color: var(--primary-color);
+  }
+
+  /* Scrollbars */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--background-color);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 4px;
+
+    &:hover {
+      background: var(--primary-color);
+    }
+  }
+
+  /* Selection */
+  ::selection {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+  }
+}

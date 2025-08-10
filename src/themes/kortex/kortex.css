@@ -1,0 +1,294 @@
+/* Kortex Theme - Modern Dark Theme with Orange Accents */
+.kortex {
+  /* Variables */
+  --font-size: 16px;
+  --font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+  --primary-color: #ff8c00;
+  --background-color: #1a1a1a;
+  --border-color: #333333;
+  --text-color: #f0f0f0;
+  --sidebar-color: #2a2a2a;
+  --highlight-color: #ff8c00;
+  --brackets-color: #ffb347;
+  --highlight-blue: #4a9eff;
+  --reference-bg: #2d2d2d;
+  --reference-border: #404040;
+  --link-color: #4a9eff;
+  --code-color: #e0e0e0;
+  --gutter-bg: #252525;
+  --line-color: #666666;
+  --active-line-bg: #333333;
+  --keyword-color: #ff8c00;
+}
+
+.kortex body {
+  background-color: var(--background-color);
+  font-size: var(--font-size);
+  font-family: var(--font-family);
+  letter-spacing: -0.001em;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+.kortex body div {
+  font-size: var(--font-size);
+}
+
+/* Sidebar */
+.kortex .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content .log-button {
+  padding: 8px 20px;
+  font-weight: 900;
+  cursor: pointer;
+  font-size: var(--font-size);
+  color: var(--primary-color);
+}
+
+.kortex .roam-body .roam-app .roam-sidebar-container {
+  background-color: var(--sidebar-color);
+  border-right: 1px solid var(--border-color);
+}
+
+.kortex .roam-body .roam-app .roam-sidebar-container .roam-sidebar-content {
+  background-color: var(--sidebar-color);
+}
+
+/* Headers */
+.kortex .roam-app h1 {
+  color: var(--primary-color) !important;
+  font-family: var(--font-family);
+  font-weight: bold;
+}
+
+.kortex .roam-app h2 {
+  color: var(--primary-color) !important;
+  font-family: var(--font-family);
+  font-weight: 600;
+}
+
+.kortex .roam-app h3 {
+  color: var(--primary-color) !important;
+  font-family: var(--font-family);
+  font-weight: 600;
+}
+
+/* Main content area */
+.kortex .roam-app {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.kortex .roam-main {
+  background-color: var(--background-color);
+}
+
+/* Text and links */
+.kortex .roam-app .roam-block-container {
+  color: var(--text-color);
+}
+
+.kortex .roam-app .rm-page-ref {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+.kortex .roam-app .rm-page-ref:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.kortex .roam-app .rm-alias {
+  color: var(--link-color);
+}
+
+.kortex .roam-app .rm-alias:hover {
+  color: var(--primary-color);
+}
+
+/* Blocks */
+.kortex .roam-block {
+  color: var(--text-color);
+}
+
+.kortex .roam-block .rm-block-text {
+  color: var(--text-color);
+}
+
+/* References */
+.kortex .rm-reference-main {
+  background-color: var(--reference-bg);
+  border: 1px solid var(--reference-border);
+  border-radius: 4px;
+}
+
+.kortex .rm-reference-item {
+  background-color: var(--reference-bg);
+  border-left: 3px solid var(--primary-color);
+}
+
+/* Code blocks */
+.kortex .CodeMirror {
+  background-color: var(--gutter-bg);
+  color: var(--code-color);
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+}
+
+.kortex .CodeMirror .CodeMirror-gutters {
+  background-color: var(--gutter-bg);
+  border-right: 1px solid var(--border-color);
+}
+
+.kortex .CodeMirror .CodeMirror-linenumber {
+  color: var(--line-color);
+}
+
+.kortex .CodeMirror .CodeMirror-activeline-background {
+  background-color: var(--active-line-bg);
+}
+
+.kortex .CodeMirror .cm-keyword {
+  color: var(--keyword-color);
+}
+
+.kortex .CodeMirror .cm-string {
+  color: #98c379;
+}
+
+.kortex .CodeMirror .cm-comment {
+  color: var(--line-color);
+  font-style: italic;
+}
+
+/* Inline code */
+.kortex code {
+  background-color: var(--reference-bg);
+  color: var(--code-color);
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+}
+
+/* Search and autocomplete */
+.kortex .bp3-menu {
+  background-color: var(--sidebar-color);
+  border: 1px solid var(--border-color);
+}
+
+.kortex .bp3-menu-item {
+  color: var(--text-color);
+}
+
+.kortex .bp3-menu-item:hover {
+  background-color: var(--reference-bg);
+  color: var(--primary-color);
+}
+
+/* Buttons */
+.kortex .bp3-button {
+  background-color: var(--reference-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+}
+
+.kortex .bp3-button:hover {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+}
+
+.kortex .bp3-intent-primary {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+}
+
+/* Input fields */
+.kortex .bp3-input {
+  background-color: var(--reference-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+}
+
+.kortex .bp3-input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 1px var(--primary-color);
+}
+
+/* Popover */
+.kortex .bp3-popover .bp3-popover-content {
+  background-color: var(--sidebar-color);
+  border: 1px solid var(--border-color);
+}
+
+/* Tags */
+.kortex .rm-page-ref-tag {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+  border-radius: 12px;
+  padding: 2px 8px;
+  font-size: 0.85em;
+}
+
+/* Breadcrumbs */
+.kortex .rm-zoom-item {
+  color: var(--text-color);
+}
+
+.kortex .rm-zoom-item:hover {
+  color: var(--primary-color);
+}
+
+/* Daily notes */
+.kortex .roam-log-container {
+  background-color: var(--background-color);
+}
+
+.kortex .roam-log-page {
+  border-top: 1px solid var(--border-color);
+}
+
+/* Block references */
+.kortex .rm-block-ref {
+  background-color: var(--reference-bg);
+  border-left: 3px solid var(--highlight-blue);
+  padding: 4px 8px;
+  margin: 2px 0;
+  border-radius: 0 4px 4px 0;
+}
+
+/* Highlights */
+.kortex .roam-highlight {
+  background-color: var(--highlight-color);
+  color: var(--background-color);
+  padding: 1px 2px;
+  border-radius: 2px;
+}
+
+/* Checkboxes */
+.kortex .check-container input[type="checkbox"] {
+  accent-color: var(--primary-color);
+}
+
+/* Scrollbars */
+.kortex ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.kortex ::-webkit-scrollbar-track {
+  background: var(--background-color);
+}
+
+.kortex ::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+.kortex ::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
+
+/* Selection */
+.kortex ::selection {
+  background-color: var(--primary-color);
+  color: var(--background-color);
+}
